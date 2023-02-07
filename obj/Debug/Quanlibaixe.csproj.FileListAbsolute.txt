@@ -1,0 +1,10 @@
+C:\Users\ASUS\source\repos\Quanlibaixe\bin\Debug\Quanlibaixe.exe.config
+C:\Users\ASUS\source\repos\Quanlibaixe\bin\Debug\Quanlibaixe.exe
+C:\Users\ASUS\source\repos\Quanlibaixe\bin\Debug\Quanlibaixe.pdb
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.Properties.Resources.resources
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.exe
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.pdb
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Main.resources
