@@ -140,11 +140,11 @@ namespace Quanlibaixe
                 
             }    
         }
-        public Image LoadImage()
+        public Image LoadImage(String base64)
         {
             //data:image/gif;base64,
             //this image is a single pixel (black)
-            byte[] bytes = Convert.FromBase64String("R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==");
+            byte[] bytes = Convert.FromBase64String(base64);
 
             Image image;
             using (MemoryStream ms = new MemoryStream(bytes))
@@ -158,9 +158,10 @@ namespace Quanlibaixe
         {
             if (e.RowIndex >= 0)
             {
-                /*DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                 string id = row.Cells[0].Value.ToString();
+                textBox1.Text = id;
+                textBox2.Text = row.Cells[1].Value.ToString();
                 string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car = '{0}'", id);
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
@@ -170,10 +171,13 @@ namespace Quanlibaixe
                 com.CommandType = CommandType.Text;
                 dataGridView2.DataSource = dt;
                 conn.Close();
-                */
 
             }
 
+        }
+        public static Image resizeImage(Image imgToResize, Size size)
+        {
+            return (Image)(new Bitmap(imgToResize, size));
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -181,13 +185,43 @@ namespace Quanlibaixe
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dataGridView2.Rows[e.RowIndex];
-                MessageBox.Show(row.Cells[2].Value.ToString());
+
+                    //MessageBox.Show(row.Cells[1].Value.ToString());
+                string id = row.Cells[1].Value.ToString();
+                string query = String.Format("select Image from Action where ID_action = '{0}'", id);
+                conn.Open();
+            SqlCommand com = new SqlCommand(query , conn);
+            using (DbDataReader reader = com.ExecuteReader())
+            {
+                
+                if (reader.HasRows)
+                {
+                        String img = "";
+                        while (reader.Read())
+                        {
+                             img = reader.GetValue(0).ToString();
+                            //MessageBox.Show(img);
+                        }
+                        Image image = LoadImage(img);
+                        image = resizeImage(image, new Size(256, 256));
+                        pictureBox1.Image = image;
+                        //Console.WriteLine(img);
+                        reader.Dispose();
+                }
+            }
+                conn.Close();
             }    
+        }
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

@@ -114,14 +114,14 @@ namespace Quanlibaixe
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(500, 410);
             this.dataGridView2.TabIndex = 13;
-            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1136, 155);
+            this.pictureBox1.Location = new System.Drawing.Point(1127, 221);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(348, 410);
+            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -166,7 +166,7 @@ namespace Quanlibaixe
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(503, 410);
             this.dataGridView1.TabIndex = 17;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // dataGridViewTextBoxColumn1
@@ -232,11 +232,15 @@ namespace Quanlibaixe
             // 
             // Image
             // 
+            this.Image.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.Image.DataPropertyName = "Image";
             this.Image.HeaderText = "Image";
+            this.Image.MaxInputLength = 1000000;
             this.Image.MinimumWidth = 6;
             this.Image.Name = "Image";
             this.Image.ReadOnly = true;
+            this.Image.Visible = false;
+            this.Image.Width = 75;
             // 
             // In_or_out
             // 
