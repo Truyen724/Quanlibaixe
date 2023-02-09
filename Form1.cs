@@ -263,13 +263,13 @@ namespace Quanlibaixe
                 conn.Close();
             }
             */
-            String query2 = String.Format("Insert into Driver(ID_driver, Driver_Name,Dateofbirth) values ((Select max(ID_driver) +1 from Driver), N'{0}','{1}')", textBox4.Text, dateTimePicker1.Value.ToString("yyyyMMdd"));
+            /*String query2 = String.Format("Insert into Driver(ID_driver, Driver_Name,Dateofbirth) values ((Select max(ID_driver) +1 from Driver), N'{0}','{1}')", textBox4.Text, dateTimePicker1.Value.ToString("yyyyMMdd"));
             conn.Open();
             SqlCommand com2 = new SqlCommand(query2, conn);
             com2.CommandType = CommandType.Text;
             com2.ExecuteNonQuery();
             MessageBox.Show("Thêm thành công");
-            conn.Close();
+            conn.Close();*/
         }
 
         private void quảnLíXeToolStripMenuItem_Click(object sender, EventArgs e)
