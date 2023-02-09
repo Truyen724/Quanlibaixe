@@ -213,12 +213,13 @@ namespace Quanlibaixe
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(772, 334);
+            this.button5.Location = new System.Drawing.Point(547, 70);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(159, 38);
             this.button5.TabIndex = 21;
             this.button5.Text = "Xe chưa đăng kí";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox2
             // 
@@ -252,6 +253,7 @@ namespace Quanlibaixe
             this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
             this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
+            this.quảnLíTàiXếToolStripMenuItem.Click += new System.EventHandler(this.quảnLíTàiXếToolStripMenuItem_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 

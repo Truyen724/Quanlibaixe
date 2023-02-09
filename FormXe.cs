@@ -67,12 +67,13 @@ namespace Quanlibaixe
                     {
                         comboBox1.Items.Add(reader.GetValue(1).ToString());
                         comboBox5.Items.Add(reader.GetValue(0).ToString());
-                        comboBox6.Items.Add(reader.GetValue(2).ToString());
+                        comboBox6.Items.Add(reader.GetValue(2).ToString().Substring(0, 10));
 
                         comboBox4.Items.Add(reader.GetValue(1).ToString());
                         comboBox8.Items.Add(reader.GetValue(0).ToString());
-                        comboBox7.Items.Add(reader.GetValue(2).ToString());
-                        //MessageBox.Show(img);
+                        comboBox7.Items.Add(reader.GetValue(2).ToString().Substring(0, 10));
+                        
+             
                     }
                     reader.Dispose();
                 }
@@ -90,13 +91,25 @@ namespace Quanlibaixe
         {
             if(textBox3.Text!="" & comboBox1.Text!= "")
             {
-                String query = String.Format("Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')", textBox3.Text, comboBox5.Text, comboBox2.Text, textBox1.Text);
-                conn.Open();
-            
-                SqlCommand com = new SqlCommand(query, conn);
-                com.CommandType = CommandType.Text;
-                com.ExecuteNonQuery();
-                conn.Close();
+                try
+                {
+                    String query = String.Format("Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')", textBox3.Text, comboBox5.Text, comboBox2.Text, textBox1.Text);
+                    conn.Open();
+
+                    SqlCommand com = new SqlCommand(query, conn);
+                    com.CommandType = CommandType.Text;
+                    com.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Thêm Thành Công");
+                    ketnoi();
+                    load_driver();
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi ");
+                }
+
+               
             }    
         }
 
@@ -143,6 +156,28 @@ namespace Quanlibaixe
                 comboBox4.SelectedIndex = comboBox8.FindStringExact(row.Cells[2].Value.ToString());
                 comboBox3.Text = row.Cells[3].Value.ToString();
                 textBox2.Text = row.Cells[4].Value.ToString();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String query = String.Format("Delete from Car where Id_Car = '{0}'", textBox4.Text);
+                conn.Open();
+                SqlCommand com = new SqlCommand(query, conn);
+                com.CommandType = CommandType.Text;
+                com.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Xóa thành công");
+                ketnoi();
+                load_driver();
+                comboBox3.Text = "";
+                comboBox1.Text = "";
+            }
+            catch
+            {
+                MessageBox.Show("Không Thể Xóa Được");
             }
         }
     }

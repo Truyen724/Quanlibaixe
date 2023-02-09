@@ -58,6 +58,12 @@
     <Compile Include="FormXe.Designer.cs">
       <DependentUpon>FormXe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Driver.Designer.cs">
+      <DependentUpon>Form_Driver.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormXe.resx">
       <DependentUpon>FormXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Driver.resx">
+      <DependentUpon>Form_Driver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

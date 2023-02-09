@@ -234,6 +234,7 @@ namespace Quanlibaixe
             // 
             // textBox4
             // 
+            this.textBox4.AcceptsReturn = true;
             this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(122, 549);
             this.textBox4.Name = "textBox4";
@@ -378,6 +379,7 @@ namespace Quanlibaixe
             this.button2.TabIndex = 56;
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormXe
             // 

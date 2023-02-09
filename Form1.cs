@@ -277,5 +277,24 @@ namespace Quanlibaixe
             FormXe f = new FormXe();
             f.ShowDialog();
         }
+
+        private void quảnLíTàiXếToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Driver f = new Form_Driver();
+            f.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car)  order by ID_action desc");
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView2.DataSource = dt;
+            conn.Close();
+        }
     }
 }
