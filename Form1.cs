@@ -33,7 +33,7 @@ namespace Quanlibaixe
             {
                 MessageBox.Show("Kết nối thất bại");
             }
-            String tatcacacxe = "select Id_car, Driver_Name, Car.State from Car left join Driver on Car.Id_driver = Driver.ID_driver";
+            String tatcacacxe = "select Id_car, Driver_Name, Car.State, Car.Desciption from Car left join Driver on Car.Id_driver = Driver.ID_driver";
             conn.Open();
             SqlCommand com = new SqlCommand(tatcacacxe, conn);
             DataTable dt = new DataTable();
@@ -128,7 +128,7 @@ namespace Quanlibaixe
                 string id = row.Cells[0].Value.ToString();
                 textBox1.Text = id;
                 textBox2.Text = row.Cells[1].Value.ToString();
-                string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car = '{0}'", id);
+                string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car = '{0}'  order by ID_action desc", id);
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
                 DataTable dt = new DataTable();
@@ -142,6 +142,7 @@ namespace Quanlibaixe
         }
         public Image LoadImage(String base64)
         {
+
             //data:image/gif;base64,
             //this image is a single pixel (black)
             byte[] bytes = Convert.FromBase64String(base64);
@@ -162,7 +163,7 @@ namespace Quanlibaixe
                 string id = row.Cells[0].Value.ToString();
                 textBox1.Text = id;
                 textBox2.Text = row.Cells[1].Value.ToString();
-                string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car = '{0}'", id);
+                string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car = '{0}' order by ID_action desc", id);
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
                 DataTable dt = new DataTable();
@@ -173,7 +174,6 @@ namespace Quanlibaixe
                 conn.Close();
 
             }
-
         }
         public static Image resizeImage(Image imgToResize, Size size)
         {
@@ -188,8 +188,8 @@ namespace Quanlibaixe
 
                     //MessageBox.Show(row.Cells[1].Value.ToString());
                 string id = row.Cells[1].Value.ToString();
-                string query = String.Format("select Image from Action where ID_action = '{0}'", id);
-                conn.Open();
+                string query = String.Format("select Image,Image2 from Action where ID_action = '{0}'", id);
+            conn.Open();
             SqlCommand com = new SqlCommand(query , conn);
             using (DbDataReader reader = com.ExecuteReader())
             {
@@ -197,15 +197,28 @@ namespace Quanlibaixe
                 if (reader.HasRows)
                 {
                         String img = "";
+                        String img2 = "";
                         while (reader.Read())
                         {
                              img = reader.GetValue(0).ToString();
+                            img2 = reader.GetValue(1).ToString();
                             //MessageBox.Show(img);
                         }
-                        Image image = LoadImage(img);
-                        image = resizeImage(image, new Size(256, 256));
-                        pictureBox1.Image = image;
-                        //Console.WriteLine(img);
+                        try
+                        {
+                            Image image = LoadImage(img);
+                            image = resizeImage(image, new Size(256, 256));
+                            pictureBox1.Image = image;
+                            Image image2 = LoadImage(img2);
+                            image2 = resizeImage(image2, new Size(256, 256));
+                            pictureBox2.Image = image2;
+                            //Console.WriteLine(img);
+                        }
+                        catch
+                        {
+
+                        }
+
                         reader.Dispose();
                 }
             }
@@ -222,6 +235,47 @@ namespace Quanlibaixe
 
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            /* String query = "Select max(ID_driver) from Driver";
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            int id = 0;
+            using (DbDataReader reader = com.ExecuteReader())
+            {
+
+                if (reader.HasRows)
+                {
+                    
+                    while (reader.Read())
+                    {
+                        id = unchecked((int)Convert.ToInt64(reader.GetValue(0)))+1;
+                        MessageBox.Show(id.ToString());
+                    }
+                    reader.Dispose();
+                }
+                conn.Close();
+            }
+            */
+            String query2 = String.Format("Insert into Driver(ID_driver, Driver_Name,Dateofbirth) values ((Select max(ID_driver) +1 from Driver), N'{0}','{1}')", textBox4.Text, dateTimePicker1.Value.ToString("yyyyMMdd"));
+            conn.Open();
+            SqlCommand com2 = new SqlCommand(query2, conn);
+            com2.CommandType = CommandType.Text;
+            com2.ExecuteNonQuery();
+            MessageBox.Show("Thêm thành công");
+            conn.Close();
+        }
+
+        private void quảnLíXeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormXe f = new FormXe();
+            f.ShowDialog();
+        }
     }
 }
