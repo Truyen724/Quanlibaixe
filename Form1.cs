@@ -185,22 +185,25 @@ namespace Quanlibaixe
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dataGridView2.Rows[e.RowIndex];
-
-                    //MessageBox.Show(row.Cells[1].Value.ToString());
+                Image no = null;
+                pictureBox1.Image = no;
+                pictureBox2.Image = no;
+                //MessageBox.Show(row.Cells[1].Value.ToString());
                 string id = row.Cells[1].Value.ToString();
                 string query = String.Format("select Image,Image2 from Action where ID_action = '{0}'", id);
-            conn.Open();
-            SqlCommand com = new SqlCommand(query , conn);
-            using (DbDataReader reader = com.ExecuteReader())
-            {
-                
-                if (reader.HasRows)
+                conn.Open();
+                SqlCommand com = new SqlCommand(query, conn);
+                using (DbDataReader reader = com.ExecuteReader())
                 {
+
+                    if (reader.HasRows)
+                    {
+
                         String img = "";
                         String img2 = "";
                         while (reader.Read())
                         {
-                             img = reader.GetValue(0).ToString();
+                            img = reader.GetValue(0).ToString();
                             img2 = reader.GetValue(1).ToString();
                             //MessageBox.Show(img);
                         }
@@ -220,14 +223,58 @@ namespace Quanlibaixe
                         }
 
                         reader.Dispose();
+                    }
                 }
-            }
                 conn.Close();
-            }    
+            }
         }
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView2.Rows[e.RowIndex];
+                Image no = null;
+                pictureBox1.Image = no;
+                pictureBox2.Image = no;
+                //MessageBox.Show(row.Cells[1].Value.ToString());
+                string id = row.Cells[1].Value.ToString();
+                string query = String.Format("select Image,Image2 from Action where ID_action = '{0}'", id);
+                conn.Open();
+                SqlCommand com = new SqlCommand(query, conn);
+                using (DbDataReader reader = com.ExecuteReader())
+                {
 
+                    if (reader.HasRows)
+                    {
+
+                        String img = "";
+                        String img2 = "";
+                        while (reader.Read())
+                        {
+                            img = reader.GetValue(0).ToString();
+                            img2 = reader.GetValue(1).ToString();
+                            //MessageBox.Show(img);
+                        }
+                        try
+                        {
+                            Image image = LoadImage(img);
+                            image = resizeImage(image, new Size(256, 256));
+                            pictureBox1.Image = image;
+                            Image image2 = LoadImage(img2);
+                            image2 = resizeImage(image2, new Size(256, 256));
+                            pictureBox2.Image = image2;
+                            //Console.WriteLine(img);
+                        }
+                        catch
+                        {
+
+                        }
+
+                        reader.Dispose();
+                    }
+                }
+                conn.Close();
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -287,6 +334,32 @@ namespace Quanlibaixe
         private void button5_Click(object sender, EventArgs e)
         {
             string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car)  order by ID_action desc");
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView2.DataSource = dt;
+            conn.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'in'  order by ID_action desc");
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView2.DataSource = dt;
+            conn.Close();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'out'  order by ID_action desc");
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             DataTable dt = new DataTable();

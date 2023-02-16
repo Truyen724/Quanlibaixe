@@ -33,27 +33,29 @@ namespace Quanlibaixe
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID_action = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_car = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Image = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.In_or_out = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id_parkinglot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quảnLíXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíTàiXếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -108,14 +110,68 @@ namespace Quanlibaixe
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(688, 344);
+            this.dataGridView2.Size = new System.Drawing.Size(958, 344);
             this.dataGridView2.TabIndex = 13;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
+            // ID_action
+            // 
+            this.ID_action.DataPropertyName = "ID_action";
+            this.ID_action.HeaderText = "ID action";
+            this.ID_action.MinimumWidth = 6;
+            this.ID_action.Name = "ID_action";
+            this.ID_action.ReadOnly = true;
+            // 
+            // ID_car
+            // 
+            this.ID_car.DataPropertyName = "ID_car";
+            this.ID_car.HeaderText = "ID car";
+            this.ID_car.MinimumWidth = 6;
+            this.ID_car.Name = "ID_car";
+            this.ID_car.ReadOnly = true;
+            // 
+            // Image
+            // 
+            this.Image.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Image.DataPropertyName = "Image";
+            this.Image.HeaderText = "Image";
+            this.Image.MaxInputLength = 1000000;
+            this.Image.MinimumWidth = 6;
+            this.Image.Name = "Image";
+            this.Image.ReadOnly = true;
+            this.Image.Visible = false;
+            this.Image.Width = 125;
+            // 
+            // In_or_out
+            // 
+            this.In_or_out.DataPropertyName = "In_or_out";
+            this.In_or_out.HeaderText = "State";
+            this.In_or_out.MinimumWidth = 6;
+            this.In_or_out.Name = "In_or_out";
+            this.In_or_out.ReadOnly = true;
+            // 
+            // Time
+            // 
+            this.Time.DataPropertyName = "Time";
+            this.Time.HeaderText = "Time";
+            this.Time.MinimumWidth = 6;
+            this.Time.Name = "Time";
+            this.Time.ReadOnly = true;
+            // 
+            // Id_parkinglot
+            // 
+            this.Id_parkinglot.DataPropertyName = "Id_parkinglot";
+            this.Id_parkinglot.HeaderText = "Id_parkinglot";
+            this.Id_parkinglot.MinimumWidth = 6;
+            this.Id_parkinglot.Name = "Id_parkinglot";
+            this.Id_parkinglot.ReadOnly = true;
+            this.Id_parkinglot.Visible = false;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(818, 70);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Location = new System.Drawing.Point(1182, 70);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(256, 256);
             this.pictureBox1.TabIndex = 14;
@@ -158,103 +214,6 @@ namespace Quanlibaixe
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // ID_action
-            // 
-            this.ID_action.DataPropertyName = "ID_action";
-            this.ID_action.HeaderText = "ID action";
-            this.ID_action.MinimumWidth = 6;
-            this.ID_action.Name = "ID_action";
-            this.ID_action.ReadOnly = true;
-            // 
-            // ID_car
-            // 
-            this.ID_car.DataPropertyName = "ID_car";
-            this.ID_car.HeaderText = "ID car";
-            this.ID_car.MinimumWidth = 6;
-            this.ID_car.Name = "ID_car";
-            this.ID_car.ReadOnly = true;
-            // 
-            // Image
-            // 
-            this.Image.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Image.DataPropertyName = "Image";
-            this.Image.HeaderText = "Image";
-            this.Image.MaxInputLength = 1000000;
-            this.Image.MinimumWidth = 6;
-            this.Image.Name = "Image";
-            this.Image.ReadOnly = true;
-            this.Image.Visible = false;
-            this.Image.Width = 75;
-            // 
-            // In_or_out
-            // 
-            this.In_or_out.DataPropertyName = "In_or_out";
-            this.In_or_out.HeaderText = "State";
-            this.In_or_out.MinimumWidth = 6;
-            this.In_or_out.Name = "In_or_out";
-            this.In_or_out.ReadOnly = true;
-            // 
-            // Time
-            // 
-            this.Time.DataPropertyName = "Time";
-            this.Time.HeaderText = "Time";
-            this.Time.MinimumWidth = 6;
-            this.Time.Name = "Time";
-            this.Time.ReadOnly = true;
-            // 
-            // Id_parkinglot
-            // 
-            this.Id_parkinglot.DataPropertyName = "Id_parkinglot";
-            this.Id_parkinglot.HeaderText = "Id_parkinglot";
-            this.Id_parkinglot.MinimumWidth = 6;
-            this.Id_parkinglot.Name = "Id_parkinglot";
-            this.Id_parkinglot.ReadOnly = true;
-            this.Id_parkinglot.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(547, 70);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(159, 38);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Xe chưa đăng kí";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(1162, 70);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(256, 256);
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quảnLíXeToolStripMenuItem,
-            this.quảnLíTàiXếToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1496, 28);
-            this.menuStrip1.TabIndex = 33;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // quảnLíXeToolStripMenuItem
-            // 
-            this.quảnLíXeToolStripMenuItem.Name = "quảnLíXeToolStripMenuItem";
-            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
-            this.quảnLíXeToolStripMenuItem.Text = "Quản lí xe";
-            this.quảnLíXeToolStripMenuItem.Click += new System.EventHandler(this.quảnLíXeToolStripMenuItem_Click);
-            // 
-            // quảnLíTàiXếToolStripMenuItem
-            // 
-            this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
-            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
-            this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
-            this.quảnLíTàiXếToolStripMenuItem.Click += new System.EventHandler(this.quảnLíTàiXếToolStripMenuItem_Click);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_car";
@@ -287,26 +246,94 @@ namespace Quanlibaixe
             this.Desciption.MinimumWidth = 6;
             this.Desciption.Name = "Desciption";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(772, 257);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(133, 38);
+            this.button5.TabIndex = 21;
+            this.button5.Text = "Xe chưa đăng kí";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Location = new System.Drawing.Point(1459, 70);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quảnLíXeToolStripMenuItem,
+            this.quảnLíTàiXếToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1742, 28);
+            this.menuStrip1.TabIndex = 33;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // quảnLíXeToolStripMenuItem
+            // 
+            this.quảnLíXeToolStripMenuItem.Name = "quảnLíXeToolStripMenuItem";
+            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.quảnLíXeToolStripMenuItem.Text = "Quản lí xe";
+            this.quảnLíXeToolStripMenuItem.Click += new System.EventHandler(this.quảnLíXeToolStripMenuItem_Click);
+            // 
+            // quảnLíTàiXếToolStripMenuItem
+            // 
+            this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
+            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
+            this.quảnLíTàiXếToolStripMenuItem.Click += new System.EventHandler(this.quảnLíTàiXếToolStripMenuItem_Click);
+            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(1224, 342);
+            this.textBox2.Location = new System.Drawing.Point(1015, 342);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 22);
+            this.textBox2.Size = new System.Drawing.Size(197, 22);
             this.textBox2.TabIndex = 20;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1016, 342);
+            this.textBox1.Location = new System.Drawing.Point(772, 342);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(180, 22);
             this.textBox1.TabIndex = 19;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(911, 257);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(129, 38);
+            this.button4.TabIndex = 34;
+            this.button4.Text = "Bên trong";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1046, 257);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(108, 38);
+            this.button6.TabIndex = 35;
+            this.button6.Text = "Bên ngoài";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1496, 763);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1742, 763);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox2);
@@ -361,6 +388,8 @@ namespace Quanlibaixe
         private System.Windows.Forms.DataGridViewTextBoxColumn Desciption;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
     }
 }
 
