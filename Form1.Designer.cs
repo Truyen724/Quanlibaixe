@@ -330,7 +330,7 @@ namespace Quanlibaixe
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(772, 156);
+            this.button7.Location = new System.Drawing.Point(762, 51);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(382, 57);
             this.button7.TabIndex = 36;
@@ -361,6 +361,7 @@ namespace Quanlibaixe
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form_Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lí Bãi Xe";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

@@ -58,6 +58,12 @@
     <Compile Include="FormXe.Designer.cs">
       <DependentUpon>FormXe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_camera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_camera.Designer.cs">
+      <DependentUpon>Form_camera.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Driver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormXe.resx">
       <DependentUpon>FormXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_camera.resx">
+      <DependentUpon>Form_camera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Driver.resx">
       <DependentUpon>Form_Driver.cs</DependentUpon>
