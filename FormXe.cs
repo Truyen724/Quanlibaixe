@@ -126,7 +126,7 @@ namespace Quanlibaixe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = '{2}' where id_car = '{3}' " , comboBox8.Text, comboBox3.Text, textBox2.Text, textBox4.Text);
+            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = N'{2}' where id_car = '{3}' " , comboBox8.Text, comboBox3.Text, textBox2.Text, textBox4.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             com.CommandType = CommandType.Text;

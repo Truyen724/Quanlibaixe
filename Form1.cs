@@ -369,5 +369,20 @@ namespace Quanlibaixe
             dataGridView2.DataSource = dt;
             conn.Close();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WorkingDirectory = @"D:\Bienso\Detect_BienSo";
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C conda activate base && python main.py";
+            process.StartInfo = startInfo;
+            process.Start();
+            MessageBox.Show("Khởi động thành công");
+            button7.Enabled = false;
+        }
     }
 }
