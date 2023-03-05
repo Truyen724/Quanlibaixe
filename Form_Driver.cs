@@ -31,7 +31,6 @@ namespace Quanlibaixe
             {
                 MessageBox.Show("Kết nối thất bại");
             }
-
         }
         List<string> dates = new List<string>();
         public void load_driver()
