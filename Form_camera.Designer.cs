@@ -33,6 +33,9 @@ namespace Quanlibaixe
             this.quảnLíXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíTàiXếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíDữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +48,7 @@ namespace Quanlibaixe
             this.quảnLíTàiXếToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1302, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1486, 28);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,16 +73,47 @@ namespace Quanlibaixe
             this.quảnLíDữLiệuToolStripMenuItem.Text = "Quản lí dữ liệu";
             this.quảnLíDữLiệuToolStripMenuItem.Click += new System.EventHandler(this.quảnLíDữLiệuToolStripMenuItem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(127, 163);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(830, 640);
+            this.panel1.TabIndex = 35;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(127, 55);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(382, 57);
+            this.button7.TabIndex = 37;
+            this.button7.Text = "Run Camera";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Location = new System.Drawing.Point(1079, 163);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(830, 640);
+            this.panel2.TabIndex = 36;
+            // 
             // Form_camera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 772);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1486, 772);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form_camera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form_camera";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -93,5 +127,8 @@ namespace Quanlibaixe
         private System.Windows.Forms.ToolStripMenuItem quảnLíDữLiệuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLíXeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLíTàiXếToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel panel2;
     }
 }

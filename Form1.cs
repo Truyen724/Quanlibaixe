@@ -372,7 +372,7 @@ namespace Quanlibaixe
 
         private void button7_Click(object sender, EventArgs e)
         {
-            
+           /* 
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WorkingDirectory = Application.StartupPath+@"\Detect_BienSo";
@@ -383,6 +383,7 @@ namespace Quanlibaixe
             process.Start();
             MessageBox.Show("Khởi động thành công");
             button7.Enabled = false;
+           */
         }
 
         private void button8_Click(object sender, EventArgs e)

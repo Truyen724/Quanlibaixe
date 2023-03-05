@@ -34,5 +34,19 @@ namespace Quanlibaixe
             Form_Main f = new Form_Main();
             f.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WorkingDirectory = Application.StartupPath + @"\Detect_BienSo";
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C conda activate base && python main.py";
+            process.StartInfo = startInfo;
+            process.Start();
+            MessageBox.Show("Đang khởi động");
+            button7.Enabled = false;
+        }
     }
 }

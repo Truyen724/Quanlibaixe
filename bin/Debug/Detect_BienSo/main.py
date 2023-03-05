@@ -165,7 +165,11 @@ def play_camera(id,id_camera):
                     print(text)
             except :
                 pass
-            cv2.imshow('frame', frame)
+            winname = "Camera " + id_camera
+            cv2.namedWindow(winname) 
+            cv2.moveWindow(winname, 100, 163) 
+            cv2.imshow(winname, frame)
+            print(frame.shape)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
                 break
