@@ -48,12 +48,13 @@ namespace Quanlibaixe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(617, 257);
+            this.button1.Location = new System.Drawing.Point(617, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 60);
             this.button1.TabIndex = 0;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 
@@ -65,6 +66,31 @@ namespace Quanlibaixe
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
             this.comboBox1.Location = new System.Drawing.Point(208, 127);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(72, 24);
@@ -103,6 +129,67 @@ namespace Quanlibaixe
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "0"});
             this.comboBox2.Location = new System.Drawing.Point(388, 127);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(72, 24);
@@ -131,6 +218,7 @@ namespace Quanlibaixe
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(274, 22);
             this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -155,7 +243,7 @@ namespace Quanlibaixe
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(208, 284);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(252, 22);
+            this.textBox3.Size = new System.Drawing.Size(388, 22);
             this.textBox3.TabIndex = 16;
             // 
             // comboBox3
@@ -179,7 +267,7 @@ namespace Quanlibaixe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 724);
+            this.ClientSize = new System.Drawing.Size(1062, 447);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox3);

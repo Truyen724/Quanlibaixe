@@ -41,6 +41,11 @@ namespace Quanlibaixe
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -58,11 +63,6 @@ namespace Quanlibaixe
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -175,6 +175,45 @@ namespace Quanlibaixe
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_car";
+            this.dataGridViewTextBoxColumn1.FillWeight = 96.25668F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Id_driver
+            // 
+            this.Id_driver.DataPropertyName = "Id_driver";
+            this.Id_driver.HeaderText = "Id Driver";
+            this.Id_driver.MinimumWidth = 6;
+            this.Id_driver.Name = "Id_driver";
+            // 
+            // Driver_name
+            // 
+            this.Driver_name.DataPropertyName = "Driver_name";
+            this.Driver_name.FillWeight = 101.8717F;
+            this.Driver_name.HeaderText = "Driver_name";
+            this.Driver_name.MinimumWidth = 6;
+            this.Driver_name.Name = "Driver_name";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "State";
+            this.dataGridViewTextBoxColumn3.FillWeight = 101.8717F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "State";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // Desciption
+            // 
+            this.Desciption.DataPropertyName = "Desciption";
+            this.Desciption.HeaderText = "Desciption";
+            this.Desciption.MinimumWidth = 6;
+            this.Desciption.Name = "Desciption";
             // 
             // label5
             // 
@@ -332,45 +371,6 @@ namespace Quanlibaixe
             this.label12.TabIndex = 52;
             this.label12.Text = "ID tài xế";
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_car";
-            this.dataGridViewTextBoxColumn1.FillWeight = 96.25668F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Id_driver
-            // 
-            this.Id_driver.DataPropertyName = "Id_driver";
-            this.Id_driver.HeaderText = "Id Driver";
-            this.Id_driver.MinimumWidth = 6;
-            this.Id_driver.Name = "Id_driver";
-            // 
-            // Driver_name
-            // 
-            this.Driver_name.DataPropertyName = "Driver_name";
-            this.Driver_name.FillWeight = 101.8717F;
-            this.Driver_name.HeaderText = "Driver_name";
-            this.Driver_name.MinimumWidth = 6;
-            this.Driver_name.Name = "Driver_name";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "State";
-            this.dataGridViewTextBoxColumn3.FillWeight = 101.8717F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "State";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // Desciption
-            // 
-            this.Desciption.DataPropertyName = "Desciption";
-            this.Desciption.HeaderText = "Desciption";
-            this.Desciption.MinimumWidth = 6;
-            this.Desciption.Name = "Desciption";
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(651, 608);
@@ -416,6 +416,7 @@ namespace Quanlibaixe
             this.Controls.Add(this.button4);
             this.Name = "FormXe";
             this.Text = "FormXe";
+            this.Load += new System.EventHandler(this.FormXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

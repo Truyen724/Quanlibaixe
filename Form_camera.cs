@@ -16,7 +16,7 @@ namespace Quanlibaixe
         {
             InitializeComponent();
         }
-
+        public static string conect_string = "server = DESKTOP-O41267U; database = Detect_bienso; integrated security = true";
         private void quảnLíXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormXe f = new FormXe();

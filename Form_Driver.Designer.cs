@@ -170,6 +170,7 @@ namespace Quanlibaixe
             this.Name = "Form_Driver";
             this.Text = "Form_Driver";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Form_Driver_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

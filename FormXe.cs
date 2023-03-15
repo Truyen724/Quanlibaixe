@@ -180,5 +180,10 @@ namespace Quanlibaixe
                 MessageBox.Show("Không Thể Xóa Được");
             }
         }
+
+        private void FormXe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

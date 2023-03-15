@@ -129,5 +129,10 @@ namespace Quanlibaixe
                 load_driver();
             }    
         }
+
+        private void Form_Driver_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
