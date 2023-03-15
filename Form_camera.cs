@@ -48,5 +48,11 @@ namespace Quanlibaixe
             MessageBox.Show("Đang khởi động");
             button7.Enabled = false;
         }
+
+        private void quảnLíLịchTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            quanlilichtrinh f = new quanlilichtrinh();
+            f.Show();
+        }
     }
 }
