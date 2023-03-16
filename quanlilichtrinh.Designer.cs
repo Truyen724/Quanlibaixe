@@ -48,7 +48,7 @@ namespace Quanlibaixe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(617, 170);
+            this.button1.Location = new System.Drawing.Point(759, 246);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 60);
             this.button1.TabIndex = 0;
@@ -267,7 +267,7 @@ namespace Quanlibaixe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 447);
+            this.ClientSize = new System.Drawing.Size(933, 359);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox3);

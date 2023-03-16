@@ -30,7 +30,25 @@ namespace Quanlibaixe
             {
                 MessageBox.Show("Kết nối thất bại");
             }
-            String query = "select Id_car from Driver";
+            String query = "select Id_car, Driver_Name from Car inner join Driver on Car.ID_driver =  Driver.ID_driver ";
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            using (DbDataReader reader = com.ExecuteReader())
+            {
+
+                if (reader.HasRows)
+                {
+
+                    while (reader.Read())
+                    {
+                        comboBox1.Items.Add(reader.GetValue(0).ToString());
+                        comboBox4.Items.Add(reader.GetValue(1).ToString());
+
+                    }
+                    reader.Dispose();
+                }
+            }
+            conn.Close();
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
