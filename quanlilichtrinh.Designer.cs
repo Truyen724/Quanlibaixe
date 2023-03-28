@@ -41,9 +41,9 @@ namespace Quanlibaixe
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -202,6 +202,7 @@ namespace Quanlibaixe
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(252, 24);
             this.comboBox4.TabIndex = 10;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -238,14 +239,6 @@ namespace Quanlibaixe
             this.label6.TabIndex = 15;
             this.label6.Text = "Tên tài xế";
             // 
-            // textBox3
-            // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(208, 284);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(388, 22);
-            this.textBox3.TabIndex = 16;
-            // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
@@ -253,6 +246,7 @@ namespace Quanlibaixe
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(252, 24);
             this.comboBox3.TabIndex = 19;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -263,14 +257,23 @@ namespace Quanlibaixe
             this.label8.TabIndex = 18;
             this.label8.Text = "Mô tả";
             // 
+            // comboBox5
+            // 
+            this.comboBox5.Enabled = false;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(208, 284);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(403, 24);
+            this.comboBox5.TabIndex = 20;
+            // 
             // quanlilichtrinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 359);
+            this.ClientSize = new System.Drawing.Size(948, 395);
+            this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox1);
@@ -305,8 +308,8 @@ namespace Quanlibaixe
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }

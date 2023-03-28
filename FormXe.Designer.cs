@@ -415,6 +415,7 @@ namespace Quanlibaixe
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button4);
             this.Name = "FormXe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormXe";
             this.Load += new System.EventHandler(this.FormXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

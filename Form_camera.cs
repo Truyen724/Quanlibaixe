@@ -51,6 +51,17 @@ namespace Quanlibaixe
 
         private void quảnLíLịchTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void quảnLíLịchTrìnhToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form_lichxe x = new Form_lichxe();
+            x.Show();
+        }
+
+        private void thêmLịchTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             quanlilichtrinh f = new quanlilichtrinh();
             f.Show();
         }

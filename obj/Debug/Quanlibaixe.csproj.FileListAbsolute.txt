@@ -12,3 +12,4 @@ C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.FormXe.resources
 C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Driver.resources
 C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.Form_camera.resources
 C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.quanlilichtrinh.resources
+C:\Users\ASUS\source\repos\Quanlibaixe\obj\Debug\Quanlibaixe.Form_lichxe.resources
