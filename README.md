@@ -7,11 +7,9 @@
    <table align="center" border="0" >
   <tr>
     <td><img width=360 src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-sreach.jpg"/></td>
-    <td><img width=360 src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-player-preview.jpg"/></td>
-    <td><img width=360 src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-main-player.jpg"/></td>
   </table>
   </div>
 <br>
 
 
-- **Player Preview**
+- **Form Camera**
