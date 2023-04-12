@@ -6,7 +6,7 @@
 <div align="center">
    <table align="center" border="0" >
   <tr>
-    <td><img width=360 src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-sreach.jpg"/></td>
+    <td><img width=600 src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera.png"/></td>
   </table>
   </div>
 <br>
