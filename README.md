@@ -2,6 +2,7 @@
 ### Features
 - winform quản lí bãi gửi xe, nhận diện biển số xe ra vào
 ## Screen Shots
+- **Form Camera**
 <br>
 <div align="center">
    <table align="center" border="0" >
@@ -12,4 +13,4 @@
 <br>
 
 
-- **Form Camera**
+
