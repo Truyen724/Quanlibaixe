@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
+using System.Threading;
 namespace Quanlibaixe
 {
     public partial class Form_camera : Form
     {
+        private Thread thread2 = null;
         public Form_camera()
         {
             InitializeComponent();
@@ -64,6 +66,48 @@ namespace Quanlibaixe
         {
             quanlilichtrinh f = new quanlilichtrinh();
             f.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_Action f = new Form_Action(id_xe:"47F149999",id_action: "1675607420792");
+            f.ShowDialog();
+        }
+
+        private void Form_camera_Load(object sender, EventArgs e)
+        {
+            
+            thread2 = new Thread(new ThreadStart(run_check));
+            thread2.Start();
+        }
+        public string rund()
+        {
+            string text = File.ReadAllText("Detect_BienSo/data.txt");
+            return text;
+        }
+        public string check()
+        {
+            string text = File.ReadAllText("data_save.txt");
+            return text;
+        }
+        public void write(string a)
+        {
+            File.WriteAllText("data_save.txt", a);
+        }
+        public void run_check()
+        {
+            while(true)
+            {
+                String[] t1 = rund().Split('|');
+                string t_check = check();
+                if(t_check!= t1[0])
+                {
+                    Form_Action f = new Form_Action(id_xe: t1[1], id_action: t1[0]);
+                    f.ShowDialog();
+                }
+                
+                write(t1[0]);
+            }
         }
     }
 }

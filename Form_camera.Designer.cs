@@ -34,13 +34,14 @@ namespace Quanlibaixe
             this.quảnLíXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíTàiXếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLíLịchTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.thêmLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLíLịchTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +90,20 @@ namespace Quanlibaixe
             this.quảnLíLịchTrìnhToolStripMenuItem.Text = "Quản lí lịch trình";
             this.quảnLíLịchTrìnhToolStripMenuItem.Click += new System.EventHandler(this.quảnLíLịchTrìnhToolStripMenuItem_Click);
             // 
+            // thêmLịchTrìnhToolStripMenuItem
+            // 
+            this.thêmLịchTrìnhToolStripMenuItem.Name = "thêmLịchTrìnhToolStripMenuItem";
+            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.thêmLịchTrìnhToolStripMenuItem.Text = "Thêm lịch trình";
+            this.thêmLịchTrìnhToolStripMenuItem.Click += new System.EventHandler(this.thêmLịchTrìnhToolStripMenuItem_Click);
+            // 
+            // quảnLíLịchTrìnhToolStripMenuItem1
+            // 
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Name = "quảnLíLịchTrìnhToolStripMenuItem1";
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(200, 26);
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Text = "Quản lí lịch trình";
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Click += new System.EventHandler(this.quảnLíLịchTrìnhToolStripMenuItem1_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -133,19 +148,15 @@ namespace Quanlibaixe
             this.label2.TabIndex = 39;
             this.label2.Text = "Camera 1";
             // 
-            // thêmLịchTrìnhToolStripMenuItem
+            // button1
             // 
-            this.thêmLịchTrìnhToolStripMenuItem.Name = "thêmLịchTrìnhToolStripMenuItem";
-            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.thêmLịchTrìnhToolStripMenuItem.Text = "Thêm lịch trình";
-            this.thêmLịchTrìnhToolStripMenuItem.Click += new System.EventHandler(this.thêmLịchTrìnhToolStripMenuItem_Click);
-            // 
-            // quảnLíLịchTrìnhToolStripMenuItem1
-            // 
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Name = "quảnLíLịchTrìnhToolStripMenuItem1";
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Text = "Quản lí lịch trình";
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Click += new System.EventHandler(this.quảnLíLịchTrìnhToolStripMenuItem1_Click);
+            this.button1.Location = new System.Drawing.Point(699, 55);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 57);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "tests";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form_camera
             // 
@@ -153,6 +164,7 @@ namespace Quanlibaixe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1880, 906);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -164,6 +176,7 @@ namespace Quanlibaixe
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form_camera";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_camera_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -185,5 +198,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.ToolStripMenuItem quảnLíLịchTrìnhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thêmLịchTrìnhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLíLịchTrìnhToolStripMenuItem1;
+        private System.Windows.Forms.Button button1;
     }
 }
