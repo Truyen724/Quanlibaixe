@@ -3,14 +3,45 @@
 - winform quản lí bãi gửi xe, nhận diện biển số xe ra vào
 ## Screen Shots
 - **Form Camera**
-<br>
 <div align="center">
    <table align="center" border="0" >
-  <tr>
-    <td><img width=1280 src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera.png"/></td>
-  </table>
-  </div>
-<br>
+      <tr>
+         <td>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera.png" width=1200>
+         </td>
+      </tr>
+   </table>
+</div>
 
+- **Form Camera Dashboard**
+<div align="center">
+   <table align="center" border="0" >
+      <tr>
+         <td>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera-dashboard.png" width=1200>
+         </td>
+      </tr>
+   </table>
+</div>
 
+- **Form Xe**
+<div align="center">
+   <table align="center" border="0" >
+      <tr>
+         <td>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_xe.png" width=1200>
+         </td>
+      </tr>
+   </table>
+</div>
+<!-- - **Form Quan Li**
+<div align="center">
+   <table align="center" border="0" >
+      <tr>
+         <td>
+            <img src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-main-player.jpg" width=1200>
+         </td>
+      </tr>
+   </table>
+</div> -->
 
