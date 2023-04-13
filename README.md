@@ -8,9 +8,21 @@
    <table align="center" border="0" >
   <tr>
     <td><img width=1280 src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera.png"/></td>
+    
+   </tr> 
+   
   </table>
   </div>
 <br>
+- **Form Camera**
+<br>
+<div align="center">
+   <table align="center" border="0" >
+  <tr>
+    <td><img width=1280 src=" https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera-dashboard.png"/></td>  
+   </tr>  
+  </table>
+  </div>
 
 
-
+<td><img width=1280 src=" https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera-dashboard.png"/></td>
