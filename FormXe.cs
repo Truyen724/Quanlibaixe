@@ -19,7 +19,7 @@ namespace Quanlibaixe
             ketnoi();
             load_driver();
         }
-        String ConectionString = "server = DESKTOP-O41267U; database = Detect_bienso; integrated security = true";
+        String ConectionString = infor.ConectionString;
         SqlConnection conn = new SqlConnection();
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

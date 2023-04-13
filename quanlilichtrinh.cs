@@ -20,7 +20,7 @@ namespace Quanlibaixe
             comboBox1.Text = "0";
             comboBox2.Text = "0";
         }
-        String ConectionString = "server = DESKTOP-O41267U; database = Detect_bienso; integrated security = true";
+        String ConectionString = infor.ConectionString;
         SqlConnection conn = new SqlConnection();
         public void ketnoi()
         {

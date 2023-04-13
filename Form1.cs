@@ -21,7 +21,7 @@ namespace Quanlibaixe
             ketnoi();
             
         }
-        String ConectionString = "server = DESKTOP-O41267U; database = Detect_bienso; integrated security = true";
+        String ConectionString = infor.ConectionString;
         SqlConnection conn = new SqlConnection();
         public void ketnoi()
         {
