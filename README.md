@@ -7,7 +7,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera.png" width=360>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera.png" width=1200>
          </td>
       </tr>
    </table>
@@ -18,7 +18,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera-dashboard.png" width=360>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera-dashboard.png" width=1200>
          </td>
       </tr>
    </table>
@@ -29,7 +29,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_xe.png" width=360>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_xe.png" width=1200>
          </td>
       </tr>
    </table>
@@ -39,7 +39,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-main-player.jpg" width=360>
+            <img src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-main-player.jpg" width=1200>
          </td>
       </tr>
    </table>
