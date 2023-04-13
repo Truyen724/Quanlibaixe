@@ -20,6 +20,7 @@ namespace Quanlibaixe
         private bool buttonCT3Checked = false;
         private bool buttonCT4Checked = false;
         private bool buttonCT5Checked = false;
+        private bool buttonCT6Checked = false;
 
         public Form_camera()
         {
@@ -48,8 +49,8 @@ namespace Quanlibaixe
             buttonCT5.MouseLeave += OnMouseLeaveButtonCT5;
 
             //Custom hover buttonCT6
-            //buttonCT6.MouseEnter += OnMouseEnterButtonCT6;
-            //buttonCT6.MouseLeave += OnMouseLeaveButtonCT6;
+            buttonCT6.MouseEnter += OnMouseEnterButtonCT6;
+            buttonCT6.MouseLeave += OnMouseLeaveButtonCT6;
             //------------------------------------------------------>
 
         }
@@ -134,6 +135,23 @@ namespace Quanlibaixe
             SidePanel2.Visible = false;
         }
 
+        private void OnMouseEnterButtonCT6(object sender, EventArgs e)
+        {
+            buttonCT6.ForeColor = Color.FromArgb(40, 86, 182);
+            buttonCT6.FlatStyle = FlatStyle.Flat;
+
+            //Tạo hiệu ứng di chuyển thanh sidePanel
+            SidePanel2.Visible = true;
+            SidePanel2.Height = buttonCT6.Height;
+            SidePanel2.Top = buttonCT6.Top;
+
+        }
+        private void OnMouseLeaveButtonCT6(object sender, EventArgs e)
+        {
+            //buttonCT2.BackColor = SystemColors.ButtonFace;
+            buttonCT2.ForeColor = Color.Gray;
+            SidePanel2.Visible = false;
+        }
         //Custom hovwe buttonCT6
         //----------------------------------------------------------------------------------------------------------------->
 
@@ -190,10 +208,36 @@ namespace Quanlibaixe
 
         private void Form_camera_Load(object sender, EventArgs e)
         {
-            buttonCT2.BackColor = Color.FromArgb(208, 212, 213);
+            buttonCT6.BackColor = Color.FromArgb(208, 212, 213);
+            SidePanel.Location = new Point(6, 146);
         }
 
-    //----------------------------------------------------------------------------------------------------------------->
+        //----------------------------------------------------------------------------------------------------------------->
+        private void buttonCT6_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = buttonCT6.Height;
+            SidePanel.Top = buttonCT6.Top;
+
+            buttonCT6Checked = true;
+            if (buttonCT6Checked)
+            {
+                buttonCT6.BackColor = Color.FromArgb(208, 212, 213);
+                buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
+            }
+            else
+            {
+                return;
+            }
+
+            //visible user control
+            tableLayoutPanel1.Visible = true;
+            form_xe_tableLayoutPanel2.Visible = false;
+            form_quanli_tableLayoutPanel2.Visible = false;
+            button7.Visible = true;
+        }
         private void buttonCT2_Click(object sender, EventArgs e)
         {
 
@@ -207,15 +251,18 @@ namespace Quanlibaixe
                 buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT6.BackColor = Color.FromArgb(235, 239, 241);
             }
             else
             {
                 return;
             }
 
-            tableLayoutPanel1.Visible = true;
-            tableLayoutPanel2.Visible = false;
-            //camera_Control1.BringToFront();
+            tableLayoutPanel1.Visible = false;
+            form_xe_tableLayoutPanel2.Visible = false;
+            form_quanli_tableLayoutPanel2.Visible = true;
+            button7.Visible = false;
+            quanLi_Control11.BringToFront();
         }
 
         private void buttonCT3_Click(object sender, EventArgs e)
@@ -230,6 +277,7 @@ namespace Quanlibaixe
                 buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT6.BackColor = Color.FromArgb(235, 239, 241);
             }
             else
             {
@@ -237,12 +285,13 @@ namespace Quanlibaixe
             }
 
             tableLayoutPanel1.Visible = false;
-            tableLayoutPanel2.Visible = true;
+            form_xe_tableLayoutPanel2.Visible = true;
+            form_quanli_tableLayoutPanel2.Visible = false;
+
             //visible user control
             xe_Control1.BringToFront();
             xe_Control1.Visible = true;
-            //xe_Control1.Show();
-            //xe_Control1.Location = new Point(0, 117);
+            button7.Visible = false;
 
         }
 
@@ -258,11 +307,16 @@ namespace Quanlibaixe
                 buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT6.BackColor = Color.FromArgb(235, 239, 241);
             }
             else
             {
                 return;
             }
+            tableLayoutPanel1.Visible = false;
+            form_xe_tableLayoutPanel2.Visible = false;
+            form_quanli_tableLayoutPanel2.Visible = false;
+            button7.Visible = false;
             //CustomControll.BringToFront();
         }
 
@@ -278,21 +332,20 @@ namespace Quanlibaixe
                 buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
                 buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT6.BackColor = Color.FromArgb(235, 239, 241);
             }
             else
             {
                 return;
             }
-
+            tableLayoutPanel1.Visible = false;
+            form_xe_tableLayoutPanel2.Visible = false;
+            form_quanli_tableLayoutPanel2.Visible = false;
+            button7.Visible = false;
             //CustomControll.BringToFront();
         }
 
-        //private void buttonCT6_Click(object sender, EventArgs e)
-        //{
-        //    SidePanel.Height = buttonCT6.Height;
-        //    SidePanel.Top = buttonCT6.Top;
-        //    //CustomControll.BringToFront();
-        //}
+        
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -309,11 +362,6 @@ namespace Quanlibaixe
             {
                 SideBar.Width = 285;
             }
-        }
-
-        private void buttonCT2_MouseClick(object sender, MouseEventArgs e)
-        {
-
         }
 
         //----------------------------------------------------------------------------------------------------------------->

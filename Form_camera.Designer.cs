@@ -48,6 +48,7 @@ namespace Quanlibaixe
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SideBar = new System.Windows.Forms.Panel();
+            this.SidePanel = new System.Windows.Forms.Panel();
             this.SidePanel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -57,29 +58,31 @@ namespace Quanlibaixe
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.SidePanel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.form_quanli_tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.form_xe_tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.xe_Control1 = new Quanlibaixe.Xe_Control();
             this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT6 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT5 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT4 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT3 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT2 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT1 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
-            this.xe_Control1 = new Quanlibaixe.Xe_Control();
+            this.quanLi_Control11 = new Quanlibaixe.QuanLi_Control1();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -88,12 +91,13 @@ namespace Quanlibaixe
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.form_quanli_tableLayoutPanel2.SuspendLayout();
+            this.form_xe_tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -235,19 +239,28 @@ namespace Quanlibaixe
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.SideBar.Controls.Add(this.SidePanel);
+            this.SideBar.Controls.Add(this.buttonCT6);
             this.SideBar.Controls.Add(this.SidePanel2);
             this.SideBar.Controls.Add(this.panel6);
             this.SideBar.Controls.Add(this.panel5);
             this.SideBar.Controls.Add(this.buttonCT5);
             this.SideBar.Controls.Add(this.buttonCT4);
             this.SideBar.Controls.Add(this.buttonCT3);
-            this.SideBar.Controls.Add(this.SidePanel);
             this.SideBar.Controls.Add(this.buttonCT2);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 92);
             this.SideBar.Name = "SideBar";
             this.SideBar.Size = new System.Drawing.Size(285, 729);
             this.SideBar.TabIndex = 41;
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.SidePanel.Location = new System.Drawing.Point(6, 146);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(10, 60);
+            this.SidePanel.TabIndex = 3;
             // 
             // SidePanel2
             // 
@@ -256,6 +269,7 @@ namespace Quanlibaixe
             this.SidePanel2.Name = "SidePanel2";
             this.SidePanel2.Size = new System.Drawing.Size(10, 60);
             this.SidePanel2.TabIndex = 2;
+            this.SidePanel2.Visible = false;
             // 
             // panel6
             // 
@@ -348,14 +362,6 @@ namespace Quanlibaixe
             this.label4.Text = "PEOPLE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // SidePanel
-            // 
-            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.SidePanel.Location = new System.Drawing.Point(6, 146);
-            this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 60);
-            this.SidePanel.TabIndex = 1;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -380,65 +386,48 @@ namespace Quanlibaixe
             this.panel8.Size = new System.Drawing.Size(1329, 729);
             this.panel8.TabIndex = 42;
             // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.label6);
-            this.panel11.Controls.Add(this.panel2);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1310, 117);
-            this.panel11.TabIndex = 42;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(161, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 22);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "DETECTION";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1025, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(285, 117);
-            this.panel2.TabIndex = 40;
-            // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(1310, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(19, 704);
-            this.panel10.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel9.Controls.Add(this.buttonCT7);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 704);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1329, 25);
-            this.panel9.TabIndex = 40;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.form_quanli_tableLayoutPanel2);
+            this.panel1.Controls.Add(this.form_xe_tableLayoutPanel2);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 117);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1310, 587);
             this.panel1.TabIndex = 43;
+            // 
+            // form_quanli_tableLayoutPanel2
+            // 
+            this.form_quanli_tableLayoutPanel2.ColumnCount = 1;
+            this.form_quanli_tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.form_quanli_tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.form_quanli_tableLayoutPanel2.Controls.Add(this.quanLi_Control11, 0, 0);
+            this.form_quanli_tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.form_quanli_tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.form_quanli_tableLayoutPanel2.Name = "form_quanli_tableLayoutPanel2";
+            this.form_quanli_tableLayoutPanel2.RowCount = 1;
+            this.form_quanli_tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.form_quanli_tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92F));
+            this.form_quanli_tableLayoutPanel2.Size = new System.Drawing.Size(1310, 587);
+            this.form_quanli_tableLayoutPanel2.TabIndex = 52;
+            this.form_quanli_tableLayoutPanel2.Visible = false;
+            // 
+            // form_xe_tableLayoutPanel2
+            // 
+            this.form_xe_tableLayoutPanel2.ColumnCount = 1;
+            this.form_xe_tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.form_xe_tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.form_xe_tableLayoutPanel2.Controls.Add(this.xe_Control1, 0, 0);
+            this.form_xe_tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.form_xe_tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.form_xe_tableLayoutPanel2.Name = "form_xe_tableLayoutPanel2";
+            this.form_xe_tableLayoutPanel2.RowCount = 1;
+            this.form_xe_tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.form_xe_tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.form_xe_tableLayoutPanel2.Size = new System.Drawing.Size(1310, 587);
+            this.form_xe_tableLayoutPanel2.TabIndex = 50;
+            this.form_xe_tableLayoutPanel2.Visible = false;
             // 
             // tableLayoutPanel1
             // 
@@ -502,21 +491,64 @@ namespace Quanlibaixe
             this.panel14.Size = new System.Drawing.Size(649, 558);
             this.panel14.TabIndex = 40;
             // 
-            // tableLayoutPanel2
+            // panel11
             // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.xe_Control1, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1310, 587);
-            this.tableLayoutPanel2.TabIndex = 50;
-            this.tableLayoutPanel2.Visible = false;
+            this.panel11.Controls.Add(this.label5);
+            this.panel11.Controls.Add(this.label6);
+            this.panel11.Controls.Add(this.panel2);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1310, 117);
+            this.panel11.TabIndex = 42;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(161, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 22);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "DETECTION";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1025, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(285, 117);
+            this.panel2.TabIndex = 40;
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(1310, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(19, 704);
+            this.panel10.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel9.Controls.Add(this.buttonCT7);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 704);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1329, 25);
+            this.panel9.TabIndex = 40;
+            // 
+            // xe_Control1
+            // 
+            this.xe_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xe_Control1.Location = new System.Drawing.Point(3, 3);
+            this.xe_Control1.Name = "xe_Control1";
+            this.xe_Control1.Size = new System.Drawing.Size(1304, 581);
+            this.xe_Control1.TabIndex = 0;
+            this.xe_Control1.Visible = false;
             // 
             // buttonCT7
             // 
@@ -537,6 +569,28 @@ namespace Quanlibaixe
             this.buttonCT7.TextColor = System.Drawing.Color.White;
             this.buttonCT7.UseVisualStyleBackColor = false;
             // 
+            // buttonCT6
+            // 
+            this.buttonCT6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT6.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT6.BorderRadius = 3;
+            this.buttonCT6.BorderSize = 0;
+            this.buttonCT6.FlatAppearance.BorderSize = 0;
+            this.buttonCT6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT6.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT6.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT6.Image")));
+            this.buttonCT6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT6.Location = new System.Drawing.Point(16, 146);
+            this.buttonCT6.Name = "buttonCT6";
+            this.buttonCT6.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT6.TabIndex = 7;
+            this.buttonCT6.Text = "Camera";
+            this.buttonCT6.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT6.UseVisualStyleBackColor = false;
+            this.buttonCT6.Click += new System.EventHandler(this.buttonCT6_Click);
+            // 
             // buttonCT5
             // 
             this.buttonCT5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
@@ -550,11 +604,11 @@ namespace Quanlibaixe
             this.buttonCT5.ForeColor = System.Drawing.Color.Gray;
             this.buttonCT5.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT5.Image")));
             this.buttonCT5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT5.Location = new System.Drawing.Point(16, 338);
+            this.buttonCT5.Location = new System.Drawing.Point(16, 404);
             this.buttonCT5.Name = "buttonCT5";
             this.buttonCT5.Size = new System.Drawing.Size(269, 60);
             this.buttonCT5.TabIndex = 4;
-            this.buttonCT5.Text = "Quản lí dữ liệu";
+            this.buttonCT5.Text = "Quản lí lịch xe";
             this.buttonCT5.TextColor = System.Drawing.Color.Gray;
             this.buttonCT5.UseVisualStyleBackColor = false;
             this.buttonCT5.Click += new System.EventHandler(this.buttonCT5_Click);
@@ -572,7 +626,7 @@ namespace Quanlibaixe
             this.buttonCT4.ForeColor = System.Drawing.Color.Gray;
             this.buttonCT4.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT4.Image")));
             this.buttonCT4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT4.Location = new System.Drawing.Point(16, 274);
+            this.buttonCT4.Location = new System.Drawing.Point(16, 340);
             this.buttonCT4.Name = "buttonCT4";
             this.buttonCT4.Size = new System.Drawing.Size(269, 60);
             this.buttonCT4.TabIndex = 3;
@@ -594,7 +648,7 @@ namespace Quanlibaixe
             this.buttonCT3.ForeColor = System.Drawing.Color.Gray;
             this.buttonCT3.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT3.Image")));
             this.buttonCT3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT3.Location = new System.Drawing.Point(16, 210);
+            this.buttonCT3.Location = new System.Drawing.Point(16, 276);
             this.buttonCT3.Name = "buttonCT3";
             this.buttonCT3.Size = new System.Drawing.Size(269, 60);
             this.buttonCT3.TabIndex = 2;
@@ -616,7 +670,7 @@ namespace Quanlibaixe
             this.buttonCT2.ForeColor = System.Drawing.Color.Gray;
             this.buttonCT2.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT2.Image")));
             this.buttonCT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT2.Location = new System.Drawing.Point(16, 146);
+            this.buttonCT2.Location = new System.Drawing.Point(16, 212);
             this.buttonCT2.Name = "buttonCT2";
             this.buttonCT2.Size = new System.Drawing.Size(269, 60);
             this.buttonCT2.TabIndex = 0;
@@ -624,7 +678,6 @@ namespace Quanlibaixe
             this.buttonCT2.TextColor = System.Drawing.Color.Gray;
             this.buttonCT2.UseVisualStyleBackColor = false;
             this.buttonCT2.Click += new System.EventHandler(this.buttonCT2_Click);
-            this.buttonCT2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCT2_MouseClick);
             // 
             // buttonCT1
             // 
@@ -664,14 +717,13 @@ namespace Quanlibaixe
             this.textBoxCT1.Texts = "";
             this.textBoxCT1.UnderlinedStyle = false;
             // 
-            // xe_Control1
+            // quanLi_Control11
             // 
-            this.xe_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xe_Control1.Location = new System.Drawing.Point(3, 3);
-            this.xe_Control1.Name = "xe_Control1";
-            this.xe_Control1.Size = new System.Drawing.Size(1304, 581);
-            this.xe_Control1.TabIndex = 0;
-            this.xe_Control1.Visible = false;
+            this.quanLi_Control11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quanLi_Control11.Location = new System.Drawing.Point(3, 3);
+            this.quanLi_Control11.Name = "quanLi_Control11";
+            this.quanLi_Control11.Size = new System.Drawing.Size(1304, 581);
+            this.quanLi_Control11.TabIndex = 0;
             // 
             // Form_camera
             // 
@@ -701,14 +753,15 @@ namespace Quanlibaixe
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel8.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.form_quanli_tableLayoutPanel2.ResumeLayout(false);
+            this.form_xe_tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -732,7 +785,6 @@ namespace Quanlibaixe
         private Custom_Toolbox.ButtonCT buttonCT5;
         private Custom_Toolbox.ButtonCT buttonCT4;
         private Custom_Toolbox.ButtonCT buttonCT3;
-        private System.Windows.Forms.Panel SidePanel;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label4;
@@ -756,12 +808,16 @@ namespace Quanlibaixe
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel SidePanel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel form_xe_tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel14;
         private Xe_Control xe_Control1;
+        private Custom_Toolbox.ButtonCT buttonCT6;
+        private System.Windows.Forms.Panel SidePanel;
+        private System.Windows.Forms.TableLayoutPanel form_quanli_tableLayoutPanel2;
+        private QuanLi_Control1 quanLi_Control11;
     }
 }

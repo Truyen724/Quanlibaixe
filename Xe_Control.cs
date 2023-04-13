@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quanlibaixe.Custom_Toolbox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,29 +19,65 @@ namespace Quanlibaixe
         public Xe_Control()
         {
             InitializeComponent();
+
+            //Custom hover buttonCT1
+            buttonCT1.MouseEnter += OnMouseEnterButtonCT1;
+            buttonCT1.MouseLeave += OnMouseLeaveButtonCT1;
+
+            //Custom hover buttonCT2
+            buttonCT2.MouseEnter += OnMouseEnterButtonCT2;
+            buttonCT2.MouseLeave += OnMouseLeaveButtonCT2;
+
+            //Custom hover buttonCT3
+            buttonCT3.MouseEnter += OnMouseEnterButtonCT3;
+            buttonCT3.MouseLeave += OnMouseLeaveButtonCT3;
         }
 
+        //Custom hover buttonCT1
+        private void OnMouseEnterButtonCT1(object sender, EventArgs e)
+        {
+            buttonCT1.ForeColor = Color.White;
+        }
+        private void OnMouseLeaveButtonCT1(object sender, EventArgs e)
+        {
+
+        }
+
+        //Custom hover buttonCT2
+        private void OnMouseEnterButtonCT2(object sender, EventArgs e)
+        {
+            buttonCT1.ForeColor = Color.White;
+        }
+        private void OnMouseLeaveButtonCT2(object sender, EventArgs e)
+        {
+
+        }
+
+        //Custom hover buttonCT3
+        private void OnMouseEnterButtonCT3(object sender, EventArgs e)
+        {
+            buttonCT1.ForeColor = Color.White;
+        }
+        private void OnMouseLeaveButtonCT3(object sender, EventArgs e)
+        {
+
+        }
         private void buttonCT1_Click(object sender, EventArgs e)
         {
-            buttonCT1.BackgroundColor = Color.FromArgb(40, 86, 182);
-            buttonCT1Checked = true;
-            if (buttonCT2Checked)
-            {
-                buttonCT1.BackgroundColor = Color.Gray;
-            }
+
         }
 
         private void buttonCT2_Click(object sender, EventArgs e)
         {
-            buttonCT2.BackgroundColor = Color.FromArgb(40, 86, 182);
-            buttonCT2Checked = true;
-            if(buttonCT1Checked)
-            {
-                buttonCT2.BackgroundColor = Color.Gray;
-            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCT3_Click(object sender, EventArgs e)
         {
 
         }

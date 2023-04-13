@@ -65,9 +65,10 @@ namespace Quanlibaixe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(24, 70);
+            this.button1.Location = new System.Drawing.Point(18, 57);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 38);
+            this.button1.Size = new System.Drawing.Size(86, 31);
             this.button1.TabIndex = 9;
             this.button1.Text = "Xe ở bên trong";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,9 +76,10 @@ namespace Quanlibaixe
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(157, 70);
+            this.button2.Location = new System.Drawing.Point(118, 57);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 38);
+            this.button2.Size = new System.Drawing.Size(103, 31);
             this.button2.TabIndex = 10;
             this.button2.Text = "Xe ở bên ngoài";
             this.button2.UseVisualStyleBackColor = true;
@@ -85,9 +87,10 @@ namespace Quanlibaixe
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(315, 70);
+            this.button3.Location = new System.Drawing.Point(236, 57);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 38);
+            this.button3.Size = new System.Drawing.Size(82, 31);
             this.button3.TabIndex = 11;
             this.button3.Text = "Tất cả các xe";
             this.button3.UseVisualStyleBackColor = true;
@@ -105,13 +108,14 @@ namespace Quanlibaixe
             this.In_or_out,
             this.Time,
             this.Id_parkinglot});
-            this.dataGridView2.Location = new System.Drawing.Point(772, 385);
+            this.dataGridView2.Location = new System.Drawing.Point(579, 313);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(958, 344);
+            this.dataGridView2.Size = new System.Drawing.Size(718, 280);
             this.dataGridView2.TabIndex = 13;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
@@ -142,7 +146,6 @@ namespace Quanlibaixe
             this.Image.Name = "Image";
             this.Image.ReadOnly = true;
             this.Image.Visible = false;
-            this.Image.Width = 125;
             // 
             // In_or_out
             // 
@@ -172,9 +175,10 @@ namespace Quanlibaixe
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(1182, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(886, 57);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox1.Size = new System.Drawing.Size(193, 209);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -205,12 +209,13 @@ namespace Quanlibaixe
             this.Driver_name,
             this.dataGridViewTextBoxColumn3,
             this.Desciption});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 129);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 105);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 600);
+            this.dataGridView1.Size = new System.Drawing.Size(512, 488);
             this.dataGridView1.TabIndex = 17;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
@@ -249,9 +254,10 @@ namespace Quanlibaixe
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(772, 257);
+            this.button5.Location = new System.Drawing.Point(579, 209);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(133, 38);
+            this.button5.Size = new System.Drawing.Size(100, 31);
             this.button5.TabIndex = 21;
             this.button5.Text = "Xe chưa đăng kí";
             this.button5.UseVisualStyleBackColor = true;
@@ -260,9 +266,10 @@ namespace Quanlibaixe
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(1459, 70);
+            this.pictureBox2.Location = new System.Drawing.Point(1094, 57);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox2.Size = new System.Drawing.Size(193, 209);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             // 
@@ -274,7 +281,8 @@ namespace Quanlibaixe
             this.quảnLíTàiXếToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1742, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1306, 24);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -282,37 +290,40 @@ namespace Quanlibaixe
             // quảnLíXeToolStripMenuItem
             // 
             this.quảnLíXeToolStripMenuItem.Name = "quảnLíXeToolStripMenuItem";
-            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.quảnLíXeToolStripMenuItem.Text = "Quản lí xe";
             this.quảnLíXeToolStripMenuItem.Click += new System.EventHandler(this.quảnLíXeToolStripMenuItem_Click);
             // 
             // quảnLíTàiXếToolStripMenuItem
             // 
             this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
-            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
             this.quảnLíTàiXếToolStripMenuItem.Click += new System.EventHandler(this.quảnLíTàiXếToolStripMenuItem_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(1015, 342);
+            this.textBox2.Location = new System.Drawing.Point(761, 278);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(197, 22);
+            this.textBox2.Size = new System.Drawing.Size(149, 20);
             this.textBox2.TabIndex = 20;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(772, 342);
+            this.textBox1.Location = new System.Drawing.Point(579, 278);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 22);
+            this.textBox1.Size = new System.Drawing.Size(136, 20);
             this.textBox1.TabIndex = 19;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(911, 257);
+            this.button4.Location = new System.Drawing.Point(683, 209);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 38);
+            this.button4.Size = new System.Drawing.Size(97, 31);
             this.button4.TabIndex = 34;
             this.button4.Text = "Bên trong";
             this.button4.UseVisualStyleBackColor = true;
@@ -320,9 +331,10 @@ namespace Quanlibaixe
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1046, 257);
+            this.button6.Location = new System.Drawing.Point(784, 209);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(108, 38);
+            this.button6.Size = new System.Drawing.Size(81, 31);
             this.button6.TabIndex = 35;
             this.button6.Text = "Bên ngoài";
             this.button6.UseVisualStyleBackColor = true;
@@ -330,10 +342,10 @@ namespace Quanlibaixe
             // 
             // Form_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1742, 763);
+            this.ClientSize = new System.Drawing.Size(1306, 620);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox2);
@@ -349,6 +361,7 @@ namespace Quanlibaixe
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lí Bãi Xe";
