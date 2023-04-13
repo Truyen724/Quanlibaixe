@@ -39,5 +39,10 @@ namespace Quanlibaixe
                 buttonCT2.BackgroundColor = Color.Gray;
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

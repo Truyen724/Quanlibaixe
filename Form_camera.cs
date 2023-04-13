@@ -213,7 +213,9 @@ namespace Quanlibaixe
                 return;
             }
 
-            //CustomControll.BringToFront();
+            tableLayoutPanel1.Visible = true;
+            tableLayoutPanel2.Visible = false;
+            //camera_Control1.BringToFront();
         }
 
         private void buttonCT3_Click(object sender, EventArgs e)
@@ -233,7 +235,15 @@ namespace Quanlibaixe
             {
                 return;
             }
-            //CustomControll.BringToFront();
+
+            tableLayoutPanel1.Visible = false;
+            tableLayoutPanel2.Visible = true;
+            //visible user control
+            xe_Control1.BringToFront();
+            xe_Control1.Visible = true;
+            //xe_Control1.Show();
+            //xe_Control1.Location = new Point(0, 117);
+
         }
 
         private void buttonCT4_Click(object sender, EventArgs e)

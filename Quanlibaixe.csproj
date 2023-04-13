@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Camera_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Camera_Control.Designer.cs">
+      <DependentUpon>Camera_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom_Toolbox\ButtonCT.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <Compile Include="Xe_Control.Designer.cs">
       <DependentUpon>Xe_Control.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Camera_Control.resx">
+      <DependentUpon>Camera_Control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom_Toolbox\TextBoxCT.resx">
       <DependentUpon>TextBoxCT.cs</DependentUpon>
     </EmbeddedResource>

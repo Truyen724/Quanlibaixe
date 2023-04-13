@@ -41,8 +41,6 @@ namespace Quanlibaixe
             this.thêmLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíLịchTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.button7 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -50,6 +48,7 @@ namespace Quanlibaixe
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SideBar = new System.Windows.Forms.Panel();
+            this.SidePanel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -61,15 +60,18 @@ namespace Quanlibaixe
             this.SidePanel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.SidePanel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT5 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT4 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
@@ -77,6 +79,7 @@ namespace Quanlibaixe
             this.buttonCT2 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT1 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
+            this.xe_Control1 = new Quanlibaixe.Xe_Control();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -85,10 +88,12 @@ namespace Quanlibaixe
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -165,32 +170,6 @@ namespace Quanlibaixe
             this.button7.Text = "Run Camera";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(657, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(651, 23);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Camera 2";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(651, 23);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Camera 1";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -269,6 +248,14 @@ namespace Quanlibaixe
             this.SideBar.Name = "SideBar";
             this.SideBar.Size = new System.Drawing.Size(285, 729);
             this.SideBar.TabIndex = 41;
+            // 
+            // SidePanel2
+            // 
+            this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.SidePanel2.Location = new System.Drawing.Point(6, 212);
+            this.SidePanel2.Name = "SidePanel2";
+            this.SidePanel2.Size = new System.Drawing.Size(10, 60);
+            this.SidePanel2.TabIndex = 2;
             // 
             // panel6
             // 
@@ -383,7 +370,7 @@ namespace Quanlibaixe
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.tableLayoutPanel1);
+            this.panel8.Controls.Add(this.panel1);
             this.panel8.Controls.Add(this.panel11);
             this.panel8.Controls.Add(this.panel10);
             this.panel8.Controls.Add(this.panel9);
@@ -392,42 +379,6 @@ namespace Quanlibaixe
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1329, 729);
             this.panel8.TabIndex = 42;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.panel12, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 117);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1310, 587);
-            this.tableLayoutPanel1.TabIndex = 43;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Gray;
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(658, 26);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(649, 558);
-            this.panel12.TabIndex = 41;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 26);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(649, 558);
-            this.panel1.TabIndex = 40;
             // 
             // panel11
             // 
@@ -479,13 +430,93 @@ namespace Quanlibaixe
             this.panel9.Size = new System.Drawing.Size(1329, 25);
             this.panel9.TabIndex = 40;
             // 
-            // SidePanel2
+            // panel1
             // 
-            this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.SidePanel2.Location = new System.Drawing.Point(6, 212);
-            this.SidePanel2.Name = "SidePanel2";
-            this.SidePanel2.Size = new System.Drawing.Size(10, 60);
-            this.SidePanel2.TabIndex = 2;
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 117);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1310, 587);
+            this.panel1.TabIndex = 43;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panel12, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel14, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1310, 587);
+            this.tableLayoutPanel1.TabIndex = 48;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Gray;
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(658, 26);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(649, 558);
+            this.panel12.TabIndex = 41;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(657, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(651, 23);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Camera 2";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(2, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(651, 23);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Camera 1";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.Gray;
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Location = new System.Drawing.Point(3, 26);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(649, 558);
+            this.panel14.TabIndex = 40;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.xe_Control1, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1310, 587);
+            this.tableLayoutPanel2.TabIndex = 50;
+            this.tableLayoutPanel2.Visible = false;
             // 
             // buttonCT7
             // 
@@ -633,6 +664,15 @@ namespace Quanlibaixe
             this.textBoxCT1.Texts = "";
             this.textBoxCT1.UnderlinedStyle = false;
             // 
+            // xe_Control1
+            // 
+            this.xe_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xe_Control1.Location = new System.Drawing.Point(3, 3);
+            this.xe_Control1.Name = "xe_Control1";
+            this.xe_Control1.Size = new System.Drawing.Size(1304, 581);
+            this.xe_Control1.TabIndex = 0;
+            this.xe_Control1.Visible = false;
+            // 
             // Form_camera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -661,12 +701,14 @@ namespace Quanlibaixe
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel8.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -679,8 +721,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.ToolStripMenuItem quảnLíXeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLíTàiXếToolStripMenuItem;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem quảnLíLịchTrìnhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thêmLịchTrìnhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLíLịchTrìnhToolStripMenuItem1;
@@ -703,9 +743,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel13;
         private Custom_Toolbox.TextBoxCT textBoxCT1;
@@ -718,5 +755,13 @@ namespace Quanlibaixe
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel SidePanel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel14;
+        private Xe_Control xe_Control1;
     }
 }
