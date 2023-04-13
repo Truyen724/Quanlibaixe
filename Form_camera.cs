@@ -16,6 +16,11 @@ namespace Quanlibaixe
 {
     public partial class Form_camera : Form
     {
+        private bool buttonCT2Checked = false;
+        private bool buttonCT3Checked = false;
+        private bool buttonCT4Checked = false;
+        private bool buttonCT5Checked = false;
+
         public Form_camera()
         {
             InitializeComponent();
@@ -23,9 +28,9 @@ namespace Quanlibaixe
             //Mặc định ButtonCT2 xuất hiện đầu tiên.
             SidePanel.Height = buttonCT2.Height;
             SidePanel.Top = buttonCT2.Top;
-            //CustomControll.BringToFront();
+            //CustomControll.BringToFront();         
 
-        //------------------------------------------------------>
+            //------------------------------------------------------>
             //Custom hover buttonCT2
             buttonCT2.MouseEnter += OnMouseEnterButtonCT2;
             buttonCT2.MouseLeave += OnMouseLeaveButtonCT2;
@@ -50,27 +55,25 @@ namespace Quanlibaixe
         }
 
         //----------------------------------------------------------------------------------------------------------------->
+
+
         //Custom hovwe buttonCT2
         private void OnMouseEnterButtonCT2(object sender, EventArgs e)
         {
-            //buttonCT2.BackColor = SystemColors.ButtonHighlight; // Màu đỏ hoặc bất cứ thứ gì bạn muốn
-            //buttonCT2.FlatAppearance.MouseOverBackColor = Color.Red;
-            //buttonCT2.BackColor = Color.FromArgb(40, 86, 182);
             buttonCT2.ForeColor = Color.FromArgb(40, 86, 182);
             buttonCT2.FlatStyle = FlatStyle.Flat;
 
-
             //Tạo hiệu ứng di chuyển thanh sidePanel
-            SidePanel.Height = buttonCT2.Height;
-            SidePanel.Top = buttonCT2.Top;
+            SidePanel2.Visible = true;
+            SidePanel2.Height = buttonCT2.Height;
+            SidePanel2.Top = buttonCT2.Top;
 
         }
         private void OnMouseLeaveButtonCT2(object sender, EventArgs e)
         {
-            buttonCT2.BackColor = SystemColors.ButtonFace;
+            //buttonCT2.BackColor = SystemColors.ButtonFace;
             buttonCT2.ForeColor = Color.Gray;
-            buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
-
+            SidePanel2.Visible = false;
         }
 
         //Custom hovwe buttonCT3
@@ -81,16 +84,16 @@ namespace Quanlibaixe
             buttonCT3.FlatStyle = FlatStyle.Flat;
 
             //Tạo hiệu ứng di chuyển thanh sidePanel
-            SidePanel.Height = buttonCT3.Height;
-            SidePanel.Top = buttonCT3.Top;
+            SidePanel2.Visible = true;
+            SidePanel2.Height = buttonCT3.Height;
+            SidePanel2.Top = buttonCT3.Top;
 
         }
         private void OnMouseLeaveButtonCT3(object sender, EventArgs e)
         {
-            buttonCT3.BackColor = SystemColors.ButtonFace;
+            //buttonCT3.BackColor = SystemColors.ButtonFace;
             buttonCT3.ForeColor = Color.Gray;
-            buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
-
+            SidePanel2.Visible = false;
         }
         //Custom hovwe buttonCT4
         private void OnMouseEnterButtonCT4(object sender, EventArgs e)
@@ -100,15 +103,16 @@ namespace Quanlibaixe
             buttonCT4.FlatStyle = FlatStyle.Flat;
 
             //Tạo hiệu ứng di chuyển thanh sidePanel
-            SidePanel.Height = buttonCT4.Height;
-            SidePanel.Top = buttonCT4.Top;
+            SidePanel2.Visible = true;
+
+            SidePanel2.Height = buttonCT4.Height;
+            SidePanel2.Top = buttonCT4.Top;
 
         }
         private void OnMouseLeaveButtonCT4(object sender, EventArgs e)
         {
-            buttonCT4.BackColor = SystemColors.ButtonFace;
             buttonCT4.ForeColor = Color.Gray;
-            buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
+            SidePanel2.Visible = false;
         }
 
         //Custom hovwe buttonCT5
@@ -119,37 +123,18 @@ namespace Quanlibaixe
             buttonCT5.FlatStyle = FlatStyle.Flat;
 
             //Tạo hiệu ứng di chuyển thanh sidePanel
-            SidePanel.Height = buttonCT5.Height;
-            SidePanel.Top = buttonCT5.Top;
+            SidePanel2.Visible = true;
+            SidePanel2.Height = buttonCT5.Height;
+            SidePanel2.Top = buttonCT5.Top;
 
         }
         private void OnMouseLeaveButtonCT5(object sender, EventArgs e)
         {
-            buttonCT5.BackColor = SystemColors.ButtonFace;
             buttonCT5.ForeColor = Color.Gray;
-            buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
-
-
+            SidePanel2.Visible = false;
         }
 
         //Custom hovwe buttonCT6
-        //private void OnMouseEnterButtonCT6(object sender, EventArgs e)
-        //{
-        //    //buttonCT6.BackColor = Color.FromArgb(40, 86, 182);
-        //    buttonCT6.ForeColor = Color.FromArgb(40, 86, 182);
-        //    buttonCT6.FlatStyle = FlatStyle.Flat;
-
-        //    //Tạo hiệu ứng di chuyển thanh sidePanel
-        //    SidePanel.Height = buttonCT6.Height;
-        //    SidePanel.Top = buttonCT6.Top;
-
-        //}
-        //private void OnMouseLeaveButtonCT6(object sender, EventArgs e)
-        //{
-        //    buttonCT6.BackColor = SystemColors.ButtonFace;
-        //    buttonCT6.ForeColor = Color.Gray;
-        //    buttonCT6.BackColor = Color.FromArgb(235, 239, 241);
-        //}
         //----------------------------------------------------------------------------------------------------------------->
 
         public static string conect_string = "server = DESKTOP-O41267U; database = Detect_bienso; integrated security = true";
@@ -187,7 +172,8 @@ namespace Quanlibaixe
 
         private void quảnLíLịchTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form_lichxe x = new Form_lichxe();
+            x.Show();
         }
 
         private void quảnLíLịchTrìnhToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -204,22 +190,29 @@ namespace Quanlibaixe
 
         private void Form_camera_Load(object sender, EventArgs e)
         {
-            
+            buttonCT2.BackColor = Color.FromArgb(208, 212, 213);
         }
 
     //----------------------------------------------------------------------------------------------------------------->
         private void buttonCT2_Click(object sender, EventArgs e)
         {
-            if(e != null)
+
+            SidePanel.Height = buttonCT2.Height;
+            SidePanel.Top = buttonCT2.Top;
+
+            buttonCT2Checked = true;
+            if (buttonCT2Checked)
             {
-                SidePanel.Height = buttonCT2.Height;
-                SidePanel.Top = buttonCT2.Top;
-                
+                buttonCT2.BackColor = Color.FromArgb(208, 212, 213);
+                buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
             }
-            else 
+            else
             {
                 return;
             }
+
             //CustomControll.BringToFront();
         }
 
@@ -227,6 +220,19 @@ namespace Quanlibaixe
         {
             SidePanel.Height = buttonCT3.Height;
             SidePanel.Top = buttonCT3.Top;
+
+            buttonCT3Checked = true;
+            if (buttonCT3Checked)
+            {
+                buttonCT3.BackColor = Color.FromArgb(208, 212, 213);
+                buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
+            }
+            else
+            {
+                return;
+            }
             //CustomControll.BringToFront();
         }
 
@@ -234,23 +240,40 @@ namespace Quanlibaixe
         {
             SidePanel.Height = buttonCT4.Height;
             SidePanel.Top = buttonCT4.Top;
+
+            buttonCT4Checked = true;
+            if (buttonCT4Checked)
+            {
+                buttonCT4.BackColor = Color.FromArgb(208, 212, 213);
+                buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT5.BackColor = Color.FromArgb(235, 239, 241);
+            }
+            else
+            {
+                return;
+            }
             //CustomControll.BringToFront();
         }
 
         private void buttonCT5_Click(object sender, EventArgs e)
         {
-            //SidePanel.Height = buttonCT5.Height;
-            //SidePanel.Top = buttonCT5.Top;
+            SidePanel.Height = buttonCT5.Height;
+            SidePanel.Top = buttonCT5.Top;
 
-            if (e != null)
+            buttonCT5Checked = true;
+            if (buttonCT5Checked)
             {
-                SidePanel.Height = buttonCT5.Height;
-                SidePanel.Top = buttonCT5.Top;
+                buttonCT5.BackColor = Color.FromArgb(208, 212, 213);
+                buttonCT2.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT3.BackColor = Color.FromArgb(235, 239, 241);
+                buttonCT4.BackColor = Color.FromArgb(235, 239, 241);
             }
             else
             {
-                SidePanel.Height = 0;
+                return;
             }
+
             //CustomControll.BringToFront();
         }
 

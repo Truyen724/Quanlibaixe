@@ -32,3 +32,4 @@ D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.pdb
 D:\Disk\ThucTap\Quanlibaixe\bin\Debug\Guna.UI2.dll
 D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CopyComplete
 D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.Custom_Toolbox.TextBoxCT.resources
+D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.Xe_Control.resources

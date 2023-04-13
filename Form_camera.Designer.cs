@@ -45,12 +45,10 @@ namespace Quanlibaixe
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.buttonCT1 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
             this.SideBar = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -60,11 +58,7 @@ namespace Quanlibaixe
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.buttonCT5 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.buttonCT4 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.buttonCT3 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.buttonCT2 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -75,7 +69,14 @@ namespace Quanlibaixe
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.SidePanel2 = new System.Windows.Forms.Panel();
             this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT5 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT4 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT3 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT2 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT1 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -156,7 +157,7 @@ namespace Quanlibaixe
             this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 43);
+            this.button7.Location = new System.Drawing.Point(0, 41);
             this.button7.Margin = new System.Windows.Forms.Padding(0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(285, 46);
@@ -215,25 +216,6 @@ namespace Quanlibaixe
             this.label3.TabIndex = 1;
             this.label3.Text = "Dashboard";
             // 
-            // buttonCT1
-            // 
-            this.buttonCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.buttonCT1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.buttonCT1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonCT1.BorderRadius = 3;
-            this.buttonCT1.BorderSize = 0;
-            this.buttonCT1.FlatAppearance.BorderSize = 0;
-            this.buttonCT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT1.ForeColor = System.Drawing.Color.White;
-            this.buttonCT1.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT1.Image")));
-            this.buttonCT1.Location = new System.Drawing.Point(12, 15);
-            this.buttonCT1.Name = "buttonCT1";
-            this.buttonCT1.Size = new System.Drawing.Size(37, 34);
-            this.buttonCT1.TabIndex = 0;
-            this.buttonCT1.TextColor = System.Drawing.Color.White;
-            this.buttonCT1.UseVisualStyleBackColor = false;
-            this.buttonCT1.Click += new System.EventHandler(this.buttonCT1_Click);
-            // 
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
@@ -264,35 +246,17 @@ namespace Quanlibaixe
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(109, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(113, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(45, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // textBoxCT1
-            // 
-            this.textBoxCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.textBoxCT1.BorderColor = System.Drawing.Color.Empty;
-            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.Empty;
-            this.textBoxCT1.BorderSize = 2;
-            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCT1.ForeColor = System.Drawing.Color.White;
-            this.textBoxCT1.Location = new System.Drawing.Point(153, 15);
-            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCT1.Multiline = false;
-            this.textBoxCT1.Name = "textBoxCT1";
-            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
-            this.textBoxCT1.PasswordChar = false;
-            this.textBoxCT1.Size = new System.Drawing.Size(291, 36);
-            this.textBoxCT1.TabIndex = 3;
-            this.textBoxCT1.Texts = "";
-            this.textBoxCT1.UnderlinedStyle = false;
-            // 
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.SideBar.Controls.Add(this.SidePanel2);
             this.SideBar.Controls.Add(this.panel6);
             this.SideBar.Controls.Add(this.panel5);
             this.SideBar.Controls.Add(this.buttonCT5);
@@ -368,7 +332,7 @@ namespace Quanlibaixe
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(3, 19);
+            this.label7.Location = new System.Drawing.Point(24, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 40);
             this.label7.TabIndex = 3;
@@ -397,72 +361,6 @@ namespace Quanlibaixe
             this.label4.Text = "PEOPLE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // buttonCT5
-            // 
-            this.buttonCT5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT5.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT5.BorderRadius = 3;
-            this.buttonCT5.BorderSize = 0;
-            this.buttonCT5.FlatAppearance.BorderSize = 0;
-            this.buttonCT5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT5.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT5.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT5.Image")));
-            this.buttonCT5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT5.Location = new System.Drawing.Point(16, 338);
-            this.buttonCT5.Name = "buttonCT5";
-            this.buttonCT5.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT5.TabIndex = 4;
-            this.buttonCT5.Text = "Quản lí dữ liệu";
-            this.buttonCT5.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT5.UseVisualStyleBackColor = false;
-            this.buttonCT5.Click += new System.EventHandler(this.buttonCT5_Click);
-            // 
-            // buttonCT4
-            // 
-            this.buttonCT4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT4.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT4.BorderRadius = 3;
-            this.buttonCT4.BorderSize = 0;
-            this.buttonCT4.FlatAppearance.BorderSize = 0;
-            this.buttonCT4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT4.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT4.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT4.Image")));
-            this.buttonCT4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT4.Location = new System.Drawing.Point(16, 274);
-            this.buttonCT4.Name = "buttonCT4";
-            this.buttonCT4.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT4.TabIndex = 3;
-            this.buttonCT4.Text = "Quản lí tài xế";
-            this.buttonCT4.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT4.UseVisualStyleBackColor = false;
-            this.buttonCT4.Click += new System.EventHandler(this.buttonCT4_Click);
-            // 
-            // buttonCT3
-            // 
-            this.buttonCT3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT3.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT3.BorderRadius = 3;
-            this.buttonCT3.BorderSize = 0;
-            this.buttonCT3.FlatAppearance.BorderSize = 0;
-            this.buttonCT3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT3.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT3.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT3.Image")));
-            this.buttonCT3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT3.Location = new System.Drawing.Point(16, 210);
-            this.buttonCT3.Name = "buttonCT3";
-            this.buttonCT3.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT3.TabIndex = 2;
-            this.buttonCT3.Text = "Quản lí xe";
-            this.buttonCT3.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT3.UseVisualStyleBackColor = false;
-            this.buttonCT3.Click += new System.EventHandler(this.buttonCT3_Click);
-            // 
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
@@ -470,29 +368,6 @@ namespace Quanlibaixe
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 60);
             this.SidePanel.TabIndex = 1;
-            // 
-            // buttonCT2
-            // 
-            this.buttonCT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT2.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT2.BorderRadius = 3;
-            this.buttonCT2.BorderSize = 0;
-            this.buttonCT2.FlatAppearance.BorderSize = 0;
-            this.buttonCT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT2.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT2.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT2.Image")));
-            this.buttonCT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT2.Location = new System.Drawing.Point(16, 146);
-            this.buttonCT2.Name = "buttonCT2";
-            this.buttonCT2.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT2.TabIndex = 0;
-            this.buttonCT2.Text = "Quản lí dữ liệu";
-            this.buttonCT2.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT2.UseVisualStyleBackColor = false;
-            this.buttonCT2.Click += new System.EventHandler(this.buttonCT2_Click);
-            this.buttonCT2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCT2_MouseClick);
             // 
             // label6
             // 
@@ -604,6 +479,14 @@ namespace Quanlibaixe
             this.panel9.Size = new System.Drawing.Size(1329, 25);
             this.panel9.TabIndex = 40;
             // 
+            // SidePanel2
+            // 
+            this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.SidePanel2.Location = new System.Drawing.Point(6, 212);
+            this.SidePanel2.Name = "SidePanel2";
+            this.SidePanel2.Size = new System.Drawing.Size(10, 60);
+            this.SidePanel2.TabIndex = 2;
+            // 
             // buttonCT7
             // 
             this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -622,6 +505,133 @@ namespace Quanlibaixe
             this.buttonCT7.TabIndex = 0;
             this.buttonCT7.TextColor = System.Drawing.Color.White;
             this.buttonCT7.UseVisualStyleBackColor = false;
+            // 
+            // buttonCT5
+            // 
+            this.buttonCT5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT5.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT5.BorderRadius = 3;
+            this.buttonCT5.BorderSize = 0;
+            this.buttonCT5.FlatAppearance.BorderSize = 0;
+            this.buttonCT5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT5.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT5.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT5.Image")));
+            this.buttonCT5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT5.Location = new System.Drawing.Point(16, 338);
+            this.buttonCT5.Name = "buttonCT5";
+            this.buttonCT5.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT5.TabIndex = 4;
+            this.buttonCT5.Text = "Quản lí dữ liệu";
+            this.buttonCT5.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT5.UseVisualStyleBackColor = false;
+            this.buttonCT5.Click += new System.EventHandler(this.buttonCT5_Click);
+            // 
+            // buttonCT4
+            // 
+            this.buttonCT4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT4.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT4.BorderRadius = 3;
+            this.buttonCT4.BorderSize = 0;
+            this.buttonCT4.FlatAppearance.BorderSize = 0;
+            this.buttonCT4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT4.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT4.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT4.Image")));
+            this.buttonCT4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT4.Location = new System.Drawing.Point(16, 274);
+            this.buttonCT4.Name = "buttonCT4";
+            this.buttonCT4.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT4.TabIndex = 3;
+            this.buttonCT4.Text = "Quản lí tài xế";
+            this.buttonCT4.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT4.UseVisualStyleBackColor = false;
+            this.buttonCT4.Click += new System.EventHandler(this.buttonCT4_Click);
+            // 
+            // buttonCT3
+            // 
+            this.buttonCT3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT3.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT3.BorderRadius = 3;
+            this.buttonCT3.BorderSize = 0;
+            this.buttonCT3.FlatAppearance.BorderSize = 0;
+            this.buttonCT3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT3.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT3.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT3.Image")));
+            this.buttonCT3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT3.Location = new System.Drawing.Point(16, 210);
+            this.buttonCT3.Name = "buttonCT3";
+            this.buttonCT3.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT3.TabIndex = 2;
+            this.buttonCT3.Text = "Quản lí xe";
+            this.buttonCT3.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT3.UseVisualStyleBackColor = false;
+            this.buttonCT3.Click += new System.EventHandler(this.buttonCT3_Click);
+            // 
+            // buttonCT2
+            // 
+            this.buttonCT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT2.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT2.BorderRadius = 3;
+            this.buttonCT2.BorderSize = 0;
+            this.buttonCT2.FlatAppearance.BorderSize = 0;
+            this.buttonCT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT2.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT2.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT2.Image")));
+            this.buttonCT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT2.Location = new System.Drawing.Point(16, 146);
+            this.buttonCT2.Name = "buttonCT2";
+            this.buttonCT2.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT2.TabIndex = 0;
+            this.buttonCT2.Text = "Quản lí dữ liệu";
+            this.buttonCT2.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT2.UseVisualStyleBackColor = false;
+            this.buttonCT2.Click += new System.EventHandler(this.buttonCT2_Click);
+            this.buttonCT2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCT2_MouseClick);
+            // 
+            // buttonCT1
+            // 
+            this.buttonCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.buttonCT1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.buttonCT1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonCT1.BorderRadius = 3;
+            this.buttonCT1.BorderSize = 0;
+            this.buttonCT1.FlatAppearance.BorderSize = 0;
+            this.buttonCT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT1.ForeColor = System.Drawing.Color.White;
+            this.buttonCT1.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT1.Image")));
+            this.buttonCT1.Location = new System.Drawing.Point(12, 15);
+            this.buttonCT1.Name = "buttonCT1";
+            this.buttonCT1.Size = new System.Drawing.Size(37, 34);
+            this.buttonCT1.TabIndex = 0;
+            this.buttonCT1.TextColor = System.Drawing.Color.White;
+            this.buttonCT1.UseVisualStyleBackColor = false;
+            this.buttonCT1.Click += new System.EventHandler(this.buttonCT1_Click);
+            // 
+            // textBoxCT1
+            // 
+            this.textBoxCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.textBoxCT1.BorderColor = System.Drawing.Color.Empty;
+            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.Empty;
+            this.textBoxCT1.BorderSize = 2;
+            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCT1.ForeColor = System.Drawing.Color.White;
+            this.textBoxCT1.Location = new System.Drawing.Point(153, 15);
+            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCT1.Multiline = false;
+            this.textBoxCT1.Name = "textBoxCT1";
+            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
+            this.textBoxCT1.PasswordChar = false;
+            this.textBoxCT1.Size = new System.Drawing.Size(291, 36);
+            this.textBoxCT1.TabIndex = 3;
+            this.textBoxCT1.Texts = "";
+            this.textBoxCT1.UnderlinedStyle = false;
             // 
             // Form_camera
             // 
@@ -707,5 +717,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel SidePanel2;
     }
 }
