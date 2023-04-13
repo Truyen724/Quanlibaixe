@@ -34,7 +34,7 @@
       </tr>
    </table>
 </div>
-- **Form Quan Li**
+<!-- - **Form Quan Li**
 <div align="center">
    <table align="center" border="0" >
       <tr>
@@ -43,5 +43,5 @@
          </td>
       </tr>
    </table>
-</div>
+</div> -->
 
