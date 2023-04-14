@@ -117,6 +117,12 @@
     <Compile Include="Form_lichxe.Designer.cs">
       <DependentUpon>Form_lichxe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lich_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lich_Control.Designer.cs">
+      <DependentUpon>Lich_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="quanlilichtrinh.cs">
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_lichxe.resx">
       <DependentUpon>Form_lichxe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich_Control.resx">
+      <DependentUpon>Lich_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -35,3 +35,4 @@ D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.Custom_Toolbox.TextBoxCT.resou
 D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.Xe_Control.resources
 D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.Camera_Control.resources
 D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.QuanLi_Control1.resources
+D:\Disk\ThucTap\Quanlibaixe\obj\Debug\Quanlibaixe.Lich_Control.resources

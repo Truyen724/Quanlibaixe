@@ -236,6 +236,8 @@ namespace Quanlibaixe
             tableLayoutPanel1.Visible = true;
             form_xe_tableLayoutPanel2.Visible = false;
             form_quanli_tableLayoutPanel2.Visible = false;
+            Form_Lich_tableLayoutPanel2.Visible = false;
+
             button7.Visible = true;
         }
         private void buttonCT2_Click(object sender, EventArgs e)
@@ -261,6 +263,8 @@ namespace Quanlibaixe
             tableLayoutPanel1.Visible = false;
             form_xe_tableLayoutPanel2.Visible = false;
             form_quanli_tableLayoutPanel2.Visible = true;
+            Form_Lich_tableLayoutPanel2.Visible = false;
+
             button7.Visible = false;
             quanLi_Control11.BringToFront();
         }
@@ -287,6 +291,7 @@ namespace Quanlibaixe
             tableLayoutPanel1.Visible = false;
             form_xe_tableLayoutPanel2.Visible = true;
             form_quanli_tableLayoutPanel2.Visible = false;
+            Form_Lich_tableLayoutPanel2.Visible = false;
 
             //visible user control
             xe_Control1.BringToFront();
@@ -316,6 +321,7 @@ namespace Quanlibaixe
             tableLayoutPanel1.Visible = false;
             form_xe_tableLayoutPanel2.Visible = false;
             form_quanli_tableLayoutPanel2.Visible = false;
+            Form_Lich_tableLayoutPanel2.Visible = false;
             button7.Visible = false;
             //CustomControll.BringToFront();
         }
@@ -341,11 +347,13 @@ namespace Quanlibaixe
             tableLayoutPanel1.Visible = false;
             form_xe_tableLayoutPanel2.Visible = false;
             form_quanli_tableLayoutPanel2.Visible = false;
+            Form_Lich_tableLayoutPanel2.Visible = true;
+
             button7.Visible = false;
-            //CustomControll.BringToFront();
+            lich_Control1.BringToFront();
         }
 
-        
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
