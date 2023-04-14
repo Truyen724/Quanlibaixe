@@ -93,14 +93,14 @@ namespace Quanlibaixe
             // thêmLịchTrìnhToolStripMenuItem
             // 
             this.thêmLịchTrìnhToolStripMenuItem.Name = "thêmLịchTrìnhToolStripMenuItem";
-            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thêmLịchTrìnhToolStripMenuItem.Text = "Thêm lịch trình";
             this.thêmLịchTrìnhToolStripMenuItem.Click += new System.EventHandler(this.thêmLịchTrìnhToolStripMenuItem_Click);
             // 
             // quảnLíLịchTrìnhToolStripMenuItem1
             // 
             this.quảnLíLịchTrìnhToolStripMenuItem1.Name = "quảnLíLịchTrìnhToolStripMenuItem1";
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(200, 26);
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.quảnLíLịchTrìnhToolStripMenuItem1.Text = "Quản lí lịch trình";
             this.quảnLíLịchTrìnhToolStripMenuItem1.Click += new System.EventHandler(this.quảnLíLịchTrìnhToolStripMenuItem1_Click);
             // 
@@ -150,11 +150,11 @@ namespace Quanlibaixe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(699, 55);
+            this.button1.Location = new System.Drawing.Point(1201, 55);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 57);
             this.button1.TabIndex = 40;
-            this.button1.Text = "tests";
+            this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

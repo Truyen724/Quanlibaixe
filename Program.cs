@@ -21,7 +21,7 @@ namespace Quanlibaixe
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Form_camera());
+            Application.Run(new Form_login());
             
     }
     }

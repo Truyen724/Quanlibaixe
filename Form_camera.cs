@@ -18,6 +18,7 @@ namespace Quanlibaixe
         {
             InitializeComponent();
         }
+        String id_access = infor.id_access.Trim();
         String ConectionString = infor.ConectionString;
         private void quảnLíXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -70,13 +71,17 @@ namespace Quanlibaixe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form_Action f = new Form_Action(id_xe:"47F149999",id_action: "1675607420792");
-            f.ShowDialog();
+            this.Close();
         }
 
         private void Form_camera_Load(object sender, EventArgs e)
         {
             
+            if(id_access=="2")
+            {
+                menuStrip1.Visible = false;
+                MessageBox.Show(id_access);
+            }    
             thread2 = new Thread(new ThreadStart(run_check));
             thread2.Start();
         }
