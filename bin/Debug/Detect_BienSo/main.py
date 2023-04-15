@@ -113,7 +113,7 @@ def play_camera(id,id_camera):
     vid = cv2.VideoCapture(id)
     while(True):
         ret, frame = vid.read()
-        try:            
+        try:
             frame = cv2.resize(frame,(640,480))
             if(ret):
             # Kích thước lớn nhất và nhỏ nhất của 1 chiều ảnh
@@ -166,12 +166,11 @@ def play_camera(id,id_camera):
                 except :
                     pass
             cv2.imshow('frame', frame)
-        except:
-            pass
-            
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
                 break
+        except:
+            pass
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
