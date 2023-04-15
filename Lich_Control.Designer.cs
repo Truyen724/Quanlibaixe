@@ -294,7 +294,7 @@
             this.buttonCT2.BorderSize = 0;
             this.buttonCT2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonCT2.FlatAppearance.BorderSize = 0;
-            this.buttonCT2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.buttonCT2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(4)))), ((int)(((byte)(44)))));
             this.buttonCT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCT2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCT2.ForeColor = System.Drawing.Color.White;
@@ -305,6 +305,7 @@
             this.buttonCT2.Text = "Xóa";
             this.buttonCT2.TextColor = System.Drawing.Color.White;
             this.buttonCT2.UseVisualStyleBackColor = false;
+            this.buttonCT2.Click += new System.EventHandler(this.buttonCT2_Click);
             // 
             // textBoxCT3
             // 
@@ -357,6 +358,7 @@
             this.buttonCT1.Text = "Sữa";
             this.buttonCT1.TextColor = System.Drawing.Color.Gray;
             this.buttonCT1.UseVisualStyleBackColor = false;
+            this.buttonCT1.Click += new System.EventHandler(this.buttonCT1_Click);
             // 
             // guna2ComboBox6
             // 
@@ -578,6 +580,7 @@
             this.buttonCT3.Text = "Tạo Lịch Mới";
             this.buttonCT3.TextColor = System.Drawing.Color.Gray;
             this.buttonCT3.UseVisualStyleBackColor = false;
+            this.buttonCT3.Click += new System.EventHandler(this.buttonCT3_Click);
             // 
             // guna2ComboBox5
             // 
@@ -681,6 +684,7 @@
             this.guna2ComboBox3.Name = "guna2ComboBox3";
             this.guna2ComboBox3.Size = new System.Drawing.Size(107, 36);
             this.guna2ComboBox3.TabIndex = 55;
+            this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -766,6 +770,7 @@
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.Size = new System.Drawing.Size(229, 36);
             this.guna2ComboBox2.TabIndex = 40;
+            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             // 
             // label8
             // 

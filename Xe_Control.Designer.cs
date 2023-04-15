@@ -40,26 +40,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBoxCT11 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBoxCT12 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxCT9 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
-            this.label5 = new System.Windows.Forms.Label();
-            this.buttonCT3 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.buttonCT2 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.guna2ComboBox8 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox7 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox6 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox5 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBoxCT3 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxCT2 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
@@ -67,6 +55,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonCT1 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxCT12 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxCT9 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
+            this.label5 = new System.Windows.Forms.Label();
+            this.buttonCT3 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT2 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -113,6 +113,9 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(742, 560);
             this.dataGridView1.TabIndex = 37;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -203,12 +206,14 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.guna2ComboBox8);
+            this.panel3.Controls.Add(this.guna2ComboBox7);
+            this.panel3.Controls.Add(this.guna2ComboBox6);
+            this.panel3.Controls.Add(this.guna2ComboBox5);
             this.panel3.Controls.Add(this.guna2ComboBox2);
             this.panel3.Controls.Add(this.guna2ComboBox1);
-            this.panel3.Controls.Add(this.guna2DateTimePicker1);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBoxCT3);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.textBoxCT2);
@@ -220,9 +225,7 @@
             this.panel3.Controls.Add(this.guna2ComboBox4);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.guna2DateTimePicker2);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBoxCT11);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.textBoxCT12);
             this.panel3.Controls.Add(this.label12);
@@ -235,6 +238,236 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(558, 558);
             this.panel3.TabIndex = 38;
+            // 
+            // guna2ComboBox8
+            // 
+            this.guna2ComboBox8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2ComboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox8.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox8.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox8.ItemHeight = 30;
+            this.guna2ComboBox8.Location = new System.Drawing.Point(246, 452);
+            this.guna2ComboBox8.Name = "guna2ComboBox8";
+            this.guna2ComboBox8.Size = new System.Drawing.Size(309, 36);
+            this.guna2ComboBox8.TabIndex = 101;
+            // 
+            // guna2ComboBox7
+            // 
+            this.guna2ComboBox7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2ComboBox7.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox7.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox7.ItemHeight = 30;
+            this.guna2ComboBox7.Location = new System.Drawing.Point(246, 146);
+            this.guna2ComboBox7.Name = "guna2ComboBox7";
+            this.guna2ComboBox7.Size = new System.Drawing.Size(309, 36);
+            this.guna2ComboBox7.TabIndex = 100;
+            // 
+            // guna2ComboBox6
+            // 
+            this.guna2ComboBox6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2ComboBox6.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox6.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox6.ItemHeight = 30;
+            this.guna2ComboBox6.Location = new System.Drawing.Point(245, 24);
+            this.guna2ComboBox6.Name = "guna2ComboBox6";
+            this.guna2ComboBox6.Size = new System.Drawing.Size(309, 36);
+            this.guna2ComboBox6.TabIndex = 99;
+            this.guna2ComboBox6.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox6_SelectedIndexChanged);
+            // 
+            // guna2ComboBox5
+            // 
+            this.guna2ComboBox5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2ComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox5.ItemHeight = 30;
+            this.guna2ComboBox5.Location = new System.Drawing.Point(245, 330);
+            this.guna2ComboBox5.Name = "guna2ComboBox5";
+            this.guna2ComboBox5.Size = new System.Drawing.Size(309, 36);
+            this.guna2ComboBox5.TabIndex = 98;
+            this.guna2ComboBox5.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox5_SelectedIndexChanged);
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(10, 85);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.Size = new System.Drawing.Size(229, 36);
+            this.guna2ComboBox2.TabIndex = 97;
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(9, 146);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(229, 36);
+            this.guna2ComboBox1.TabIndex = 96;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Gray;
+            this.label9.Location = new System.Drawing.Point(242, 125);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 21);
+            this.label9.TabIndex = 94;
+            this.label9.Text = "Ngày Sinh";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(5, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 21);
+            this.label10.TabIndex = 93;
+            this.label10.Text = "ID Tài Xế";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(241, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 21);
+            this.label7.TabIndex = 91;
+            this.label7.Text = "Tài Xế";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(5, 64);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(89, 21);
+            this.label8.TabIndex = 90;
+            this.label8.Text = "Trạng Thái";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBoxCT2
+            // 
+            this.textBoxCT2.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCT2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.textBoxCT2.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBoxCT2.BorderSize = 1;
+            this.textBoxCT2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCT2.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCT2.Location = new System.Drawing.Point(245, 90);
+            this.textBoxCT2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCT2.Multiline = false;
+            this.textBoxCT2.Name = "textBoxCT2";
+            this.textBoxCT2.Padding = new System.Windows.Forms.Padding(7);
+            this.textBoxCT2.PasswordChar = false;
+            this.textBoxCT2.Size = new System.Drawing.Size(310, 31);
+            this.textBoxCT2.TabIndex = 89;
+            this.textBoxCT2.Texts = "";
+            this.textBoxCT2.UnderlinedStyle = false;
+            // 
+            // textBoxCT1
+            // 
+            this.textBoxCT1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCT1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBoxCT1.BorderSize = 1;
+            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCT1.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCT1.Location = new System.Drawing.Point(9, 24);
+            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCT1.Multiline = false;
+            this.textBoxCT1.Name = "textBoxCT1";
+            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
+            this.textBoxCT1.PasswordChar = false;
+            this.textBoxCT1.Size = new System.Drawing.Size(229, 31);
+            this.textBoxCT1.TabIndex = 88;
+            this.textBoxCT1.Texts = "";
+            this.textBoxCT1.UnderlinedStyle = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(241, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 21);
+            this.label1.TabIndex = 87;
+            this.label1.Text = "Mô Tả";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(5, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 21);
+            this.label4.TabIndex = 86;
+            this.label4.Text = "Biển Số";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // buttonCT1
+            // 
+            this.buttonCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.buttonCT1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.buttonCT1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonCT1.BorderRadius = 3;
+            this.buttonCT1.BorderSize = 0;
+            this.buttonCT1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonCT1.FlatAppearance.BorderSize = 0;
+            this.buttonCT1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.buttonCT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT1.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT1.Location = new System.Drawing.Point(9, 193);
+            this.buttonCT1.Name = "buttonCT1";
+            this.buttonCT1.Size = new System.Drawing.Size(547, 40);
+            this.buttonCT1.TabIndex = 85;
+            this.buttonCT1.Text = "Thêm Xe";
+            this.buttonCT1.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT1.UseVisualStyleBackColor = false;
+            this.buttonCT1.Click += new System.EventHandler(this.buttonCT1_Click);
             // 
             // guna2ComboBox3
             // 
@@ -292,23 +525,6 @@
             this.label3.Text = "Trạng Thái";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(246, 452);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(310, 31);
-            this.guna2DateTimePicker2.TabIndex = 80;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 4, 13, 13, 49, 0, 10);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -321,31 +537,12 @@
             this.label6.Text = "Ngày Sinh";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBoxCT11
-            // 
-            this.textBoxCT11.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCT11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.textBoxCT11.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBoxCT11.BorderSize = 1;
-            this.textBoxCT11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCT11.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCT11.Location = new System.Drawing.Point(246, 391);
-            this.textBoxCT11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCT11.Multiline = false;
-            this.textBoxCT11.Name = "textBoxCT11";
-            this.textBoxCT11.Padding = new System.Windows.Forms.Padding(7);
-            this.textBoxCT11.PasswordChar = false;
-            this.textBoxCT11.Size = new System.Drawing.Size(310, 31);
-            this.textBoxCT11.TabIndex = 78;
-            this.textBoxCT11.Texts = "";
-            this.textBoxCT11.UnderlinedStyle = false;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(242, 370);
+            this.label11.Location = new System.Drawing.Point(241, 309);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(54, 21);
             this.label11.TabIndex = 77;
@@ -360,7 +557,7 @@
             this.textBoxCT12.BorderSize = 1;
             this.textBoxCT12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCT12.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCT12.Location = new System.Drawing.Point(246, 330);
+            this.textBoxCT12.Location = new System.Drawing.Point(246, 396);
             this.textBoxCT12.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCT12.Multiline = false;
             this.textBoxCT12.Name = "textBoxCT12";
@@ -376,7 +573,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(242, 309);
+            this.label12.Location = new System.Drawing.Point(242, 375);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 21);
             this.label12.TabIndex = 75;
@@ -434,6 +631,7 @@
             this.buttonCT3.Text = "Sữa Xe";
             this.buttonCT3.TextColor = System.Drawing.Color.Gray;
             this.buttonCT3.UseVisualStyleBackColor = false;
+            this.buttonCT3.Click += new System.EventHandler(this.buttonCT3_Click);
             // 
             // buttonCT2
             // 
@@ -444,7 +642,7 @@
             this.buttonCT2.BorderSize = 0;
             this.buttonCT2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonCT2.FlatAppearance.BorderSize = 0;
-            this.buttonCT2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.buttonCT2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(4)))), ((int)(((byte)(44)))));
             this.buttonCT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCT2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCT2.ForeColor = System.Drawing.Color.White;
@@ -455,205 +653,7 @@
             this.buttonCT2.Text = "Xóa Xe";
             this.buttonCT2.TextColor = System.Drawing.Color.White;
             this.buttonCT2.UseVisualStyleBackColor = false;
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(10, 85);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(229, 36);
-            this.guna2ComboBox2.TabIndex = 97;
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(9, 146);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(229, 36);
-            this.guna2ComboBox1.TabIndex = 96;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(246, 146);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(310, 31);
-            this.guna2DateTimePicker1.TabIndex = 95;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 4, 13, 13, 49, 0, 10);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(242, 125);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 21);
-            this.label9.TabIndex = 94;
-            this.label9.Text = "Ngày Sinh";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(5, 125);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 21);
-            this.label10.TabIndex = 93;
-            this.label10.Text = "ID Tài Xế";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBoxCT3
-            // 
-            this.textBoxCT3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCT3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.textBoxCT3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBoxCT3.BorderSize = 1;
-            this.textBoxCT3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCT3.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCT3.Location = new System.Drawing.Point(246, 85);
-            this.textBoxCT3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCT3.Multiline = false;
-            this.textBoxCT3.Name = "textBoxCT3";
-            this.textBoxCT3.Padding = new System.Windows.Forms.Padding(7);
-            this.textBoxCT3.PasswordChar = false;
-            this.textBoxCT3.Size = new System.Drawing.Size(310, 31);
-            this.textBoxCT3.TabIndex = 92;
-            this.textBoxCT3.Texts = "";
-            this.textBoxCT3.UnderlinedStyle = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(242, 64);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 21);
-            this.label7.TabIndex = 91;
-            this.label7.Text = "Tài Xế";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(5, 64);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 21);
-            this.label8.TabIndex = 90;
-            this.label8.Text = "Trạng Thái";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBoxCT2
-            // 
-            this.textBoxCT2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCT2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.textBoxCT2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBoxCT2.BorderSize = 1;
-            this.textBoxCT2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCT2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCT2.Location = new System.Drawing.Point(246, 24);
-            this.textBoxCT2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCT2.Multiline = false;
-            this.textBoxCT2.Name = "textBoxCT2";
-            this.textBoxCT2.Padding = new System.Windows.Forms.Padding(7);
-            this.textBoxCT2.PasswordChar = false;
-            this.textBoxCT2.Size = new System.Drawing.Size(310, 31);
-            this.textBoxCT2.TabIndex = 89;
-            this.textBoxCT2.Texts = "";
-            this.textBoxCT2.UnderlinedStyle = false;
-            // 
-            // textBoxCT1
-            // 
-            this.textBoxCT1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCT1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBoxCT1.BorderSize = 1;
-            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCT1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCT1.Location = new System.Drawing.Point(9, 24);
-            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCT1.Multiline = false;
-            this.textBoxCT1.Name = "textBoxCT1";
-            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
-            this.textBoxCT1.PasswordChar = false;
-            this.textBoxCT1.Size = new System.Drawing.Size(229, 31);
-            this.textBoxCT1.TabIndex = 88;
-            this.textBoxCT1.Texts = "";
-            this.textBoxCT1.UnderlinedStyle = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(242, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 21);
-            this.label1.TabIndex = 87;
-            this.label1.Text = "Mô Tả";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(5, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 21);
-            this.label4.TabIndex = 86;
-            this.label4.Text = "Biển Số";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // buttonCT1
-            // 
-            this.buttonCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.buttonCT1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.buttonCT1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonCT1.BorderRadius = 3;
-            this.buttonCT1.BorderSize = 0;
-            this.buttonCT1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonCT1.FlatAppearance.BorderSize = 0;
-            this.buttonCT1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.buttonCT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT1.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT1.Location = new System.Drawing.Point(9, 193);
-            this.buttonCT1.Name = "buttonCT1";
-            this.buttonCT1.Size = new System.Drawing.Size(547, 40);
-            this.buttonCT1.TabIndex = 85;
-            this.buttonCT1.Text = "Thêm Xe";
-            this.buttonCT1.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT1.UseVisualStyleBackColor = false;
+            this.buttonCT2.Click += new System.EventHandler(this.buttonCT2_Click);
             // 
             // Xe_Control
             // 
@@ -688,10 +688,8 @@
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private Custom_Toolbox.TextBoxCT textBoxCT3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private Custom_Toolbox.TextBoxCT textBoxCT2;
@@ -703,9 +701,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
         private System.Windows.Forms.Label label6;
-        private Custom_Toolbox.TextBoxCT textBoxCT11;
         private System.Windows.Forms.Label label11;
         private Custom_Toolbox.TextBoxCT textBoxCT12;
         private System.Windows.Forms.Label label12;
@@ -713,5 +709,9 @@
         private System.Windows.Forms.Label label5;
         private Custom_Toolbox.ButtonCT buttonCT3;
         private Custom_Toolbox.ButtonCT buttonCT2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox6;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox5;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox7;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox8;
     }
 }
