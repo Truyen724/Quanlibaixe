@@ -80,14 +80,16 @@ namespace Quanlibaixe
             if(id_access=="2")
             {
                 menuStrip1.Visible = false;
-                MessageBox.Show(id_access);
+               
             }    
             thread2 = new Thread(new ThreadStart(run_check));
             thread2.Start();
         }
         public string rund()
         {
-            string text = File.ReadAllText("Detect_BienSo/data.txt");
+            
+                string text = File.ReadAllText("Detect_BienSo/data.txt");
+            
             return text;
         }
         public string check()
@@ -103,15 +105,23 @@ namespace Quanlibaixe
         {
             while(true)
             {
-                String[] t1 = rund().Split('|');
-                string t_check = check();
-                if(t_check!= t1[0])
+                try
                 {
-                    Form_Action f = new Form_Action(id_xe: t1[1], id_action: t1[0]);
-                    f.ShowDialog();
+                    String[] t1 = rund().Split('|');
+                    string t_check = check();
+                    if (t_check != t1[0])
+                    {
+                        Form_Action f = new Form_Action(id_xe: t1[1], id_action: t1[0]);
+                        f.ShowDialog();
+                    }
+
+                    write(t1[0]);
+                }
+                catch
+                {
+                    
                 }
                 
-                write(t1[0]);
             }
         }
     }

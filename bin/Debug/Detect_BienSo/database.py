@@ -9,9 +9,12 @@ from datetime import datetime
 def current_milli_time():
     return round(time.time() * 1000)
 def save(filename, text):
-    with open(filename, "w") as file:
-        file.write(text)
-    file.close()
+    try:
+        with open(filename, "w") as file:
+            file.write(text)
+        file.close()
+    except:
+        pass
 save("t.txt","hello1")
 def add_action(id_car, image1, image2, id_camera):
     id_action = current_milli_time()
