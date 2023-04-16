@@ -37,3 +37,4 @@ C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.Toolbox.TextBoxCT.r
 C:\Users\thqnhngqn\Desktop\Quanlibaixe\bin\Debug\Guna.UI2.dll
 C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CopyComplete
 C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Master.resources
+C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Camera_UserControl.resources

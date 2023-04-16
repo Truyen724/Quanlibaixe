@@ -94,6 +94,12 @@
     <Compile Include="Form_Master.Designer.cs">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Camera_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_Camera_UserControl.Designer.cs">
+      <DependentUpon>Form_Camera_UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="infor.cs" />
     <Compile Include="Form_login.cs">
       <SubType>Form</SubType>
@@ -145,6 +151,9 @@
     <EmbeddedResource Include="Form_Master.resx">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Camera_UserControl.resx">
+      <DependentUpon>Form_Camera_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -186,6 +195,8 @@
     <Content Include="UI-UX\icons8_Check_Circle_32.png" />
     <Content Include="UI-UX\icons8_driver48px_gray_48.png" />
     <Content Include="UI-UX\icons8_Facebooks_32.png" />
+    <None Include="UI-UX\ios_shutdown_48.png" />
+    <None Include="UI-UX\icons8_logout_rounded_up_48.png" />
     <Content Include="UI-UX\icons8_menu48px_48.png" />
     <Content Include="UI-UX\icons8_More16px_16.png" />
     <Content Include="UI-UX\icons8_More32px_32.png" />
@@ -193,6 +204,7 @@
     <Content Include="UI-UX\icons8_play_32.png" />
     <Content Include="UI-UX\icons8_Search_16.png" />
     <Content Include="UI-UX\icons8_Search_32.png" />
+    <None Include="UI-UX\icons8_shutdown_48.png" />
     <Content Include="UI-UX\icons8_twitter.ico" />
     <Content Include="UI-UX\icons8_twitter32px_32.png" />
     <Content Include="UI-UX\icons8_twitter_32.png" />
