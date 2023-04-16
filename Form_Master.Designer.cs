@@ -63,6 +63,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Form_Xe_tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Form_Camera_tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.form_Camera_UserControl1 = new Quanlibaixe.Form_Camera_UserControl();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -531,6 +532,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.Form_Xe_tableLayoutPanel1);
             this.panel2.Controls.Add(this.Form_Camera_tableLayoutPanel);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel1);
@@ -542,6 +544,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1329, 729);
             this.panel2.TabIndex = 43;
+            // 
+            // Form_Xe_tableLayoutPanel1
+            // 
+            this.Form_Xe_tableLayoutPanel1.ColumnCount = 1;
+            this.Form_Xe_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Form_Xe_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.guna2Transition2.SetDecoration(this.Form_Xe_tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.Form_Xe_tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Form_Xe_tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Form_Xe_tableLayoutPanel1.Location = new System.Drawing.Point(0, 117);
+            this.Form_Xe_tableLayoutPanel1.Name = "Form_Xe_tableLayoutPanel1";
+            this.Form_Xe_tableLayoutPanel1.RowCount = 1;
+            this.Form_Xe_tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Form_Xe_tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Form_Xe_tableLayoutPanel1.Size = new System.Drawing.Size(1310, 587);
+            this.Form_Xe_tableLayoutPanel1.TabIndex = 54;
             // 
             // Form_Camera_tableLayoutPanel
             // 
@@ -812,5 +830,6 @@
         private Toolbox.ButtonCT buttonCT7;
         private System.Windows.Forms.Button button1;
         private Form_Camera_UserControl form_Camera_UserControl1;
+        private System.Windows.Forms.TableLayoutPanel Form_Xe_tableLayoutPanel1;
     }
 }
