@@ -53,18 +53,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.buttonCT6 = new Quanlibaixe.Toolbox.ButtonCT();
-            this.buttonCT5 = new Quanlibaixe.Toolbox.ButtonCT();
-            this.buttonCT4 = new Quanlibaixe.Toolbox.ButtonCT();
-            this.buttonCT3 = new Quanlibaixe.Toolbox.ButtonCT();
-            this.buttonCT2 = new Quanlibaixe.Toolbox.ButtonCT();
-            this.buttonCT1 = new Quanlibaixe.Toolbox.ButtonCT();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonCT6 = new Quanlibaixe.Toolbox.ButtonCT();
+            this.buttonCT5 = new Quanlibaixe.Toolbox.ButtonCT();
+            this.buttonCT4 = new Quanlibaixe.Toolbox.ButtonCT();
+            this.buttonCT3 = new Quanlibaixe.Toolbox.ButtonCT();
+            this.buttonCT2 = new Quanlibaixe.Toolbox.ButtonCT();
+            this.buttonCT1 = new Quanlibaixe.Toolbox.ButtonCT();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -318,130 +318,6 @@
             this.label4.Text = "PEOPLE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // buttonCT6
-            // 
-            this.buttonCT6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT6.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT6.BorderRadius = 3;
-            this.buttonCT6.BorderSize = 0;
-            this.buttonCT6.FlatAppearance.BorderSize = 0;
-            this.buttonCT6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT6.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT6.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT6.Image")));
-            this.buttonCT6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT6.Location = new System.Drawing.Point(16, 410);
-            this.buttonCT6.Name = "buttonCT6";
-            this.buttonCT6.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT6.TabIndex = 11;
-            this.buttonCT6.Text = "Lịch xe";
-            this.buttonCT6.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT6.UseVisualStyleBackColor = false;
-            // 
-            // buttonCT5
-            // 
-            this.buttonCT5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT5.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT5.BorderRadius = 3;
-            this.buttonCT5.BorderSize = 0;
-            this.buttonCT5.FlatAppearance.BorderSize = 0;
-            this.buttonCT5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT5.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT5.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT5.Image")));
-            this.buttonCT5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT5.Location = new System.Drawing.Point(16, 344);
-            this.buttonCT5.Name = "buttonCT5";
-            this.buttonCT5.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT5.TabIndex = 10;
-            this.buttonCT5.Text = "Tài xế";
-            this.buttonCT5.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT5.UseVisualStyleBackColor = false;
-            // 
-            // buttonCT4
-            // 
-            this.buttonCT4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT4.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT4.BorderRadius = 3;
-            this.buttonCT4.BorderSize = 0;
-            this.buttonCT4.FlatAppearance.BorderSize = 0;
-            this.buttonCT4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT4.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT4.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT4.Image")));
-            this.buttonCT4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT4.Location = new System.Drawing.Point(16, 278);
-            this.buttonCT4.Name = "buttonCT4";
-            this.buttonCT4.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT4.TabIndex = 9;
-            this.buttonCT4.Text = "Xe oto";
-            this.buttonCT4.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT4.UseVisualStyleBackColor = false;
-            // 
-            // buttonCT3
-            // 
-            this.buttonCT3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT3.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT3.BorderRadius = 3;
-            this.buttonCT3.BorderSize = 0;
-            this.buttonCT3.FlatAppearance.BorderSize = 0;
-            this.buttonCT3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT3.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT3.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT3.Image")));
-            this.buttonCT3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT3.Location = new System.Drawing.Point(16, 212);
-            this.buttonCT3.Name = "buttonCT3";
-            this.buttonCT3.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT3.TabIndex = 8;
-            this.buttonCT3.Text = "Quản lí dữ liệu";
-            this.buttonCT3.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT3.UseVisualStyleBackColor = false;
-            // 
-            // buttonCT2
-            // 
-            this.buttonCT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonCT2.BorderColor = System.Drawing.Color.Empty;
-            this.buttonCT2.BorderRadius = 3;
-            this.buttonCT2.BorderSize = 0;
-            this.buttonCT2.FlatAppearance.BorderSize = 0;
-            this.buttonCT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCT2.ForeColor = System.Drawing.Color.Gray;
-            this.buttonCT2.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT2.Image")));
-            this.buttonCT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCT2.Location = new System.Drawing.Point(16, 146);
-            this.buttonCT2.Name = "buttonCT2";
-            this.buttonCT2.Size = new System.Drawing.Size(269, 60);
-            this.buttonCT2.TabIndex = 7;
-            this.buttonCT2.Text = "Camera";
-            this.buttonCT2.TextColor = System.Drawing.Color.Gray;
-            this.buttonCT2.UseVisualStyleBackColor = false;
-            // 
-            // buttonCT1
-            // 
-            this.buttonCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.buttonCT1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.buttonCT1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonCT1.BorderRadius = 3;
-            this.buttonCT1.BorderSize = 0;
-            this.buttonCT1.FlatAppearance.BorderSize = 0;
-            this.buttonCT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT1.ForeColor = System.Drawing.Color.White;
-            this.buttonCT1.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT1.Image")));
-            this.buttonCT1.Location = new System.Drawing.Point(12, 15);
-            this.buttonCT1.Name = "buttonCT1";
-            this.buttonCT1.Size = new System.Drawing.Size(37, 34);
-            this.buttonCT1.TabIndex = 0;
-            this.buttonCT1.TextColor = System.Drawing.Color.White;
-            this.buttonCT1.UseVisualStyleBackColor = false;
-            this.buttonCT1.Click += new System.EventHandler(this.buttonCT1_Click);
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -506,6 +382,136 @@
             this.button1.TabIndex = 37;
             this.button1.Text = "Run Camera";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonCT6
+            // 
+            this.buttonCT6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT6.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT6.BorderRadius = 3;
+            this.buttonCT6.BorderSize = 0;
+            this.buttonCT6.FlatAppearance.BorderSize = 0;
+            this.buttonCT6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT6.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT6.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT6.Image")));
+            this.buttonCT6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT6.Location = new System.Drawing.Point(16, 410);
+            this.buttonCT6.Name = "buttonCT6";
+            this.buttonCT6.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT6.TabIndex = 11;
+            this.buttonCT6.Text = "Lịch xe";
+            this.buttonCT6.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT6.UseVisualStyleBackColor = false;
+            this.buttonCT6.Click += new System.EventHandler(this.buttonCT6_Click);
+            // 
+            // buttonCT5
+            // 
+            this.buttonCT5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT5.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT5.BorderRadius = 3;
+            this.buttonCT5.BorderSize = 0;
+            this.buttonCT5.FlatAppearance.BorderSize = 0;
+            this.buttonCT5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT5.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT5.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT5.Image")));
+            this.buttonCT5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT5.Location = new System.Drawing.Point(16, 344);
+            this.buttonCT5.Name = "buttonCT5";
+            this.buttonCT5.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT5.TabIndex = 10;
+            this.buttonCT5.Text = "Tài xế";
+            this.buttonCT5.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT5.UseVisualStyleBackColor = false;
+            this.buttonCT5.Click += new System.EventHandler(this.buttonCT5_Click);
+            // 
+            // buttonCT4
+            // 
+            this.buttonCT4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT4.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT4.BorderRadius = 3;
+            this.buttonCT4.BorderSize = 0;
+            this.buttonCT4.FlatAppearance.BorderSize = 0;
+            this.buttonCT4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT4.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT4.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT4.Image")));
+            this.buttonCT4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT4.Location = new System.Drawing.Point(16, 278);
+            this.buttonCT4.Name = "buttonCT4";
+            this.buttonCT4.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT4.TabIndex = 9;
+            this.buttonCT4.Text = "Xe oto";
+            this.buttonCT4.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT4.UseVisualStyleBackColor = false;
+            this.buttonCT4.Click += new System.EventHandler(this.buttonCT4_Click);
+            // 
+            // buttonCT3
+            // 
+            this.buttonCT3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT3.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT3.BorderRadius = 3;
+            this.buttonCT3.BorderSize = 0;
+            this.buttonCT3.FlatAppearance.BorderSize = 0;
+            this.buttonCT3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT3.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT3.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT3.Image")));
+            this.buttonCT3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT3.Location = new System.Drawing.Point(16, 212);
+            this.buttonCT3.Name = "buttonCT3";
+            this.buttonCT3.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT3.TabIndex = 8;
+            this.buttonCT3.Text = "Quản lí dữ liệu";
+            this.buttonCT3.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT3.UseVisualStyleBackColor = false;
+            this.buttonCT3.Click += new System.EventHandler(this.buttonCT3_Click);
+            // 
+            // buttonCT2
+            // 
+            this.buttonCT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCT2.BorderColor = System.Drawing.Color.Empty;
+            this.buttonCT2.BorderRadius = 3;
+            this.buttonCT2.BorderSize = 0;
+            this.buttonCT2.FlatAppearance.BorderSize = 0;
+            this.buttonCT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCT2.ForeColor = System.Drawing.Color.Gray;
+            this.buttonCT2.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT2.Image")));
+            this.buttonCT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCT2.Location = new System.Drawing.Point(16, 146);
+            this.buttonCT2.Name = "buttonCT2";
+            this.buttonCT2.Size = new System.Drawing.Size(269, 60);
+            this.buttonCT2.TabIndex = 7;
+            this.buttonCT2.Text = "Camera";
+            this.buttonCT2.TextColor = System.Drawing.Color.Gray;
+            this.buttonCT2.UseVisualStyleBackColor = false;
+            this.buttonCT2.Click += new System.EventHandler(this.buttonCT2_Click);
+            // 
+            // buttonCT1
+            // 
+            this.buttonCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.buttonCT1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.buttonCT1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonCT1.BorderRadius = 3;
+            this.buttonCT1.BorderSize = 0;
+            this.buttonCT1.FlatAppearance.BorderSize = 0;
+            this.buttonCT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT1.ForeColor = System.Drawing.Color.White;
+            this.buttonCT1.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT1.Image")));
+            this.buttonCT1.Location = new System.Drawing.Point(12, 15);
+            this.buttonCT1.Name = "buttonCT1";
+            this.buttonCT1.Size = new System.Drawing.Size(37, 34);
+            this.buttonCT1.TabIndex = 0;
+            this.buttonCT1.TextColor = System.Drawing.Color.White;
+            this.buttonCT1.UseVisualStyleBackColor = false;
+            this.buttonCT1.Click += new System.EventHandler(this.buttonCT1_Click);
             // 
             // Form_Master
             // 
@@ -522,6 +528,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Master";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_Master_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
