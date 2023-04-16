@@ -34,3 +34,6 @@ C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CoreCompileI
 C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.exe
 C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.pdb
 C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.Toolbox.TextBoxCT.resources
+C:\Users\thqnhngqn\Desktop\Quanlibaixe\bin\Debug\Guna.UI2.dll
+C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CopyComplete
+C:\Users\thqnhngqn\Desktop\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Master.resources
