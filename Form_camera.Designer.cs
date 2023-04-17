@@ -55,28 +55,29 @@ namespace Quanlibaixe
             this.quảnLíLịchTrìnhToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1880, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1084, 24);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // quảnLíDữLiệuToolStripMenuItem
             // 
             this.quảnLíDữLiệuToolStripMenuItem.Name = "quảnLíDữLiệuToolStripMenuItem";
-            this.quảnLíDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(120, 24);
+            this.quảnLíDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.quảnLíDữLiệuToolStripMenuItem.Text = "Quản lí dữ liệu";
             this.quảnLíDữLiệuToolStripMenuItem.Click += new System.EventHandler(this.quảnLíDữLiệuToolStripMenuItem_Click);
             // 
             // quảnLíXeToolStripMenuItem
             // 
             this.quảnLíXeToolStripMenuItem.Name = "quảnLíXeToolStripMenuItem";
-            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.quảnLíXeToolStripMenuItem.Text = "Quản lí xe";
             this.quảnLíXeToolStripMenuItem.Click += new System.EventHandler(this.quảnLíXeToolStripMenuItem_Click);
             // 
             // quảnLíTàiXếToolStripMenuItem
             // 
             this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
-            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
             this.quảnLíTàiXếToolStripMenuItem.Click += new System.EventHandler(this.quảnLíTàiXếToolStripMenuItem_Click);
             // 
@@ -86,37 +87,39 @@ namespace Quanlibaixe
             this.thêmLịchTrìnhToolStripMenuItem,
             this.quảnLíLịchTrìnhToolStripMenuItem1});
             this.quảnLíLịchTrìnhToolStripMenuItem.Name = "quảnLíLịchTrìnhToolStripMenuItem";
-            this.quảnLíLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(131, 24);
+            this.quảnLíLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.quảnLíLịchTrìnhToolStripMenuItem.Text = "Quản lí lịch trình";
             this.quảnLíLịchTrìnhToolStripMenuItem.Click += new System.EventHandler(this.quảnLíLịchTrìnhToolStripMenuItem_Click);
             // 
             // thêmLịchTrìnhToolStripMenuItem
             // 
             this.thêmLịchTrìnhToolStripMenuItem.Name = "thêmLịchTrìnhToolStripMenuItem";
-            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.thêmLịchTrìnhToolStripMenuItem.Text = "Thêm lịch trình";
             this.thêmLịchTrìnhToolStripMenuItem.Click += new System.EventHandler(this.thêmLịchTrìnhToolStripMenuItem_Click);
             // 
             // quảnLíLịchTrìnhToolStripMenuItem1
             // 
             this.quảnLíLịchTrìnhToolStripMenuItem1.Name = "quảnLíLịchTrìnhToolStripMenuItem1";
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
             this.quảnLíLịchTrìnhToolStripMenuItem1.Text = "Quản lí lịch trình";
             this.quảnLíLịchTrìnhToolStripMenuItem1.Click += new System.EventHandler(this.quảnLíLịchTrìnhToolStripMenuItem1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(127, 163);
+            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(830, 640);
+            this.panel1.Size = new System.Drawing.Size(441, 368);
             this.panel1.TabIndex = 35;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(127, 55);
+            this.button7.Location = new System.Drawing.Point(909, 174);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(382, 57);
+            this.button7.Size = new System.Drawing.Size(145, 46);
             this.button7.TabIndex = 37;
             this.button7.Text = "Run Camera";
             this.button7.UseVisualStyleBackColor = true;
@@ -125,34 +128,38 @@ namespace Quanlibaixe
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Location = new System.Drawing.Point(1079, 163);
+            this.panel2.Location = new System.Drawing.Point(445, 26);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(830, 640);
+            this.panel2.Size = new System.Drawing.Size(441, 368);
             this.panel2.TabIndex = 36;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1488, 826);
+            this.label1.Location = new System.Drawing.Point(649, 407);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 17);
+            this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 38;
             this.label1.Text = "Camera 2";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(462, 826);
+            this.label2.Location = new System.Drawing.Point(188, 407);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 39;
             this.label2.Text = "Camera 1";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1201, 55);
+            this.button1.Location = new System.Drawing.Point(908, 343);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 57);
+            this.button1.Size = new System.Drawing.Size(146, 46);
             this.button1.TabIndex = 40;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
@@ -160,10 +167,10 @@ namespace Quanlibaixe
             // 
             // Form_camera
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1880, 906);
+            this.ClientSize = new System.Drawing.Size(1084, 457);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -172,10 +179,10 @@ namespace Quanlibaixe
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_camera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form_camera";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form_camera_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
