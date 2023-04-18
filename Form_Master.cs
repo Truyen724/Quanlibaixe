@@ -21,8 +21,8 @@ namespace Quanlibaixe
         private bool XeOto_buttonCTChecked = false;
         private bool TaiXe_buttonCTChecked = false;
         private bool LichXe_buttonCTChecked = false;
-
-        //
+        private bool master = false;
+       
         private Thread thread2 = null;
         String id_access = infor.id_access.Trim();
         String ConectionString = infor.ConectionString;
@@ -30,10 +30,10 @@ namespace Quanlibaixe
         public Form_Master()
         {
             InitializeComponent();
-
-            //Mặc định ButtonCT2 xuất hiện đầu tiên.
-            SidePanel.Height = QuanLi_buttonCT.Height;
-            SidePanel.Top = QuanLi_buttonCT.Top;
+            ExamSchedulerMethod();
+            //Mặc định Camera_buttonCT xuất hiện đầu tiên.
+            SidePanel.Height = Camera_buttonCT.Height;
+            SidePanel.Top = Camera_buttonCT.Top;
 
             //------------------------------------------------------>
             //Custom hover buttonCT1
@@ -61,12 +61,13 @@ namespace Quanlibaixe
         private void Form_Master_Load(object sender, EventArgs e)
         {
             Camera_buttonCT.BackColor = Color.FromArgb(208, 212, 213);
-            SidePanel.Location = new Point(6, 146);
+            camera_Control1.BringToFront();
+            Form_camera form_Camera = new Form_camera();
 
+            //ExamSchedulerMethod();
 
-            //
-            thread2 = new Thread(new ThreadStart(run_check));
-            thread2.Start();
+            //thread2 = new Thread(new ThreadStart(run_check));
+            //thread2.Start();
 
             // Tắt menuStrip1 nếu user đăng nhập
             if (id_access == "2")
@@ -76,56 +77,56 @@ namespace Quanlibaixe
             else
             {
                 return;
-            }
+            }          
+         
         }
+       
+        //// rund
+        //public string rund()
+        //{
 
-        //
-        // rund
-        public string rund()
-        {
+        //    string text = File.ReadAllText("Detect_BienSo/data.txt");
 
-            string text = File.ReadAllText("Detect_BienSo/data.txt");
+        //    return text;
+        //}
 
-            return text;
-        }
+        //// check
+        //public string check()
+        //{
+        //    string text = File.ReadAllText("data_save.txt");
+        //    return text;
+        //}
 
-        // check
-        public string check()
-        {
-            string text = File.ReadAllText("data_save.txt");
-            return text;
-        }
+        //// write
+        //public void write(string a)
+        //{
+        //    File.WriteAllText("data_save.txt", a);
+        //}
 
-        // write
-        public void write(string a)
-        {
-            File.WriteAllText("data_save.txt", a);
-        }
+        ////run_check
+        //public void run_check()
+        //{
+        //    while (true)
+        //    {
+        //        try
+        //        {
+        //            String[] t1 = rund().Split('|');
+        //            string t_check = check();
+        //            if (t_check != t1[0])
+        //            {
+        //                Form_Action f = new Form_Action(id_xe: t1[1], id_action: t1[0]);
+        //                f.ShowDialog();
+        //            }
 
-        //run_check
-        public void run_check()
-        {
-            while (true)
-            {
-                try
-                {
-                    String[] t1 = rund().Split('|');
-                    string t_check = check();
-                    if (t_check != t1[0])
-                    {
-                        Form_Action f = new Form_Action(id_xe: t1[1], id_action: t1[0]);
-                        f.ShowDialog();
-                    }
+        //            write(t1[0]);
+        //        }
+        //        catch
+        //        {
 
-                    write(t1[0]);
-                }
-                catch
-                {
+        //        }
 
-                }
-
-            }
-        }
+        //    }
+        //}
 
         //----------------------------------------------------------------------------------------------------------------->
         //Custom hover Camera_buttonCT
@@ -247,16 +248,32 @@ namespace Quanlibaixe
         // Button Camera
         private void Camera_buttonCT_Click(object sender, EventArgs e)
         {
-           
-            // Form_camera
-            //Form_camera form_Camera = new Form_camera();
-            //form_Camera.StartPosition = FormStartPosition.Manual;
-            //form_Camera.Location = new Point(310, 240);
-            //form_Camera.ShowDialog();
 
-            // Bật Xe_Control 
+            // Form_camera
+            Form_camera form_Camera = new Form_camera();            
+
+            //Form_Master form_Master = new Form_Master();            
+            //if(form_Master.WindowState == FormWindowState.Maximized)
+            //{
+            //    form_Camera.StartPosition = FormStartPosition.Manual;
+            //    form_Camera.Location = new Point(290, 245);
+            //    form_Camera.WindowState = FormWindowState.Maximized;
+            //    form_Camera.ShowDialog();
+            //}
+            //else if(form_Master.WindowState == FormWindowState.Minimized)
+            //{
+            //    form_Camera.StartPosition = FormStartPosition.Manual;
+            //    form_Camera.Location = new Point(290, 245);
+            //    form_Camera.ShowDialog();
+            //}
+
+            // Bật Camera_Control 
             Camera_tableLayoutPanel1.Visible = true;
-            
+            camera_Control1.BringToFront();
+
+            // Button RunCamera
+            button7.Visible = true;
+
             // Click mouse SidePanel di chuyển theo button
             SidePanel.Height = Camera_buttonCT.Height;
             SidePanel.Top = Camera_buttonCT.Top;
@@ -431,6 +448,17 @@ namespace Quanlibaixe
         private void quảnLíLịchTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        // Loading form_Camera lên panel trong form_master
+        public void ExamSchedulerMethod()
+        {
+            Form_camera form_Camera = new Form_camera();
+            form_Camera.TopLevel = false;
+            form_Camera.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Controls.Add(form_Camera);
+            form_Camera.Show();
         }
     }
 }

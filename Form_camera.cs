@@ -124,5 +124,20 @@ namespace Quanlibaixe
                 
             }
         }
+
+        //
+        public Form_Master CallerForm { get; set; }
+        public Form_camera(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
+        }
+
+        //public void ExamSchedulerMethod()
+        //{
+        //    Form_camera form_Camera = new Form_camera();
+        //    form_Camera.TopLevel = false;
+        //    panel8.Controls.Add(form_Camera);
+        //    form_Camera.Show();
+        //}
     }
 }

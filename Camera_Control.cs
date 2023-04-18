@@ -14,8 +14,7 @@ namespace Quanlibaixe
 {
     public partial class Camera_Control : UserControl
     {
-        private Thread thread2 = null;
-        String id_access = infor.id_access.Trim();
+        private Thread thread2 = null;       
         String ConectionString = infor.ConectionString;
 
         public Camera_Control()
@@ -24,8 +23,7 @@ namespace Quanlibaixe
         }
 
         private void Camera_Control_Load(object sender, EventArgs e)
-        {
-            //
+        {           
             thread2 = new Thread(new ThreadStart(run_check));
             thread2.Start();
         }
@@ -35,7 +33,6 @@ namespace Quanlibaixe
         {
 
             string text = File.ReadAllText("Detect_BienSo/data.txt");
-
             return text;
         }
 

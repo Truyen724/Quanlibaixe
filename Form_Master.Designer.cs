@@ -38,15 +38,12 @@
             this.quảnLíLịchTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Dashboard_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
             this.SideBar = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.SidePanel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -56,22 +53,26 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.LichXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.TaiXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.XeOto_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.QuanLi_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Camera_tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.camera_Control1 = new Quanlibaixe.Camera_Control();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.LogOut_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.button7 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.camera_Control1 = new Quanlibaixe.Camera_Control();
+            this.LogOut_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.LichXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.TaiXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.XeOto_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.QuanLi_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.Dashboard_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -169,25 +170,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Dashboard";
             // 
-            // Dashboard_buttonCT
-            // 
-            this.Dashboard_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.Dashboard_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.Dashboard_buttonCT.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.Dashboard_buttonCT.BorderRadius = 3;
-            this.Dashboard_buttonCT.BorderSize = 0;
-            this.Dashboard_buttonCT.FlatAppearance.BorderSize = 0;
-            this.Dashboard_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Dashboard_buttonCT.ForeColor = System.Drawing.Color.White;
-            this.Dashboard_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Dashboard_buttonCT.Image")));
-            this.Dashboard_buttonCT.Location = new System.Drawing.Point(12, 15);
-            this.Dashboard_buttonCT.Name = "Dashboard_buttonCT";
-            this.Dashboard_buttonCT.Size = new System.Drawing.Size(37, 34);
-            this.Dashboard_buttonCT.TabIndex = 0;
-            this.Dashboard_buttonCT.TextColor = System.Drawing.Color.White;
-            this.Dashboard_buttonCT.UseVisualStyleBackColor = false;
-            this.Dashboard_buttonCT.Click += new System.EventHandler(this.Dashboard_buttonCT_Click);
-            // 
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
@@ -225,25 +207,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // textBoxCT1
-            // 
-            this.textBoxCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.textBoxCT1.BorderColor = System.Drawing.Color.Empty;
-            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.Empty;
-            this.textBoxCT1.BorderSize = 2;
-            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCT1.ForeColor = System.Drawing.Color.White;
-            this.textBoxCT1.Location = new System.Drawing.Point(153, 15);
-            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCT1.Multiline = false;
-            this.textBoxCT1.Name = "textBoxCT1";
-            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
-            this.textBoxCT1.PasswordChar = false;
-            this.textBoxCT1.Size = new System.Drawing.Size(291, 36);
-            this.textBoxCT1.TabIndex = 3;
-            this.textBoxCT1.Texts = "";
-            this.textBoxCT1.UnderlinedStyle = false;
-            // 
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
@@ -269,28 +232,6 @@
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 60);
             this.SidePanel.TabIndex = 3;
-            // 
-            // Camera_buttonCT
-            // 
-            this.Camera_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.Camera_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.Camera_buttonCT.BorderColor = System.Drawing.Color.Empty;
-            this.Camera_buttonCT.BorderRadius = 3;
-            this.Camera_buttonCT.BorderSize = 0;
-            this.Camera_buttonCT.FlatAppearance.BorderSize = 0;
-            this.Camera_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Camera_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Camera_buttonCT.ForeColor = System.Drawing.Color.Gray;
-            this.Camera_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Camera_buttonCT.Image")));
-            this.Camera_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Camera_buttonCT.Location = new System.Drawing.Point(16, 146);
-            this.Camera_buttonCT.Name = "Camera_buttonCT";
-            this.Camera_buttonCT.Size = new System.Drawing.Size(269, 60);
-            this.Camera_buttonCT.TabIndex = 7;
-            this.Camera_buttonCT.Text = "Camera";
-            this.Camera_buttonCT.TextColor = System.Drawing.Color.Gray;
-            this.Camera_buttonCT.UseVisualStyleBackColor = false;
-            this.Camera_buttonCT.Click += new System.EventHandler(this.Camera_buttonCT_Click);
             // 
             // SidePanel2
             // 
@@ -392,6 +333,181 @@
             this.label4.Text = "PEOPLE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Controls.Add(this.Camera_tableLayoutPanel1);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(285, 92);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1125, 644);
+            this.panel1.TabIndex = 43;
+            // 
+            // Camera_tableLayoutPanel1
+            // 
+            this.Camera_tableLayoutPanel1.ColumnCount = 1;
+            this.Camera_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Camera_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Camera_tableLayoutPanel1.Controls.Add(this.camera_Control1, 0, 0);
+            this.Camera_tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Camera_tableLayoutPanel1.Location = new System.Drawing.Point(0, 117);
+            this.Camera_tableLayoutPanel1.Name = "Camera_tableLayoutPanel1";
+            this.Camera_tableLayoutPanel1.RowCount = 1;
+            this.Camera_tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Camera_tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Camera_tableLayoutPanel1.Size = new System.Drawing.Size(1106, 502);
+            this.Camera_tableLayoutPanel1.TabIndex = 44;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label5);
+            this.panel11.Controls.Add(this.label6);
+            this.panel11.Controls.Add(this.panel2);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1106, 117);
+            this.panel11.TabIndex = 43;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(161, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 22);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "DETECTION";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(22, 53);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(246, 22);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "LICENSE PLATE DETECTION";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.LogOut_buttonCT);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(700, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(406, 117);
+            this.panel2.TabIndex = 40;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(0, 41);
+            this.button7.Margin = new System.Windows.Forms.Padding(0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(285, 46);
+            this.button7.TabIndex = 37;
+            this.button7.Text = "Run Camera";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(1106, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(19, 619);
+            this.panel10.TabIndex = 42;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel9.Controls.Add(this.buttonCT7);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 619);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1125, 25);
+            this.panel9.TabIndex = 41;
+            // 
+            // camera_Control1
+            // 
+            this.camera_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.camera_Control1.Location = new System.Drawing.Point(3, 3);
+            this.camera_Control1.Name = "camera_Control1";
+            this.camera_Control1.Size = new System.Drawing.Size(1100, 496);
+            this.camera_Control1.TabIndex = 0;
+            // 
+            // LogOut_buttonCT
+            // 
+            this.LogOut_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(55)))));
+            this.LogOut_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(55)))));
+            this.LogOut_buttonCT.BorderColor = System.Drawing.Color.Empty;
+            this.LogOut_buttonCT.BorderRadius = 3;
+            this.LogOut_buttonCT.BorderSize = 0;
+            this.LogOut_buttonCT.FlatAppearance.BorderSize = 0;
+            this.LogOut_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogOut_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOut_buttonCT.ForeColor = System.Drawing.Color.White;
+            this.LogOut_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogOut_buttonCT.Location = new System.Drawing.Point(288, 41);
+            this.LogOut_buttonCT.Name = "LogOut_buttonCT";
+            this.LogOut_buttonCT.Size = new System.Drawing.Size(115, 46);
+            this.LogOut_buttonCT.TabIndex = 43;
+            this.LogOut_buttonCT.Text = "LogOut";
+            this.LogOut_buttonCT.TextColor = System.Drawing.Color.White;
+            this.LogOut_buttonCT.UseVisualStyleBackColor = false;
+            this.LogOut_buttonCT.Click += new System.EventHandler(this.buttonCT8_Click);
+            // 
+            // buttonCT7
+            // 
+            this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonCT7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonCT7.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonCT7.BorderRadius = 0;
+            this.buttonCT7.BorderSize = 0;
+            this.buttonCT7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonCT7.FlatAppearance.BorderSize = 0;
+            this.buttonCT7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT7.ForeColor = System.Drawing.Color.White;
+            this.buttonCT7.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT7.Image")));
+            this.buttonCT7.Location = new System.Drawing.Point(1102, 0);
+            this.buttonCT7.Name = "buttonCT7";
+            this.buttonCT7.Size = new System.Drawing.Size(23, 25);
+            this.buttonCT7.TabIndex = 0;
+            this.buttonCT7.TextColor = System.Drawing.Color.White;
+            this.buttonCT7.UseVisualStyleBackColor = false;
+            // 
+            // Camera_buttonCT
+            // 
+            this.Camera_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.Camera_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.Camera_buttonCT.BorderColor = System.Drawing.Color.Empty;
+            this.Camera_buttonCT.BorderRadius = 3;
+            this.Camera_buttonCT.BorderSize = 0;
+            this.Camera_buttonCT.FlatAppearance.BorderSize = 0;
+            this.Camera_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Camera_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camera_buttonCT.ForeColor = System.Drawing.Color.Gray;
+            this.Camera_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Camera_buttonCT.Image")));
+            this.Camera_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Camera_buttonCT.Location = new System.Drawing.Point(16, 146);
+            this.Camera_buttonCT.Name = "Camera_buttonCT";
+            this.Camera_buttonCT.Size = new System.Drawing.Size(269, 60);
+            this.Camera_buttonCT.TabIndex = 7;
+            this.Camera_buttonCT.Text = "Camera";
+            this.Camera_buttonCT.TextColor = System.Drawing.Color.Gray;
+            this.Camera_buttonCT.UseVisualStyleBackColor = false;
+            this.Camera_buttonCT.Click += new System.EventHandler(this.Camera_buttonCT_Click);
+            // 
             // LichXe_buttonCT
             // 
             this.LichXe_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
@@ -480,157 +596,57 @@
             this.QuanLi_buttonCT.UseVisualStyleBackColor = false;
             this.QuanLi_buttonCT.Click += new System.EventHandler(this.QuanLi_buttonCT_Click);
             // 
-            // panel1
+            // Dashboard_buttonCT
             // 
-            this.panel1.Controls.Add(this.Camera_tableLayoutPanel1);
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(285, 92);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1125, 644);
-            this.panel1.TabIndex = 43;
+            this.Dashboard_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.Dashboard_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.Dashboard_buttonCT.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Dashboard_buttonCT.BorderRadius = 3;
+            this.Dashboard_buttonCT.BorderSize = 0;
+            this.Dashboard_buttonCT.FlatAppearance.BorderSize = 0;
+            this.Dashboard_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dashboard_buttonCT.ForeColor = System.Drawing.Color.White;
+            this.Dashboard_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Dashboard_buttonCT.Image")));
+            this.Dashboard_buttonCT.Location = new System.Drawing.Point(12, 15);
+            this.Dashboard_buttonCT.Name = "Dashboard_buttonCT";
+            this.Dashboard_buttonCT.Size = new System.Drawing.Size(37, 34);
+            this.Dashboard_buttonCT.TabIndex = 0;
+            this.Dashboard_buttonCT.TextColor = System.Drawing.Color.White;
+            this.Dashboard_buttonCT.UseVisualStyleBackColor = false;
+            this.Dashboard_buttonCT.Click += new System.EventHandler(this.Dashboard_buttonCT_Click);
             // 
-            // Camera_tableLayoutPanel1
+            // textBoxCT1
             // 
-            this.Camera_tableLayoutPanel1.ColumnCount = 1;
-            this.Camera_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Camera_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Camera_tableLayoutPanel1.Controls.Add(this.camera_Control1, 0, 0);
-            this.Camera_tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Camera_tableLayoutPanel1.Location = new System.Drawing.Point(0, 117);
-            this.Camera_tableLayoutPanel1.Name = "Camera_tableLayoutPanel1";
-            this.Camera_tableLayoutPanel1.RowCount = 1;
-            this.Camera_tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Camera_tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Camera_tableLayoutPanel1.Size = new System.Drawing.Size(1106, 502);
-            this.Camera_tableLayoutPanel1.TabIndex = 44;
+            this.textBoxCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.textBoxCT1.BorderColor = System.Drawing.Color.Empty;
+            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.Empty;
+            this.textBoxCT1.BorderSize = 2;
+            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCT1.ForeColor = System.Drawing.Color.White;
+            this.textBoxCT1.Location = new System.Drawing.Point(153, 15);
+            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCT1.Multiline = false;
+            this.textBoxCT1.Name = "textBoxCT1";
+            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
+            this.textBoxCT1.PasswordChar = false;
+            this.textBoxCT1.Size = new System.Drawing.Size(291, 36);
+            this.textBoxCT1.TabIndex = 3;
+            this.textBoxCT1.Texts = "";
+            this.textBoxCT1.UnderlinedStyle = false;
             // 
-            // camera_Control1
+            // tableLayoutPanel1
             // 
-            this.camera_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.camera_Control1.Location = new System.Drawing.Point(3, 3);
-            this.camera_Control1.Name = "camera_Control1";
-            this.camera_Control1.Size = new System.Drawing.Size(1100, 496);
-            this.camera_Control1.TabIndex = 0;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.label6);
-            this.panel11.Controls.Add(this.panel2);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1106, 117);
-            this.panel11.TabIndex = 43;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(161, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 22);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "DETECTION";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(22, 53);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(246, 22);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "LICENSE PLATE DETECTION";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.LogOut_buttonCT);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(700, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(406, 117);
-            this.panel2.TabIndex = 40;
-            // 
-            // LogOut_buttonCT
-            // 
-            this.LogOut_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(55)))));
-            this.LogOut_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(55)))));
-            this.LogOut_buttonCT.BorderColor = System.Drawing.Color.Empty;
-            this.LogOut_buttonCT.BorderRadius = 3;
-            this.LogOut_buttonCT.BorderSize = 0;
-            this.LogOut_buttonCT.FlatAppearance.BorderSize = 0;
-            this.LogOut_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LogOut_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogOut_buttonCT.ForeColor = System.Drawing.Color.White;
-            this.LogOut_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LogOut_buttonCT.Location = new System.Drawing.Point(288, 41);
-            this.LogOut_buttonCT.Name = "LogOut_buttonCT";
-            this.LogOut_buttonCT.Size = new System.Drawing.Size(115, 46);
-            this.LogOut_buttonCT.TabIndex = 43;
-            this.LogOut_buttonCT.Text = "LogOut";
-            this.LogOut_buttonCT.TextColor = System.Drawing.Color.White;
-            this.LogOut_buttonCT.UseVisualStyleBackColor = false;
-            this.LogOut_buttonCT.Click += new System.EventHandler(this.buttonCT8_Click);
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 41);
-            this.button7.Margin = new System.Windows.Forms.Padding(0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(285, 46);
-            this.button7.TabIndex = 37;
-            this.button7.Text = "Run Camera";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(1106, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(19, 619);
-            this.panel10.TabIndex = 42;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel9.Controls.Add(this.buttonCT7);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 619);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1125, 25);
-            this.panel9.TabIndex = 41;
-            // 
-            // buttonCT7
-            // 
-            this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonCT7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonCT7.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonCT7.BorderRadius = 0;
-            this.buttonCT7.BorderSize = 0;
-            this.buttonCT7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonCT7.FlatAppearance.BorderSize = 0;
-            this.buttonCT7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT7.ForeColor = System.Drawing.Color.White;
-            this.buttonCT7.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT7.Image")));
-            this.buttonCT7.Location = new System.Drawing.Point(1102, 0);
-            this.buttonCT7.Name = "buttonCT7";
-            this.buttonCT7.Size = new System.Drawing.Size(23, 25);
-            this.buttonCT7.TabIndex = 0;
-            this.buttonCT7.TextColor = System.Drawing.Color.White;
-            this.buttonCT7.UseVisualStyleBackColor = false;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 117);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1106, 502);
+            this.tableLayoutPanel1.TabIndex = 45;
             // 
             // Form_Master
             // 
@@ -713,5 +729,6 @@
         private Custom_Toolbox.ButtonCT LogOut_buttonCT;
         private System.Windows.Forms.TableLayoutPanel Camera_tableLayoutPanel1;
         private Camera_Control camera_Control1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
