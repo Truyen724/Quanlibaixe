@@ -180,17 +180,29 @@ namespace Quanlibaixe
         // Button Dashboard
         private void Dashboard_buttonCT_Click(object sender, EventArgs e)
         {
-            if (SideBar.Width == 285)
+
+            //
+            //guna2Transition1.ShowSync(SideBar);
+
+            if (SideBar_panel.Width == 285)
             {
-                SideBar.Width = 90;
+                SideBar_panel.Visible = false;
+                SideBar_panel.Width = 90;
+                // Transiton HorizSlide cho SideBar_panel.Visible = false thi animation moi chay
+                guna2Transition1.ShowSync(SideBar_panel);
+
+
             }
             else
             {
-                SideBar.Width = 285;
+                SideBar_panel.Visible = false;
+                SideBar_panel.Width = 285;
+                // su dung Transiton cho SideBar_panel.Visible = false thi animation moi chay
+                guna2Transition1.ShowSync(SideBar_panel);
             }
 
             //            
-            if (SideBar.Width == 90)
+            if (SideBar_panel.Width == 90)
             {
                 label3.Text = Camera_buttonCT.Text;
             }
@@ -205,7 +217,7 @@ namespace Quanlibaixe
         private void Camera_buttonCT_Click(object sender, EventArgs e)
         {
             //
-            if (SideBar.Width == 285)
+            if (SideBar_panel.Width == 285)
             {
                 label3.Text = " Dashboard";
             }
@@ -250,7 +262,7 @@ namespace Quanlibaixe
         private void QuanLi_buttonCT_Click(object sender, EventArgs e)
         {
             //
-            if (SideBar.Width == 285)
+            if (SideBar_panel.Width == 285)
             {
                 label3.Text = " Dashboard";
             }
@@ -290,7 +302,7 @@ namespace Quanlibaixe
         private void XeOto_buttonCT_Click(object sender, EventArgs e)
         {
             //
-            if (SideBar.Width == 285)
+            if (SideBar_panel.Width == 285)
             {
                 label3.Text = " Dashboard";
             }
@@ -331,7 +343,7 @@ namespace Quanlibaixe
         {
 
             //
-            if (SideBar.Width == 285)
+            if (SideBar_panel.Width == 285)
             {
                 label3.Text = " Dashboard";               
             }
@@ -371,7 +383,7 @@ namespace Quanlibaixe
         {
 
             //
-            if (SideBar.Width == 285)
+            if (SideBar_panel.Width == 285)
             {
                 label3.Text = " Dashboard";
             }
@@ -460,12 +472,6 @@ namespace Quanlibaixe
         private void LogOut_buttonCT_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        // Button new tab
-        private void TabNew_button_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

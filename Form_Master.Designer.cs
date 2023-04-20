@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Master));
             this.button7 = new System.Windows.Forms.Button();
             this.DragControl_Panel = new System.Windows.Forms.Panel();
@@ -48,18 +49,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.Camera_tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Camera_tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.camera_Control1 = new Quanlibaixe.Camera_Control();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.LogOut_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.SideBar = new System.Windows.Forms.Panel();
+            this.SideBar_panel = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.SidePanel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -69,19 +66,24 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.camera_Control1 = new Quanlibaixe.Camera_Control();
+            this.LogOut_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.LichXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.TaiXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.XeOto_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.QuanLi_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.Dashboard_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DragControl_Panel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -91,7 +93,7 @@
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.SideBar.SuspendLayout();
+            this.SideBar_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -106,6 +108,7 @@
             // 
             // button7
             // 
+            this.guna2Transition1.SetDecoration(this.button7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,6 +129,7 @@
             this.DragControl_Panel.Controls.Add(this.guna2ControlBox3);
             this.DragControl_Panel.Controls.Add(this.guna2ControlBox2);
             this.DragControl_Panel.Controls.Add(this.guna2ControlBox1);
+            this.guna2Transition1.SetDecoration(this.DragControl_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DragControl_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.DragControl_Panel.Location = new System.Drawing.Point(0, 0);
             this.DragControl_Panel.Name = "DragControl_Panel";
@@ -135,6 +139,7 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.guna2Transition1.SetDecoration(this.menuStrip1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.menuStrip1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -198,6 +203,7 @@
             // DragControl_Panel2
             // 
             this.DragControl_Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.guna2Transition1.SetDecoration(this.DragControl_Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DragControl_Panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.DragControl_Panel2.Location = new System.Drawing.Point(574, 0);
             this.DragControl_Panel2.Name = "DragControl_Panel2";
@@ -208,6 +214,7 @@
             // 
             this.guna2ControlBox3.BackColor = System.Drawing.Color.White;
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ControlBox3.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
@@ -220,6 +227,7 @@
             // 
             this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ControlBox2.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
@@ -231,6 +239,7 @@
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(55)))));
@@ -244,8 +253,9 @@
             // Master_Panel
             // 
             this.Master_Panel.Controls.Add(this.panel3);
-            this.Master_Panel.Controls.Add(this.SideBar);
+            this.Master_Panel.Controls.Add(this.SideBar_panel);
             this.Master_Panel.Controls.Add(this.panel8);
+            this.guna2Transition1.SetDecoration(this.Master_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Master_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Master_Panel.Location = new System.Drawing.Point(0, 27);
             this.Master_Panel.Name = "Master_Panel";
@@ -259,6 +269,7 @@
             this.panel3.Controls.Add(this.panel11);
             this.panel3.Controls.Add(this.panel10);
             this.panel3.Controls.Add(this.panel9);
+            this.guna2Transition1.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(285, 80);
             this.panel3.Name = "panel3";
@@ -270,6 +281,7 @@
             this.Camera_tableLayoutPanel2.ColumnCount = 1;
             this.Camera_tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.Camera_tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.guna2Transition1.SetDecoration(this.Camera_tableLayoutPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Camera_tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Camera_tableLayoutPanel2.Location = new System.Drawing.Point(0, 117);
             this.Camera_tableLayoutPanel2.Name = "Camera_tableLayoutPanel2";
@@ -285,6 +297,7 @@
             this.Camera_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.Camera_tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.Camera_tableLayoutPanel1.Controls.Add(this.camera_Control1, 0, 0);
+            this.guna2Transition1.SetDecoration(this.Camera_tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Camera_tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Camera_tableLayoutPanel1.Location = new System.Drawing.Point(0, 117);
             this.Camera_tableLayoutPanel1.Name = "Camera_tableLayoutPanel1";
@@ -294,19 +307,12 @@
             this.Camera_tableLayoutPanel1.Size = new System.Drawing.Size(1120, 487);
             this.Camera_tableLayoutPanel1.TabIndex = 44;
             // 
-            // camera_Control1
-            // 
-            this.camera_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.camera_Control1.Location = new System.Drawing.Point(3, 3);
-            this.camera_Control1.Name = "camera_Control1";
-            this.camera_Control1.Size = new System.Drawing.Size(1114, 481);
-            this.camera_Control1.TabIndex = 0;
-            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.label5);
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.panel2);
+            this.guna2Transition1.SetDecoration(this.panel11, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
@@ -317,6 +323,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(161, 53);
@@ -329,6 +336,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(22, 53);
@@ -341,11 +349,272 @@
             // 
             this.panel2.Controls.Add(this.LogOut_buttonCT);
             this.panel2.Controls.Add(this.button7);
+            this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(714, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(406, 117);
             this.panel2.TabIndex = 40;
+            // 
+            // panel10
+            // 
+            this.guna2Transition1.SetDecoration(this.panel10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(1120, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(5, 604);
+            this.panel10.TabIndex = 42;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.panel9.Controls.Add(this.buttonCT7);
+            this.guna2Transition1.SetDecoration(this.panel9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 604);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1125, 25);
+            this.panel9.TabIndex = 41;
+            // 
+            // SideBar_panel
+            // 
+            this.SideBar_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.SideBar_panel.Controls.Add(this.SidePanel);
+            this.SideBar_panel.Controls.Add(this.Camera_buttonCT);
+            this.SideBar_panel.Controls.Add(this.SidePanel2);
+            this.SideBar_panel.Controls.Add(this.panel6);
+            this.SideBar_panel.Controls.Add(this.panel5);
+            this.SideBar_panel.Controls.Add(this.LichXe_buttonCT);
+            this.SideBar_panel.Controls.Add(this.TaiXe_buttonCT);
+            this.SideBar_panel.Controls.Add(this.XeOto_buttonCT);
+            this.SideBar_panel.Controls.Add(this.QuanLi_buttonCT);
+            this.guna2Transition1.SetDecoration(this.SideBar_panel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.SideBar_panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBar_panel.Location = new System.Drawing.Point(0, 80);
+            this.SideBar_panel.Name = "SideBar_panel";
+            this.SideBar_panel.Size = new System.Drawing.Size(285, 629);
+            this.SideBar_panel.TabIndex = 46;
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2Transition1.SetDecoration(this.SidePanel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.SidePanel.Location = new System.Drawing.Point(6, 146);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(10, 60);
+            this.SidePanel.TabIndex = 3;
+            // 
+            // SidePanel2
+            // 
+            this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.guna2Transition1.SetDecoration(this.SidePanel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.SidePanel2.Location = new System.Drawing.Point(6, 212);
+            this.SidePanel2.Name = "SidePanel2";
+            this.SidePanel2.Size = new System.Drawing.Size(10, 60);
+            this.SidePanel2.TabIndex = 2;
+            this.SidePanel2.Visible = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.label7);
+            this.guna2Transition1.SetDecoration(this.panel6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 564);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(285, 65);
+            this.panel6.TabIndex = 6;
+            // 
+            // label11
+            // 
+            this.guna2Transition1.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Image = ((System.Drawing.Image)(resources.GetObject("label11.Image")));
+            this.label11.Location = new System.Drawing.Point(101, 19);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 40);
+            this.label11.TabIndex = 7;
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
+            this.label10.Location = new System.Drawing.Point(147, 19);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 40);
+            this.label10.TabIndex = 6;
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.guna2Transition1.SetDecoration(this.label9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.Location = new System.Drawing.Point(239, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 37);
+            this.label9.TabIndex = 5;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.guna2Transition1.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
+            this.label8.Location = new System.Drawing.Point(193, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 40);
+            this.label8.TabIndex = 4;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.guna2Transition1.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(24, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 40);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "?";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel5.Controls.Add(this.label4);
+            this.guna2Transition1.SetDecoration(this.panel5, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(285, 140);
+            this.panel5.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(2, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 22);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "PEOPLE";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
+            this.panel8.Controls.Add(this.panel7);
+            this.panel8.Controls.Add(this.panel4);
+            this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1410, 80);
+            this.panel8.TabIndex = 45;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.Dashboard_buttonCT);
+            this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(285, 80);
+            this.panel7.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(74, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 22);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Dashboard";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel13);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.textBoxCT1);
+            this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(947, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(463, 80);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.panel13, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel13.Location = new System.Drawing.Point(159, 47);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(285, 2);
+            this.panel13.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(113, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.DragControl_Panel2;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
+            // 
+            // camera_Control1
+            // 
+            this.guna2Transition1.SetDecoration(this.camera_Control1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.camera_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.camera_Control1.Location = new System.Drawing.Point(3, 3);
+            this.camera_Control1.Name = "camera_Control1";
+            this.camera_Control1.Size = new System.Drawing.Size(1114, 481);
+            this.camera_Control1.TabIndex = 0;
             // 
             // LogOut_buttonCT
             // 
@@ -354,6 +623,7 @@
             this.LogOut_buttonCT.BorderColor = System.Drawing.Color.Empty;
             this.LogOut_buttonCT.BorderRadius = 3;
             this.LogOut_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.LogOut_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.LogOut_buttonCT.FlatAppearance.BorderSize = 0;
             this.LogOut_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogOut_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,24 +638,6 @@
             this.LogOut_buttonCT.UseVisualStyleBackColor = false;
             this.LogOut_buttonCT.Click += new System.EventHandler(this.LogOut_buttonCT_Click);
             // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(1120, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(5, 604);
-            this.panel10.TabIndex = 42;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.panel9.Controls.Add(this.buttonCT7);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 604);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1125, 25);
-            this.panel9.TabIndex = 41;
-            // 
             // buttonCT7
             // 
             this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
@@ -393,6 +645,7 @@
             this.buttonCT7.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.buttonCT7.BorderRadius = 0;
             this.buttonCT7.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.buttonCT7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.buttonCT7.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonCT7.FlatAppearance.BorderSize = 0;
             this.buttonCT7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -405,32 +658,6 @@
             this.buttonCT7.TextColor = System.Drawing.Color.White;
             this.buttonCT7.UseVisualStyleBackColor = false;
             // 
-            // SideBar
-            // 
-            this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.SideBar.Controls.Add(this.SidePanel);
-            this.SideBar.Controls.Add(this.Camera_buttonCT);
-            this.SideBar.Controls.Add(this.SidePanel2);
-            this.SideBar.Controls.Add(this.panel6);
-            this.SideBar.Controls.Add(this.panel5);
-            this.SideBar.Controls.Add(this.LichXe_buttonCT);
-            this.SideBar.Controls.Add(this.TaiXe_buttonCT);
-            this.SideBar.Controls.Add(this.XeOto_buttonCT);
-            this.SideBar.Controls.Add(this.QuanLi_buttonCT);
-            this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SideBar.Location = new System.Drawing.Point(0, 80);
-            this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(285, 629);
-            this.SideBar.TabIndex = 46;
-            // 
-            // SidePanel
-            // 
-            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.SidePanel.Location = new System.Drawing.Point(6, 146);
-            this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 60);
-            this.SidePanel.TabIndex = 3;
-            // 
             // Camera_buttonCT
             // 
             this.Camera_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
@@ -438,6 +665,7 @@
             this.Camera_buttonCT.BorderColor = System.Drawing.Color.Empty;
             this.Camera_buttonCT.BorderRadius = 3;
             this.Camera_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.Camera_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Camera_buttonCT.FlatAppearance.BorderSize = 0;
             this.Camera_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Camera_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -453,106 +681,6 @@
             this.Camera_buttonCT.UseVisualStyleBackColor = false;
             this.Camera_buttonCT.Click += new System.EventHandler(this.Camera_buttonCT_Click);
             // 
-            // SidePanel2
-            // 
-            this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.SidePanel2.Location = new System.Drawing.Point(6, 212);
-            this.SidePanel2.Name = "SidePanel2";
-            this.SidePanel2.Size = new System.Drawing.Size(10, 60);
-            this.SidePanel2.TabIndex = 2;
-            this.SidePanel2.Visible = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.label8);
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 564);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(285, 65);
-            this.panel6.TabIndex = 6;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Image = ((System.Drawing.Image)(resources.GetObject("label11.Image")));
-            this.label11.Location = new System.Drawing.Point(101, 19);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 40);
-            this.label11.TabIndex = 7;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
-            this.label10.Location = new System.Drawing.Point(147, 19);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 40);
-            this.label10.TabIndex = 6;
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
-            this.label9.Location = new System.Drawing.Point(239, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 38);
-            this.label9.TabIndex = 5;
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
-            this.label8.Location = new System.Drawing.Point(193, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 40);
-            this.label8.TabIndex = 4;
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(24, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 40);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "?";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(285, 140);
-            this.panel5.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(2, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 22);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "PEOPLE";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // LichXe_buttonCT
             // 
             this.LichXe_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
@@ -560,6 +688,7 @@
             this.LichXe_buttonCT.BorderColor = System.Drawing.Color.Empty;
             this.LichXe_buttonCT.BorderRadius = 3;
             this.LichXe_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.LichXe_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.LichXe_buttonCT.FlatAppearance.BorderSize = 0;
             this.LichXe_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LichXe_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -582,6 +711,7 @@
             this.TaiXe_buttonCT.BorderColor = System.Drawing.Color.Empty;
             this.TaiXe_buttonCT.BorderRadius = 3;
             this.TaiXe_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.TaiXe_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.TaiXe_buttonCT.FlatAppearance.BorderSize = 0;
             this.TaiXe_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TaiXe_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -604,6 +734,7 @@
             this.XeOto_buttonCT.BorderColor = System.Drawing.Color.Empty;
             this.XeOto_buttonCT.BorderRadius = 3;
             this.XeOto_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.XeOto_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.XeOto_buttonCT.FlatAppearance.BorderSize = 0;
             this.XeOto_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.XeOto_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -626,6 +757,7 @@
             this.QuanLi_buttonCT.BorderColor = System.Drawing.Color.Empty;
             this.QuanLi_buttonCT.BorderRadius = 3;
             this.QuanLi_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.QuanLi_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.QuanLi_buttonCT.FlatAppearance.BorderSize = 0;
             this.QuanLi_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuanLi_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -641,38 +773,6 @@
             this.QuanLi_buttonCT.UseVisualStyleBackColor = false;
             this.QuanLi_buttonCT.Click += new System.EventHandler(this.QuanLi_buttonCT_Click);
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.panel4);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1410, 80);
-            this.panel8.TabIndex = 45;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.Dashboard_buttonCT);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(285, 80);
-            this.panel7.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(74, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 22);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Dashboard";
-            // 
             // Dashboard_buttonCT
             // 
             this.Dashboard_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
@@ -680,6 +780,7 @@
             this.Dashboard_buttonCT.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.Dashboard_buttonCT.BorderRadius = 3;
             this.Dashboard_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.Dashboard_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Dashboard_buttonCT.FlatAppearance.BorderSize = 0;
             this.Dashboard_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Dashboard_buttonCT.ForeColor = System.Drawing.Color.White;
@@ -692,41 +793,13 @@
             this.Dashboard_buttonCT.UseVisualStyleBackColor = false;
             this.Dashboard_buttonCT.Click += new System.EventHandler(this.Dashboard_buttonCT_Click);
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel13);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBoxCT1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(947, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(463, 80);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.Location = new System.Drawing.Point(159, 47);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(285, 2);
-            this.panel13.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(113, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBoxCT1
             // 
             this.textBoxCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
             this.textBoxCT1.BorderColor = System.Drawing.Color.Empty;
             this.textBoxCT1.BorderFocusColor = System.Drawing.Color.Empty;
             this.textBoxCT1.BorderSize = 2;
+            this.guna2Transition1.SetDecoration(this.textBoxCT1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCT1.ForeColor = System.Drawing.Color.White;
             this.textBoxCT1.Location = new System.Drawing.Point(153, 15);
@@ -740,12 +813,6 @@
             this.textBoxCT1.Texts = "";
             this.textBoxCT1.UnderlinedStyle = false;
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.DragControl_Panel2;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
             // Form_Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -754,6 +821,7 @@
             this.ClientSize = new System.Drawing.Size(1410, 736);
             this.Controls.Add(this.Master_Panel);
             this.Controls.Add(this.DragControl_Panel);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Master";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -771,7 +839,7 @@
             this.panel11.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.SideBar.ResumeLayout(false);
+            this.SideBar_panel.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -801,7 +869,7 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private Custom_Toolbox.ButtonCT buttonCT7;
-        private System.Windows.Forms.Panel SideBar;
+        private System.Windows.Forms.Panel SideBar_panel;
         private System.Windows.Forms.Panel SidePanel;
         private Custom_Toolbox.ButtonCT Camera_buttonCT;
         private System.Windows.Forms.Panel SidePanel2;
@@ -837,5 +905,6 @@
         private System.Windows.Forms.ToolStripMenuItem thêmLịchTrìnhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLíLịchTrìnhToolStripMenuItem1;
         private System.Windows.Forms.Panel DragControl_Panel2;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
     }
 }

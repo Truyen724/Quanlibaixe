@@ -64,11 +64,6 @@ namespace Quanlibaixe
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click_1(object sender, EventArgs e)
         {
 
@@ -399,6 +394,13 @@ namespace Quanlibaixe
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        // Khai bao lien ket giua form master va form Quan li du lieu
+        public Form_Master CallerForm { get; set; }
+        public Form_Main(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
         }
     }
 }

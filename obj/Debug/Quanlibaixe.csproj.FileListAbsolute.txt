@@ -38,4 +38,3 @@ D:\Quanlibaixe\obj\Debug\Quanlibaixe.pdb
 D:\Quanlibaixe\obj\Debug\Quanlibaixe.Camera_Control.resources
 D:\Quanlibaixe\bin\Debug\Guna.UI2.dll
 D:\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CopyComplete
-D:\Quanlibaixe\obj\Debug\Quanlibaixe.Form_TabControl.resources

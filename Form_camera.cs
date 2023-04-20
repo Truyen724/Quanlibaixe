@@ -125,7 +125,7 @@ namespace Quanlibaixe
             }
         }
 
-        //
+        // Khai bao lien ket giua form master va form camera
         public Form_Master CallerForm { get; set; }
         public Form_camera(Form_Master callerForm) : this()
         {

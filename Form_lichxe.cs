@@ -180,5 +180,12 @@ namespace Quanlibaixe
             MessageBox.Show("Xóa thành công");
             refresh_data();
         }
+
+        // Khai bao lien ket giua form master va form lich xe
+        public Form_Master CallerForm { get; set; }
+        public Form_lichxe(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
+        }
     }
 }

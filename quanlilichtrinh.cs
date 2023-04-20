@@ -132,5 +132,11 @@ namespace Quanlibaixe
         {
 
         }
+        // Khai bao lien ket giua form master va form lich 
+        public Form_Master CallerForm { get; set; }
+        public quanlilichtrinh(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
+        }
     }
 }
