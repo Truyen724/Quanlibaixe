@@ -59,6 +59,9 @@
     <Compile Include="Custom_Toolbox\ButtonCT.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Custom_Toolbox\ButtonS.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Custom_Toolbox\DragControlCT.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -163,6 +166,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="quanlilichtrinh.resx">
       <DependentUpon>quanlilichtrinh.cs</DependentUpon>
@@ -192,6 +196,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UI_UX\Plus16px_Gray_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI_UX\icons8_youtube_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_car48px_48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

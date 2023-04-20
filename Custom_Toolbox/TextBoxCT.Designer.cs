@@ -38,7 +38,7 @@
             this.textBox1.Location = new System.Drawing.Point(7, 7);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 16);
+            this.textBox1.Size = new System.Drawing.Size(236, 24);
             this.textBox1.TabIndex = 1;
             // 
             // TextBoxCT
@@ -51,7 +51,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TextBoxCT";
             this.Padding = new System.Windows.Forms.Padding(7);
-            this.Size = new System.Drawing.Size(250, 30);
+            this.Size = new System.Drawing.Size(250, 38);
             this.ResumeLayout(false);
             this.PerformLayout();
 

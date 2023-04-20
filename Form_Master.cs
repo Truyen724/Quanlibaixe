@@ -1,4 +1,5 @@
-﻿using Quanlibaixe.Custom_Toolbox;
+﻿using Guna.UI2.WinForms;
+using Quanlibaixe.Custom_Toolbox;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -472,6 +473,38 @@ namespace Quanlibaixe
         private void LogOut_buttonCT_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2CircleButton1_MouseHover(object sender, EventArgs e)
+        {
+            Guna2CircleButton button = (Guna2CircleButton)sender;
+            //button.Location = new Point(button.Location.X - 5, button.Location.Y);
+            youtube_label.Visible = true;
+            guna2CircleButton1.Size = new Size(45,45);
+            button.BringToFront();
+        }
+
+        private void guna2CircleButton1_MouseLeave(object sender, EventArgs e)
+        {
+            Guna2CircleButton button = (Guna2CircleButton)sender;
+            guna2CircleButton1.Size = new Size(40,40);
+            youtube_label.Visible = false;
+            //button.Location = new Point(button.Location.X + 5, button.Location.Y);
+        }
+
+        private void guna2CircleButton2_MouseHover(object sender, EventArgs e)
+        {
+            Guna2CircleButton button = (Guna2CircleButton)sender;
+            settings_label.Visible = true;
+            guna2CircleButton2.Size = new Size(45, 45);
+            button.BringToFront();
+        }
+
+        private void guna2CircleButton2_MouseLeave(object sender, EventArgs e)
+        {
+            Guna2CircleButton button = (Guna2CircleButton)sender;
+            guna2CircleButton2.Size = new Size(40, 40);
+            settings_label.Visible = false;
         }
     }
 }
