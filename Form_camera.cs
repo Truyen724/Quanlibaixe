@@ -139,5 +139,7 @@ namespace Quanlibaixe
         //    panel8.Controls.Add(form_Camera);
         //    form_Camera.Show();
         //}
+
+        
     }
 }

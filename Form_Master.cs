@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
 
 namespace Quanlibaixe
@@ -21,16 +22,15 @@ namespace Quanlibaixe
         private bool XeOto_buttonCTChecked = false;
         private bool TaiXe_buttonCTChecked = false;
         private bool LichXe_buttonCTChecked = false;
-        private bool master = false;
        
-        private Thread thread2 = null;
         String id_access = infor.id_access.Trim();
-        String ConectionString = infor.ConectionString;
 
         public Form_Master()
         {
             InitializeComponent();
-            ExamSchedulerMethod();
+            //Camera_ExamSchedulerMethod();
+            Camera_tableLayoutPanel2.Visible = false;
+
             //Mặc định Camera_buttonCT xuất hiện đầu tiên.
             SidePanel.Height = Camera_buttonCT.Height;
             SidePanel.Top = Camera_buttonCT.Top;
@@ -61,10 +61,9 @@ namespace Quanlibaixe
         private void Form_Master_Load(object sender, EventArgs e)
         {
             Camera_buttonCT.BackColor = Color.FromArgb(208, 212, 213);
-            camera_Control1.BringToFront();
-            Form_camera form_Camera = new Form_camera();
+            camera_Control1.BringToFront();          
 
-            //ExamSchedulerMethod();
+            //
 
             //thread2 = new Thread(new ThreadStart(run_check));
             //thread2.Start();
@@ -77,59 +76,13 @@ namespace Quanlibaixe
             else
             {
                 return;
-            }          
-         
+            }
+
+            
         }
-       
-        //// rund
-        //public string rund()
-        //{
 
-        //    string text = File.ReadAllText("Detect_BienSo/data.txt");
-
-        //    return text;
-        //}
-
-        //// check
-        //public string check()
-        //{
-        //    string text = File.ReadAllText("data_save.txt");
-        //    return text;
-        //}
-
-        //// write
-        //public void write(string a)
-        //{
-        //    File.WriteAllText("data_save.txt", a);
-        //}
-
-        ////run_check
-        //public void run_check()
-        //{
-        //    while (true)
-        //    {
-        //        try
-        //        {
-        //            String[] t1 = rund().Split('|');
-        //            string t_check = check();
-        //            if (t_check != t1[0])
-        //            {
-        //                Form_Action f = new Form_Action(id_xe: t1[1], id_action: t1[0]);
-        //                f.ShowDialog();
-        //            }
-
-        //            write(t1[0]);
-        //        }
-        //        catch
-        //        {
-
-        //        }
-
-        //    }
-        //}
-
-        //----------------------------------------------------------------------------------------------------------------->
         //Custom hover Camera_buttonCT
+        //----------------------------------------------------------------------------------------------------------------->
         private void OnMouseEnterButtonCT1(object sender, EventArgs e)
         {
             Camera_buttonCT.ForeColor = Color.FromArgb(40, 86, 182);
@@ -235,37 +188,34 @@ namespace Quanlibaixe
             {
                 SideBar.Width = 285;
             }
-        }
 
-        // Button Run Camera
-        private void buttonCT8_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            //            
+            if (SideBar.Width == 90)
+            {
+                label3.Text = Camera_buttonCT.Text;
+            }
+            else
+            {
+                label3.Text = "Dashboard";
+            }
         }
-
 
         
         // Button Camera
         private void Camera_buttonCT_Click(object sender, EventArgs e)
         {
+            //
+            if (SideBar.Width == 285)
+            {
+                label3.Text = " Dashboard";
+            }
+            else
+            {
+                label3.Text = Camera_buttonCT.Text;
+            }
 
             // Form_camera
-            Form_camera form_Camera = new Form_camera();            
-
-            //Form_Master form_Master = new Form_Master();            
-            //if(form_Master.WindowState == FormWindowState.Maximized)
-            //{
-            //    form_Camera.StartPosition = FormStartPosition.Manual;
-            //    form_Camera.Location = new Point(290, 245);
-            //    form_Camera.WindowState = FormWindowState.Maximized;
-            //    form_Camera.ShowDialog();
-            //}
-            //else if(form_Master.WindowState == FormWindowState.Minimized)
-            //{
-            //    form_Camera.StartPosition = FormStartPosition.Manual;
-            //    form_Camera.Location = new Point(290, 245);
-            //    form_Camera.ShowDialog();
-            //}
+            //Camera_ExamSchedulerMethod();
 
             // Bật Camera_Control 
             Camera_tableLayoutPanel1.Visible = true;
@@ -288,6 +238,7 @@ namespace Quanlibaixe
                 LichXe_buttonCT.BackColor = Color.FromArgb(235, 239, 241);
                 //
                 Camera_buttonCT.BackColor = Color.FromArgb(208, 212, 213);
+
             }
             else
             {
@@ -298,6 +249,16 @@ namespace Quanlibaixe
         // Button quanli
         private void QuanLi_buttonCT_Click(object sender, EventArgs e)
         {
+            //
+            if (SideBar.Width == 285)
+            {
+                label3.Text = " Dashboard";
+            }
+            else
+            {
+                label3.Text = QuanLi_buttonCT.Text;
+            }
+
             // Tắt Xe_Control 
             Camera_tableLayoutPanel1.Visible = false;
             // Button RunCamera
@@ -317,6 +278,7 @@ namespace Quanlibaixe
                 LichXe_buttonCT.BackColor = Color.FromArgb(235, 239, 241);
                 //
                 QuanLi_buttonCT.BackColor = Color.FromArgb(208, 212, 213);
+
             }
             else
             {
@@ -327,6 +289,16 @@ namespace Quanlibaixe
         // Button xeOto
         private void XeOto_buttonCT_Click(object sender, EventArgs e)
         {
+            //
+            if (SideBar.Width == 285)
+            {
+                label3.Text = " Dashboard";
+            }
+            else
+            {
+                label3.Text = XeOto_buttonCT.Text;
+            }
+
             // Tắt Xe_Control 
             Camera_tableLayoutPanel1.Visible = false;
             // Button RunCamera
@@ -346,6 +318,7 @@ namespace Quanlibaixe
                 LichXe_buttonCT.BackColor = Color.FromArgb(235, 239, 241);
                 //
                 XeOto_buttonCT.BackColor = Color.FromArgb(208, 212, 213);
+
             }
             else
             {
@@ -356,6 +329,17 @@ namespace Quanlibaixe
         // Button TaiXe
         private void TaiXe_buttonCT_Click(object sender, EventArgs e)
         {
+
+            //
+            if (SideBar.Width == 285)
+            {
+                label3.Text = " Dashboard";               
+            }
+            else
+            {
+                label3.Text = TaiXe_buttonCT.Text;
+            }
+
             // Tắt Xe_Control 
             Camera_tableLayoutPanel1.Visible = false;
             // Button RunCamera
@@ -385,6 +369,17 @@ namespace Quanlibaixe
         // Button LichXe
         private void LichXe_buttonCT_Click(object sender, EventArgs e)
         {
+
+            //
+            if (SideBar.Width == 285)
+            {
+                label3.Text = " Dashboard";
+            }
+            else
+            {
+                label3.Text = LichXe_buttonCT.Text;
+            }
+
             // Tắt Xe_Control 
             Camera_tableLayoutPanel1.Visible = false;
             // Button RunCamera
@@ -452,13 +447,35 @@ namespace Quanlibaixe
 
 
         // Loading form_Camera lên panel trong form_master
-        public void ExamSchedulerMethod()
+        public void Camera_ExamSchedulerMethod()
         {
             Form_camera form_Camera = new Form_camera();
             form_Camera.TopLevel = false;
             form_Camera.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Controls.Add(form_Camera);
+            Camera_tableLayoutPanel2.Controls.Add(form_Camera);
             form_Camera.Show();
+        }
+
+        // Button LogOut
+        private void LogOut_buttonCT_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        // Button new tab
+        private void TabNew_button_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+            SideBar.Width = 90;
+        }
+
+        private void guna2ControlBox2_DoubleClick(object sender, EventArgs e)
+        {
+            SideBar.Width = 285;
         }
     }
 }

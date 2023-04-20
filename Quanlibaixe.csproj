@@ -40,14 +40,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -59,6 +57,9 @@
       <DependentUpon>Camera_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom_Toolbox\ButtonCT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_Toolbox\DragControlCT.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Custom_Toolbox\TextBoxCT.cs">
@@ -109,6 +110,12 @@
     <Compile Include="Form_Master.Designer.cs">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_TabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TabControl.Designer.cs">
+      <DependentUpon>Form_TabControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="infor.cs" />
     <Compile Include="Form_login.cs">
       <SubType>Form</SubType>
@@ -154,6 +161,9 @@
     <EmbeddedResource Include="Form_Master.resx">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_TabControl.resx">
+      <DependentUpon>Form_TabControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -182,7 +192,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ScreenShots\" />
-    <Folder Include="UI_UX\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI_UX\icons8_Close_Gray_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI_UX\Plus16px_Gray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI_UX\Plus16px_Gray_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close.png" />
+    <Content Include="Resources\Add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
