@@ -110,12 +110,6 @@
     <Compile Include="Form_Master.Designer.cs">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_TabControl.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_TabControl.Designer.cs">
-      <DependentUpon>Form_TabControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="infor.cs" />
     <Compile Include="Form_login.cs">
       <SubType>Form</SubType>
@@ -161,9 +155,6 @@
     <EmbeddedResource Include="Form_Master.resx">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_TabControl.resx">
-      <DependentUpon>Form_TabControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -201,10 +192,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UI_UX\Plus16px_Gray_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\Close.png" />
-    <Content Include="Resources\Add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -467,15 +467,5 @@ namespace Quanlibaixe
         {
             
         }
-
-        private void guna2ControlBox2_Click(object sender, EventArgs e)
-        {
-            SideBar.Width = 90;
-        }
-
-        private void guna2ControlBox2_DoubleClick(object sender, EventArgs e)
-        {
-            SideBar.Width = 285;
-        }
     }
 }

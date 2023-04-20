@@ -33,6 +33,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Master));
             this.button7 = new System.Windows.Forms.Button();
             this.DragControl_Panel = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.quảnLíDữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLíXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLíTàiXếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLíLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLíLịchTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.DragControl_Panel2 = new System.Windows.Forms.Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -74,16 +82,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.DragControl_Panel2 = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.quảnLíDữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLíXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLíTàiXếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLíLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmLịchTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLíLịchTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DragControl_Panel.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.Master_Panel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Camera_tableLayoutPanel1.SuspendLayout();
@@ -97,7 +98,6 @@
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -132,6 +132,78 @@
             this.DragControl_Panel.Size = new System.Drawing.Size(1410, 27);
             this.DragControl_Panel.TabIndex = 1;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.menuStrip1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quảnLíDữLiệuToolStripMenuItem,
+            this.quảnLíXeToolStripMenuItem,
+            this.quảnLíTàiXếToolStripMenuItem,
+            this.quảnLíLịchTrìnhToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(574, 27);
+            this.menuStrip1.TabIndex = 46;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // quảnLíDữLiệuToolStripMenuItem
+            // 
+            this.quảnLíDữLiệuToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
+            this.quảnLíDữLiệuToolStripMenuItem.Name = "quảnLíDữLiệuToolStripMenuItem";
+            this.quảnLíDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(118, 23);
+            this.quảnLíDữLiệuToolStripMenuItem.Text = "Quản lí dữ liệu";
+            // 
+            // quảnLíXeToolStripMenuItem
+            // 
+            this.quảnLíXeToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
+            this.quảnLíXeToolStripMenuItem.Name = "quảnLíXeToolStripMenuItem";
+            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(89, 23);
+            this.quảnLíXeToolStripMenuItem.Text = "Quản lí xe";
+            // 
+            // quảnLíTàiXếToolStripMenuItem
+            // 
+            this.quảnLíTàiXếToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
+            this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
+            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 23);
+            this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
+            // 
+            // quảnLíLịchTrìnhToolStripMenuItem
+            // 
+            this.quảnLíLịchTrìnhToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thêmLịchTrìnhToolStripMenuItem,
+            this.quảnLíLịchTrìnhToolStripMenuItem1});
+            this.quảnLíLịchTrìnhToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
+            this.quảnLíLịchTrìnhToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
+            this.quảnLíLịchTrìnhToolStripMenuItem.Name = "quảnLíLịchTrìnhToolStripMenuItem";
+            this.quảnLíLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(131, 23);
+            this.quảnLíLịchTrìnhToolStripMenuItem.Text = "Quản lí lịch trình";
+            // 
+            // thêmLịchTrìnhToolStripMenuItem
+            // 
+            this.thêmLịchTrìnhToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
+            this.thêmLịchTrìnhToolStripMenuItem.Name = "thêmLịchTrìnhToolStripMenuItem";
+            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
+            this.thêmLịchTrìnhToolStripMenuItem.Text = "Thêm lịch trình";
+            // 
+            // quảnLíLịchTrìnhToolStripMenuItem1
+            // 
+            this.quảnLíLịchTrìnhToolStripMenuItem1.ForeColor = System.Drawing.Color.Gray;
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Name = "quảnLíLịchTrìnhToolStripMenuItem1";
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(188, 24);
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Text = "Quản lí lịch trình";
+            // 
+            // DragControl_Panel2
+            // 
+            this.DragControl_Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.DragControl_Panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DragControl_Panel2.Location = new System.Drawing.Point(574, 0);
+            this.DragControl_Panel2.Name = "DragControl_Panel2";
+            this.DragControl_Panel2.Size = new System.Drawing.Size(716, 27);
+            this.DragControl_Panel2.TabIndex = 6;
+            // 
             // guna2ControlBox3
             // 
             this.guna2ControlBox3.BackColor = System.Drawing.Color.White;
@@ -155,8 +227,6 @@
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(40, 27);
             this.guna2ControlBox2.TabIndex = 4;
-            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
-            this.guna2ControlBox2.DoubleClick += new System.EventHandler(this.guna2ControlBox2_DoubleClick);
             // 
             // guna2ControlBox1
             // 
@@ -435,7 +505,7 @@
             this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
             this.label9.Location = new System.Drawing.Point(239, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 40);
+            this.label9.Size = new System.Drawing.Size(38, 38);
             this.label9.TabIndex = 5;
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -676,78 +746,6 @@
             this.guna2DragControl1.TargetControl = this.DragControl_Panel2;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // DragControl_Panel2
-            // 
-            this.DragControl_Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.DragControl_Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.DragControl_Panel2.Location = new System.Drawing.Point(574, 0);
-            this.DragControl_Panel2.Name = "DragControl_Panel2";
-            this.DragControl_Panel2.Size = new System.Drawing.Size(716, 27);
-            this.DragControl_Panel2.TabIndex = 6;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.menuStrip1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quảnLíDữLiệuToolStripMenuItem,
-            this.quảnLíXeToolStripMenuItem,
-            this.quảnLíTàiXếToolStripMenuItem,
-            this.quảnLíLịchTrìnhToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(574, 27);
-            this.menuStrip1.TabIndex = 46;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // quảnLíDữLiệuToolStripMenuItem
-            // 
-            this.quảnLíDữLiệuToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.quảnLíDữLiệuToolStripMenuItem.Name = "quảnLíDữLiệuToolStripMenuItem";
-            this.quảnLíDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(118, 23);
-            this.quảnLíDữLiệuToolStripMenuItem.Text = "Quản lí dữ liệu";
-            // 
-            // quảnLíXeToolStripMenuItem
-            // 
-            this.quảnLíXeToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.quảnLíXeToolStripMenuItem.Name = "quảnLíXeToolStripMenuItem";
-            this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(89, 23);
-            this.quảnLíXeToolStripMenuItem.Text = "Quản lí xe";
-            // 
-            // quảnLíTàiXếToolStripMenuItem
-            // 
-            this.quảnLíTàiXếToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
-            this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 23);
-            this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
-            // 
-            // quảnLíLịchTrìnhToolStripMenuItem
-            // 
-            this.quảnLíLịchTrìnhToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thêmLịchTrìnhToolStripMenuItem,
-            this.quảnLíLịchTrìnhToolStripMenuItem1});
-            this.quảnLíLịchTrìnhToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.quảnLíLịchTrìnhToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
-            this.quảnLíLịchTrìnhToolStripMenuItem.Name = "quảnLíLịchTrìnhToolStripMenuItem";
-            this.quảnLíLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(131, 23);
-            this.quảnLíLịchTrìnhToolStripMenuItem.Text = "Quản lí lịch trình";
-            // 
-            // thêmLịchTrìnhToolStripMenuItem
-            // 
-            this.thêmLịchTrìnhToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.thêmLịchTrìnhToolStripMenuItem.Name = "thêmLịchTrìnhToolStripMenuItem";
-            this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
-            this.thêmLịchTrìnhToolStripMenuItem.Text = "Thêm lịch trình";
-            // 
-            // quảnLíLịchTrìnhToolStripMenuItem1
-            // 
-            this.quảnLíLịchTrìnhToolStripMenuItem1.ForeColor = System.Drawing.Color.Gray;
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Name = "quảnLíLịchTrìnhToolStripMenuItem1";
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(188, 24);
-            this.quảnLíLịchTrìnhToolStripMenuItem1.Text = "Quản lí lịch trình";
-            // 
             // Form_Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -764,6 +762,8 @@
             this.Load += new System.EventHandler(this.Form_Master_Load);
             this.DragControl_Panel.ResumeLayout(false);
             this.DragControl_Panel.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.Master_Panel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.Camera_tableLayoutPanel1.ResumeLayout(false);
@@ -780,8 +780,6 @@
             this.panel7.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
