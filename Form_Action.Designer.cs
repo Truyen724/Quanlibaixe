@@ -43,7 +43,7 @@ namespace Quanlibaixe
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(41, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 39);
+            this.label1.Size = new System.Drawing.Size(126, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Biển số";
             // 
@@ -98,6 +98,7 @@ namespace Quanlibaixe
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form_Action";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Action";
             this.Load += new System.EventHandler(this.Form_Action_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
