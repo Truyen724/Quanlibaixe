@@ -2,6 +2,16 @@
 ### Features
 - winform quản lí bãi gửi xe, nhận diện biển số xe ra vào
 ## Screen Shots
+- **Form Login**
+<div align="center">
+   <table align="center" border="0" >
+      <tr>
+         <td>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormLogin.png" width=1200>
+         </td>
+      </tr>
+   </table>
+</div>
 - **Form Camera**
 <div align="center">
    <table align="center" border="0" >
