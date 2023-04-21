@@ -62,6 +62,8 @@ namespace Quanlibaixe
             try
             {
                 conn.ConnectionString = ConectionString;
+                textBox1.Text = "Truyen";
+                textBox2.Text = "123456@Aa";
             }
             catch
             {

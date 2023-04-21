@@ -26,10 +26,10 @@ namespace Quanlibaixe
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                textBox4.Text = row.Cells[0].Value.ToString();
-                comboBox4.SelectedIndex = comboBox8.FindStringExact(row.Cells[2].Value.ToString());
-                comboBox3.Text = row.Cells[3].Value.ToString();
-                textBox2.Text = row.Cells[4].Value.ToString();
+                textBox3.Text = row.Cells[0].Value.ToString();
+                comboBox1.SelectedIndex = comboBox8.FindStringExact(row.Cells[2].Value.ToString());
+                comboBox2.Text = row.Cells[3].Value.ToString();
+                textBox1.Text = row.Cells[4].Value.ToString();
             }
         }
         public void ketnoi()
@@ -91,8 +91,7 @@ namespace Quanlibaixe
         {
             if(textBox3.Text!="" & comboBox1.Text!= "")
             {
-                try
-                {
+
                     String query = String.Format("Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')", textBox3.Text, comboBox5.Text, comboBox2.Text, textBox1.Text);
                     conn.Open();
                     SqlCommand com = new SqlCommand(query, conn);
@@ -102,12 +101,6 @@ namespace Quanlibaixe
                     MessageBox.Show("Thêm Thành Công");
                     ketnoi();
                     load_driver();
-                }
-                catch
-                {
-                    MessageBox.Show("Lỗi ");
-                    conn.Close();
-                }
 
                
             }    
@@ -126,7 +119,7 @@ namespace Quanlibaixe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = N'{2}' where id_car = '{3}' " , comboBox8.Text, comboBox3.Text, textBox2.Text, textBox4.Text);
+            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = N'{2}' where id_car = '{3}' " , comboBox5.Text, comboBox2.Text, textBox1.Text, textBox3.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             com.CommandType = CommandType.Text;
@@ -163,25 +156,31 @@ namespace Quanlibaixe
         {
             try
             {
-                String query = String.Format("Delete from Car where Id_Car = '{0}'", textBox4.Text);
+                String query = String.Format("Delete from Car where Id_Car = '{0}'", textBox3.Text);
+                MessageBox.Show(query);
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
+                MessageBox.Show(query);
                 com.CommandType = CommandType.Text;
                 com.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Xóa thành công");
                 ketnoi();
                 load_driver();
-                comboBox3.Text = "";
-                comboBox1.Text = "";
+
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Không Thể Xóa Được");
+                MessageBox.Show(ex.ToString());
             }
         }
 
         private void FormXe_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
