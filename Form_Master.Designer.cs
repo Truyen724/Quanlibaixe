@@ -343,7 +343,6 @@
             this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(86)))), ((int)(((byte)(182)))));
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Image = global::Quanlibaixe.Properties.Resources.icons8_youtube_32;
             this.guna2CircleButton1.ImageOffset = new System.Drawing.Point(1, 0);
             this.guna2CircleButton1.ImageSize = new System.Drawing.Size(32, 32);
             this.guna2CircleButton1.Location = new System.Drawing.Point(193, 18);

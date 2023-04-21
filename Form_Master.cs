@@ -473,6 +473,8 @@ namespace Quanlibaixe
         private void LogOut_buttonCT_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form_login form_Login = new Form_login();
+            form_Login.Show();
         }
 
         private void guna2CircleButton1_MouseHover(object sender, EventArgs e)

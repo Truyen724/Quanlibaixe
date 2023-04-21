@@ -33,11 +33,9 @@ namespace Quanlibaixe
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_login));
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Email_TextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.Password_TextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.LoginButton = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.label2 = new System.Windows.Forms.Label();
@@ -45,10 +43,12 @@ namespace Quanlibaixe
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LoginButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -66,16 +66,6 @@ namespace Quanlibaixe
             // 
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // guna2ControlBox1
             // 
@@ -137,23 +127,6 @@ namespace Quanlibaixe
             this.Password_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PasswordTextBox_KeyDown);
             this.Password_TextBox.MouseLeave += new System.EventHandler(this.Password_TextBox_MouseLeave);
             this.Password_TextBox.MouseHover += new System.EventHandler(this.Password_TextBox_MouseHover);
-            // 
-            // LoginButton
-            // 
-            this.LoginButton.BorderRadius = 8;
-            this.LoginButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.LoginButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.LoginButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LoginButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.LoginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            this.LoginButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 14F);
-            this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Location = new System.Drawing.Point(26, 445);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(350, 46);
-            this.LoginButton.TabIndex = 20;
-            this.LoginButton.Text = "Sign in";
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // label4
             // 
@@ -218,24 +191,10 @@ namespace Quanlibaixe
             // 
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(20, 545);
+            this.panel1.Location = new System.Drawing.Point(21, 545);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 19);
             this.panel1.TabIndex = 28;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(207, 19);
-            this.label7.TabIndex = 27;
-            this.label7.Text = " You dont\'t have an account yet?";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
@@ -251,6 +210,47 @@ namespace Quanlibaixe
             this.label8.Text = "Sign up";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(207, 19);
+            this.label7.TabIndex = 27;
+            this.label7.Text = " You dont\'t have an account yet?";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(25, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.BorderRadius = 8;
+            this.LoginButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LoginButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LoginButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LoginButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LoginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.LoginButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 14F);
+            this.LoginButton.ForeColor = System.Drawing.Color.White;
+            this.LoginButton.Location = new System.Drawing.Point(26, 445);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(350, 46);
+            this.LoginButton.TabIndex = 30;
+            this.LoginButton.Text = "Sign in";
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
+            // 
             // Form_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,21 +263,21 @@ namespace Quanlibaixe
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.Password_TextBox);
             this.Controls.Add(this.Email_TextBox);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.LoginButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,7 +290,6 @@ namespace Quanlibaixe
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2TextBox Password_TextBox;
         private Guna.UI2.WinForms.Guna2TextBox Email_TextBox;
-        private Guna.UI2.WinForms.Guna2Button LoginButton;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.Label label1;
@@ -300,5 +299,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2Button LoginButton;
     }
 }

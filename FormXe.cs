@@ -95,11 +95,9 @@ namespace Quanlibaixe
                 {
                     String query = String.Format("Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')", textBox3.Text, comboBox5.Text, comboBox2.Text, textBox1.Text);
                     conn.Open();
-
                     SqlCommand com = new SqlCommand(query, conn);
                     com.CommandType = CommandType.Text;
                     com.ExecuteNonQuery();
-                    conn.Close();
                     MessageBox.Show("Thêm Thành Công");
                     ketnoi();
                     load_driver();
@@ -107,6 +105,7 @@ namespace Quanlibaixe
                 catch
                 {
                     MessageBox.Show("Lỗi ");
+                    conn.Close();
                 }
 
                

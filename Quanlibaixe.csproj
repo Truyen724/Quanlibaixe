@@ -71,6 +71,7 @@
     <Compile Include="Custom_Toolbox\TextBoxCT.Designer.cs">
       <DependentUpon>TextBoxCT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom_Toolbox\WaitFormFunc.cs" />
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +129,12 @@
     <Compile Include="quanlilichtrinh.Designer.cs">
       <DependentUpon>quanlilichtrinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wait_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wait_Form.Designer.cs">
+      <DependentUpon>Wait_Form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Camera_Control.resx">
       <DependentUpon>Camera_Control.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +178,9 @@
     <EmbeddedResource Include="quanlilichtrinh.resx">
       <DependentUpon>quanlilichtrinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wait_Form.resx">
+      <DependentUpon>Wait_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -201,7 +211,7 @@
     <None Include="UI_UX\icons8_youtube_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_car48px_48.png" />
+    <None Include="Resources\Loading.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
