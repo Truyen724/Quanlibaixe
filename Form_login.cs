@@ -38,6 +38,8 @@ namespace Quanlibaixe
                             Form_camera f = new Form_camera();
                             this.Hide();
                             f.ShowDialog();
+                            this.Close();
+                            this.Dispose();
                             Application.Exit();
                         }
                         reader.Dispose();

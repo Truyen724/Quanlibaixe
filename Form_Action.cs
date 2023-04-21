@@ -70,7 +70,7 @@ namespace Quanlibaixe
             com.CommandType = CommandType.Text;
             com.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("Không thực hiện thành công");
+            MessageBox.Show("Đã ngăn hành động");
             
         }
     }
