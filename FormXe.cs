@@ -185,7 +185,7 @@ namespace Quanlibaixe
 
         }
 
-        // Khai bao lien ket giua form master va form Quan li du lieu
+        // Khai bao lien ket giua form master va form Xe
         public Form_Master CallerForm { get; set; }
         public FormXe(Form_Master callerForm) : this()
         {

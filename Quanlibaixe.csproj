@@ -114,6 +114,12 @@
     <Compile Include="Form_Master.Designer.cs">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Xe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Xe.Designer.cs">
+      <DependentUpon>Form_Xe.cs</DependentUpon>
+    </Compile>
     <Compile Include="infor.cs" />
     <Compile Include="Form_login.cs">
       <SubType>Form</SubType>
@@ -165,6 +171,9 @@
     <EmbeddedResource Include="Form_Master.resx">
       <DependentUpon>Form_Master.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Xe.resx">
+      <DependentUpon>Form_Xe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -199,19 +208,16 @@
     <Folder Include="ScreenShots\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="UI_UX\icons8_Close_Gray_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UI_UX\Plus16px_Gray.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UI_UX\Plus16px_Gray_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UI_UX\icons8_youtube_32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI_UX\Loadings.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI_UX\youtube_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,18 +42,18 @@
             // 
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = global::Quanlibaixe.Properties.Resources.Loading;
-            this.label1.Location = new System.Drawing.Point(152, 0);
+            this.label1.Image = global::Quanlibaixe.Properties.Resources.Loadings;
+            this.label1.Location = new System.Drawing.Point(77, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 46);
+            this.label1.Size = new System.Drawing.Size(44, 44);
             this.label1.TabIndex = 1;
             // 
             // Wait_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(350, 46);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.ClientSize = new System.Drawing.Size(200, 44);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Wait_Form";

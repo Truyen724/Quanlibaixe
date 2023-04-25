@@ -30,7 +30,7 @@ namespace Quanlibaixe
         {
             InitializeComponent();
             //Camera_ExamSchedulerMethod();
-            Camera_tableLayoutPanel2.Visible = false;
+            Xe_tableLayoutPanel2.Visible = false;
 
             //Mặc định Camera_buttonCT xuất hiện đầu tiên.
             SidePanel.Height = Camera_buttonCT.Height;
@@ -274,6 +274,10 @@ namespace Quanlibaixe
 
             // Tắt Xe_Control 
             Camera_tableLayoutPanel1.Visible = false;
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+            Camera_ExamSchedulerMethod();
+
             // Button RunCamera
             button7.Visible = false;
 
@@ -462,11 +466,21 @@ namespace Quanlibaixe
         // Loading form_Camera lên panel trong form_master
         public void Camera_ExamSchedulerMethod()
         {
-            Form_camera form_Camera = new Form_camera();
-            form_Camera.TopLevel = false;
-            form_Camera.Dock = DockStyle.Fill;
-            Camera_tableLayoutPanel2.Controls.Add(form_Camera);
-            form_Camera.Show();
+            Form_Xe form_Xe = new Form_Xe();
+            form_Xe.TopLevel = false;
+            form_Xe.Dock = DockStyle.Fill;
+            Xe_tableLayoutPanel2.Controls.Add(form_Xe);
+            form_Xe.Show();
+        }
+
+        // Loading form_Xe lên panel trong form_master
+        public void Xe_ExamSchedulerMethod()
+        {
+            Form_Xe form_Xe = new Form_Xe();
+            form_Xe.TopLevel = false;
+            form_Xe.Dock = DockStyle.Fill;
+            Xe_tableLayoutPanel2.Controls.Add(form_Xe);
+            form_Xe.Show();
         }
 
         // Button LogOut
