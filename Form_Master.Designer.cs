@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Master));
             this.button7 = new System.Windows.Forms.Button();
             this.DragControl_Panel = new System.Windows.Forms.Panel();
@@ -57,37 +57,31 @@
             this.LogOut_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.SideBar_panel = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
+            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.SidePanel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.facebook_label = new System.Windows.Forms.Label();
-            this.twitter_label = new System.Windows.Forms.Label();
+            this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.settings_label = new System.Windows.Forms.Label();
-            this.youtube_label = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.LichXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.TaiXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.XeOto_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.QuanLi_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.Dashboard_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DragControl_Panel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -294,6 +288,7 @@
             this.Xe_tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.Xe_tableLayoutPanel2.Size = new System.Drawing.Size(1120, 487);
             this.Xe_tableLayoutPanel2.TabIndex = 45;
+            this.Xe_tableLayoutPanel2.Visible = false;
             // 
             // Camera_tableLayoutPanel1
             // 
@@ -411,6 +406,26 @@
             this.panel9.Size = new System.Drawing.Size(1125, 25);
             this.panel9.TabIndex = 41;
             // 
+            // buttonCT7
+            // 
+            this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.buttonCT7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.buttonCT7.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonCT7.BorderRadius = 0;
+            this.buttonCT7.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.buttonCT7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonCT7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonCT7.FlatAppearance.BorderSize = 0;
+            this.buttonCT7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT7.ForeColor = System.Drawing.Color.White;
+            this.buttonCT7.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT7.Image")));
+            this.buttonCT7.Location = new System.Drawing.Point(1102, 0);
+            this.buttonCT7.Name = "buttonCT7";
+            this.buttonCT7.Size = new System.Drawing.Size(23, 25);
+            this.buttonCT7.TabIndex = 0;
+            this.buttonCT7.TextColor = System.Drawing.Color.White;
+            this.buttonCT7.UseVisualStyleBackColor = false;
+            // 
             // SideBar_panel
             // 
             this.SideBar_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
@@ -439,6 +454,29 @@
             this.SidePanel.Size = new System.Drawing.Size(10, 60);
             this.SidePanel.TabIndex = 3;
             // 
+            // Camera_buttonCT
+            // 
+            this.Camera_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.Camera_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.Camera_buttonCT.BorderColor = System.Drawing.Color.Empty;
+            this.Camera_buttonCT.BorderRadius = 3;
+            this.Camera_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.Camera_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Camera_buttonCT.FlatAppearance.BorderSize = 0;
+            this.Camera_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Camera_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camera_buttonCT.ForeColor = System.Drawing.Color.Gray;
+            this.Camera_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Camera_buttonCT.Image")));
+            this.Camera_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Camera_buttonCT.Location = new System.Drawing.Point(16, 146);
+            this.Camera_buttonCT.Name = "Camera_buttonCT";
+            this.Camera_buttonCT.Size = new System.Drawing.Size(269, 60);
+            this.Camera_buttonCT.TabIndex = 7;
+            this.Camera_buttonCT.Text = "Camera";
+            this.Camera_buttonCT.TextColor = System.Drawing.Color.Gray;
+            this.Camera_buttonCT.UseVisualStyleBackColor = false;
+            this.Camera_buttonCT.Click += new System.EventHandler(this.Camera_buttonCT_Click);
+            // 
             // SidePanel2
             // 
             this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
@@ -453,13 +491,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
             this.panel6.Controls.Add(this.guna2CircleButton2);
-            this.panel6.Controls.Add(this.facebook_label);
-            this.panel6.Controls.Add(this.twitter_label);
             this.panel6.Controls.Add(this.settings_label);
-            this.panel6.Controls.Add(this.youtube_label);
-            this.panel6.Controls.Add(this.guna2CircleButton1);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.label7);
             this.guna2Transition1.SetDecoration(this.panel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -468,33 +500,26 @@
             this.panel6.Size = new System.Drawing.Size(285, 70);
             this.panel6.TabIndex = 6;
             // 
-            // facebook_label
+            // guna2CircleButton2
             // 
-            this.facebook_label.AutoSize = true;
-            this.facebook_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.guna2Transition1.SetDecoration(this.facebook_label, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.facebook_label.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.facebook_label.ForeColor = System.Drawing.Color.White;
-            this.facebook_label.Location = new System.Drawing.Point(87, 3);
-            this.facebook_label.Name = "facebook_label";
-            this.facebook_label.Size = new System.Drawing.Size(61, 16);
-            this.facebook_label.TabIndex = 47;
-            this.facebook_label.Text = "Facebook";
-            this.facebook_label.Visible = false;
-            // 
-            // twitter_label
-            // 
-            this.twitter_label.AutoSize = true;
-            this.twitter_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.guna2Transition1.SetDecoration(this.twitter_label, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.twitter_label.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twitter_label.ForeColor = System.Drawing.Color.White;
-            this.twitter_label.Location = new System.Drawing.Point(146, 3);
-            this.twitter_label.Name = "twitter_label";
-            this.twitter_label.Size = new System.Drawing.Size(41, 16);
-            this.twitter_label.TabIndex = 46;
-            this.twitter_label.Text = "twitter";
-            this.twitter_label.Visible = false;
+            this.guna2Transition1.SetDecoration(this.guna2CircleButton2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2CircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
+            this.guna2CircleButton2.ImageOffset = new System.Drawing.Point(1, 0);
+            this.guna2CircleButton2.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(236, 18);
+            this.guna2CircleButton2.Name = "guna2CircleButton2";
+            this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton2.Size = new System.Drawing.Size(40, 40);
+            this.guna2CircleButton2.TabIndex = 44;
+            this.guna2CircleButton2.MouseLeave += new System.EventHandler(this.guna2CircleButton2_MouseLeave);
+            this.guna2CircleButton2.MouseHover += new System.EventHandler(this.guna2CircleButton2_MouseHover);
             // 
             // settings_label
             // 
@@ -503,26 +528,12 @@
             this.guna2Transition1.SetDecoration(this.settings_label, Guna.UI2.AnimatorNS.DecorationType.None);
             this.settings_label.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settings_label.ForeColor = System.Drawing.Color.White;
-            this.settings_label.Location = new System.Drawing.Point(237, 3);
+            this.settings_label.Location = new System.Drawing.Point(234, 3);
             this.settings_label.Name = "settings_label";
             this.settings_label.Size = new System.Drawing.Size(48, 16);
             this.settings_label.TabIndex = 45;
             this.settings_label.Text = "Settings";
             this.settings_label.Visible = false;
-            // 
-            // youtube_label
-            // 
-            this.youtube_label.AutoSize = true;
-            this.youtube_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.guna2Transition1.SetDecoration(this.youtube_label, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.youtube_label.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.youtube_label.ForeColor = System.Drawing.Color.White;
-            this.youtube_label.Location = new System.Drawing.Point(188, 3);
-            this.youtube_label.Name = "youtube_label";
-            this.youtube_label.Size = new System.Drawing.Size(53, 16);
-            this.youtube_label.TabIndex = 44;
-            this.youtube_label.Text = "youtube";
-            this.youtube_label.Visible = false;
             // 
             // label7
             // 
@@ -559,218 +570,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "PEOPLE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.panel4);
-            this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1410, 80);
-            this.panel8.TabIndex = 45;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.Dashboard_buttonCT);
-            this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(285, 80);
-            this.panel7.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(74, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 22);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Dashboard";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel13);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBoxCT1);
-            this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(947, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(463, 80);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.panel13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel13.Location = new System.Drawing.Point(159, 47);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(285, 2);
-            this.panel13.TabIndex = 3;
-            // 
-            // textBoxCT1
-            // 
-            this.textBoxCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.textBoxCT1.BorderColor = System.Drawing.Color.Empty;
-            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.Empty;
-            this.textBoxCT1.BorderSize = 2;
-            this.guna2Transition1.SetDecoration(this.textBoxCT1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCT1.ForeColor = System.Drawing.Color.White;
-            this.textBoxCT1.Location = new System.Drawing.Point(153, 15);
-            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCT1.Multiline = false;
-            this.textBoxCT1.Name = "textBoxCT1";
-            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
-            this.textBoxCT1.PasswordChar = false;
-            this.textBoxCT1.Size = new System.Drawing.Size(291, 36);
-            this.textBoxCT1.TabIndex = 3;
-            this.textBoxCT1.Texts = "";
-            this.textBoxCT1.UnderlinedStyle = false;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.DragControl_Panel2;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
-            // 
-            // buttonCT7
-            // 
-            this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.buttonCT7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.buttonCT7.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonCT7.BorderRadius = 0;
-            this.buttonCT7.BorderSize = 0;
-            this.guna2Transition1.SetDecoration(this.buttonCT7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonCT7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonCT7.FlatAppearance.BorderSize = 0;
-            this.buttonCT7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT7.ForeColor = System.Drawing.Color.White;
-            this.buttonCT7.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT7.Image")));
-            this.buttonCT7.Location = new System.Drawing.Point(1102, 0);
-            this.buttonCT7.Name = "buttonCT7";
-            this.buttonCT7.Size = new System.Drawing.Size(23, 25);
-            this.buttonCT7.TabIndex = 0;
-            this.buttonCT7.TextColor = System.Drawing.Color.White;
-            this.buttonCT7.UseVisualStyleBackColor = false;
-            // 
-            // Camera_buttonCT
-            // 
-            this.Camera_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.Camera_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.Camera_buttonCT.BorderColor = System.Drawing.Color.Empty;
-            this.Camera_buttonCT.BorderRadius = 3;
-            this.Camera_buttonCT.BorderSize = 0;
-            this.guna2Transition1.SetDecoration(this.Camera_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Camera_buttonCT.FlatAppearance.BorderSize = 0;
-            this.Camera_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Camera_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Camera_buttonCT.ForeColor = System.Drawing.Color.Gray;
-            this.Camera_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Camera_buttonCT.Image")));
-            this.Camera_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Camera_buttonCT.Location = new System.Drawing.Point(16, 146);
-            this.Camera_buttonCT.Name = "Camera_buttonCT";
-            this.Camera_buttonCT.Size = new System.Drawing.Size(269, 60);
-            this.Camera_buttonCT.TabIndex = 7;
-            this.Camera_buttonCT.Text = "Camera";
-            this.Camera_buttonCT.TextColor = System.Drawing.Color.Gray;
-            this.Camera_buttonCT.UseVisualStyleBackColor = false;
-            this.Camera_buttonCT.Click += new System.EventHandler(this.Camera_buttonCT_Click);
-            // 
-            // guna2CircleButton2
-            // 
-            this.guna2Transition1.SetDecoration(this.guna2CircleButton2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2CircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
-            this.guna2CircleButton2.ImageOffset = new System.Drawing.Point(1, 0);
-            this.guna2CircleButton2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(239, 18);
-            this.guna2CircleButton2.Name = "guna2CircleButton2";
-            this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(40, 40);
-            this.guna2CircleButton2.TabIndex = 44;
-            this.guna2CircleButton2.MouseLeave += new System.EventHandler(this.guna2CircleButton2_MouseLeave);
-            this.guna2CircleButton2.MouseHover += new System.EventHandler(this.guna2CircleButton2_MouseHover);
-            // 
-            // guna2CircleButton1
-            // 
-            this.guna2Transition1.SetDecoration(this.guna2CircleButton1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Image = global::Quanlibaixe.Properties.Resources.youtube_32;
-            this.guna2CircleButton1.ImageOffset = new System.Drawing.Point(1, 0);
-            this.guna2CircleButton1.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(193, 18);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(40, 40);
-            this.guna2CircleButton1.TabIndex = 43;
-            this.guna2CircleButton1.MouseLeave += new System.EventHandler(this.guna2CircleButton1_MouseLeave);
-            this.guna2CircleButton1.MouseHover += new System.EventHandler(this.guna2CircleButton1_MouseHover);
-            // 
-            // label11
-            // 
-            this.guna2Transition1.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Image = ((System.Drawing.Image)(resources.GetObject("label11.Image")));
-            this.label11.Location = new System.Drawing.Point(99, 18);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 40);
-            this.label11.TabIndex = 7;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
-            this.label10.Location = new System.Drawing.Point(147, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 40);
-            this.label10.TabIndex = 6;
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LichXe_buttonCT
             // 
@@ -864,6 +663,41 @@
             this.QuanLi_buttonCT.UseVisualStyleBackColor = false;
             this.QuanLi_buttonCT.Click += new System.EventHandler(this.QuanLi_buttonCT_Click);
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.panel8.Controls.Add(this.panel7);
+            this.panel8.Controls.Add(this.panel4);
+            this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1410, 80);
+            this.panel8.TabIndex = 45;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.Dashboard_buttonCT);
+            this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(285, 80);
+            this.panel7.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(74, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 22);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Dashboard";
+            // 
             // Dashboard_buttonCT
             // 
             this.Dashboard_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
@@ -884,6 +718,27 @@
             this.Dashboard_buttonCT.UseVisualStyleBackColor = false;
             this.Dashboard_buttonCT.Click += new System.EventHandler(this.Dashboard_buttonCT_Click);
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel13);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.textBoxCT1);
+            this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(947, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(463, 80);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.panel13, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel13.Location = new System.Drawing.Point(159, 47);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(285, 2);
+            this.panel13.TabIndex = 3;
+            // 
             // pictureBox1
             // 
             this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -894,6 +749,53 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // textBoxCT1
+            // 
+            this.textBoxCT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.textBoxCT1.BorderColor = System.Drawing.Color.Empty;
+            this.textBoxCT1.BorderFocusColor = System.Drawing.Color.Empty;
+            this.textBoxCT1.BorderSize = 2;
+            this.guna2Transition1.SetDecoration(this.textBoxCT1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCT1.ForeColor = System.Drawing.Color.White;
+            this.textBoxCT1.Location = new System.Drawing.Point(153, 15);
+            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCT1.Multiline = false;
+            this.textBoxCT1.Name = "textBoxCT1";
+            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(7);
+            this.textBoxCT1.PasswordChar = false;
+            this.textBoxCT1.Size = new System.Drawing.Size(291, 36);
+            this.textBoxCT1.TabIndex = 3;
+            this.textBoxCT1.Texts = "";
+            this.textBoxCT1.UnderlinedStyle = false;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.DragControl_Panel2;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // Form_Master
             // 
@@ -957,8 +859,6 @@
         private Custom_Toolbox.ButtonCT Camera_buttonCT;
         private System.Windows.Forms.Panel SidePanel2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
@@ -987,11 +887,7 @@
         private System.Windows.Forms.ToolStripMenuItem quảnLíLịchTrìnhToolStripMenuItem1;
         private System.Windows.Forms.Panel DragControl_Panel2;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
-        private System.Windows.Forms.Label facebook_label;
-        private System.Windows.Forms.Label twitter_label;
         private System.Windows.Forms.Label settings_label;
-        private System.Windows.Forms.Label youtube_label;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
     }
 }

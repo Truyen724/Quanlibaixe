@@ -30,6 +30,8 @@ namespace Quanlibaixe
             try
             {
                 conn.ConnectionString = ConectionString;
+                Email_TextBox.Text = "Admin";
+                Password_TextBox.Text = "123456";
             }
             catch
             {
@@ -50,7 +52,7 @@ namespace Quanlibaixe
             }
         }
 
-        // Loading button lên panel trong form_master
+        // Login_ExamSchedulerMethod
         public void Login_ExamSchedulerMethod()
         {
             //Loading_Panel.Visible = true;
@@ -70,56 +72,44 @@ namespace Quanlibaixe
         WaitFormFunc waitForm = new WaitFormFunc();
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            //
-            try
-            {               
-                waitForm.Show(this);
-                Thread.Sleep(3000);
-                waitForm.Close();
-
-                Form_Master form_Master = new Form_Master();
-                form_Master.Show();
-
-                Form_login form_Login = new Form_login();
-                this.Hide();
-            }
-            catch (Exception )
+            if (Email_TextBox.Text != "" && Password_TextBox.Text != "")
             {
-                MessageBox.Show("Loi");
+                string query = String.Format("select Id_admin, Access_id from Ad_min where Name = '{0}' COLLATE SQL_Latin1_General_CP1_CS_AS and Password ='{1}' COLLATE SQL_Latin1_General_CP1_CS_AS", Email_TextBox.Text, Password_TextBox.Text);
+                conn.Open();
+                SqlCommand com = new SqlCommand(query, conn);
+                using (DbDataReader reader = com.ExecuteReader())
+                {
+
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            reader.GetValue(0).ToString();
+                            infor.id_access = reader.GetValue(1).ToString();
+                            //Loading button lên panel trong form_master
+                            waitForm.Show(this);
+                            Thread.Sleep(3000);
+                            waitForm.Close();
+                            Form_Master f = new Form_Master();
+
+                            //Form_camera f = new Form_camera();
+                            this.Hide();
+                            f.ShowDialog();
+                            Application.Exit();
+                        }
+                        reader.Dispose();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai tài khoản hoặc mật khẩu");
+                    }
+                }
+                conn.Close();
             }
-
-            //if (Email_TextBox.Text != "" && Password_TextBox.Text != "")
-            //{
-            //    string query = String.Format("select Id_admin, Access_id from Ad_min where Name = '{0}' COLLATE SQL_Latin1_General_CP1_CS_AS and Password ='{1}' COLLATE SQL_Latin1_General_CP1_CS_AS", Email_TextBox.Text, Password_TextBox.Text);
-            //    conn.Open();
-            //    SqlCommand com = new SqlCommand(query, conn);
-            //    using (DbDataReader reader = com.ExecuteReader())
-            //    {
-
-            //        if (reader.HasRows)
-            //        {
-            //            while (reader.Read())
-            //            {
-            //                reader.GetValue(0).ToString();
-            //                infor.id_access = reader.GetValue(1).ToString();
-            //                Form_camera f = new Form_camera();
-            //                this.Hide();
-            //                f.ShowDialog();
-            //                Application.Exit();
-            //            }
-            //            reader.Dispose();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Sai tài khoản hoặc mật khẩu");
-            //        }
-            //    }
-            //    conn.Close();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Vui lòng nhập tài khoản mật khẩu");
-            //}
+            else
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản mật khẩu");
+            }
         }
 
         private void PasswordTextBox_KeyDown(object sender, KeyEventArgs e)

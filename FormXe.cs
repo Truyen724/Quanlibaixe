@@ -13,6 +13,13 @@ namespace Quanlibaixe
 {
     public partial class FormXe : Form
     {
+        // đoạn mã được đặt form_Xe Nhằm lien ket giua form master va form Xe li du lieu
+        public Form_Master CallerForm { get; set; }
+        public FormXe(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
+        }
+
         public FormXe()
         {
             InitializeComponent();
@@ -42,7 +49,7 @@ namespace Quanlibaixe
             {
                 MessageBox.Show("Kết nối thất bại");
             }
-            String tatcacacxe = "select Id_car, Driver_Name, Driver.Id_driver, Car.State, Car.Desciption from Car left join Driver on Car.Id_driver = Driver.ID_driver";
+            String tatcacacxe = "select Id_car, Driver.Driver_Name, Driver.Id_driver, Car.State, Car.Desciption from Car left join Driver on Car.Id_driver = Driver.ID_driver";
             conn.Open();
             SqlCommand com = new SqlCommand(tatcacacxe, conn);
             DataTable dt = new DataTable();
@@ -67,11 +74,11 @@ namespace Quanlibaixe
                     {
                         comboBox1.Items.Add(reader.GetValue(1).ToString());
                         comboBox5.Items.Add(reader.GetValue(0).ToString());
-                        comboBox6.Items.Add(reader.GetValue(2).ToString().Substring(0, 10));
+                        //comboBox6.Items.Add(reader.GetValue(2).ToString().Substring(0, 10));
 
                         comboBox4.Items.Add(reader.GetValue(1).ToString());
                         comboBox8.Items.Add(reader.GetValue(0).ToString());
-                        comboBox7.Items.Add(reader.GetValue(2).ToString().Substring(0, 10));
+                        //comboBox7.Items.Add(reader.GetValue(2).ToString().Substring(0, 10));
                         
              
                     }
@@ -84,18 +91,29 @@ namespace Quanlibaixe
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBox5.SelectedIndex = comboBox1.SelectedIndex;
-            comboBox6.SelectedIndex = comboBox1.SelectedIndex;
+            //comboBox6.SelectedIndex = comboBox1.SelectedIndex;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(textBox3.Text!="" & comboBox1.Text!= "")
+            if(textBox3.Text!="" && comboBox1.Text!= "")
             {
                 try
                 {
-                    String query = String.Format("Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')", textBox3.Text, comboBox5.Text, comboBox2.Text, textBox1.Text);
-                    conn.Open();
+                    // "Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')" sử dụng các tham số để thay thế vào chuỗi truy vấn SQL.
+                    // lỗ hổng bảo mật
+                    // rất nguy hiểm bạn có thể gặp các cuộc tấn công SQL Injection.
+                    //String query = String.Format("Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')", textBox3.Text, comboBox5.Text, comboBox2.Text, textBox1.Text);
+
+                    // sử dụng cơ chế tham số hóa "parameterization mechanism"
+                    String query = "Insert into Car (Id_car,Id_driver,State,Desciption) values (@Id_car,@Id_driver,@State,@Desciption)";
                     SqlCommand com = new SqlCommand(query, conn);
+                    com.Parameters.AddWithValue("@Id_car", textBox3.Text);
+                    com.Parameters.AddWithValue("@Id_driver", comboBox5.Text);
+                    com.Parameters.AddWithValue("@State", comboBox2.Text);
+                    com.Parameters.AddWithValue("@Desciption", textBox1.Text);
+
+                    conn.Open();
                     com.CommandType = CommandType.Text;
                     com.ExecuteNonQuery();
                     MessageBox.Show("Thêm Thành Công");
@@ -115,7 +133,7 @@ namespace Quanlibaixe
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBox8.SelectedIndex = comboBox4.SelectedIndex;
-            comboBox7.SelectedIndex = comboBox4.SelectedIndex;
+            //comboBox7.SelectedIndex = comboBox4.SelectedIndex;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -185,11 +203,26 @@ namespace Quanlibaixe
 
         }
 
-        // Khai bao lien ket giua form master va form Xe
-        public Form_Master CallerForm { get; set; }
-        public FormXe(Form_Master callerForm) : this()
+        private void btn_refresh_Click(object sender, EventArgs e)
         {
-            this.CallerForm = callerForm;
+            // Làm mới DataGridView
+            //dataGridView1.Refresh();
+
+            // Lưu nguồn dữ liệu hiện tại
+            var dataSource = dataGridView1.DataSource;
+            // Đặt giá trị cho DataSource thành null
+            dataGridView1.DataSource = null;
+
+            // Thiết lập lại nguồn dữ liệu đã lưu
+            dataGridView1.DataSource = dataSource;           
+
+            textBox4.Text = "";
+            comboBox8.Text = "";
+            comboBox4.Text = "";
+            comboBox3.Text = "";
+            textBox2.Text = "";
+
+            this.Refresh();
         }
     }
 }

@@ -274,9 +274,7 @@ namespace Quanlibaixe
 
             // Tắt Xe_Control 
             Camera_tableLayoutPanel1.Visible = false;
-            // Mở form_Xe
-            Xe_tableLayoutPanel2.Visible = true;
-            Camera_ExamSchedulerMethod();
+            
 
             // Button RunCamera
             button7.Visible = false;
@@ -318,6 +316,10 @@ namespace Quanlibaixe
 
             // Tắt Xe_Control 
             Camera_tableLayoutPanel1.Visible = false;
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+            Xe_ExamSchedulerMethod();
+
             // Button RunCamera
             button7.Visible = false;
 
@@ -464,23 +466,36 @@ namespace Quanlibaixe
 
 
         // Loading form_Camera lên panel trong form_master
-        public void Camera_ExamSchedulerMethod()
-        {
-            Form_Xe form_Xe = new Form_Xe();
-            form_Xe.TopLevel = false;
-            form_Xe.Dock = DockStyle.Fill;
-            Xe_tableLayoutPanel2.Controls.Add(form_Xe);
-            form_Xe.Show();
-        }
+        //public void Camera_ExamSchedulerMethod()
+        //{
+        //    Form_Xe form_Xe = new Form_Xe();
+        //    form_Xe.TopLevel = false;
+        //    form_Xe.Dock = DockStyle.Fill;
+        //    Xe_tableLayoutPanel2.Controls.Add(form_Xe);
+        //    form_Xe.Show();
+        //}
 
         // Loading form_Xe lên panel trong form_master
+        //private static Form_Xe xeForm = null; // tạo một instance duy nhất của Form_Xe
+        private static FormXe xeForm = null; // tạo một instance duy nhất của Form_Xe
         public void Xe_ExamSchedulerMethod()
         {
-            Form_Xe form_Xe = new Form_Xe();
-            form_Xe.TopLevel = false;
-            form_Xe.Dock = DockStyle.Fill;
-            Xe_tableLayoutPanel2.Controls.Add(form_Xe);
-            form_Xe.Show();
+            if (xeForm == null)
+            {
+                //xeForm = new Form_Xe();
+                xeForm = new FormXe();
+                xeForm.TopLevel = false;
+                xeForm.Dock = DockStyle.Fill;
+
+                // Thêm form_Xe vào control con cuối cùng trong Xe_tableLayoutPanel2
+                Xe_tableLayoutPanel2.Controls.Add(xeForm);
+
+                // Đăng ký sự kiện Closed để set xeForm về null
+                xeForm.Closed += (s, args) => { xeForm.Dispose(); xeForm = null; };
+            }
+
+            // Hiển thị form_Xe
+            xeForm.Show();
         }
 
         // Button LogOut
@@ -491,22 +506,6 @@ namespace Quanlibaixe
             form_Login.Show();
         }
 
-        private void guna2CircleButton1_MouseHover(object sender, EventArgs e)
-        {
-            Guna2CircleButton button = (Guna2CircleButton)sender;
-            //button.Location = new Point(button.Location.X - 5, button.Location.Y);
-            youtube_label.Visible = true;
-            guna2CircleButton1.Size = new Size(45,45);
-            button.BringToFront();
-        }
-
-        private void guna2CircleButton1_MouseLeave(object sender, EventArgs e)
-        {
-            Guna2CircleButton button = (Guna2CircleButton)sender;
-            guna2CircleButton1.Size = new Size(40,40);
-            youtube_label.Visible = false;
-            //button.Location = new Point(button.Location.X + 5, button.Location.Y);
-        }
 
         private void guna2CircleButton2_MouseHover(object sender, EventArgs e)
         {
