@@ -142,19 +142,21 @@ namespace Quanlibaixe
 
                     conn.Open();
                     com.CommandType = CommandType.Text;
+
+                    // Thực hiện câu truy vấn và đóng kết nối sau khi hoàn thành
                     com.ExecuteNonQuery();
+                    conn.Close();
                     MessageBox.Show("Thêm Thành Công");
-                    //ketnoi();
-                    load_driver();
+
+                    // Gọi phương thức ketnoi() để cập nhật dữ liệu trên giao diện
+                    ketnoi();
                 }
                 catch
                 {
                     MessageBox.Show("Lỗi ");
                     conn.Close();
-                }
-
-               
-            }    
+                }               
+            }
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
@@ -223,9 +225,8 @@ namespace Quanlibaixe
 
                 MessageBox.Show("Xóa thành công");
 
-                // Gọi phương thức ketnoi() và load_driver() để cập nhật dữ liệu trên giao diện
+                // Gọi phương thức ketnoi() để cập nhật dữ liệu trên giao diện
                 ketnoi();
-                load_driver();
 
                 // Xóa giá trị của các combobox
                 cb_TrangThai.SelectedIndex = -1;
