@@ -17,7 +17,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/FormCamera.png" width=1200>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FromCamera.png" width=1200>
          </td>
       </tr>
    </table>
@@ -28,7 +28,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/FormXe.png" width=1200>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormXe.png" width=1200>
          </td>
       </tr>
    </table>
