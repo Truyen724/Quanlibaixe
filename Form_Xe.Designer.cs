@@ -38,6 +38,7 @@
             this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TrangThai_combobox = new System.Windows.Forms.ComboBox();
             this.TaiXe_combobox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Xoa_button = new Guna.UI2.WinForms.Guna2Button();
             this.Sua_button = new Guna.UI2.WinForms.Guna2Button();
@@ -46,13 +47,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.MoTa_textbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TrangThai_combobox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.IDtaixe_combobox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BienSo_textbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -114,8 +115,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(668, 454);
             this.dataGridView1.TabIndex = 37;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -172,6 +171,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.TrangThai_combobox);
             this.panel1.Controls.Add(this.TaiXe_combobox);
             this.panel1.Controls.Add(this.Xoa_button);
             this.panel1.Controls.Add(this.Sua_button);
@@ -180,7 +181,6 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.MoTa_textbox);
-            this.panel1.Controls.Add(this.TrangThai_combobox);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.IDtaixe_combobox);
@@ -192,6 +192,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(442, 452);
             this.panel1.TabIndex = 38;
+            // 
+            // TrangThai_combobox
+            // 
+            this.TrangThai_combobox.BackColor = System.Drawing.Color.White;
+            this.TrangThai_combobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrangThai_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.TrangThai_combobox.FormattingEnabled = true;
+            this.TrangThai_combobox.Items.AddRange(new object[] {
+            "in",
+            "out"});
+            this.TrangThai_combobox.Location = new System.Drawing.Point(224, 86);
+            this.TrangThai_combobox.Margin = new System.Windows.Forms.Padding(2);
+            this.TrangThai_combobox.Name = "TrangThai_combobox";
+            this.TrangThai_combobox.Size = new System.Drawing.Size(190, 34);
+            this.TrangThai_combobox.TabIndex = 70;
+            this.TrangThai_combobox.Text = "in";
             // 
             // TaiXe_combobox
             // 
@@ -317,22 +333,6 @@
             this.MoTa_textbox.Size = new System.Drawing.Size(390, 36);
             this.MoTa_textbox.TabIndex = 13;
             // 
-            // TrangThai_combobox
-            // 
-            this.TrangThai_combobox.BackColor = System.Drawing.Color.Transparent;
-            this.TrangThai_combobox.BorderRadius = 3;
-            this.TrangThai_combobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.TrangThai_combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.TrangThai_combobox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TrangThai_combobox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TrangThai_combobox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TrangThai_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.TrangThai_combobox.ItemHeight = 30;
-            this.TrangThai_combobox.Location = new System.Drawing.Point(224, 87);
-            this.TrangThai_combobox.Name = "TrangThai_combobox";
-            this.TrangThai_combobox.Size = new System.Drawing.Size(190, 36);
-            this.TrangThai_combobox.TabIndex = 12;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -409,6 +409,23 @@
             this.BienSo_textbox.Size = new System.Drawing.Size(390, 36);
             this.BienSo_textbox.TabIndex = 0;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 3;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(270, 306);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(99, 36);
+            this.guna2Button1.TabIndex = 71;
+            this.guna2Button1.Text = "refresh";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // Form_Xe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,7 +460,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox IDtaixe_combobox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2ComboBox TrangThai_combobox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox MoTa_textbox;
@@ -454,5 +470,7 @@
         private Guna.UI2.WinForms.Guna2Button Xoa_button;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ComboBox TaiXe_combobox;
+        private System.Windows.Forms.ComboBox TrangThai_combobox;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

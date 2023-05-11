@@ -86,9 +86,9 @@ namespace Quanlibaixe
                         {
                             reader.GetValue(0).ToString();
                             infor.id_access = reader.GetValue(1).ToString();
-                            //Loading button lên panel trong form_master
+                            //Loading button inside panel trong form_master
                             waitForm.Show(this);
-                            Thread.Sleep(3000);
+                            Thread.Sleep(2000);
                             waitForm.Close();
                             Form_Master f = new Form_Master();
 

@@ -29,8 +29,8 @@ namespace Quanlibaixe
         public Form_Xe()
         {
             InitializeComponent();
-            //ketnoi();
-            //load_driver();
+            ketnoi();
+            load_driver();
         }
 
         public void ketnoi()
@@ -76,32 +76,69 @@ namespace Quanlibaixe
             conn.Close();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        // reload page
+        private void ReloadPage()
         {
-            if (e.RowIndex >= 0)
+            // Clear all combobox items
+            IDtaixe_combobox.Items.Clear();
+            TaiXe_combobox.Items.Clear();
+            NgaySinh_combobox.Items.Clear();
+
+            // Re-load data from database
+            string query = "SELECT [Id_car], [Id_driver], [State], [Desciption] FROM [Detect_bienso].[dbo].[Car]";
+            using (SqlCommand com = new SqlCommand(query, conn))
             {
-                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                MoTa_textbox.Text = row.Cells[0].Value.ToString();
-                TaiXe_combobox.SelectedIndex = IDtaixe_combobox.FindStringExact(row.Cells[2].Value.ToString());
-                TrangThai_combobox.Text = row.Cells[3].Value.ToString();
+                conn.Open();
+                using (SqlDataReader reader = com.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        if (!reader.IsDBNull(reader.GetOrdinal("Id_car")) && reader.GetDataTypeName(0) == "nvarchar")
+                        {
+                            //IDtaixe_combobox.Items.Add(reader.GetInt32(reader.GetOrdinal("Id_car")));
+                            IDtaixe_combobox.Items.Add(reader.GetString(reader.GetOrdinal("Id_car")));
+                        }
+
+                        if (!reader.IsDBNull(reader.GetOrdinal("Id_driver")) && reader.GetDataTypeName(1) == "int")
+                        {
+                            TaiXe_combobox.Items.Add(reader.GetInt32(reader.GetOrdinal("Id_driver")));
+                            //TaiXe_combobox.Items.Add(reader.GetString(reader.GetOrdinal("Id_driver")));
+                        }
+
+                        if (!reader.IsDBNull(reader.GetOrdinal("State")) && reader.GetDataTypeName(2) == "char")
+                        {
+                            TaiXe_combobox.Items.Add(reader.GetString(reader.GetOrdinal("State")));
+                        }
+
+                        if (!reader.IsDBNull(reader.GetOrdinal("Desciption")) && reader.GetDataTypeName(3) == "nvarchar(MAX)")
+                        {
+                            TaiXe_combobox.Items.Add(reader.GetString(reader.GetOrdinal("Desciption")));
+                        }
+
+                        //if (!reader.IsDBNull(reader.GetOrdinal("Dateofbirth")) && reader.GetDataTypeName(2) == "date")
+                        //{
+                        //    NgaySinh_combobox.Items.Add(reader.GetDateTime(reader.GetOrdinal("Dateofbirth")).ToString("yyyy-MM-dd"));
+                        //}
+                    }
+                }
+                conn.Close();
             }
+
+            // Refresh the form to display updated data
+            this.Refresh();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-            MoTa_textbox.Text = row.Cells[0].Value.ToString();
+            BienSo_textbox.Text = row.Cells[0].Value.ToString();
             TaiXe_combobox.SelectedIndex = IDtaixe_combobox.FindStringExact(row.Cells[2].Value.ToString());
             TrangThai_combobox.Text = row.Cells[3].Value.ToString();
+            MoTa_textbox.Text = row.Cells[4].Value.ToString();
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-            MoTa_textbox.Text = row.Cells[0].Value.ToString();
-            TaiXe_combobox.SelectedIndex = IDtaixe_combobox.FindStringExact(row.Cells[2].Value.ToString());
-            TrangThai_combobox.Text = row.Cells[3].Value.ToString();
-        }
+
 
         private void TaiXe_combobox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -112,38 +149,51 @@ namespace Quanlibaixe
         // Button Them
         private void Them_button_Click(object sender, EventArgs e)
         {
-            if (BienSo_textbox.Text != "" & TaiXe_combobox.Text != "")
+            if (!string.IsNullOrEmpty(BienSo_textbox.Text) && !string.IsNullOrEmpty(IDtaixe_combobox.Text))
             {
                 try
                 {
-                    String query = String.Format("Insert into Car (Id_car,Id_driver,State,Desciption) values ('{0}',{1},'{2}',N'{3}')", BienSo_textbox.Text, IDtaixe_combobox.Text, TrangThai_combobox.Text, MoTa_textbox.Text);
-                    conn.Open();
-                    SqlCommand com = new SqlCommand(query, conn);
-                    com.CommandType = CommandType.Text;
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Thêm Thành Công");
-                    ketnoi();
-                    load_driver();
+                    string query = "Insert into Car (Id_car, Id_driver, State, Desciption) values (@idCar, @idDriver, @state, @description)";
+                    using (SqlCommand com = new SqlCommand(query, conn))
+                    {
+                        com.Parameters.AddWithValue("@idCar", BienSo_textbox.Text);
+                        com.Parameters.AddWithValue("@idDriver", IDtaixe_combobox.Text);
+                        com.Parameters.AddWithValue("@state", TrangThai_combobox.Text);
+                        com.Parameters.AddWithValue("@description", MoTa_textbox.Text);
+
+                        conn.Open();
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Thêm Thành Công");
+                        load_driver();// tải lại danh sách và hiển thị lên DataGridView
+                    }
                 }
-                catch
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi ");
+                    MessageBox.Show($"Lỗi: {ex.Message}");
+                }
+                finally
+                {
                     conn.Close();
                 }
-
-
             }
         }
 
         // Button Sua
         private void Sua_button_Click(object sender, EventArgs e)
         {
-            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = N'{2}' where id_car = '{3}' ", IDtaixe_combobox.Text, TrangThai_combobox.Text, MoTa_textbox.Text, BienSo_textbox.Text);
-            conn.Open();
-            SqlCommand com = new SqlCommand(query, conn);
-            com.CommandType = CommandType.Text;
-            com.ExecuteNonQuery();
-            conn.Close();
+            //Điều này sẽ giúp đảm bảo tính an toàn của ứng dụng và ngăn ngừa các cuộc tấn công SQL Injection.
+            String query = "Update Car Set Id_driver=@idDriver, State=@state, Desciption=@description where id_car=@carId";
+            using (SqlCommand com = new SqlCommand(query, conn))
+            {
+                com.Parameters.AddWithValue("@idDriver", IDtaixe_combobox.Text);
+                com.Parameters.AddWithValue("@state", TrangThai_combobox.Text);
+                com.Parameters.AddWithValue("@description", MoTa_textbox.Text);
+                com.Parameters.AddWithValue("@carId", BienSo_textbox.Text);
+
+                conn.Open();
+                com.ExecuteNonQuery();
+                conn.Close();
+            }
             ketnoi();
             MessageBox.Show("Chỉnh thành công");
         }
@@ -162,13 +212,19 @@ namespace Quanlibaixe
                 MessageBox.Show("Xóa thành công");
                 ketnoi();
                 load_driver();
-                TrangThai_combobox.Text = "";
+                //TrangThai_combobox.Text = "";
                 TaiXe_combobox.Text = "";
             }
             catch
             {
                 MessageBox.Show("Không Thể Xóa Được");
             }
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            ReloadPage();
         }
     }
 }
