@@ -12,23 +12,12 @@
       </tr>
    </table>
 </div>
-- **Form Camera**
-<div align="center">
-   <table align="center" border="0" >
-      <tr>
-         <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera.png" width=1200>
-         </td>
-      </tr>
-   </table>
-</div>
-
 - **Form Camera Dashboard**
 <div align="center">
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_camera-dashboard.png" width=1200>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/FormCamera.png" width=1200>
          </td>
       </tr>
    </table>
@@ -39,7 +28,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/form_xe.png" width=1200>
+            <img src="https://github.com/thqnhngqn-dev/Quanlibaixe-DA00011/blob/main/Screen%20Shots/FormXe.png" width=1200>
          </td>
       </tr>
    </table>
