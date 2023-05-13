@@ -126,12 +126,12 @@ namespace Quanlibaixe
             conn.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_Add_Click(object sender, EventArgs e)
         {
-            if(txt_IDcar.Text!="" && cb_IDtaixe.Text!= "")
+            if (txt_IDcar.Text != "" && cb_IDtaixe.Text != "")
             {
                 try
-                {                   
+                {
                     // sử dụng cơ chế tham số hóa "parameterization mechanism"
                     String query = "Insert into Car (Id_car,Id_driver,State,Desciption) values (@Id_car,@Id_driver,@State,@Desciption)";
                     SqlCommand com = new SqlCommand(query, conn);
@@ -155,7 +155,7 @@ namespace Quanlibaixe
                 {
                     MessageBox.Show("Lỗi ");
                     conn.Close();
-                }               
+                }
             }
         }
 
@@ -170,9 +170,9 @@ namespace Quanlibaixe
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Edit_Click(object sender, EventArgs e)
         {
-            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = N'{2}' where id_car = '{3}' " , cb_IDtaixe.Text, cb_TrangThai.Text, txt_MoTa.Text, txt_IDcar.Text);
+            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = N'{2}' where id_car = '{3}' ", cb_IDtaixe.Text, cb_TrangThai.Text, txt_MoTa.Text, txt_IDcar.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             com.CommandType = CommandType.Text;
@@ -181,7 +181,6 @@ namespace Quanlibaixe
             ketnoi();
             MessageBox.Show("Chỉnh thành công");
         }
-
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -205,7 +204,7 @@ namespace Quanlibaixe
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Delete_Click(object sender, EventArgs e)
         {
             try
             {
@@ -243,29 +242,6 @@ namespace Quanlibaixe
 
         }
 
-        private void btn_refresh_Click(object sender, EventArgs e)
-        {
-            // Làm mới DataGridView
-            //dataGridView1.Refresh();
-
-            // Lưu nguồn dữ liệu hiện tại
-            var dataSource = dataGridView1.DataSource;
-            // Đặt giá trị cho DataSource thành null
-            dataGridView1.DataSource = null;
-
-            // Thiết lập lại nguồn dữ liệu đã lưu
-            dataGridView1.DataSource = dataSource;           
-
-            txt_IDcar.Text = "";
-            cb_IDtaixe.Text = "";
-            cb_TaiXe.Text = "";
-            cb_TrangThai.Text = "";
-            txt_MoTa.Text = "";
-            cb_NgaySinh.Text = "";
-            ketnoi();
-            this.Refresh();
-        }
-
         private void cb_IDtaixe_SelectedIndexChanged(object sender, EventArgs e)
         {
             cb_IDtaixe.SelectedIndex = cb_TaiXe.SelectedIndex;
@@ -293,5 +269,41 @@ namespace Quanlibaixe
                 dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;
             }
         }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            // Làm mới DataGridView
+            //dataGridView1.Refresh();
+
+            // Lưu nguồn dữ liệu hiện tại
+            var dataSource = dataGridView1.DataSource;
+            // Đặt giá trị cho DataSource thành null
+            dataGridView1.DataSource = null;
+
+            // Thiết lập lại nguồn dữ liệu đã lưu
+            dataGridView1.DataSource = dataSource;
+
+            txt_IDcar.Text = "";
+            cb_IDtaixe.Text = "";
+            cb_TaiXe.Text = "";
+            cb_TrangThai.Text = "";
+            txt_MoTa.Text = "";
+            cb_NgaySinh.Text = "";
+            ketnoi();
+            this.Refresh();
+        }
+
+        private void btn_Refresh_MouseHover(object sender, EventArgs e)
+        {
+            label3.Visible = false;
+            // Transiton HorizSlide cho label3.Visible = false thi animation moi chay
+            guna2Transition1.ShowSync(label3);
+        }
+
+        private void btn_Refresh_MouseLeave(object sender, EventArgs e)
+        {
+            label3.Visible = false;
+        }
+
     }
 }

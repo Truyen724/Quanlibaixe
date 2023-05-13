@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Common;
+using System.Globalization;
+using System.Text.RegularExpressions;
+
 namespace Quanlibaixe
 {
     public partial class Form_Driver : Form
@@ -60,24 +63,49 @@ namespace Quanlibaixe
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             comboBox1.SelectedIndex = comboBox3.SelectedIndex;
             string[] x = dates[comboBox3.SelectedIndex].Split('/');
             int day = 0, month = 0, year = 0;
-            try
+            if (int.TryParse(x[0], out day) && int.TryParse(x[1], out month) && int.TryParse(x[2], out year))
             {
-                day = Int32.Parse(x[0]);
-                month = Int32.Parse(x[1]);
-                year = Int32.Parse(x[2]);
-            }
-            catch (FormatException)
-            {
+                try
+                {
+                    // Use TryParseExact method to convert string x to a DateTime object
+                    if (DateTime.TryParseExact(x[0] + "/" + x[1] + "/" + x[2], "dd/MM/yyyy", null, DateTimeStyles.None, out DateTime date))
+                    {
+                        dateTimePicker2.Value = date;
 
+                        // Add code to retrieve ID_driver and Driver_Name from the database based on the selected birthdate
+                        string connectionString = "PUT YOUR CONNECTION STRING HERE";
+                        using (SqlConnection connection = new SqlConnection(connectionString))
+                        {
+                            SqlCommand command = new SqlCommand("SELECT [ID_driver], [Driver_Name] FROM [Detect_bienso].[dbo].[Driver] WHERE [Dateofbirth] = @birthdate", connection);
+                            command.Parameters.AddWithValue("@birthdate", date);
+                            connection.Open();
+                            SqlDataReader reader = command.ExecuteReader();
+                            while (reader.Read())
+                            {
+                                int id = (int)reader["ID_driver"];
+                                string name = (string)reader["Driver_Name"];
+                                // Do something with id and name
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("1.Định dạng ngày sinh không hợp lệ.");
+                    }
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("2.Định dạng ngày sinh không hợp lệ.");
+                }
             }
-            finally
+            else
             {
-                dateTimePicker2.Value = new DateTime(year, month, day);
+                MessageBox.Show("3.Định dạng ngày sinh không hợp lệ.");
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,17 +145,35 @@ namespace Quanlibaixe
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text != "")
+            // Lỗi này khả năng cao do việc bảng Driver của bạn đã được tạo trước
+            if (txt_TenTaiXe.Text != "" && NgaySinh_dateTimePicker.Value <= DateTime.Now)
             {
-                String query2 = String.Format("Insert into Driver(ID_driver, Driver_Name,Dateofbirth) values ((Select max(ID_driver) +1 from Driver), N'{0}','{1}')", textBox1.Text, dateTimePicker1.Value.ToString("yyyyMMdd"));
+                String query = "INSERT INTO Driver (ID_driver, Driver_Name, Dateofbirth) VALUES (@IDDriver, @DriverName, @DateOfBirth)";
                 conn.Open();
-                SqlCommand com2 = new SqlCommand(query2, conn);
-                com2.CommandType = CommandType.Text;
-                com2.ExecuteNonQuery();
-                MessageBox.Show("Thêm thành công");
+                SqlCommand com = new SqlCommand(query, conn);
+                com.CommandType = CommandType.Text;
+                // Sử dụng SELECT MAX(ID_driver) + 1 để tạo giá trị ID mới cho bản ghi
+                com.Parameters.AddWithValue("@IDDriver", Convert.ToInt32(new SqlCommand("SELECT MAX(ID_driver) + 1 FROM Driver", conn).ExecuteScalar()));
+                com.Parameters.AddWithValue("@DriverName", txt_TenTaiXe.Text);
+                com.Parameters.AddWithValue("@DateOfBirth", NgaySinh_dateTimePicker.Value);
+                int result = com.ExecuteNonQuery();
                 conn.Close();
-                load_driver();
-            }    
+
+                if (result > 0)
+                {
+                    MessageBox.Show("Thêm thành công");
+                    load_driver();
+                    //ketnoi();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
+            }
         }
 
         private void Form_Driver_Load(object sender, EventArgs e)

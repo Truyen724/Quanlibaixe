@@ -79,7 +79,9 @@ namespace Quanlibaixe
                 return;
             }
 
-            
+            // notifyIcon1 biểu tượng trên khay hệ thống (system tray) ở góc phải dưới của màn hình.
+            notifyIcon1.Text = "This is a NotifyIcon example.";
+            notifyIcon1.Visible = true;
         }
 
         //Custom hover Camera_buttonCT
@@ -432,6 +434,7 @@ namespace Quanlibaixe
 
             // Tắt Control 
             Camera_tableLayoutPanel1.Visible = false;
+
             // Mở form_Xe
             Xe_tableLayoutPanel2.Visible = true;
 
@@ -610,9 +613,9 @@ namespace Quanlibaixe
         // Button LogOut
         private void LogOut_buttonCT_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Form_login form_Login = new Form_login();
-            form_Login.Show();
+            form_Login.ShowDialog();
         }
 
 
@@ -629,6 +632,81 @@ namespace Quanlibaixe
             Guna2CircleButton button = (Guna2CircleButton)sender;
             guna2CircleButton2.Size = new Size(40, 40);
             settings_label.Visible = false;
+        }
+
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have clicked on the NotifyIcon.");
+        }
+
+        private void quảnLíDữLiệuToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            // Tắt Control 
+            Camera_tableLayoutPanel1.Visible = false;
+
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị Form_QuanLi
+            if (driverForm != null && driverForm.Visible) driverForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_QuanLi
+            if (xeForm != null && xeForm.Visible) xeForm.Hide();
+            // Nếu Form_LichXe đang hiển thị, ẩn đi trước khi hiển thị Form_QuanLi
+            if (lichxeForm != null && lichxeForm.Visible) lichxeForm.Hide();
+            Main_ExamSchedulerMethod();
+        }
+
+        private void quảnLíXeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            // Tắt Control 
+            Camera_tableLayoutPanel1.Visible = false;
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị FormXe
+            if (driverForm != null && driverForm.Visible) driverForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị FormXe
+            if (mainForm != null && mainForm.Visible) mainForm.Hide();
+            // Nếu Form_LichXe đang hiển thị, ẩn đi trước khi hiển thị FormXe
+            if (lichxeForm != null && lichxeForm.Visible) lichxeForm.Hide();
+            Xe_ExamSchedulerMethod();
+        }
+
+        private void quảnLíTàiXếToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            // Tắt Control 
+            Camera_tableLayoutPanel1.Visible = false;
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị Form_Driver
+            if (xeForm != null && xeForm.Visible) xeForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_Driver
+            if (mainForm != null && mainForm.Visible) mainForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_Driver
+            if (lichxeForm != null && lichxeForm.Visible) lichxeForm.Hide();
+            Driver_ExamSchedulerMethod();
+        }
+
+        private void quảnLíLịchTrìnhToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            // Tắt Control 
+            Camera_tableLayoutPanel1.Visible = false;
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị Form_LichXe
+            if (xeForm != null && xeForm.Visible) xeForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_LichXe
+            if (mainForm != null && mainForm.Visible) mainForm.Hide();
+            // Nếu Form_Driver đang hiển thị, ẩn đi trước khi hiển thị Form_LichXe
+            if (driverForm != null && driverForm.Visible) driverForm.Hide();
+            LichXe_ExamSchedulerMethod();
+        }
+
+        private void thêmLịchTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

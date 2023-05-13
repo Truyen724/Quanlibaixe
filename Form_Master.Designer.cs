@@ -72,6 +72,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.camera_Control1 = new Quanlibaixe.Camera_Control();
             this.LogOut_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
@@ -158,6 +159,7 @@
             this.quảnLíDữLiệuToolStripMenuItem.Name = "quảnLíDữLiệuToolStripMenuItem";
             this.quảnLíDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(118, 23);
             this.quảnLíDữLiệuToolStripMenuItem.Text = "Quản lí dữ liệu";
+            this.quảnLíDữLiệuToolStripMenuItem.Click += new System.EventHandler(this.quảnLíDữLiệuToolStripMenuItem_Click_1);
             // 
             // quảnLíXeToolStripMenuItem
             // 
@@ -165,6 +167,7 @@
             this.quảnLíXeToolStripMenuItem.Name = "quảnLíXeToolStripMenuItem";
             this.quảnLíXeToolStripMenuItem.Size = new System.Drawing.Size(89, 23);
             this.quảnLíXeToolStripMenuItem.Text = "Quản lí xe";
+            this.quảnLíXeToolStripMenuItem.Click += new System.EventHandler(this.quảnLíXeToolStripMenuItem_Click_1);
             // 
             // quảnLíTàiXếToolStripMenuItem
             // 
@@ -172,6 +175,7 @@
             this.quảnLíTàiXếToolStripMenuItem.Name = "quảnLíTàiXếToolStripMenuItem";
             this.quảnLíTàiXếToolStripMenuItem.Size = new System.Drawing.Size(110, 23);
             this.quảnLíTàiXếToolStripMenuItem.Text = "Quản lí tài xế";
+            this.quảnLíTàiXếToolStripMenuItem.Click += new System.EventHandler(this.quảnLíTàiXếToolStripMenuItem_Click_1);
             // 
             // quảnLíLịchTrìnhToolStripMenuItem
             // 
@@ -190,6 +194,7 @@
             this.thêmLịchTrìnhToolStripMenuItem.Name = "thêmLịchTrìnhToolStripMenuItem";
             this.thêmLịchTrìnhToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.thêmLịchTrìnhToolStripMenuItem.Text = "Thêm lịch trình";
+            this.thêmLịchTrìnhToolStripMenuItem.Click += new System.EventHandler(this.thêmLịchTrìnhToolStripMenuItem_Click);
             // 
             // quảnLíLịchTrìnhToolStripMenuItem1
             // 
@@ -197,6 +202,7 @@
             this.quảnLíLịchTrìnhToolStripMenuItem1.Name = "quảnLíLịchTrìnhToolStripMenuItem1";
             this.quảnLíLịchTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(188, 24);
             this.quảnLíLịchTrìnhToolStripMenuItem1.Text = "Quản lí lịch trình";
+            this.quảnLíLịchTrìnhToolStripMenuItem1.Click += new System.EventHandler(this.quảnLíLịchTrìnhToolStripMenuItem1_Click);
             // 
             // DragControl_Panel2
             // 
@@ -591,6 +597,13 @@
             animation1.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation1;
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+            // 
             // camera_Control1
             // 
             this.guna2Transition1.SetDecoration(this.camera_Control1, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -889,5 +902,6 @@
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
         private System.Windows.Forms.Label settings_label;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
