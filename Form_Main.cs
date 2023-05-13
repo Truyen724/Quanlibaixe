@@ -15,6 +15,12 @@ namespace Quanlibaixe
 {
     public partial class Form_Main : Form
     {
+        // đoạn mã được đặt form_Xe Nhằm lien ket giua form master va form Xe li du lieu
+        public Form_Master CallerForm { get; set; }
+        public Form_Main(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
+        }
         public Form_Main()
         {
             InitializeComponent();
@@ -25,6 +31,10 @@ namespace Quanlibaixe
         SqlConnection conn = new SqlConnection();
         public void ketnoi()
         {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.Gray;
+            dataGridView1.DefaultCellStyle = style;
+
             try
             {
                 conn.ConnectionString = ConectionString;
@@ -121,8 +131,8 @@ namespace Quanlibaixe
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                 
                 string id = row.Cells[0].Value.ToString();
-                textBox1.Text = id;
-                textBox2.Text = row.Cells[1].Value.ToString();
+                txt_IDcar.Text = id;
+                txt_TaiXe.Text = row.Cells[1].Value.ToString();
                 string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car = '{0}'  order by ID_action desc", id);
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
@@ -156,8 +166,8 @@ namespace Quanlibaixe
             {
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                 string id = row.Cells[0].Value.ToString();
-                textBox1.Text = id;
-                textBox2.Text = row.Cells[1].Value.ToString();
+                txt_IDcar.Text = id;
+                txt_TaiXe.Text = row.Cells[1].Value.ToString();
                 string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car = '{0}' order by ID_action desc", id);
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
@@ -396,11 +406,48 @@ namespace Quanlibaixe
 
         }
 
-        // Khai bao lien ket giua form master va form Quan li du lieu
-        public Form_Master CallerForm { get; set; }
-        public Form_Main(Form_Master callerForm) : this()
+        private void dataGridView1_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
         {
-            this.CallerForm = callerForm;
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.White;
+            style.BackColor = Color.FromArgb(0, 13, 66);
+            if (e.RowIndex > -1)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
+
+        private void dataGridView1_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellStyle style1 = new DataGridViewCellStyle();
+            style1.ForeColor = Color.Gray;
+            style1.BackColor = Color.White;
+            if (e.RowIndex > -1)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style1;
+            }
+        }
+
+        private void dataGridView2_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.White;
+            style.BackColor = Color.FromArgb(0, 13, 66);
+            if (e.RowIndex > -1)
+            {
+                dataGridView2.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
+
+        private void dataGridView2_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.Gray;
+            style.BackColor = Color.White;
+            if (e.RowIndex > -1)
+            {
+                dataGridView2.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
         }
     }
 }

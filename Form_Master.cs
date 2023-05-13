@@ -234,6 +234,9 @@ namespace Quanlibaixe
             Camera_tableLayoutPanel1.Visible = true;
             camera_Control1.BringToFront();
 
+            // Tắt FormXe
+            Xe_tableLayoutPanel2.Visible = false;
+
             // Button RunCamera
             button7.Visible = true;
 
@@ -272,9 +275,19 @@ namespace Quanlibaixe
                 label3.Text = QuanLi_buttonCT.Text;
             }
 
-            // Tắt Xe_Control 
+            // Tắt Control 
             Camera_tableLayoutPanel1.Visible = false;
-            
+
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị Form_QuanLi
+            if (driverForm != null && driverForm.Visible) driverForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_QuanLi
+            if (xeForm != null && xeForm.Visible) xeForm.Hide();
+            // Nếu Form_LichXe đang hiển thị, ẩn đi trước khi hiển thị Form_QuanLi
+            if (lichxeForm != null && lichxeForm.Visible) lichxeForm.Hide();
+            Main_ExamSchedulerMethod();
 
             // Button RunCamera
             button7.Visible = false;
@@ -314,10 +327,17 @@ namespace Quanlibaixe
                 label3.Text = XeOto_buttonCT.Text;
             }
 
-            // Tắt Xe_Control 
+            // Tắt Control 
             Camera_tableLayoutPanel1.Visible = false;
             // Mở form_Xe
             Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị FormXe
+            if (driverForm != null && driverForm.Visible) driverForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị FormXe
+            if (mainForm != null && mainForm.Visible) mainForm.Hide();
+            // Nếu Form_LichXe đang hiển thị, ẩn đi trước khi hiển thị FormXe
+            if (lichxeForm != null && lichxeForm.Visible) lichxeForm.Hide();
             Xe_ExamSchedulerMethod();
 
             // Button RunCamera
@@ -359,8 +379,19 @@ namespace Quanlibaixe
                 label3.Text = TaiXe_buttonCT.Text;
             }
 
-            // Tắt Xe_Control 
+            // Tắt Control 
             Camera_tableLayoutPanel1.Visible = false;
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị Form_Driver
+            if (xeForm != null && xeForm.Visible) xeForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_Driver
+            if (mainForm != null && mainForm.Visible) mainForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_Driver
+            if (lichxeForm != null && lichxeForm.Visible) lichxeForm.Hide();
+            Driver_ExamSchedulerMethod();
+
             // Button RunCamera
             button7.Visible = false;
 
@@ -399,8 +430,19 @@ namespace Quanlibaixe
                 label3.Text = LichXe_buttonCT.Text;
             }
 
-            // Tắt Xe_Control 
+            // Tắt Control 
             Camera_tableLayoutPanel1.Visible = false;
+            // Mở form_Xe
+            Xe_tableLayoutPanel2.Visible = true;
+
+            // Nếu FormXe đang hiển thị, ẩn đi trước khi hiển thị Form_LichXe
+            if (xeForm != null && xeForm.Visible) xeForm.Hide();
+            // Nếu Form_Main đang hiển thị, ẩn đi trước khi hiển thị Form_LichXe
+            if (mainForm != null && mainForm.Visible) mainForm.Hide();
+            // Nếu Form_Driver đang hiển thị, ẩn đi trước khi hiển thị Form_LichXe
+            if (driverForm != null && driverForm.Visible) driverForm.Hide();
+            LichXe_ExamSchedulerMethod();
+
             // Button RunCamera
             button7.Visible = false;
 
@@ -475,8 +517,8 @@ namespace Quanlibaixe
         //    form_Xe.Show();
         //}
 
-        // Loading form_Xe lên panel trong form_master
-        //private static Form_Xe xeForm = null; // tạo một instance duy nhất của Form_Xe
+        // Loading formXe lên panel trong form_master
+        //private static FormXe xeForm = null; // tạo một instance duy nhất của Form_Xe
         private static FormXe xeForm = null; // tạo một instance duy nhất của Form_Xe
         public void Xe_ExamSchedulerMethod()
         {
@@ -488,7 +530,7 @@ namespace Quanlibaixe
                 xeForm.Dock = DockStyle.Fill;
 
                 // Thêm form_Xe vào control con cuối cùng trong Xe_tableLayoutPanel2
-                Xe_tableLayoutPanel2.Controls.Add(xeForm);
+                Xe_tableLayoutPanel2.Controls.Add(xeForm, Xe_tableLayoutPanel2.Controls.Count - 1, 0);
 
                 // Đăng ký sự kiện Closed để set xeForm về null
                 xeForm.Closed += (s, args) => { xeForm.Dispose(); xeForm = null; };
@@ -496,6 +538,73 @@ namespace Quanlibaixe
 
             // Hiển thị form_Xe
             xeForm.Show();
+        }
+
+        // Loading form_Main lên panel trong form_master
+        //private static Form_Main mainForm = null; // tạo một instance duy nhất của Form_Xe
+        private static Form_Main mainForm = null; // tạo một instance duy nhất của Form_Xe
+        public void Main_ExamSchedulerMethod()
+        {
+            if (mainForm == null)
+            {
+                //xeForm = new Form_Xe();
+                mainForm = new Form_Main();
+                mainForm.TopLevel = false;
+                mainForm.Dock = DockStyle.Fill;
+
+                // Thêm form_Xe vào control con cuối cùng trong Xe_tableLayoutPanel2
+                Xe_tableLayoutPanel2.Controls.Add(mainForm, Xe_tableLayoutPanel2.Controls.Count - 1, 0);
+
+                // Đăng ký sự kiện Closed để set xeForm về null
+                mainForm.Closed += (s, args) => { mainForm.Dispose(); mainForm = null; };
+            }
+
+            // Hiển thị form_Xe
+            mainForm.Show();
+        }
+
+        // Loading form_Driver lên panel trong form_master
+        //private static Form_Driver driverForm = null; // tạo một instance duy nhất của Form_Xe
+        private static Form_Driver driverForm = null; // tạo một instance duy nhất của Form_Xe
+        public void Driver_ExamSchedulerMethod()
+        {
+            if (driverForm == null)
+            {
+                //xeForm = new Form_Xe();
+                driverForm = new Form_Driver();
+                driverForm.TopLevel = false;
+                driverForm.Dock = DockStyle.Fill;
+                // Thêm form_Xe vào control con cuối cùng trong Xe_tableLayoutPanel2
+                Xe_tableLayoutPanel2.Controls.Add(driverForm, Xe_tableLayoutPanel2.Controls.Count - 1, 0);
+
+                // Đăng ký sự kiện Closed để set xeForm về null
+                driverForm.Closed += (s, args) => { driverForm.Dispose(); driverForm = null; };
+            }
+
+            // Hiển thị form_Xe
+            driverForm.Show();
+        }
+
+        // Loading lichxeForm lên panel trong form_master
+        //private static Form_lichxe lichxeForm = null; // tạo một instance duy nhất của Form_Xe
+        private static Form_lichxe lichxeForm = null; // tạo một instance duy nhất của Form_Xe
+        public void LichXe_ExamSchedulerMethod()
+        {
+            if (lichxeForm == null)
+            {
+                //xeForm = new Form_Xe();
+                lichxeForm = new Form_lichxe();
+                lichxeForm.TopLevel = false;
+                lichxeForm.Dock = DockStyle.Fill;
+                // Thêm form_Xe vào control con cuối cùng trong Xe_tableLayoutPanel2
+                Xe_tableLayoutPanel2.Controls.Add(lichxeForm, Xe_tableLayoutPanel2.Controls.Count - 1, 0);
+
+                // Đăng ký sự kiện Closed để set xeForm về null
+                lichxeForm.Closed += (s, args) => { lichxeForm.Dispose(); lichxeForm = null; };
+            }
+
+            // Hiển thị form_Xe
+            lichxeForm.Show();
         }
 
         // Button LogOut

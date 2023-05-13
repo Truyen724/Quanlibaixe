@@ -64,3 +64,4 @@ D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CopyComplete
 D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.exe
 D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.pdb
 D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Xe.resources
+D:\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Xe.resources

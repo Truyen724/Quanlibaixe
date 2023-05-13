@@ -271,7 +271,27 @@ namespace Quanlibaixe
             cb_IDtaixe.SelectedIndex = cb_TaiXe.SelectedIndex;
             cb_NgaySinh.SelectedIndex = cb_TaiXe.SelectedIndex;
         }
-        
-        
+
+        private void dataGridView1_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.White;
+            style.BackColor = Color.FromArgb(0, 13, 66);
+            if (e.RowIndex > -1)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
+
+        private void dataGridView1_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.Black;
+            style.BackColor = Color.White;
+            if (e.RowIndex > -1)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
     }
 }
