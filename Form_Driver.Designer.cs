@@ -165,7 +165,7 @@ namespace Quanlibaixe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 150);
+            this.ClientSize = new System.Drawing.Size(1194, 448);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.txt_TenTaiXe);
@@ -178,7 +178,7 @@ namespace Quanlibaixe
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_Driver";
             this.Text = "Form_Driver";
