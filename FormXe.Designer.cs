@@ -29,7 +29,7 @@ namespace Quanlibaixe
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormXe));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +51,8 @@ namespace Quanlibaixe
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_Refresh = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txt_MoTa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_IDcar = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
@@ -60,8 +62,6 @@ namespace Quanlibaixe
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_Refresh = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -154,6 +154,7 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.SetDecoration(this.cb_TrangThai, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_TrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_TrangThai.ForeColor = System.Drawing.Color.Gray;
             this.cb_TrangThai.FormattingEnabled = true;
             this.cb_TrangThai.Items.AddRange(new object[] {
             "in",
@@ -195,6 +196,7 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.SetDecoration(this.cb_TaiXe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_TaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_TaiXe.ForeColor = System.Drawing.Color.Gray;
             this.cb_TaiXe.FormattingEnabled = true;
             this.cb_TaiXe.Location = new System.Drawing.Point(105, 66);
             this.cb_TaiXe.Margin = new System.Windows.Forms.Padding(2);
@@ -339,6 +341,42 @@ namespace Quanlibaixe
             this.panel1.Size = new System.Drawing.Size(436, 416);
             this.panel1.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(17, 246);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 19);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "Refresh";
+            this.label3.Visible = false;
+            // 
+            // btn_Refresh
+            // 
+            this.guna2Transition1.SetDecoration(this.btn_Refresh, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Refresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Refresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Refresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Refresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Refresh.FillColor = System.Drawing.SystemColors.Control;
+            this.btn_Refresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.btn_Refresh.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
+            this.btn_Refresh.Location = new System.Drawing.Point(23, 268);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Refresh.Size = new System.Drawing.Size(40, 40);
+            this.btn_Refresh.TabIndex = 64;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            this.btn_Refresh.MouseLeave += new System.EventHandler(this.btn_Refresh_MouseLeave);
+            this.btn_Refresh.MouseHover += new System.EventHandler(this.btn_Refresh_MouseHover);
+            // 
             // txt_MoTa
             // 
             this.txt_MoTa.BorderColor = System.Drawing.Color.Gray;
@@ -354,6 +392,7 @@ namespace Quanlibaixe
             this.txt_MoTa.ForeColor = System.Drawing.Color.Gray;
             this.txt_MoTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MoTa.Location = new System.Drawing.Point(105, 140);
+            this.txt_MoTa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_MoTa.Name = "txt_MoTa";
             this.txt_MoTa.PasswordChar = '\0';
             this.txt_MoTa.PlaceholderText = "";
@@ -376,6 +415,7 @@ namespace Quanlibaixe
             this.txt_IDcar.ForeColor = System.Drawing.Color.Gray;
             this.txt_IDcar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_IDcar.Location = new System.Drawing.Point(105, 30);
+            this.txt_IDcar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_IDcar.Name = "txt_IDcar";
             this.txt_IDcar.PasswordChar = '\0';
             this.txt_IDcar.PlaceholderText = "";
@@ -488,62 +528,26 @@ namespace Quanlibaixe
             this.panel2.Size = new System.Drawing.Size(436, 20);
             this.panel2.TabIndex = 37;
             // 
-            // btn_Refresh
-            // 
-            this.guna2Transition1.SetDecoration(this.btn_Refresh, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btn_Refresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Refresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Refresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Refresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Refresh.FillColor = System.Drawing.SystemColors.Control;
-            this.btn_Refresh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
-            this.btn_Refresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            this.btn_Refresh.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
-            this.btn_Refresh.Location = new System.Drawing.Point(23, 268);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_Refresh.Size = new System.Drawing.Size(40, 40);
-            this.btn_Refresh.TabIndex = 64;
-            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
-            this.btn_Refresh.MouseLeave += new System.EventHandler(this.btn_Refresh_MouseLeave);
-            this.btn_Refresh.MouseHover += new System.EventHandler(this.btn_Refresh_MouseHover);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(17, 246);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 19);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "Refresh";
-            this.label3.Visible = false;
-            // 
             // guna2Transition1
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Mosaic;
             this.guna2Transition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 20;
-            animation3.Padding = new System.Windows.Forms.Padding(30);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 20;
+            animation1.Padding = new System.Windows.Forms.Padding(30);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // FormXe
             // 

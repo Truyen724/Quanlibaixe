@@ -35,7 +35,7 @@ namespace Quanlibaixe
                 conn.Open();
 
                 // Câu truy vấn SELECT để lấy dữ liệu từ bảng Car
-                string query = "SELECT TOP (1000) [Id_car], [Id_driver], [State], [Desciption] FROM [Detect_bienso].[dbo].[Car]";
+                string query = "SELECT [Id_car], [Id_driver], [State], [Desciption] FROM [Detect_bienso].[dbo].[Car]";
 
                 // Tạo đối tượng SqlCommand để thực hiện câu truy vấn SELECT
                 using (SqlCommand command = new SqlCommand(query, conn))
@@ -295,7 +295,6 @@ namespace Quanlibaixe
 
         private void btn_Refresh_MouseHover(object sender, EventArgs e)
         {
-            label3.Visible = false;
             // Transiton HorizSlide cho label3.Visible = false thi animation moi chay
             guna2Transition1.ShowSync(label3);
         }

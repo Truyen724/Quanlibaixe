@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Data.Common;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using System.Xml.Linq;
 
 namespace Quanlibaixe
 {
@@ -24,6 +25,7 @@ namespace Quanlibaixe
         }
         String ConectionString = infor.ConectionString;
         SqlConnection conn = new SqlConnection();
+        //
         public void ketnoi()
         {
             try
@@ -32,8 +34,18 @@ namespace Quanlibaixe
             }
             catch
             {
-                MessageBox.Show("Kết nối thất bại");
+                MessageBox.Show("Kết nối thất bại !");
             }
+
+            String query = "select [ID_driver], [Driver_Name], [Dateofbirth] FROM [Detect_bienso].[dbo].[Driver]";
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView1.DataSource = dt;
+            conn.Close();
         }
         List<string> dates = new List<string>();
         public void load_driver()
@@ -43,16 +55,16 @@ namespace Quanlibaixe
             SqlCommand com = new SqlCommand(query, conn);
             using (DbDataReader reader = com.ExecuteReader())
             {
-                comboBox1.Items.Clear();
-                comboBox3.Items.Clear();
+                cb_IDtaixe.Items.Clear();
+                cb_TenTaiXe2.Items.Clear();
                 dates.Clear();
                 if (reader.HasRows)
                 {
 
                     while (reader.Read())
                     {
-                        comboBox1.Items.Add(reader.GetValue(0).ToString());
-                        comboBox3.Items.Add(reader.GetValue(1).ToString());
+                        cb_IDtaixe.Items.Add(reader.GetValue(0).ToString());
+                        cb_TenTaiXe2.Items.Add(reader.GetValue(1).ToString());
                         dates.Add(reader.GetValue(2).ToString().Substring(0, 10));
                     }
                     reader.Dispose();
@@ -61,11 +73,91 @@ namespace Quanlibaixe
             conn.Close();
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", cb_TenTaiXe2.Text, dateTimePicker2.Value.ToString("dd/MM/yyyy"), cb_IDtaixe.Text);
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            com.CommandType = CommandType.Text;
+            com.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Sửa thành công");
+            load_driver();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String query = String.Format("Delete from driver where Id_driver = {0}", cb_IDtaixe.Text);
+                conn.Open();
+                SqlCommand com = new SqlCommand(query, conn);
+                com.CommandType = CommandType.Text;
+                com.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Xóa thành công");
+                load_driver();
+                cb_TenTaiXe2.Text = "";
+                cb_IDtaixe.Text = "";
+            }
+            catch
+            {
+                MessageBox.Show("Không Thể Xóa Được");
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Lỗi này khả năng cao do việc bảng Driver của bạn đã được tạo trước
+            if (txt_TenTaiXe.Text != "" && NgaySinh_dateTimePicker.Value <= DateTime.Now)
+            {
+                String query = "INSERT INTO Driver (ID_driver, Driver_Name, Dateofbirth) VALUES (@IDDriver, @DriverName, @DateOfBirth)";
+                conn.Open();
+                SqlCommand com = new SqlCommand(query, conn);
+                com.CommandType = CommandType.Text;
+                // Sử dụng SELECT MAX(ID_driver) + 1 để tạo giá trị ID mới cho bản ghi
+                com.Parameters.AddWithValue("@IDDriver", Convert.ToInt32(new SqlCommand("SELECT MAX(ID_driver) + 1 FROM Driver", conn).ExecuteScalar()));
+                com.Parameters.AddWithValue("@DriverName", txt_TenTaiXe.Text);
+                com.Parameters.AddWithValue("@DateOfBirth", NgaySinh_dateTimePicker.Value.ToString("dd/MM/yyyy"));
+                int result = com.ExecuteNonQuery();
+                conn.Close();
+
+                if (result > 0)
+                {
+                    MessageBox.Show("Thêm thành công");
+                    load_driver();
+                    //ketnoi();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
+            }
+        }
+
+        private void Form_Driver_Load(object sender, EventArgs e)
         {
 
-            comboBox1.SelectedIndex = comboBox3.SelectedIndex;
-            string[] x = dates[comboBox3.SelectedIndex].Split('/');
+        }
+
+        // Khai bao lien ket giua form master va form Quan li du lieu
+        public Form_Master CallerForm { get; set; }
+        public Form_Driver(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
+        }
+
+        private void cb_TenTaiXe2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cb_IDtaixe.SelectedIndex = cb_TenTaiXe2.SelectedIndex;
+            string[] x = dates[cb_TenTaiXe2.SelectedIndex].Split('/');
             int day = 0, month = 0, year = 0;
             if (int.TryParse(x[0], out day) && int.TryParse(x[1], out month) && int.TryParse(x[2], out year))
             {
@@ -108,84 +200,25 @@ namespace Quanlibaixe
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cb_IDtaixe_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", comboBox3.Text, dateTimePicker2.Value.ToString("yyyyMMdd"), comboBox1.Text);
-            conn.Open();
-            SqlCommand com = new SqlCommand(query, conn);
-            com.CommandType = CommandType.Text;
-            com.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Sửa thành công");
-            load_driver();
-
+            cb_IDtaixe.SelectedIndex = cb_TenTaiXe2.SelectedIndex;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                String query = String.Format("Delete from driver where Id_driver = {0}", comboBox1.Text);
-                conn.Open();
-                SqlCommand com = new SqlCommand(query, conn);
-                com.CommandType = CommandType.Text;
-                com.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Xóa thành công");
-                load_driver();
-                comboBox3.Text = "";
-                comboBox1.Text = "";
-            }
-            catch
-            {
-                MessageBox.Show("Không Thể Xóa Được");
-            }
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // Lỗi này khả năng cao do việc bảng Driver của bạn đã được tạo trước
-            if (txt_TenTaiXe.Text != "" && NgaySinh_dateTimePicker.Value <= DateTime.Now)
-            {
-                String query = "INSERT INTO Driver (ID_driver, Driver_Name, Dateofbirth) VALUES (@IDDriver, @DriverName, @DateOfBirth)";
-                conn.Open();
-                SqlCommand com = new SqlCommand(query, conn);
-                com.CommandType = CommandType.Text;
-                // Sử dụng SELECT MAX(ID_driver) + 1 để tạo giá trị ID mới cho bản ghi
-                com.Parameters.AddWithValue("@IDDriver", Convert.ToInt32(new SqlCommand("SELECT MAX(ID_driver) + 1 FROM Driver", conn).ExecuteScalar()));
-                com.Parameters.AddWithValue("@DriverName", txt_TenTaiXe.Text);
-                com.Parameters.AddWithValue("@DateOfBirth", NgaySinh_dateTimePicker.Value);
-                int result = com.ExecuteNonQuery();
-                conn.Close();
-
-                if (result > 0)
-                {
-                    MessageBox.Show("Thêm thành công");
-                    load_driver();
-                    //ketnoi();
-                }
-                else
-                {
-                    MessageBox.Show("Thêm thất bại");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
-            }
-        }
-
-        private void Form_Driver_Load(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        // Khai bao lien ket giua form master va form Quan li du lieu
-        public Form_Master CallerForm { get; set; }
-        public Form_Driver(Form_Master callerForm) : this()
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.CallerForm = callerForm;
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                cb_IDtaixe.Text = row.Cells["ID_driver"].Value.ToString();
+                txt_TenTaiXe.Text = row.Cells["Driver_Name"].Value.ToString();
+                NgaySinh_dateTimePicker.Text = row.Cells["Dateofbirth"].Value.ToString();
+            }
         }
     }
 }

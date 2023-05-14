@@ -21,10 +21,10 @@ namespace Quanlibaixe
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new Form_login());
+            Application.Run(new Form_login());
             //Application.Run(new Form_Master());
             //Application.Run(new FormXe());
-            Application.Run(new Form_Driver());
+            //Application.Run(new Form_Driver());
 
         }
     }

@@ -240,7 +240,7 @@ namespace Quanlibaixe
             Xe_tableLayoutPanel2.Visible = false;
 
             // Button RunCamera
-            button7.Visible = true;
+            btn_RunCamera.Visible = true;
 
             // Click mouse SidePanel di chuyển theo button
             SidePanel.Height = Camera_buttonCT.Height;
@@ -292,7 +292,7 @@ namespace Quanlibaixe
             Main_ExamSchedulerMethod();
 
             // Button RunCamera
-            button7.Visible = false;
+            btn_RunCamera.Visible = false;
 
             // Click mouse SidePanel di chuyển theo button
             SidePanel.Height = QuanLi_buttonCT.Height;
@@ -343,7 +343,7 @@ namespace Quanlibaixe
             Xe_ExamSchedulerMethod();
 
             // Button RunCamera
-            button7.Visible = false;
+            btn_RunCamera.Visible = false;
 
             // Click mouse SidePanel di chuyển theo button
             SidePanel.Height = XeOto_buttonCT.Height;
@@ -395,7 +395,7 @@ namespace Quanlibaixe
             Driver_ExamSchedulerMethod();
 
             // Button RunCamera
-            button7.Visible = false;
+            btn_RunCamera.Visible = false;
 
             // Click mouse SidePanel di chuyển theo button
             SidePanel.Height = TaiXe_buttonCT.Height;
@@ -447,7 +447,7 @@ namespace Quanlibaixe
             LichXe_ExamSchedulerMethod();
 
             // Button RunCamera
-            button7.Visible = false;
+            btn_RunCamera.Visible = false;
 
             // Click mouse SidePanel di chuyển theo button
             SidePanel.Height = LichXe_buttonCT.Height;
@@ -471,7 +471,7 @@ namespace Quanlibaixe
         }
 
         // Button RunCamera
-        private void button7_Click(object sender, EventArgs e)
+        private void btn_RunCamera_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
@@ -482,7 +482,7 @@ namespace Quanlibaixe
             process.StartInfo = startInfo;
             process.Start();
             MessageBox.Show("Đang khởi động");
-            button7.Enabled = false;
+            btn_RunCamera.Enabled = false;
         }
 
         // ToolStripMenu
@@ -610,14 +610,13 @@ namespace Quanlibaixe
             lichxeForm.Show();
         }
 
-        // Button LogOut
-        private void LogOut_buttonCT_Click(object sender, EventArgs e)
+        // Button đăng xuất
+        private void btn_Logout_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form_login form_Login = new Form_login();
             form_Login.ShowDialog();
         }
-
 
         private void guna2CircleButton2_MouseHover(object sender, EventArgs e)
         {
@@ -708,5 +707,7 @@ namespace Quanlibaixe
         {
 
         }
+
+
     }
 }
