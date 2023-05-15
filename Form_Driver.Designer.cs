@@ -29,7 +29,7 @@ namespace Quanlibaixe
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Driver));
             this.NgaySinh_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,7 +39,6 @@ namespace Quanlibaixe
             this.label7 = new System.Windows.Forms.Label();
             this.cb_IDtaixe = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cb_TenTaiXe2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -85,7 +84,7 @@ namespace Quanlibaixe
             // button2
             // 
             this.guna2Transition1.SetDecoration(this.button2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.button2.Location = new System.Drawing.Point(141, 234);
+            this.button2.Location = new System.Drawing.Point(141, 256);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(303, 31);
@@ -172,23 +171,6 @@ namespace Quanlibaixe
             this.label4.Size = new System.Drawing.Size(105, 21);
             this.label4.TabIndex = 64;
             this.label4.Text = "Mã Số Tài Xế";
-            // 
-            // cb_TenTaiXe2
-            // 
-            this.cb_TenTaiXe2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.cb_TenTaiXe2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.cb_TenTaiXe2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_TenTaiXe2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_TenTaiXe2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_TenTaiXe2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_TenTaiXe2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cb_TenTaiXe2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_TenTaiXe2.ItemHeight = 30;
-            this.cb_TenTaiXe2.Location = new System.Drawing.Point(141, 304);
-            this.cb_TenTaiXe2.Name = "cb_TenTaiXe2";
-            this.cb_TenTaiXe2.Size = new System.Drawing.Size(303, 36);
-            this.cb_TenTaiXe2.TabIndex = 65;
-            this.cb_TenTaiXe2.SelectedIndexChanged += new System.EventHandler(this.cb_TenTaiXe2_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -342,7 +324,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(22, 304);
+            this.label5.Location = new System.Drawing.Point(11, 256);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 19);
@@ -363,7 +345,7 @@ namespace Quanlibaixe
             this.btn_Refresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.btn_Refresh.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
-            this.btn_Refresh.Location = new System.Drawing.Point(28, 326);
+            this.btn_Refresh.Location = new System.Drawing.Point(17, 278);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_Refresh.Size = new System.Drawing.Size(40, 40);
@@ -376,22 +358,22 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Mosaic;
             this.guna2Transition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 20;
-            animation3.Padding = new System.Windows.Forms.Padding(30);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 20;
+            animation1.Padding = new System.Windows.Forms.Padding(30);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // Form_Driver
             // 
@@ -406,7 +388,6 @@ namespace Quanlibaixe
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cb_TenTaiXe2);
             this.Controls.Add(this.cb_IDtaixe);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
@@ -437,7 +418,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2ComboBox cb_IDtaixe;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_TenTaiXe2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;

@@ -56,7 +56,6 @@ namespace Quanlibaixe
             using (DbDataReader reader = com.ExecuteReader())
             {
                 cb_IDtaixe.Items.Clear();
-                cb_TenTaiXe2.Items.Clear();
                 dates.Clear();
                 if (reader.HasRows)
                 {
@@ -64,7 +63,6 @@ namespace Quanlibaixe
                     while (reader.Read())
                     {
                         cb_IDtaixe.Items.Add(reader.GetValue(0).ToString());
-                        cb_TenTaiXe2.Items.Add(reader.GetValue(1).ToString());
                         dates.Add(reader.GetValue(2).ToString().Substring(0, 10));
                     }
                     reader.Dispose();
@@ -76,7 +74,7 @@ namespace Quanlibaixe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", cb_TenTaiXe2.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), cb_IDtaixe.Text);
+            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", txt_TenTaiXe.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), cb_IDtaixe.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             com.CommandType = CommandType.Text;
@@ -99,7 +97,6 @@ namespace Quanlibaixe
                 conn.Close();
                 MessageBox.Show("Xóa thành công");
                 load_driver();
-                cb_TenTaiXe2.Text = "";
                 cb_IDtaixe.Text = "";
             }
             catch
@@ -155,66 +152,60 @@ namespace Quanlibaixe
             this.CallerForm = callerForm;
         }
 
-        private void cb_TenTaiXe2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cb_IDtaixe.SelectedIndex = cb_TenTaiXe2.SelectedIndex;
-            string[] x = dates[cb_TenTaiXe2.SelectedIndex].Split('/');
-            int day = 0, month = 0, year = 0;
-            if (int.TryParse(x[0], out day) && int.TryParse(x[1], out month) && int.TryParse(x[2], out year))
-            {
-                try
-                {
-                    // Use TryParseExact method to convert string x to a DateTime object
-                    if (DateTime.TryParseExact(x[0] + "/" + x[1] + "/" + x[2], "yyyy/MM/dd", null, DateTimeStyles.None, out DateTime date))
-                    {
-                        NgaySinh_dateTimePicker.Value = date;
+        //private void cb_TenTaiXe2_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+            //cb_IDtaixe.SelectedIndex = cb_TenTaiXe2.SelectedIndex;
+            //string[] x = dates[cb_TenTaiXe2.SelectedIndex].Split('/');
+            //int day = 0, month = 0, year = 0;
+            //if (int.TryParse(x[0], out day) && int.TryParse(x[1], out month) && int.TryParse(x[2], out year))
+            //{
+            //    try
+            //    {
+            //        // Use TryParseExact method to convert string x to a DateTime object
+            //        if (DateTime.TryParseExact(x[0] + "/" + x[1] + "/" + x[2], "yyyy/MM/dd", null, DateTimeStyles.None, out DateTime date))
+            //        {
+            //            NgaySinh_dateTimePicker.Value = date;
 
-                        // Add code to retrieve ID_driver and Driver_Name from the database based on the selected birthdate
-                        string connectionString = "PUT YOUR CONNECTION STRING HERE";
-                        using (SqlConnection connection = new SqlConnection(connectionString))
-                        {
-                            SqlCommand command = new SqlCommand("SELECT [ID_driver], [Driver_Name] FROM [Detect_bienso].[dbo].[Driver] WHERE [Dateofbirth] = @birthdate", connection);
-                            command.Parameters.AddWithValue("@birthdate", date);
-                            connection.Open();
-                            SqlDataReader reader = command.ExecuteReader();
-                            while (reader.Read())
-                            {
-                                int id = (int)reader["ID_driver"];
-                                string name = (string)reader["Driver_Name"];
-                                // Do something with id and name
-                            }
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("1.Định dạng ngày sinh không hợp lệ.");
-                    }
-                }
-                catch (FormatException)
-                {
-                    MessageBox.Show("2.Định dạng ngày sinh không hợp lệ.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("3.Định dạng ngày sinh không hợp lệ.");
-            }
-        }
+            //            // Add code to retrieve ID_driver and Driver_Name from the database based on the selected birthdate
+            //            string connectionString = "PUT YOUR CONNECTION STRING HERE";
+            //            using (SqlConnection connection = new SqlConnection(connectionString))
+            //            {
+            //                SqlCommand command = new SqlCommand("SELECT [ID_driver], [Driver_Name] FROM [Detect_bienso].[dbo].[Driver] WHERE [Dateofbirth] = @birthdate", connection);
+            //                command.Parameters.AddWithValue("@birthdate", date);
+            //                connection.Open();
+            //                SqlDataReader reader = command.ExecuteReader();
+            //                while (reader.Read())
+            //                {
+            //                    int id = (int)reader["ID_driver"];
+            //                    string name = (string)reader["Driver_Name"];
+            //                    // Do something with id and name
+            //                }
+            //            }
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("1.Định dạng ngày sinh không hợp lệ.");
+            //        }
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        MessageBox.Show("2.Định dạng ngày sinh không hợp lệ.");
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("3.Định dạng ngày sinh không hợp lệ.");
+            //}
+        //}
 
         private void cb_IDtaixe_SelectedIndexChanged(object sender, EventArgs e)
         {
             
         }
 
-            private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                cb_IDtaixe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells["ID_driver"].Value.ToString());
-                txt_TenTaiXe.Text = row.Cells["Driver_Name"].Value.ToString();
-                NgaySinh_dateTimePicker.Text = row.Cells["Dateofbirth"].Value.ToString();
-            }
+            
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -223,8 +214,12 @@ namespace Quanlibaixe
             {
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                 cb_IDtaixe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells["ID_driver"].Value.ToString());
+                //txt_TenTaiXe.Text = row.Cells["Driver_Name"].Value.ToString();
                 txt_TenTaiXe.Text = row.Cells["Driver_Name"].Value.ToString();
                 NgaySinh_dateTimePicker.Text = row.Cells["Dateofbirth"].Value.ToString();
+                txt_PhoneNumber.Text = row.Cells["Phone_Number"].Value.ToString();
+                txt_DiaChi.Text = row.Cells["Dia_Chi"].Value.ToString();
+
             }
         }
 
