@@ -84,13 +84,13 @@ namespace Quanlibaixe
             this.Desciption});
             this.guna2Transition1.SetDecoration(this.dataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 31);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 418);
+            this.dataGridView1.Size = new System.Drawing.Size(722, 454);
             this.dataGridView1.TabIndex = 36;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -215,7 +215,7 @@ namespace Quanlibaixe
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(656, 20);
+            this.label10.Size = new System.Drawing.Size(720, 23);
             this.label10.TabIndex = 49;
             this.label10.Text = "Bảng Xe";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,7 +301,7 @@ namespace Quanlibaixe
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1104, 448);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1210, 487);
             this.tableLayoutPanel1.TabIndex = 57;
             // 
             // panel3
@@ -311,7 +311,7 @@ namespace Quanlibaixe
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(656, 20);
+            this.panel3.Size = new System.Drawing.Size(720, 23);
             this.panel3.TabIndex = 38;
             // 
             // panel1
@@ -336,9 +336,9 @@ namespace Quanlibaixe
             this.panel1.Controls.Add(this.label5);
             this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(665, 29);
+            this.panel1.Location = new System.Drawing.Point(729, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(436, 416);
+            this.panel1.Size = new System.Drawing.Size(478, 452);
             this.panel1.TabIndex = 0;
             // 
             // label3
@@ -459,7 +459,7 @@ namespace Quanlibaixe
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(146, 40);
             this.btn_Edit.TabIndex = 60;
-            this.btn_Edit.Text = "Thêm xe";
+            this.btn_Edit.Text = "Sữa Xe";
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // btn_Add
@@ -488,9 +488,9 @@ namespace Quanlibaixe
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 340);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 376);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(436, 76);
+            this.guna2Panel1.Size = new System.Drawing.Size(478, 76);
             this.guna2Panel1.TabIndex = 58;
             // 
             // label2
@@ -523,9 +523,9 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(665, 3);
+            this.panel2.Location = new System.Drawing.Point(729, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(436, 20);
+            this.panel2.Size = new System.Drawing.Size(478, 23);
             this.panel2.TabIndex = 37;
             // 
             // guna2Transition1
@@ -553,7 +553,7 @@ namespace Quanlibaixe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 448);
+            this.ClientSize = new System.Drawing.Size(1210, 487);
             this.Controls.Add(this.tableLayoutPanel1);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -71,10 +71,10 @@ namespace Quanlibaixe
             conn.Close();
         }
 
-
+        // Button Edit
         private void button1_Click(object sender, EventArgs e)
         {
-            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", txt_TenTaiXe.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), cb_IDtaixe.Text);
+            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", txt_TenTaiXe.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), txt_PhoneNumber.Text, txt_DiaChi.Text, cb_IDtaixe.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             com.CommandType = CommandType.Text;
@@ -84,8 +84,21 @@ namespace Quanlibaixe
             load_driver();
 
         }
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", txt_TenTaiXe.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), txt_PhoneNumber.Text, txt_DiaChi.Text, cb_IDtaixe.Text);
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            com.CommandType = CommandType.Text;
+            com.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Sửa thành công");
+            //load_driver();
+            ketnoi();
+        }
 
-        private void button3_Click(object sender, EventArgs e)
+        // Button Delete
+        private void btn_Delete_Click(object sender, EventArgs e)
         {
             try
             {
@@ -96,17 +109,17 @@ namespace Quanlibaixe
                 com.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Xóa thành công");
-                load_driver();
                 cb_IDtaixe.Text = "";
+                ketnoi();
             }
             catch
             {
                 MessageBox.Show("Không Thể Xóa Được");
             }
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        // Button Add
+        private void btn_Add_Click(object sender, EventArgs e)
         {
             // Lỗi này khả năng cao do việc bảng Driver của bạn đã được tạo trước
             if (txt_TenTaiXe.Text != "" && NgaySinh_dateTimePicker.Value <= DateTime.Now)
@@ -198,10 +211,6 @@ namespace Quanlibaixe
             //}
         //}
 
-        private void cb_IDtaixe_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -251,5 +260,7 @@ namespace Quanlibaixe
         {
             label5.Visible = false;
         }
+
+
     }
 }

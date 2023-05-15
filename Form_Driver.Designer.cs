@@ -29,15 +29,11 @@ namespace Quanlibaixe
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation7 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Driver));
             this.NgaySinh_dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.txt_TenTaiXe = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cb_IDtaixe = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,7 +49,23 @@ namespace Quanlibaixe
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Refresh = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.btn_Add = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Edit = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
+            this.cb_IDtaixe = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // NgaySinh_dateTimePicker
@@ -63,47 +75,11 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.NgaySinh_dateTimePicker, Guna.UI2.AnimatorNS.DecorationType.None);
             this.NgaySinh_dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgaySinh_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NgaySinh_dateTimePicker.Location = new System.Drawing.Point(141, 117);
+            this.NgaySinh_dateTimePicker.Location = new System.Drawing.Point(138, 109);
             this.NgaySinh_dateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.NgaySinh_dateTimePicker.Name = "NgaySinh_dateTimePicker";
             this.NgaySinh_dateTimePicker.Size = new System.Drawing.Size(303, 26);
             this.NgaySinh_dateTimePicker.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.guna2Transition1.SetDecoration(this.button1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.button1.Location = new System.Drawing.Point(141, 389);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Sửa ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.guna2Transition1.SetDecoration(this.button2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.button2.Location = new System.Drawing.Point(141, 256);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(303, 31);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Thêm ";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.guna2Transition1.SetDecoration(this.button3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.button3.Location = new System.Drawing.Point(329, 389);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 32);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txt_TenTaiXe
             // 
@@ -119,13 +95,13 @@ namespace Quanlibaixe
             this.txt_TenTaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_TenTaiXe.ForeColor = System.Drawing.Color.Gray;
             this.txt_TenTaiXe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TenTaiXe.Location = new System.Drawing.Point(141, 53);
+            this.txt_TenTaiXe.Location = new System.Drawing.Point(138, 73);
             this.txt_TenTaiXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_TenTaiXe.Name = "txt_TenTaiXe";
             this.txt_TenTaiXe.PasswordChar = '\0';
             this.txt_TenTaiXe.PlaceholderText = "";
             this.txt_TenTaiXe.SelectedText = "";
-            this.txt_TenTaiXe.Size = new System.Drawing.Size(303, 36);
+            this.txt_TenTaiXe.Size = new System.Drawing.Size(303, 26);
             this.txt_TenTaiXe.TabIndex = 63;
             // 
             // label7
@@ -134,30 +110,12 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(13, 53);
+            this.label7.Location = new System.Drawing.Point(13, 78);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 21);
             this.label7.TabIndex = 64;
             this.label7.Text = "Tên Tài xế";
-            // 
-            // cb_IDtaixe
-            // 
-            this.cb_IDtaixe.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.cb_IDtaixe, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.cb_IDtaixe.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_IDtaixe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_IDtaixe.Enabled = false;
-            this.cb_IDtaixe.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_IDtaixe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_IDtaixe.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cb_IDtaixe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_IDtaixe.ItemHeight = 30;
-            this.cb_IDtaixe.Location = new System.Drawing.Point(141, 10);
-            this.cb_IDtaixe.Name = "cb_IDtaixe";
-            this.cb_IDtaixe.Size = new System.Drawing.Size(303, 36);
-            this.cb_IDtaixe.TabIndex = 65;
-            this.cb_IDtaixe.SelectedIndexChanged += new System.EventHandler(this.cb_IDtaixe_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -165,7 +123,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(11, 10);
+            this.label4.Location = new System.Drawing.Point(13, 40);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 21);
@@ -178,7 +136,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(11, 164);
+            this.label1.Location = new System.Drawing.Point(13, 148);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 21);
@@ -191,7 +149,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(11, 122);
+            this.label3.Location = new System.Drawing.Point(13, 111);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 21);
@@ -211,13 +169,14 @@ namespace Quanlibaixe
             this.Phone_Number,
             this.Dia_Chi});
             this.guna2Transition1.SetDecoration(this.dataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.dataGridView1.Location = new System.Drawing.Point(488, 14);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 31);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 418);
+            this.dataGridView1.Size = new System.Drawing.Size(722, 454);
             this.dataGridView1.TabIndex = 68;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -273,13 +232,13 @@ namespace Quanlibaixe
             this.txt_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_PhoneNumber.ForeColor = System.Drawing.Color.Gray;
             this.txt_PhoneNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_PhoneNumber.Location = new System.Drawing.Point(141, 149);
+            this.txt_PhoneNumber.Location = new System.Drawing.Point(138, 145);
             this.txt_PhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_PhoneNumber.Name = "txt_PhoneNumber";
             this.txt_PhoneNumber.PasswordChar = '\0';
             this.txt_PhoneNumber.PlaceholderText = "";
             this.txt_PhoneNumber.SelectedText = "";
-            this.txt_PhoneNumber.Size = new System.Drawing.Size(303, 36);
+            this.txt_PhoneNumber.Size = new System.Drawing.Size(303, 26);
             this.txt_PhoneNumber.TabIndex = 69;
             // 
             // txt_DiaChi
@@ -296,13 +255,13 @@ namespace Quanlibaixe
             this.txt_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_DiaChi.ForeColor = System.Drawing.Color.Gray;
             this.txt_DiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_DiaChi.Location = new System.Drawing.Point(141, 192);
+            this.txt_DiaChi.Location = new System.Drawing.Point(138, 183);
             this.txt_DiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_DiaChi.Name = "txt_DiaChi";
             this.txt_DiaChi.PasswordChar = '\0';
             this.txt_DiaChi.PlaceholderText = "";
             this.txt_DiaChi.SelectedText = "";
-            this.txt_DiaChi.Size = new System.Drawing.Size(303, 36);
+            this.txt_DiaChi.Size = new System.Drawing.Size(303, 26);
             this.txt_DiaChi.TabIndex = 70;
             // 
             // label2
@@ -311,7 +270,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(11, 207);
+            this.label2.Location = new System.Drawing.Point(13, 185);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 21);
@@ -324,7 +283,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(11, 256);
+            this.label5.Location = new System.Drawing.Point(21, 262);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 19);
@@ -345,7 +304,7 @@ namespace Quanlibaixe
             this.btn_Refresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.btn_Refresh.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
-            this.btn_Refresh.Location = new System.Drawing.Point(17, 278);
+            this.btn_Refresh.Location = new System.Drawing.Point(27, 284);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_Refresh.Size = new System.Drawing.Size(40, 40);
@@ -358,44 +317,216 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Mosaic;
             this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 20;
-            animation1.Padding = new System.Windows.Forms.Padding(30);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 0F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 20;
+            animation7.Padding = new System.Windows.Forms.Padding(30);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 0F;
+            animation7.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation7;
+            // 
+            // btn_Add
+            // 
+            this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.btn_Add.BorderColor = System.Drawing.Color.White;
+            this.btn_Add.BorderRadius = 3;
+            this.guna2Transition1.SetDecoration(this.btn_Add, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.btn_Add.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add.ForeColor = System.Drawing.Color.White;
+            this.btn_Add.Location = new System.Drawing.Point(138, 229);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(303, 40);
+            this.btn_Add.TabIndex = 74;
+            this.btn_Add.Text = "Thêm xe";
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
+            // 
+            // btn_Edit
+            // 
+            this.btn_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.btn_Edit.BorderColor = System.Drawing.Color.White;
+            this.btn_Edit.BorderRadius = 3;
+            this.guna2Transition1.SetDecoration(this.btn_Edit, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Edit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.btn_Edit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Edit.ForeColor = System.Drawing.Color.White;
+            this.btn_Edit.Location = new System.Drawing.Point(138, 284);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(146, 40);
+            this.btn_Edit.TabIndex = 75;
+            this.btn_Edit.Text = "Sữa Xe";
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.BorderColor = System.Drawing.Color.White;
+            this.btn_Delete.BorderRadius = 3;
+            this.guna2Transition1.SetDecoration(this.btn_Delete, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(55)))));
+            this.btn_Delete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.ForeColor = System.Drawing.Color.White;
+            this.btn_Delete.Location = new System.Drawing.Point(295, 284);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(146, 40);
+            this.btn_Delete.TabIndex = 76;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
+            // cb_IDtaixe
+            // 
+            this.guna2Transition1.SetDecoration(this.cb_IDtaixe, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.cb_IDtaixe.Enabled = false;
+            this.cb_IDtaixe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_IDtaixe.FormattingEnabled = true;
+            this.cb_IDtaixe.Location = new System.Drawing.Point(138, 35);
+            this.cb_IDtaixe.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_IDtaixe.Name = "cb_IDtaixe";
+            this.cb_IDtaixe.Size = new System.Drawing.Size(303, 28);
+            this.cb_IDtaixe.TabIndex = 77;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.guna2Transition1.SetDecoration(this.tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1210, 487);
+            this.tableLayoutPanel1.TabIndex = 78;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label10);
+            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(720, 23);
+            this.panel1.TabIndex = 69;
+            // 
+            // panel2
+            // 
+            this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(729, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(478, 23);
+            this.panel2.TabIndex = 70;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.guna2Panel1);
+            this.panel3.Controls.Add(this.btn_Delete);
+            this.panel3.Controls.Add(this.cb_IDtaixe);
+            this.panel3.Controls.Add(this.NgaySinh_dateTimePicker);
+            this.panel3.Controls.Add(this.txt_TenTaiXe);
+            this.panel3.Controls.Add(this.btn_Edit);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.btn_Add);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.btn_Refresh);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.txt_PhoneNumber);
+            this.panel3.Controls.Add(this.txt_DiaChi);
+            this.guna2Transition1.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(729, 32);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(478, 452);
+            this.panel3.TabIndex = 71;
+            // 
+            // label10
+            // 
+            this.label10.AutoEllipsis = true;
+            this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(720, 23);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "Bảng Tài Xế";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Visible = false;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.label6);
+            this.guna2Panel1.Controls.Add(this.label8);
+            this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 376);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(478, 76);
+            this.guna2Panel1.TabIndex = 78;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(2, 41);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(178, 19);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Vui lòng nhấn nút Refesh";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(2, 22);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(413, 19);
+            this.label8.TabIndex = 59;
+            this.label8.Text = "Nếu thêm xe thành công, dữ liệu không tải lên BẢNG TÀI XẾ";
             // 
             // Form_Driver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 448);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btn_Refresh);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_DiaChi);
-            this.Controls.Add(this.txt_PhoneNumber);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cb_IDtaixe);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.txt_TenTaiXe);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.NgaySinh_dateTimePicker);
+            this.ClientSize = new System.Drawing.Size(1210, 487);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -404,19 +535,20 @@ namespace Quanlibaixe
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form_Driver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.DateTimePicker NgaySinh_dateTimePicker;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private Guna.UI2.WinForms.Guna2TextBox txt_TenTaiXe;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_IDtaixe;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -432,5 +564,17 @@ namespace Quanlibaixe
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2CircleButton btn_Refresh;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+        private Guna.UI2.WinForms.Guna2Button btn_Add;
+        private Guna.UI2.WinForms.Guna2Button btn_Edit;
+        private Guna.UI2.WinForms.Guna2Button btn_Delete;
+        private System.Windows.Forms.ComboBox cb_IDtaixe;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
     }
 }
