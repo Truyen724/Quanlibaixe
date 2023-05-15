@@ -261,6 +261,26 @@ namespace Quanlibaixe
             label5.Visible = false;
         }
 
+        private void dataGridView1_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.White;
+            style.BackColor = Color.FromArgb(0, 120, 251);
+            if (e.RowIndex > -1)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
 
+        private void dataGridView1_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.Gray;
+            style.BackColor = Color.White;
+            if (e.RowIndex > -1)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
     }
 }

@@ -87,28 +87,34 @@ namespace Quanlibaixe
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTime iDate = dateTimePicker1.Value;
-            string strDate = iDate.ToString("yyyyMMdd");
             string time = comboBox1.Text + ":" + comboBox2.Text;
-            string id_schedule = GetTimestamp(DateTime.Now);
             string id_car = comboBox4.Text;
             string description = textBox1.Text;
-            string id_action = "";
-            if(time!="" && id_car!="" && description!="")
+
+            if (!string.IsNullOrEmpty(time) && !string.IsNullOrEmpty(id_car) && !string.IsNullOrEmpty(description))
             {
-                String query = String.Format("Insert into schedule (id_schedule,ngay,time,id_car,description,id_action) values ('{0}','{1}','{2}','{3}',N'{4}','{5}')", id_schedule, strDate, time, id_car, description, id_action);
-                conn.Open();
-                Console.WriteLine(query);
-                MessageBox.Show(query);
-                SqlCommand com = new SqlCommand(query, conn);
-                com.CommandType = CommandType.Text;
-                com.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("THem thanh cong");
-            }    
-
-
-
+                try {
+                    DateTime iDate = dateTimePicker1.Value;
+                    string strDate = iDate.ToString("yyyyMMdd");
+                    string id_schedule = GetTimestamp(DateTime.Now);
+                    string id_action = "";
+                    String query = String.Format("Insert into schedule (id_schedule, ngay, time, id_car, description, id_action) values ('{0}', '{1}', '{2}', '{3}', N'{4}', '{5}')", id_schedule, strDate, time, id_car, description, id_action);
+                    conn.Open();
+                    SqlCommand com = new SqlCommand(query, conn);
+                    com.CommandType = CommandType.Text;
+                    com.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Thêm thành công");
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi" + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

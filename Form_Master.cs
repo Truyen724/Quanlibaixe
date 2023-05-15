@@ -705,7 +705,8 @@ namespace Quanlibaixe
 
         private void thêmLịchTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            quanlilichtrinh quanlilichtrinh = new quanlilichtrinh();
+            quanlilichtrinh.ShowDialog();
         }
 
 

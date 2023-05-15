@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Master));
             this.DragControl_Panel = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -50,10 +50,10 @@
             this.Camera_tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.camera_Control1 = new Quanlibaixe.Camera_Control();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.btn_RunCamera = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_RunCamera = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Logout = new Guna.UI2.WinForms.Guna2Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -83,6 +83,7 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DragControl_Panel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -314,27 +315,6 @@
             this.panel11.Size = new System.Drawing.Size(1210, 117);
             this.panel11.TabIndex = 43;
             // 
-            // btn_RunCamera
-            // 
-            this.btn_RunCamera.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.btn_RunCamera.BorderRadius = 3;
-            this.btn_RunCamera.BorderThickness = 1;
-            this.guna2Transition1.SetDecoration(this.btn_RunCamera, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btn_RunCamera.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_RunCamera.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_RunCamera.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_RunCamera.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_RunCamera.FillColor = System.Drawing.Color.White;
-            this.btn_RunCamera.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RunCamera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.btn_RunCamera.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_RunCamera.Location = new System.Drawing.Point(3, 41);
-            this.btn_RunCamera.Name = "btn_RunCamera";
-            this.btn_RunCamera.Size = new System.Drawing.Size(225, 46);
-            this.btn_RunCamera.TabIndex = 43;
-            this.btn_RunCamera.Text = "Run Camera";
-            this.btn_RunCamera.Click += new System.EventHandler(this.btn_RunCamera_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -371,6 +351,27 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(356, 117);
             this.panel2.TabIndex = 40;
+            // 
+            // btn_RunCamera
+            // 
+            this.btn_RunCamera.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.btn_RunCamera.BorderRadius = 3;
+            this.btn_RunCamera.BorderThickness = 1;
+            this.guna2Transition1.SetDecoration(this.btn_RunCamera, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_RunCamera.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_RunCamera.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_RunCamera.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_RunCamera.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_RunCamera.FillColor = System.Drawing.Color.White;
+            this.btn_RunCamera.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RunCamera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.btn_RunCamera.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_RunCamera.Location = new System.Drawing.Point(3, 41);
+            this.btn_RunCamera.Name = "btn_RunCamera";
+            this.btn_RunCamera.Size = new System.Drawing.Size(225, 46);
+            this.btn_RunCamera.TabIndex = 43;
+            this.btn_RunCamera.Text = "Run Camera";
+            this.btn_RunCamera.Click += new System.EventHandler(this.btn_RunCamera_Click);
             // 
             // btn_Logout
             // 
@@ -784,22 +785,22 @@
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation3;
             // 
             // notifyIcon1
             // 
@@ -807,6 +808,10 @@
             this.notifyIcon1.Text = "notifyIcon";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this;
             // 
             // Form_Master
             // 
@@ -901,5 +906,6 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private Guna.UI2.WinForms.Guna2Button btn_Logout;
         private Guna.UI2.WinForms.Guna2Button btn_RunCamera;
+        public Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
     }
 }

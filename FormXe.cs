@@ -256,7 +256,7 @@ namespace Quanlibaixe
         {
             DataGridViewCellStyle style = new DataGridViewCellStyle();
             style.ForeColor = Color.White;
-            style.BackColor = Color.FromArgb(0, 13, 66);
+            style.BackColor = Color.FromArgb(26, 34, 65);
             if (e.RowIndex > -1)
             {
                 dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;
@@ -266,7 +266,7 @@ namespace Quanlibaixe
         private void dataGridView1_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewCellStyle style = new DataGridViewCellStyle();
-            style.ForeColor = Color.Black;
+            style.ForeColor = Color.Gray;
             style.BackColor = Color.White;
             if (e.RowIndex > -1)
             {

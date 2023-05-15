@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Common;
+using System.Globalization;
 
 namespace Quanlibaixe
 {
@@ -35,7 +36,7 @@ namespace Quanlibaixe
             SqlDataAdapter da = new SqlDataAdapter(com);
             da.Fill(dt);
             com.CommandType = CommandType.Text;
-            dataGridView1.DataSource = dt;
+            dataGridView2.DataSource = dt;
             conn.Close();
         }
         public void ketnoi()
@@ -82,7 +83,7 @@ namespace Quanlibaixe
             SqlDataAdapter da = new SqlDataAdapter(com);
             da.Fill(dt);
             com.CommandType = CommandType.Text;
-            dataGridView1.DataSource = dt;
+            dataGridView2.DataSource = dt;
             conn.Close();
         }
         public void refresh_data()
@@ -95,7 +96,7 @@ namespace Quanlibaixe
                 SqlDataAdapter da = new SqlDataAdapter(com);
                 da.Fill(dt);
                 com.CommandType = CommandType.Text;
-                dataGridView1.DataSource = dt;
+                dataGridView2.DataSource = dt;
                 conn.Close();
             }
             catch
@@ -111,36 +112,66 @@ namespace Quanlibaixe
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                string id = row.Cells[0].Value.ToString();
-                string ngay = row.Cells[1].Value.ToString();
-                string time = row.Cells[2].Value.ToString();
-                string id_car = row.Cells[3].Value.ToString();
-                string description = row.Cells[4].Value.ToString();
-                string id_action = row.Cells[5].Value.ToString();
+            //if (e.RowIndex >= 0)
+            //{
+            //    DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+            //    string id = row.Cells[0].Value.ToString();
+            //    string ngay = row.Cells[1].Value.ToString();
+            //    string time = row.Cells[2].Value.ToString();
+            //    string id_car = row.Cells[3].Value.ToString();
+            //    string description = row.Cells[4].Value.ToString();
+            //    string id_action = row.Cells[5].Value.ToString();
 
-                string[] ngay_ = ngay.Split('/');
+            //    string[] ngay_ = ngay.Split('/');
 
-                int a = Int32.Parse(ngay_[0]);
-                int b = Int32.Parse(ngay_[1]);
+            //    int a = Int32.Parse(ngay_[0]);
+            //    int b = Int32.Parse(ngay_[1]);
 
-                string[] nam_ = ngay_[2].Split(' ');
+            //    string[] nam_ = ngay_[2].Split(' ');
 
-                int c  = Int32.Parse(nam_[0]);
-                //MessageBox.Show(ngay_[2]);
-                dateTimePicker1.Value = new DateTime(c,b,a);
-                string[] time_ = time.Split(':');
-                comboBox8.Text = time_[0];
-                comboBox7.Text = time_[1];
-                comboBox6.Text = id_car;
-                textBox2.Text = id;
-                textBox1.Text = description;
+            //    int c  = Int32.Parse(nam_[0]);
+            //    //MessageBox.Show(ngay_[2]);
+            //    dateTimePicker1.Value = new DateTime(c,b,a);
+            //    string[] time_ = time.Split(':');
+            //    comboBox8.Text = time_[0];
+            //    comboBox7.Text = time_[1];
+            //    comboBox6.Text = id_car;
+            //    textBox2.Text = id;
+            //    textBox1.Text = description;
 
 
-            }
+            //}
         }
+
+        //private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    if (e.RowIndex >= 0)
+        //    {
+        //        DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+        //        string id = row.Cells[0].Value.ToString();
+        //        string ngay = row.Cells[1].Value.ToString();
+        //        string time = row.Cells[2].Value.ToString();
+        //        string id_car = row.Cells[3].Value.ToString();
+        //        string description = row.Cells[4].Value.ToString();
+        //        string id_action = row.Cells[5].Value.ToString();
+
+        //        if (DateTime.TryParseExact(ngay, "yyyy/MM/dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate))
+        //        {
+        //            dateTimePicker1.Value = parsedDate;
+        //        }
+        //        else
+        //        {
+        //            //MessageBox.Show("Định dạng ngày tháng hợp lệ: " + ngay);
+        //        }
+
+        //        string[] time_ = time.Split(':');
+        //        comboBox8.Text = time_[0];
+        //        comboBox7.Text = time_[1];
+        //        comboBox6.Text = id_car;
+        //        textBox2.Text = id;
+        //        textBox1.Text = description;
+        //    }
+        //}
 
         private void comboBox1_ControlAdded(object sender, ControlEventArgs e)
         {
@@ -156,10 +187,80 @@ namespace Quanlibaixe
         private void button1_Click(object sender, EventArgs e)
         {
 
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        // Khai bao lien ket giua form master va form lich xe
+        public Form_Master CallerForm { get; set; }
+        public Form_lichxe(Form_Master callerForm) : this()
+        {
+            this.CallerForm = callerForm;
+        }
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView2.Rows[e.RowIndex];
+                string id = row.Cells[0].Value.ToString();
+                string ngay = row.Cells[1].Value.ToString();
+                string time = row.Cells[2].Value.ToString();
+                string id_car = row.Cells[3].Value.ToString();
+                string description = row.Cells[4].Value.ToString();
+                string id_action = row.Cells[5].Value.ToString();
+
+                if (DateTime.TryParseExact(ngay, "yyyy/MM/dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate))
+                {
+                    dateTimePicker1.Value = parsedDate;
+                }
+                else
+                {
+                    //MessageBox.Show("Định dạng ngày tháng hợp lệ: " + ngay);
+                }
+
+                string[] time_ = time.Split(':');
+                comboBox8.Text = time_[0];
+                comboBox7.Text = time_[1];
+                comboBox6.Text = id_car;
+                txt_IDschedule.Text = id;
+                txt_ND.Text = description;
+            }
+        }
+
+        private void dataGridView2_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.White;
+            style.BackColor = Color.FromArgb(26, 34, 65);
+            if (e.RowIndex > -1)
+            {
+                dataGridView2.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
+
+        private void dataGridView2_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellStyle style = new DataGridViewCellStyle();
+            style.ForeColor = Color.Gray;
+            style.BackColor = Color.White;
+            if (e.RowIndex > -1)
+            {
+                dataGridView2.Rows[e.RowIndex].DefaultCellStyle = style;
+            }
+        }
+
+
+        // Button Edit
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
             DateTime iDate = dateTimePicker1.Value;
-            string strDate = iDate.ToString("yyyyMMdd");
+            string strDate = iDate.ToString("yyyy/MM/dd");
             string time = comboBox8.Text + ":" + comboBox7.Text;
-            string update = string.Format("update schedule set ngay = '{0}',time = '{1}',id_car='{2}', description = N'{3}' where id_schedule ='{4}'", strDate, time, comboBox6.Text, textBox1.Text, textBox2.Text);
+            string update = string.Format("update schedule set ngay = '{0}',time = '{1}',id_car='{2}', description = N'{3}' where id_schedule ='{4}'", strDate, time, comboBox6.Text, txt_ND.Text, txt_IDschedule.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(update, conn);
             com.CommandType = CommandType.Text;
@@ -169,9 +270,9 @@ namespace Quanlibaixe
             refresh_data();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Delete_Click(object sender, EventArgs e)
         {
-            string update = string.Format("Delete from schedule where id_schedule ='{0}'", textBox2.Text);
+            string update = string.Format("Delete from schedule where id_schedule ='{0}'", txt_IDschedule.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(update, conn);
             com.CommandType = CommandType.Text;
@@ -181,11 +282,39 @@ namespace Quanlibaixe
             refresh_data();
         }
 
-        // Khai bao lien ket giua form master va form lich xe
-        public Form_Master CallerForm { get; set; }
-        public Form_lichxe(Form_Master callerForm) : this()
+        private void btn_Refresh_MouseLeave(object sender, EventArgs e)
         {
-            this.CallerForm = callerForm;
+            label13.Visible = false;
+        }
+
+        private void btn_Refresh_MouseHover(object sender, EventArgs e)
+        {
+            // Transiton HorizSlide cho label3.Visible = false thi animation moi chay
+            guna2Transition1.ShowSync(label13);
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            // Làm mới DataGridView
+            //dataGridView1.Refresh();
+
+            // Lưu nguồn dữ liệu hiện tại
+            var dataSource = dataGridView2.DataSource;
+            // Đặt giá trị cho DataSource thành null
+            dataGridView2.DataSource = null;
+
+            // Thiết lập lại nguồn dữ liệu đã lưu
+            dataGridView2.DataSource = dataSource;
+
+            txt_IDschedule.Text = "";
+            comboBox8.Text = "";
+            comboBox7.Text = "";
+            comboBox6.Text = "";
+            comboBox4.Text = "";
+            comboBox5.Text = "";
+            txt_ND.Text = "";
+            ketnoi();
+            this.Refresh();
         }
     }
 }

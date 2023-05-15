@@ -29,7 +29,9 @@ namespace Quanlibaixe
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation7 = new Guna.UI2.AnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Driver));
             this.NgaySinh_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txt_TenTaiXe = new Guna.UI2.WinForms.Guna2TextBox();
@@ -38,11 +40,6 @@ namespace Quanlibaixe
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dateofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dia_Chi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_PhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_DiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,18 +51,23 @@ namespace Quanlibaixe
             this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
             this.cb_IDtaixe = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dateofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dia_Chi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // NgaySinh_dateTimePicker
@@ -161,6 +163,14 @@ namespace Quanlibaixe
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id_driver,
@@ -169,6 +179,14 @@ namespace Quanlibaixe
             this.Phone_Number,
             this.Dia_Chi});
             this.guna2Transition1.SetDecoration(this.dataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 31);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
@@ -180,43 +198,8 @@ namespace Quanlibaixe
             this.dataGridView1.TabIndex = 68;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Id_driver
-            // 
-            this.Id_driver.DataPropertyName = "Id_driver";
-            this.Id_driver.FillWeight = 50F;
-            this.Id_driver.HeaderText = "Mã Tài Xế";
-            this.Id_driver.MinimumWidth = 6;
-            this.Id_driver.Name = "Id_driver";
-            // 
-            // Driver_name
-            // 
-            this.Driver_name.DataPropertyName = "Driver_name";
-            this.Driver_name.FillWeight = 101.8717F;
-            this.Driver_name.HeaderText = "Tên Tài Xế";
-            this.Driver_name.MinimumWidth = 6;
-            this.Driver_name.Name = "Driver_name";
-            // 
-            // Dateofbirth
-            // 
-            this.Dateofbirth.DataPropertyName = "Dateofbirth";
-            this.Dateofbirth.FillWeight = 70F;
-            this.Dateofbirth.HeaderText = "Ngày Sinh";
-            this.Dateofbirth.MinimumWidth = 6;
-            this.Dateofbirth.Name = "Dateofbirth";
-            // 
-            // Phone_Number
-            // 
-            this.Phone_Number.DataPropertyName = "Phone_Number";
-            this.Phone_Number.FillWeight = 80F;
-            this.Phone_Number.HeaderText = "Số Điện Thoại";
-            this.Phone_Number.Name = "Phone_Number";
-            // 
-            // Dia_Chi
-            // 
-            this.Dia_Chi.DataPropertyName = "Dia_Chi";
-            this.Dia_Chi.HeaderText = "Địa Chỉ";
-            this.Dia_Chi.Name = "Dia_Chi";
+            this.dataGridView1.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellMouseLeave);
+            this.dataGridView1.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseMove);
             // 
             // txt_PhoneNumber
             // 
@@ -282,7 +265,7 @@ namespace Quanlibaixe
             this.label5.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.label5.Location = new System.Drawing.Point(21, 262);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -317,22 +300,22 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Mosaic;
             this.guna2Transition1.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 20;
-            animation7.Padding = new System.Windows.Forms.Padding(30);
-            animation7.RotateCoeff = 0F;
-            animation7.RotateLimit = 0F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 0F;
-            animation7.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation7;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 20;
+            animation1.Padding = new System.Windows.Forms.Padding(30);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // btn_Add
             // 
@@ -424,25 +407,6 @@ namespace Quanlibaixe
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1210, 487);
             this.tableLayoutPanel1.TabIndex = 78;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label10);
-            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(720, 23);
-            this.panel1.TabIndex = 69;
-            // 
-            // panel2
-            // 
-            this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(729, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(478, 23);
-            this.panel2.TabIndex = 70;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.guna2Panel1);
@@ -467,22 +431,6 @@ namespace Quanlibaixe
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(478, 452);
             this.panel3.TabIndex = 71;
-            // 
-            // label10
-            // 
-            this.label10.AutoEllipsis = true;
-            this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(720, 23);
-            this.label10.TabIndex = 50;
-            this.label10.Text = "Bảng Tài Xế";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Visible = false;
             // 
             // guna2Panel1
             // 
@@ -517,9 +465,81 @@ namespace Quanlibaixe
             this.label8.Location = new System.Drawing.Point(2, 22);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(413, 19);
+            this.label8.Size = new System.Drawing.Size(432, 19);
             this.label8.TabIndex = 59;
-            this.label8.Text = "Nếu thêm xe thành công, dữ liệu không tải lên BẢNG TÀI XẾ";
+            this.label8.Text = "Nếu thêm tài xế thành công, dữ liệu không tải lên BẢNG TÀI XẾ";
+            // 
+            // panel2
+            // 
+            this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(729, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(478, 23);
+            this.panel2.TabIndex = 70;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label10);
+            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(720, 23);
+            this.panel1.TabIndex = 69;
+            // 
+            // label10
+            // 
+            this.label10.AutoEllipsis = true;
+            this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(720, 23);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "Bảng Tài Xế";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Visible = false;
+            // 
+            // Id_driver
+            // 
+            this.Id_driver.DataPropertyName = "Id_driver";
+            this.Id_driver.FillWeight = 70F;
+            this.Id_driver.HeaderText = "Mã Tài Xế";
+            this.Id_driver.MinimumWidth = 6;
+            this.Id_driver.Name = "Id_driver";
+            // 
+            // Driver_name
+            // 
+            this.Driver_name.DataPropertyName = "Driver_name";
+            this.Driver_name.FillWeight = 101.8717F;
+            this.Driver_name.HeaderText = "Tên Tài Xế";
+            this.Driver_name.MinimumWidth = 6;
+            this.Driver_name.Name = "Driver_name";
+            // 
+            // Dateofbirth
+            // 
+            this.Dateofbirth.DataPropertyName = "Dateofbirth";
+            this.Dateofbirth.FillWeight = 70F;
+            this.Dateofbirth.HeaderText = "Ngày Sinh";
+            this.Dateofbirth.MinimumWidth = 6;
+            this.Dateofbirth.Name = "Dateofbirth";
+            // 
+            // Phone_Number
+            // 
+            this.Phone_Number.DataPropertyName = "Phone_Number";
+            this.Phone_Number.FillWeight = 80F;
+            this.Phone_Number.HeaderText = "Số Điện Thoại";
+            this.Phone_Number.Name = "Phone_Number";
+            // 
+            // Dia_Chi
+            // 
+            this.Dia_Chi.DataPropertyName = "Dia_Chi";
+            this.Dia_Chi.HeaderText = "Địa Chỉ";
+            this.Dia_Chi.Name = "Dia_Chi";
             // 
             // Form_Driver
             // 
@@ -536,11 +556,11 @@ namespace Quanlibaixe
             this.Load += new System.EventHandler(this.Form_Driver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -553,11 +573,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id_driver;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Driver_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dateofbirth;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone_Number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dia_Chi;
         private Guna.UI2.WinForms.Guna2TextBox txt_PhoneNumber;
         private Guna.UI2.WinForms.Guna2TextBox txt_DiaChi;
         private System.Windows.Forms.Label label2;
@@ -576,5 +591,10 @@ namespace Quanlibaixe
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_driver;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Driver_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dateofbirth;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone_Number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dia_Chi;
     }
 }
