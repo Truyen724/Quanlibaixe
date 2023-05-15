@@ -203,10 +203,7 @@ namespace Quanlibaixe
 
         private void cb_IDtaixe_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txt_TenTaiXe.Text = cb_IDtaixe.Text;
-            //NgaySinh_dateTimePicker.Text = cb_IDtaixe.Text;
-            txt_PhoneNumber.Text = cb_IDtaixe.Text;
-            txt_DiaChi.Text = cb_IDtaixe.Text;
+            
         }
 
             private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
