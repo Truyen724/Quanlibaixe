@@ -157,6 +157,10 @@ namespace Quanlibaixe
                     conn.Close();
                 }
             }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
+            }
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)

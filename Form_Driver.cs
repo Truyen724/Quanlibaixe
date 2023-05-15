@@ -37,7 +37,7 @@ namespace Quanlibaixe
                 MessageBox.Show("Kết nối thất bại !");
             }
 
-            String query = "select [ID_driver], [Driver_Name], [Dateofbirth] FROM [Detect_bienso].[dbo].[Driver]";
+            String query = "select [ID_driver], [Driver_Name], [Dateofbirth], [Phone_Number], [Dia_Chi] FROM [Detect_bienso].[dbo].[Driver]";
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             DataTable dt = new DataTable();
@@ -76,7 +76,7 @@ namespace Quanlibaixe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", cb_TenTaiXe2.Text, dateTimePicker2.Value.ToString("dd/MM/yyyy"), cb_IDtaixe.Text);
+            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", cb_TenTaiXe2.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), cb_IDtaixe.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             com.CommandType = CommandType.Text;
@@ -121,15 +121,16 @@ namespace Quanlibaixe
                 // Sử dụng SELECT MAX(ID_driver) + 1 để tạo giá trị ID mới cho bản ghi
                 com.Parameters.AddWithValue("@IDDriver", Convert.ToInt32(new SqlCommand("SELECT MAX(ID_driver) + 1 FROM Driver", conn).ExecuteScalar()));
                 com.Parameters.AddWithValue("@DriverName", txt_TenTaiXe.Text);
-                com.Parameters.AddWithValue("@DateOfBirth", NgaySinh_dateTimePicker.Value.ToString("dd/MM/yyyy"));
+                com.Parameters.AddWithValue("@DateOfBirth", NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"));
+                com.Parameters.AddWithValue("@Phone_Number", txt_PhoneNumber.Text);
+                com.Parameters.AddWithValue("@Dia_Chi", txt_DiaChi.Text);
                 int result = com.ExecuteNonQuery();
                 conn.Close();
 
                 if (result > 0)
                 {
                     MessageBox.Show("Thêm thành công");
-                    load_driver();
-                    //ketnoi();
+                    ketnoi();
                 }
                 else
                 {
@@ -164,9 +165,9 @@ namespace Quanlibaixe
                 try
                 {
                     // Use TryParseExact method to convert string x to a DateTime object
-                    if (DateTime.TryParseExact(x[0] + "/" + x[1] + "/" + x[2], "dd/MM/yyyy", null, DateTimeStyles.None, out DateTime date))
+                    if (DateTime.TryParseExact(x[0] + "/" + x[1] + "/" + x[2], "yyyy/MM/dd", null, DateTimeStyles.None, out DateTime date))
                     {
-                        dateTimePicker2.Value = date;
+                        NgaySinh_dateTimePicker.Value = date;
 
                         // Add code to retrieve ID_driver and Driver_Name from the database based on the selected birthdate
                         string connectionString = "PUT YOUR CONNECTION STRING HERE";
@@ -202,12 +203,21 @@ namespace Quanlibaixe
 
         private void cb_IDtaixe_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cb_IDtaixe.SelectedIndex = cb_TenTaiXe2.SelectedIndex;
+            txt_TenTaiXe.Text = cb_IDtaixe.Text;
+            //NgaySinh_dateTimePicker.Text = cb_IDtaixe.Text;
+            txt_PhoneNumber.Text = cb_IDtaixe.Text;
+            txt_DiaChi.Text = cb_IDtaixe.Text;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                cb_IDtaixe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells["ID_driver"].Value.ToString());
+                txt_TenTaiXe.Text = row.Cells["Driver_Name"].Value.ToString();
+                NgaySinh_dateTimePicker.Text = row.Cells["Dateofbirth"].Value.ToString();
+            }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -215,10 +225,39 @@ namespace Quanlibaixe
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                cb_IDtaixe.Text = row.Cells["ID_driver"].Value.ToString();
+                cb_IDtaixe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells["ID_driver"].Value.ToString());
                 txt_TenTaiXe.Text = row.Cells["Driver_Name"].Value.ToString();
                 NgaySinh_dateTimePicker.Text = row.Cells["Dateofbirth"].Value.ToString();
             }
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            var dataSource = dataGridView1.DataSource;
+            // Đặt giá trị cho DataSource thành null
+            dataGridView1.DataSource = null;
+
+            // Thiết lập lại nguồn dữ liệu đã lưu
+            dataGridView1.DataSource = dataSource;
+
+            cb_IDtaixe.Text = "";
+            txt_TenTaiXe.Text = "";
+            NgaySinh_dateTimePicker.Text = "";
+            txt_PhoneNumber.Text = "";
+            txt_DiaChi.Text = "";
+            ketnoi();
+            this.Refresh();
+        }
+
+        private void btn_Refresh_MouseHover(object sender, EventArgs e)
+        {
+            // Transiton HorizSlide cho label3.Visible = false thi animation moi chay
+            guna2Transition1.ShowSync(label5);
+        }
+
+        private void btn_Refresh_MouseLeave(object sender, EventArgs e)
+        {
+            label5.Visible = false;
         }
     }
 }
