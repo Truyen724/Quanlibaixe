@@ -153,7 +153,7 @@ namespace Quanlibaixe
             // Lỗi này khả năng cao do việc bảng Driver của bạn đã được tạo trước
             if (txt_TenTaiXe.Text != "" && NgaySinh_dateTimePicker.Value <= DateTime.Now)
             {
-                String query = "INSERT INTO Driver (ID_driver, Driver_Name, Dateofbirth, Phone_Number) VALUES (@IDDriver, @DriverName, @DateOfBirth, @Phone_Number, @Dia_Chi)";
+                String query = "INSERT INTO Driver (ID_driver, Driver_Name, Dateofbirth, Phone_Number, Dia_Chi) VALUES (@IDDriver, @DriverName, @DateOfBirth, @Phone_Number, @Dia_Chi)";
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
                 com.CommandType = CommandType.Text;
