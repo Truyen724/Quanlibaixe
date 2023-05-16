@@ -69,14 +69,14 @@ namespace Quanlibaixe
         SqlConnection conn = new SqlConnection();
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                txt_IDcar.Text = row.Cells[0].Value.ToString();
-                cb_TaiXe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells[2].Value.ToString());
-                cb_TrangThai.Text = row.Cells[3].Value.ToString();
-                txt_MoTa.Text = row.Cells[4].Value.ToString();
-            }
+            //if (e.RowIndex >= 0)
+            //{
+            //    DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+            //    txt_IDcar.Text = row.Cells[0].Value.ToString();
+            //    cb_TaiXe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells[2].Value.ToString());
+            //    cb_TrangThai.Text = row.Cells[3].Value.ToString();
+            //    txt_MoTa.Text = row.Cells[4].Value.ToString();
+            //}
         }
 
         //
@@ -103,22 +103,18 @@ namespace Quanlibaixe
         }
         public void load_driver()
         {
-            String query = "select * from Driver";
+            string query = "SELECT * FROM Driver";
             //conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             using (DbDataReader reader = com.ExecuteReader())
             {
-
                 if (reader.HasRows)
                 {
-
                     while (reader.Read())
                     {
                         cb_TaiXe.Items.Add(reader.GetValue(1).ToString());
                         cb_IDtaixe.Items.Add(reader.GetValue(0).ToString());
                         cb_NgaySinh.Items.Add(reader.GetValue(2).ToString().Substring(0, 10));
-                        
-             
                     }
                     reader.Dispose();
                 }
@@ -176,35 +172,29 @@ namespace Quanlibaixe
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            String query = String.Format("Update Car Set Id_driver = {0}, State = '{1}', Desciption = N'{2}' where id_car = '{3}' ", cb_IDtaixe.Text, cb_TrangThai.Text, txt_MoTa.Text, txt_IDcar.Text);
+            string query = "UPDATE Car SET Id_driver = @id_driver, State = @state, Desciption = @desciption WHERE id_car = @id_car";
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
+            com.Parameters.AddWithValue("@id_driver", cb_IDtaixe.Text);
+            com.Parameters.AddWithValue("@state", cb_TrangThai.Text);
+            com.Parameters.AddWithValue("@desciption", txt_MoTa.Text);
+            com.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
             com.CommandType = CommandType.Text;
             com.ExecuteNonQuery();
             conn.Close();
             ketnoi();
             MessageBox.Show("Chỉnh thành công");
         }
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                txt_IDcar.Text = row.Cells[0].Value.ToString();
-                cb_TaiXe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells[2].Value.ToString());
-                cb_TrangThai.Text = row.Cells[3].Value.ToString();
-                txt_MoTa.Text = row.Cells[4].Value.ToString();
-            }
-        }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                txt_IDcar.Text = row.Cells[0].Value.ToString();
-                cb_TaiXe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells[2].Value.ToString());
-                cb_TrangThai.Text = row.Cells[3].Value.ToString();
-                txt_MoTa.Text = row.Cells[4].Value.ToString();
+                txt_IDcar.Text = row.Cells["Id_car"].Value.ToString();
+                cb_TaiXe.SelectedIndex = cb_IDtaixe.FindStringExact(row.Cells["Id_driver"].Value.ToString());
+                cb_TrangThai.Text = row.Cells["State"].Value.ToString();
+                txt_MoTa.Text = row.Cells["Desciption"].Value.ToString();
+
             }
         }
 
@@ -293,8 +283,8 @@ namespace Quanlibaixe
             cb_TrangThai.Text = "";
             txt_MoTa.Text = "";
             cb_NgaySinh.Text = "";
-            //ketnoi();
-            load_driver();
+            ketnoi();
+            //load_driver();
             this.Refresh();
         }
 

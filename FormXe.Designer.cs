@@ -62,10 +62,10 @@ namespace Quanlibaixe
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id_car = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -91,10 +91,10 @@ namespace Quanlibaixe
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
+            this.Id_car,
             this.Id_driver,
             this.Driver_name,
-            this.dataGridViewTextBoxColumn3,
+            this.State,
             this.Desciption});
             this.guna2Transition1.SetDecoration(this.dataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -116,7 +116,6 @@ namespace Quanlibaixe
             this.dataGridView1.TabIndex = 36;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             this.dataGridView1.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellMouseLeave);
             this.dataGridView1.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseMove);
             // 
@@ -547,14 +546,14 @@ namespace Quanlibaixe
             animation1.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation1;
             // 
-            // dataGridViewTextBoxColumn1
+            // Id_car
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_car";
-            this.dataGridViewTextBoxColumn1.FillWeight = 96.25668F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Biển Số Xe";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Id_car.DataPropertyName = "Id_car";
+            this.Id_car.FillWeight = 96.25668F;
+            this.Id_car.HeaderText = "Biển Số Xe";
+            this.Id_car.MinimumWidth = 6;
+            this.Id_car.Name = "Id_car";
+            this.Id_car.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // Id_driver
             // 
@@ -572,13 +571,13 @@ namespace Quanlibaixe
             this.Driver_name.MinimumWidth = 6;
             this.Driver_name.Name = "Driver_name";
             // 
-            // dataGridViewTextBoxColumn3
+            // State
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "State";
-            this.dataGridViewTextBoxColumn3.FillWeight = 101.8717F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Trạng Thái";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.State.DataPropertyName = "State";
+            this.State.FillWeight = 101.8717F;
+            this.State.HeaderText = "Trạng Thái";
+            this.State.MinimumWidth = 6;
+            this.State.Name = "State";
             // 
             // Desciption
             // 
@@ -640,10 +639,10 @@ namespace Quanlibaixe
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_car;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id_driver;
         private System.Windows.Forms.DataGridViewTextBoxColumn Driver_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn State;
         private System.Windows.Forms.DataGridViewTextBoxColumn Desciption;
     }
 }
