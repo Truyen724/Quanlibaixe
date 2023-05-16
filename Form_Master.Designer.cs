@@ -425,15 +425,20 @@
             // 
             // timeToolStripMenuItem
             // 
+            this.timeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.timeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
             this.timeToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
             this.timeToolStripMenuItem.Text = "Time";
+            this.timeToolStripMenuItem.MouseHover += new System.EventHandler(this.timeToolStripMenuItem_MouseHover);
             // 
             // dateToolStripMenuItem
             // 
+            this.dateToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.dateToolStripMenuItem.Name = "dateToolStripMenuItem";
             this.dateToolStripMenuItem.Size = new System.Drawing.Size(43, 21);
             this.dateToolStripMenuItem.Text = "Date";
+            this.dateToolStripMenuItem.MouseHover += new System.EventHandler(this.dateToolStripMenuItem_MouseHover);
             // 
             // SideBar_panel
             // 
@@ -665,10 +670,12 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
             // 
             this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // camera_Control1
             // 

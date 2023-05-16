@@ -717,9 +717,12 @@ namespace Quanlibaixe
             quanlilichtrinh.ShowDialog();
         }
 
+
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             timeToolStripMenuItem.Text = DateTime.Now.ToShortTimeString();
+
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -727,5 +730,18 @@ namespace Quanlibaixe
             dateToolStripMenuItem.Text = DateTime.Now.ToLongDateString();
 
         }
+
+        private void timeToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+            timeToolStripMenuItem.BackColor = Color.FromArgb(0,13,66);
+            timeToolStripMenuItem.ForeColor = Color.White;
+        }
+
+        private void dateToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+            timeToolStripMenuItem.BackColor = Color.FromArgb(208, 212, 213);
+            timeToolStripMenuItem.ForeColor = Color.FromArgb(0, 13, 66);
+        }
+
     }
 }
