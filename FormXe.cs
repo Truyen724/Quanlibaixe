@@ -206,14 +206,21 @@ namespace Quanlibaixe
                 if (conn.State != ConnectionState.Open)
                     conn.Open();
 
-                // Tạo đối tượng SqlCommand và sử dụng tham số để tránh lỗ hổng bảo mật
-                string query = "DELETE FROM Car WHERE Id_Car = @id_car";
-                SqlCommand com = new SqlCommand(query, conn);
-                com.CommandType = CommandType.Text;
-                com.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
+                // Tạo đối tượng SqlCommand để xóa các bản ghi liên quan trong bảng schedule
+                string deleteScheduleQuery = "DELETE FROM schedule WHERE id_car = @id_car";
+                SqlCommand deleteScheduleCmd = new SqlCommand(deleteScheduleQuery, conn);
+                deleteScheduleCmd.CommandType = CommandType.Text;
+                deleteScheduleCmd.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
+                deleteScheduleCmd.ExecuteNonQuery();
 
-                // Thực hiện câu truy vấn và đóng kết nối sau khi hoàn thành
-                com.ExecuteNonQuery();
+                // Tạo đối tượng SqlCommand để xóa bản ghi trong bảng Car
+                string deleteCarQuery = "DELETE FROM Car WHERE Id_Car = @id_car";
+                SqlCommand deleteCarCmd = new SqlCommand(deleteCarQuery, conn);
+                deleteCarCmd.CommandType = CommandType.Text;
+                deleteCarCmd.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
+                deleteCarCmd.ExecuteNonQuery();
+
+                // Đóng kết nối sau khi hoàn thành
                 conn.Close();
 
                 MessageBox.Show("Xóa thành công");
