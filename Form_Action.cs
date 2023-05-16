@@ -36,7 +36,7 @@ namespace Quanlibaixe
         private void Form_Action_Load(object sender, EventArgs e)
         {
          
-            textBox1.Text = id_xe;
+            txt_IDxe.Text = id_xe;
             try
             {
                 conn.ConnectionString = ConectionString;
@@ -73,5 +73,23 @@ namespace Quanlibaixe
             MessageBox.Show("Không thực hiện thành công");
             
         }
+
+        private void btn_Accept_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_Unaccep_Click(object sender, EventArgs e)
+        {
+            string update = string.Format("Delete from schedule where id_schedule ='{0}'", id_action);
+            conn.Open();
+            SqlCommand com = new SqlCommand(update, conn);
+            com.CommandType = CommandType.Text;
+            com.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Không thực hiện thành công");
+
+        }
+
     }
 }

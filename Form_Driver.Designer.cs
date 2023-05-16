@@ -507,7 +507,7 @@ namespace Quanlibaixe
             // Id_driver
             // 
             this.Id_driver.DataPropertyName = "Id_driver";
-            this.Id_driver.FillWeight = 70F;
+            this.Id_driver.FillWeight = 50F;
             this.Id_driver.HeaderText = "Mã Tài Xế";
             this.Id_driver.MinimumWidth = 6;
             this.Id_driver.Name = "Id_driver";

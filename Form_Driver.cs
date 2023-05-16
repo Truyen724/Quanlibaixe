@@ -265,7 +265,7 @@ namespace Quanlibaixe
         {
             DataGridViewCellStyle style = new DataGridViewCellStyle();
             style.ForeColor = Color.White;
-            style.BackColor = Color.FromArgb(0, 120, 251);
+            style.BackColor = Color.FromArgb(0, 13, 66);
             if (e.RowIndex > -1)
             {
                 dataGridView1.Rows[e.RowIndex].DefaultCellStyle = style;

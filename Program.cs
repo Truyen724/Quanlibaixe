@@ -26,6 +26,8 @@ namespace Quanlibaixe
             //Application.Run(new FormXe());
             //Application.Run(new Form_Driver());
             //Application.Run(new Form_lichxe());
+            //Application.Run(new Form_Action());
+
         }
     }
 }

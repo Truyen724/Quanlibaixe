@@ -29,17 +29,17 @@ namespace Quanlibaixe
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.AnimatorNS.Animation animation4 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_lichxe));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,9 +62,15 @@ namespace Quanlibaixe
             this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.txt_ND = new System.Windows.Forms.RichTextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -76,32 +82,26 @@ namespace Quanlibaixe
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -110,7 +110,7 @@ namespace Quanlibaixe
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(2, 28);
+            this.comboBox1.Location = new System.Drawing.Point(2, 21);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(366, 28);
@@ -124,7 +124,7 @@ namespace Quanlibaixe
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(387, 28);
+            this.comboBox2.Location = new System.Drawing.Point(387, 21);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(367, 28);
@@ -140,7 +140,7 @@ namespace Quanlibaixe
             this.label1.Location = new System.Drawing.Point(2, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 26);
+            this.label1.Size = new System.Drawing.Size(366, 19);
             this.label1.TabIndex = 24;
             this.label1.Text = "Biển Số";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,7 +154,7 @@ namespace Quanlibaixe
             this.label2.Location = new System.Drawing.Point(387, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(367, 26);
+            this.label2.Size = new System.Drawing.Size(367, 19);
             this.label2.TabIndex = 25;
             this.label2.Text = "Tài xế";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,9 +218,9 @@ namespace Quanlibaixe
             this.label8.Location = new System.Drawing.Point(11, 187);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 21);
+            this.label8.Size = new System.Drawing.Size(70, 21);
             this.label8.TabIndex = 41;
-            this.label8.Text = "Mô tả";
+            this.label8.Text = "Ghi chú";
             // 
             // label6
             // 
@@ -277,6 +277,7 @@ namespace Quanlibaixe
             this.label7.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
             this.label7.Location = new System.Drawing.Point(242, 79);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -474,6 +475,22 @@ namespace Quanlibaixe
             this.panel3.Size = new System.Drawing.Size(442, 52);
             this.panel3.TabIndex = 2;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.comboBox3, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
+            this.guna2Transition1.SetDecoration(this.tableLayoutPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(442, 52);
+            this.tableLayoutPanel3.TabIndex = 29;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel6);
@@ -497,15 +514,73 @@ namespace Quanlibaixe
             this.panel6.Size = new System.Drawing.Size(442, 141);
             this.panel6.TabIndex = 64;
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.panel7, 0, 0);
+            this.guna2Transition1.SetDecoration(this.tableLayoutPanel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(442, 124);
+            this.tableLayoutPanel4.TabIndex = 66;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.txt_ND);
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Controls.Add(this.panel10);
+            this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(436, 118);
+            this.panel7.TabIndex = 0;
+            // 
             // txt_ND
             // 
+            this.txt_ND.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2Transition1.SetDecoration(this.txt_ND, Guna.UI2.AnimatorNS.DecorationType.None);
             this.txt_ND.Dock = System.Windows.Forms.DockStyle.Top;
             this.txt_ND.Location = new System.Drawing.Point(20, 27);
             this.txt_ND.Name = "txt_ND";
-            this.txt_ND.Size = new System.Drawing.Size(391, 294);
+            this.txt_ND.Size = new System.Drawing.Size(391, 321);
             this.txt_ND.TabIndex = 65;
             this.txt_ND.Text = "";
+            // 
+            // panel8
+            // 
+            this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(411, 27);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(25, 91);
+            this.panel8.TabIndex = 66;
+            // 
+            // panel9
+            // 
+            this.guna2Transition1.SetDecoration(this.panel9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel9.Location = new System.Drawing.Point(0, 27);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(20, 91);
+            this.panel9.TabIndex = 67;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label5);
+            this.guna2Transition1.SetDecoration(this.panel10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(436, 27);
+            this.panel10.TabIndex = 68;
             // 
             // label12
             // 
@@ -560,6 +635,7 @@ namespace Quanlibaixe
             this.label13.TabIndex = 75;
             this.label13.Text = "Refresh";
             this.label13.Visible = false;
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // btn_Refresh
             // 
@@ -636,6 +712,7 @@ namespace Quanlibaixe
             this.txt_IDschedule.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_IDschedule.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_IDschedule.Location = new System.Drawing.Point(108, 4);
+            this.txt_IDschedule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_IDschedule.Name = "txt_IDschedule";
             this.txt_IDschedule.PasswordChar = '\0';
             this.txt_IDschedule.PlaceholderText = "";
@@ -687,17 +764,17 @@ namespace Quanlibaixe
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -707,14 +784,14 @@ namespace Quanlibaixe
             this.Desciption,
             this.Column2});
             this.guna2Transition1.SetDecoration(this.dataGridView2, Guna.UI2.AnimatorNS.DecorationType.None);
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle36;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
@@ -728,48 +805,11 @@ namespace Quanlibaixe
             this.dataGridView2.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellMouseLeave);
             this.dataGridView2.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_CellMouseMove);
             // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Mosaic;
-            this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 20;
-            animation1.Padding = new System.Windows.Forms.Padding(30);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.comboBox3, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
-            this.guna2Transition1.SetDecoration(this.tableLayoutPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(442, 52);
-            this.tableLayoutPanel3.TabIndex = 29;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id_schedule";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridViewTextBoxColumn1.FillWeight = 175F;
             this.dataGridViewTextBoxColumn1.HeaderText = "ID";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
@@ -779,8 +819,8 @@ namespace Quanlibaixe
             // Id_driver
             // 
             this.Id_driver.DataPropertyName = "ngay";
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Id_driver.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Id_driver.DefaultCellStyle = dataGridViewCellStyle31;
             this.Id_driver.HeaderText = "Ngày";
             this.Id_driver.MinimumWidth = 6;
             this.Id_driver.Name = "Id_driver";
@@ -788,8 +828,8 @@ namespace Quanlibaixe
             // Driver_name
             // 
             this.Driver_name.DataPropertyName = "time";
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Driver_name.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Driver_name.DefaultCellStyle = dataGridViewCellStyle32;
             this.Driver_name.FillWeight = 101.8717F;
             this.Driver_name.HeaderText = "Thời Gian";
             this.Driver_name.MinimumWidth = 6;
@@ -798,8 +838,8 @@ namespace Quanlibaixe
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "id_car";
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle33;
             this.dataGridViewTextBoxColumn3.FillWeight = 101.8717F;
             this.dataGridViewTextBoxColumn3.HeaderText = "Biển Số Xe";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
@@ -808,8 +848,8 @@ namespace Quanlibaixe
             // Desciption
             // 
             this.Desciption.DataPropertyName = "description";
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Desciption.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Desciption.DefaultCellStyle = dataGridViewCellStyle34;
             this.Desciption.HeaderText = "Desciption";
             this.Desciption.MinimumWidth = 6;
             this.Desciption.Name = "Desciption";
@@ -817,67 +857,31 @@ namespace Quanlibaixe
             // Column2
             // 
             this.Column2.DataPropertyName = "id_action";
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle35;
             this.Column2.HeaderText = "ID Action";
             this.Column2.Name = "Column2";
             // 
-            // tableLayoutPanel4
+            // guna2Transition1
             // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.panel7, 0, 0);
-            this.guna2Transition1.SetDecoration(this.tableLayoutPanel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(442, 124);
-            this.tableLayoutPanel4.TabIndex = 66;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.txt_ND);
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Controls.Add(this.panel10);
-            this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(3, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(436, 118);
-            this.panel7.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(411, 27);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(25, 91);
-            this.panel8.TabIndex = 66;
-            // 
-            // panel9
-            // 
-            this.guna2Transition1.SetDecoration(this.panel9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(0, 27);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(20, 91);
-            this.panel9.TabIndex = 67;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label5);
-            this.guna2Transition1.SetDecoration(this.panel10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(436, 27);
-            this.panel10.TabIndex = 68;
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Mosaic;
+            this.guna2Transition1.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 20;
+            animation4.Padding = new System.Windows.Forms.Padding(30);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation4;
             // 
             // Form_lichxe
             // 
@@ -892,8 +896,14 @@ namespace Quanlibaixe
             this.Text = "Lich Xe";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -901,12 +911,6 @@ namespace Quanlibaixe
             this.tableLayoutPanel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -316,5 +316,10 @@ namespace Quanlibaixe
             ketnoi();
             this.Refresh();
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

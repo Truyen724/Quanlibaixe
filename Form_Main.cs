@@ -52,32 +52,11 @@ namespace Quanlibaixe
             com.CommandType = CommandType.Text;
             dataGridView1.DataSource = dt;
             conn.Close();
+
+            dataGridView1.DefaultCellStyle.Font = new Font(dataGridView1.DefaultCellStyle.Font.FontFamily, 12);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void thêmXeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -94,7 +73,24 @@ namespace Quanlibaixe
             conn.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            String tatcacacxe = "select Id_car, Driver_Name, Car.State from Car left join Driver on Car.Id_driver = Driver.ID_driver where Car.State = 'in'";
+            conn.Open();
+            SqlCommand com = new SqlCommand(tatcacacxe, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+
+            da.Fill(dt);
+
+            com.CommandType = CommandType.Text;
+            dataGridView1.DataSource = dt;
+            conn.Close();
+        }
+
+        // Button
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             String tatcacacxe = "select Id_car, Driver_Name, Car.State from Car left join Driver on Car.Id_driver = Driver.ID_driver";
             conn.Open();
@@ -110,6 +106,20 @@ namespace Quanlibaixe
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            String tatcacacxe = "select Id_car, Driver_Name, Car.State from Car left join Driver on Car.Id_driver = Driver.ID_driver where Car.State = 'out'";
+            conn.Open();
+            SqlCommand com = new SqlCommand(tatcacacxe, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView1.DataSource = dt;
+            conn.Close();
+        }
+
+        // Button
+        private void guna2Button3_Click(object sender, EventArgs e)
         {
             String tatcacacxe = "select Id_car, Driver_Name, Car.State from Car left join Driver on Car.Id_driver = Driver.ID_driver where Car.State = 'out'";
             conn.Open();
@@ -145,6 +155,7 @@ namespace Quanlibaixe
                 
             }    
         }
+
         public Image LoadImage(String base64)
         {
 
@@ -349,6 +360,20 @@ namespace Quanlibaixe
             conn.Close();
         }
 
+        // Button
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car)  order by ID_action desc");
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView2.DataSource = dt;
+            conn.Close();
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'in'  order by ID_action desc");
@@ -362,7 +387,35 @@ namespace Quanlibaixe
             conn.Close();
         }
 
+        // Button
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'in'  order by ID_action desc");
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView2.DataSource = dt;
+            conn.Close();
+        }
+
         private void button6_Click_1(object sender, EventArgs e)
+        {
+            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'out'  order by ID_action desc");
+            conn.Open();
+            SqlCommand com = new SqlCommand(query, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dt);
+            com.CommandType = CommandType.Text;
+            dataGridView2.DataSource = dt;
+            conn.Close();
+        }
+
+        // Button
+        private void guna2Button5_Click(object sender, EventArgs e)
         {
             string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'out'  order by ID_action desc");
             conn.Open();
@@ -449,5 +502,7 @@ namespace Quanlibaixe
                 dataGridView2.Rows[e.RowIndex].DefaultCellStyle = style;
             }
         }
+
+
     }
 }

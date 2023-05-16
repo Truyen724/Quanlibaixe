@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Common;
+using Guna.UI2.WinForms;
+
 namespace Quanlibaixe
 {
     public partial class quanlilichtrinh : Form
@@ -52,30 +54,6 @@ namespace Quanlibaixe
             }
             conn.Close();
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void quanlilichtrinh_Load(object sender, EventArgs e)
         {
@@ -89,7 +67,7 @@ namespace Quanlibaixe
         {
             string time = comboBox1.Text + ":" + comboBox2.Text;
             string id_car = comboBox4.Text;
-            string description = textBox1.Text;
+            string description = txt_ND.Text;
 
             if (!string.IsNullOrEmpty(time) && !string.IsNullOrEmpty(id_car) && !string.IsNullOrEmpty(description))
             {
@@ -114,6 +92,40 @@ namespace Quanlibaixe
             else
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
+            }
+        }
+
+        // Button Thêm
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            string time = comboBox1.Text + ":" + comboBox2.Text;
+            string id_car = comboBox4.Text;
+            string description = txt_ND.Text;
+
+            if (!string.IsNullOrEmpty(time) && !string.IsNullOrEmpty(id_car) && !string.IsNullOrEmpty(description))
+            {
+                try
+                {
+                    DateTime iDate = dateTimePicker1.Value;
+                    string strDate = iDate.ToString("yyyyMMdd");
+                    string id_schedule = GetTimestamp(DateTime.Now);
+                    string id_action = "";
+                    String query = String.Format("Insert into schedule (id_schedule, ngay, time, id_car, description, id_action) values ('{0}', '{1}', '{2}', '{3}', N'{4}', '{5}')", id_schedule, strDate, time, id_car, description, id_action);
+                    conn.Open();
+                    SqlCommand com = new SqlCommand(query, conn);
+                    com.CommandType = CommandType.Text;
+                    com.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Thêm thành công");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi" + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một thời gian hợp lệ.");
             }
         }
 
@@ -143,6 +155,29 @@ namespace Quanlibaixe
         public quanlilichtrinh(Form_Master callerForm) : this()
         {
             this.CallerForm = callerForm;
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            comboBox1.Text = "";
+            comboBox2.Text = "";
+            comboBox4.Text = "";
+            comboBox3.Text = "";
+            comboBox5.Text = "";
+            txt_ND.Text = "";
+            ketnoi();
+            this.Refresh();
+        }
+
+        private void btn_Refresh_MouseHover(object sender, EventArgs e)
+        {
+            // Transiton HorizSlide cho label3.Visible = false thi animation moi chay
+            guna2Transition1.ShowSync(label13);
+        }
+
+        private void btn_Refresh_MouseLeave(object sender, EventArgs e)
+        {
+            label13.Visible = false;
         }
     }
 }
