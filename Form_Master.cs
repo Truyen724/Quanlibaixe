@@ -717,6 +717,15 @@ namespace Quanlibaixe
             quanlilichtrinh.ShowDialog();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timeToolStripMenuItem.Text = DateTime.Now.ToShortTimeString();
+        }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            dateToolStripMenuItem.Text = DateTime.Now.ToLongDateString();
+
+        }
     }
 }

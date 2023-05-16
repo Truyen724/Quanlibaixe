@@ -48,7 +48,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.Xe_tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Camera_tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.camera_Control1 = new Quanlibaixe.Camera_Control();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,10 +56,11 @@
             this.btn_Logout = new Guna.UI2.WinForms.Guna2Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.timeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SideBar_panel = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.SidePanel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -68,22 +68,27 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.LichXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.TaiXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.XeOto_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
-            this.QuanLi_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Dashboard_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.camera_Control1 = new Quanlibaixe.Camera_Control();
+            this.buttonCT7 = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.Camera_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.LichXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.TaiXe_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.XeOto_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.QuanLi_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.Dashboard_buttonCT = new Quanlibaixe.Custom_Toolbox.ButtonCT();
+            this.textBoxCT1 = new Quanlibaixe.Custom_Toolbox.TextBoxCT();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DragControl_Panel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -93,6 +98,7 @@
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
             this.SideBar_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -294,15 +300,6 @@
             this.Camera_tableLayoutPanel1.Size = new System.Drawing.Size(1210, 487);
             this.Camera_tableLayoutPanel1.TabIndex = 44;
             // 
-            // camera_Control1
-            // 
-            this.guna2Transition1.SetDecoration(this.camera_Control1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.camera_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.camera_Control1.Location = new System.Drawing.Point(3, 3);
-            this.camera_Control1.Name = "camera_Control1";
-            this.camera_Control1.Size = new System.Drawing.Size(1204, 481);
-            this.camera_Control1.TabIndex = 0;
-            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.label5);
@@ -404,6 +401,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
             this.panel9.Controls.Add(this.buttonCT7);
+            this.panel9.Controls.Add(this.menuStrip2);
             this.guna2Transition1.SetDecoration(this.panel9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 604);
@@ -411,25 +409,31 @@
             this.panel9.Size = new System.Drawing.Size(1215, 25);
             this.panel9.TabIndex = 41;
             // 
-            // buttonCT7
+            // menuStrip2
             // 
-            this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.buttonCT7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
-            this.buttonCT7.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonCT7.BorderRadius = 0;
-            this.buttonCT7.BorderSize = 0;
-            this.guna2Transition1.SetDecoration(this.buttonCT7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonCT7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonCT7.FlatAppearance.BorderSize = 0;
-            this.buttonCT7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCT7.ForeColor = System.Drawing.Color.White;
-            this.buttonCT7.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT7.Image")));
-            this.buttonCT7.Location = new System.Drawing.Point(1192, 0);
-            this.buttonCT7.Name = "buttonCT7";
-            this.buttonCT7.Size = new System.Drawing.Size(23, 25);
-            this.buttonCT7.TabIndex = 0;
-            this.buttonCT7.TextColor = System.Drawing.Color.White;
-            this.buttonCT7.UseVisualStyleBackColor = false;
+            this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.guna2Transition1.SetDecoration(this.menuStrip2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.timeToolStripMenuItem,
+            this.dateToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(1215, 25);
+            this.menuStrip2.TabIndex = 1;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // timeToolStripMenuItem
+            // 
+            this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
+            this.timeToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
+            this.timeToolStripMenuItem.Text = "Time";
+            // 
+            // dateToolStripMenuItem
+            // 
+            this.dateToolStripMenuItem.Name = "dateToolStripMenuItem";
+            this.dateToolStripMenuItem.Size = new System.Drawing.Size(43, 21);
+            this.dateToolStripMenuItem.Text = "Date";
             // 
             // SideBar_panel
             // 
@@ -458,29 +462,6 @@
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 60);
             this.SidePanel.TabIndex = 3;
-            // 
-            // Camera_buttonCT
-            // 
-            this.Camera_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.Camera_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.Camera_buttonCT.BorderColor = System.Drawing.Color.Empty;
-            this.Camera_buttonCT.BorderRadius = 3;
-            this.Camera_buttonCT.BorderSize = 0;
-            this.guna2Transition1.SetDecoration(this.Camera_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Camera_buttonCT.FlatAppearance.BorderSize = 0;
-            this.Camera_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Camera_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Camera_buttonCT.ForeColor = System.Drawing.Color.Gray;
-            this.Camera_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Camera_buttonCT.Image")));
-            this.Camera_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Camera_buttonCT.Location = new System.Drawing.Point(16, 146);
-            this.Camera_buttonCT.Name = "Camera_buttonCT";
-            this.Camera_buttonCT.Size = new System.Drawing.Size(269, 60);
-            this.Camera_buttonCT.TabIndex = 7;
-            this.Camera_buttonCT.Text = "Camera";
-            this.Camera_buttonCT.TextColor = System.Drawing.Color.Gray;
-            this.Camera_buttonCT.UseVisualStyleBackColor = false;
-            this.Camera_buttonCT.Click += new System.EventHandler(this.Camera_buttonCT_Click);
             // 
             // SidePanel2
             // 
@@ -576,6 +557,171 @@
             this.label4.Text = "PEOPLE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.panel8.Controls.Add(this.panel7);
+            this.panel8.Controls.Add(this.panel4);
+            this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1500, 80);
+            this.panel8.TabIndex = 45;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.Dashboard_buttonCT);
+            this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(285, 80);
+            this.panel7.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(74, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 22);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Dashboard";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel13);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.textBoxCT1);
+            this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(1037, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(463, 80);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.panel13, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel13.Location = new System.Drawing.Point(159, 47);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(285, 2);
+            this.panel13.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(113, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.DragControl_Panel2;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            // 
+            // camera_Control1
+            // 
+            this.guna2Transition1.SetDecoration(this.camera_Control1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.camera_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.camera_Control1.Location = new System.Drawing.Point(3, 3);
+            this.camera_Control1.Name = "camera_Control1";
+            this.camera_Control1.Size = new System.Drawing.Size(1204, 481);
+            this.camera_Control1.TabIndex = 0;
+            // 
+            // buttonCT7
+            // 
+            this.buttonCT7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.buttonCT7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
+            this.buttonCT7.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonCT7.BorderRadius = 0;
+            this.buttonCT7.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.buttonCT7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonCT7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonCT7.FlatAppearance.BorderSize = 0;
+            this.buttonCT7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCT7.ForeColor = System.Drawing.Color.White;
+            this.buttonCT7.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT7.Image")));
+            this.buttonCT7.Location = new System.Drawing.Point(1192, 0);
+            this.buttonCT7.Name = "buttonCT7";
+            this.buttonCT7.Size = new System.Drawing.Size(23, 25);
+            this.buttonCT7.TabIndex = 0;
+            this.buttonCT7.TextColor = System.Drawing.Color.White;
+            this.buttonCT7.UseVisualStyleBackColor = false;
+            // 
+            // Camera_buttonCT
+            // 
+            this.Camera_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.Camera_buttonCT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.Camera_buttonCT.BorderColor = System.Drawing.Color.Empty;
+            this.Camera_buttonCT.BorderRadius = 3;
+            this.Camera_buttonCT.BorderSize = 0;
+            this.guna2Transition1.SetDecoration(this.Camera_buttonCT, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Camera_buttonCT.FlatAppearance.BorderSize = 0;
+            this.Camera_buttonCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Camera_buttonCT.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camera_buttonCT.ForeColor = System.Drawing.Color.Gray;
+            this.Camera_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Camera_buttonCT.Image")));
+            this.Camera_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Camera_buttonCT.Location = new System.Drawing.Point(16, 146);
+            this.Camera_buttonCT.Name = "Camera_buttonCT";
+            this.Camera_buttonCT.Size = new System.Drawing.Size(269, 60);
+            this.Camera_buttonCT.TabIndex = 7;
+            this.Camera_buttonCT.Text = "Camera";
+            this.Camera_buttonCT.TextColor = System.Drawing.Color.Gray;
+            this.Camera_buttonCT.UseVisualStyleBackColor = false;
+            this.Camera_buttonCT.Click += new System.EventHandler(this.Camera_buttonCT_Click);
+            // 
             // LichXe_buttonCT
             // 
             this.LichXe_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
@@ -668,41 +814,6 @@
             this.QuanLi_buttonCT.UseVisualStyleBackColor = false;
             this.QuanLi_buttonCT.Click += new System.EventHandler(this.QuanLi_buttonCT_Click);
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.panel4);
-            this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1500, 80);
-            this.panel8.TabIndex = 45;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.Dashboard_buttonCT);
-            this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(285, 80);
-            this.panel7.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(74, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 22);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Dashboard";
-            // 
             // Dashboard_buttonCT
             // 
             this.Dashboard_buttonCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
@@ -722,38 +833,6 @@
             this.Dashboard_buttonCT.TextColor = System.Drawing.Color.White;
             this.Dashboard_buttonCT.UseVisualStyleBackColor = false;
             this.Dashboard_buttonCT.Click += new System.EventHandler(this.Dashboard_buttonCT_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel13);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBoxCT1);
-            this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1037, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(463, 80);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.panel13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel13.Location = new System.Drawing.Point(159, 47);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(285, 2);
-            this.panel13.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(113, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // textBoxCT1
             // 
@@ -775,44 +854,6 @@
             this.textBoxCT1.Texts = "";
             this.textBoxCT1.UnderlinedStyle = false;
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.DragControl_Panel2;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon";
-            this.notifyIcon1.Visible = true;
-            this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this;
-            // 
             // Form_Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -824,6 +865,7 @@
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip2;
             this.Name = "Form_Master";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Master";
@@ -839,6 +881,9 @@
             this.panel11.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.SideBar_panel.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -907,5 +952,10 @@
         private Guna.UI2.WinForms.Guna2Button btn_Logout;
         private Guna.UI2.WinForms.Guna2Button btn_RunCamera;
         public Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem timeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dateToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
