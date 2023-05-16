@@ -40,6 +40,11 @@ namespace Quanlibaixe
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dateofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dia_Chi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_PhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_DiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,16 +58,10 @@ namespace Quanlibaixe
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dateofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dia_Chi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -200,6 +199,43 @@ namespace Quanlibaixe
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellMouseLeave);
             this.dataGridView1.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseMove);
+            // 
+            // Id_driver
+            // 
+            this.Id_driver.DataPropertyName = "Id_driver";
+            this.Id_driver.FillWeight = 50F;
+            this.Id_driver.HeaderText = "Mã Tài Xế";
+            this.Id_driver.MinimumWidth = 6;
+            this.Id_driver.Name = "Id_driver";
+            // 
+            // Driver_name
+            // 
+            this.Driver_name.DataPropertyName = "Driver_name";
+            this.Driver_name.FillWeight = 101.8717F;
+            this.Driver_name.HeaderText = "Tên Tài Xế";
+            this.Driver_name.MinimumWidth = 6;
+            this.Driver_name.Name = "Driver_name";
+            // 
+            // Dateofbirth
+            // 
+            this.Dateofbirth.DataPropertyName = "Dateofbirth";
+            this.Dateofbirth.FillWeight = 70F;
+            this.Dateofbirth.HeaderText = "Ngày Sinh";
+            this.Dateofbirth.MinimumWidth = 6;
+            this.Dateofbirth.Name = "Dateofbirth";
+            // 
+            // Phone_Number
+            // 
+            this.Phone_Number.DataPropertyName = "Phone_Number";
+            this.Phone_Number.FillWeight = 80F;
+            this.Phone_Number.HeaderText = "Số Điện Thoại";
+            this.Phone_Number.Name = "Phone_Number";
+            // 
+            // Dia_Chi
+            // 
+            this.Dia_Chi.DataPropertyName = "Dia_Chi";
+            this.Dia_Chi.HeaderText = "Địa Chỉ";
+            this.Dia_Chi.Name = "Dia_Chi";
             // 
             // txt_PhoneNumber
             // 
@@ -434,7 +470,6 @@ namespace Quanlibaixe
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -443,31 +478,18 @@ namespace Quanlibaixe
             this.guna2Panel1.Size = new System.Drawing.Size(478, 76);
             this.guna2Panel1.TabIndex = 78;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(2, 41);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 19);
-            this.label6.TabIndex = 59;
-            this.label6.Text = "Vui lòng nhấn nút Refesh";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(2, 22);
+            this.label8.Location = new System.Drawing.Point(2, 41);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(432, 19);
+            this.label8.Size = new System.Drawing.Size(307, 19);
             this.label8.TabIndex = 59;
-            this.label8.Text = "Nếu thêm tài xế thành công, dữ liệu không tải lên BẢNG TÀI XẾ";
+            this.label8.Text = "Muốn thêm tài xế vui lòng nhấn nút Refesh !";
             // 
             // panel2
             // 
@@ -503,43 +525,6 @@ namespace Quanlibaixe
             this.label10.Text = "Bảng Tài Xế";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label10.Visible = false;
-            // 
-            // Id_driver
-            // 
-            this.Id_driver.DataPropertyName = "Id_driver";
-            this.Id_driver.FillWeight = 50F;
-            this.Id_driver.HeaderText = "Mã Tài Xế";
-            this.Id_driver.MinimumWidth = 6;
-            this.Id_driver.Name = "Id_driver";
-            // 
-            // Driver_name
-            // 
-            this.Driver_name.DataPropertyName = "Driver_name";
-            this.Driver_name.FillWeight = 101.8717F;
-            this.Driver_name.HeaderText = "Tên Tài Xế";
-            this.Driver_name.MinimumWidth = 6;
-            this.Driver_name.Name = "Driver_name";
-            // 
-            // Dateofbirth
-            // 
-            this.Dateofbirth.DataPropertyName = "Dateofbirth";
-            this.Dateofbirth.FillWeight = 70F;
-            this.Dateofbirth.HeaderText = "Ngày Sinh";
-            this.Dateofbirth.MinimumWidth = 6;
-            this.Dateofbirth.Name = "Dateofbirth";
-            // 
-            // Phone_Number
-            // 
-            this.Phone_Number.DataPropertyName = "Phone_Number";
-            this.Phone_Number.FillWeight = 80F;
-            this.Phone_Number.HeaderText = "Số Điện Thoại";
-            this.Phone_Number.Name = "Phone_Number";
-            // 
-            // Dia_Chi
-            // 
-            this.Dia_Chi.DataPropertyName = "Dia_Chi";
-            this.Dia_Chi.HeaderText = "Địa Chỉ";
-            this.Dia_Chi.Name = "Dia_Chi";
             // 
             // Form_Driver
             // 
@@ -589,7 +574,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id_driver;
         private System.Windows.Forms.DataGridViewTextBoxColumn Driver_name;

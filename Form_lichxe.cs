@@ -295,16 +295,16 @@ namespace Quanlibaixe
 
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
-            // Làm mới DataGridView
+            //// Làm mới DataGridView
             //dataGridView1.Refresh();
 
-            // Lưu nguồn dữ liệu hiện tại
-            var dataSource = dataGridView2.DataSource;
-            // Đặt giá trị cho DataSource thành null
-            dataGridView2.DataSource = null;
+            //// Lưu nguồn dữ liệu hiện tại
+            //var dataSource = dataGridView2.DataSource;
+            //// Đặt giá trị cho DataSource thành null
+            //dataGridView2.DataSource = null;
 
-            // Thiết lập lại nguồn dữ liệu đã lưu
-            dataGridView2.DataSource = dataSource;
+            //// Thiết lập lại nguồn dữ liệu đã lưu
+            //dataGridView2.DataSource = dataSource;
 
             txt_IDschedule.Text = "";
             comboBox8.Text = "";
@@ -313,7 +313,7 @@ namespace Quanlibaixe
             comboBox4.Text = "";
             comboBox5.Text = "";
             txt_ND.Text = "";
-            ketnoi();
+            //ketnoi();
             this.Refresh();
         }
 
