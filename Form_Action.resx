@@ -117,13 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_Accept.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAMFSURBVHhe7Zo7aFRREIY34gOLWIgRVPABPoIv0ICWopWFILFUJChBsVJSiRYWVhZaCEkREAVR
+        LFJKKkHBRkRBELTyhQ9UUFR8oej6zTArCe5mz+xN7t5zPR/8LNl75sz8w92Tcx+VRCKRSCQSiRipVqsz
+        0Al0G51HK+3Q/wGGL6GxfEVH0DQbUl4w2SeOG3ALddvQ8oG5BeidOJ2AT6jPQsoFxq6qxeb8RjssrBxg
+        aL9aC+eihcYPZpagj2ornEELjxuMdKBraimcH2itTRE3GBlQSz6OWnjcYGQN+q6WwrmJ4t8PYEJ2e3fF
+        kYMvaJVNETcYOa6WfBy28LjBSA+ShczDdVSKU38muieOHMjub6lNETcYOamWfByw8LjByGb0Uy2FM2rh
+        cYOR2eihWgpHLowW2hRxg5HTasnHXguPG4xsQb/UUjgjFh43GOlEj9VSOK9Rl00RNxgZUks+dlp43GBk
+        O5KbFx4uW3i+kHgeOoj60Rz7umWYQ079J8jDG5T/qU/SDUh+dzWeokwXHcQP60w+ei08P0gqm5MPmn48
+        b9E6G+aCuF06g49zFp4fJN2E6pmv4W4C4+dbnIdnKPPPzgUJm5mv4WoCY69oVDiySG6z8Hwg4Vz0UrIH
+        ImObrgmM6dXRPoYtPD9IKiu9l1eoYRM41oVkFfcg/yU6bYr8IOk+Te+nYRP4fkRHhCNb460Wni8kbmV7
+        WuOfJvD3bj3i46yFtwcKWIweaSl+/i6MfMo8IYvpWO6jWVpIO6GIrE1Yj1p5qLHRSmg/FLMCvZDKWuCz
+        fXo4ZamLA0XJmdDqmuDhDppuaYsFhU11E76h1ZaumFCgPKWdqiYcszTFhkKlCd7L2GbIqy3FPPXrQbGT
+        2QR5wSnTpXVboOjJasKATRkfFJ+1CTdQ3M/zMLAcPRc3TuR53jKbJm4wIk3wbpYOWXg5wJBnxziKOiy0
+        PGAqpAnv0SILKR+Yk/d6Jrrx0W9Dywsmu9EDtTueMzak/GBWXnLagy6gQZTvjc1EIpFIJBKJulQqfwBw
+        q8Ns9n4I9wAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>48</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIACieAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv
@@ -649,5 +668,11 @@
   </metadata>
   <metadata name="guna2DragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>301, 17</value>
+  </metadata>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="guna2Elipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>461, 17</value>
   </metadata>
 </root>

@@ -35,7 +35,12 @@ namespace Quanlibaixe
         SqlConnection conn = new SqlConnection();
         private void Form_Action_Load(object sender, EventArgs e)
         {
-         
+
+            ketnoi();
+        }
+
+        public void ketnoi()
+        {
             txt_IDxe.Text = id_xe;
             try
             {
@@ -54,7 +59,6 @@ namespace Quanlibaixe
             {
                 MessageBox.Show("Kết nối thất bại");
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
