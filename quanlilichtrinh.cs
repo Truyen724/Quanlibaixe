@@ -98,34 +98,42 @@ namespace Quanlibaixe
         // Button Thêm
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            string time = comboBox1.Text + ":" + comboBox2.Text;
-            string id_car = comboBox4.Text;
-            string description = txt_ND.Text;
-
-            if (!string.IsNullOrEmpty(time) && !string.IsNullOrEmpty(id_car) && !string.IsNullOrEmpty(description))
+            
+            if (MessageBox.Show("Bạn có muốn thêm dữ liệu ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                try
+                string time = comboBox1.Text + ":" + comboBox2.Text;
+                string id_car = comboBox4.Text;
+                string description = txt_ND.Text;
+
+                if (!string.IsNullOrEmpty(time) && !string.IsNullOrEmpty(id_car) && !string.IsNullOrEmpty(description))
                 {
-                    DateTime iDate = dateTimePicker1.Value;
-                    string strDate = iDate.ToString("yyyyMMdd");
-                    string id_schedule = GetTimestamp(DateTime.Now);
-                    string id_action = "";
-                    String query = String.Format("Insert into schedule (id_schedule, ngay, time, id_car, description, id_action) values ('{0}', '{1}', '{2}', '{3}', N'{4}', '{5}')", id_schedule, strDate, time, id_car, description, id_action);
-                    conn.Open();
-                    SqlCommand com = new SqlCommand(query, conn);
-                    com.CommandType = CommandType.Text;
-                    com.ExecuteNonQuery();
-                    conn.Close();
-                    MessageBox.Show("Thêm thành công");
+                    try
+                    {
+                        DateTime iDate = dateTimePicker1.Value;
+                        string strDate = iDate.ToString("yyyyMMdd");
+                        string id_schedule = GetTimestamp(DateTime.Now);
+                        string id_action = "";
+                        String query = String.Format("Insert into schedule (id_schedule, ngay, time, id_car, description, id_action) values ('{0}', '{1}', '{2}', '{3}', N'{4}', '{5}')", id_schedule, strDate, time, id_car, description, id_action);
+                        conn.Open();
+                        SqlCommand com = new SqlCommand(query, conn);
+                        com.CommandType = CommandType.Text;
+                        com.ExecuteNonQuery();
+                        conn.Close();
+                        MessageBox.Show("Thêm thành công");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi không thể xóa" + ex.Message, "Errol", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Lỗi" + ex.Message);
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một thời gian hợp lệ.");
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một thời gian hợp lệ.");
+                return;
             }
         }
 

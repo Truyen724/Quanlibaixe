@@ -257,29 +257,61 @@ namespace Quanlibaixe
         // Button Edit
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            DateTime iDate = dateTimePicker1.Value;
-            string strDate = iDate.ToString("yyyy/MM/dd");
-            string time = comboBox8.Text + ":" + comboBox7.Text;
-            string update = string.Format("update schedule set ngay = '{0}',time = '{1}',id_car='{2}', description = N'{3}' where id_schedule ='{4}'", strDate, time, comboBox6.Text, txt_ND.Text, txt_IDschedule.Text);
-            conn.Open();
-            SqlCommand com = new SqlCommand(update, conn);
-            com.CommandType = CommandType.Text;
-            com.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Sửa thành công");
+            
             refresh_data();
+            if (MessageBox.Show("Bạn có muốn sửa dữ liệu hay không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                try
+                {
+                    DateTime iDate = dateTimePicker1.Value;
+                    string strDate = iDate.ToString("yyyy/MM/dd");
+                    string time = comboBox8.Text + ":" + comboBox7.Text;
+                    string update = string.Format("update schedule set ngay = '{0}',time = '{1}',id_car='{2}', description = N'{3}' where id_schedule ='{4}'", strDate, time, comboBox6.Text, txt_ND.Text, txt_IDschedule.Text);
+                    conn.Open();
+                    SqlCommand com = new SqlCommand(update, conn);
+                    com.CommandType = CommandType.Text;
+                    com.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Sửa thành công");
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi không thể sửa" + ex.Message, "Errol", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            string update = string.Format("Delete from schedule where id_schedule ='{0}'", txt_IDschedule.Text);
-            conn.Open();
-            SqlCommand com = new SqlCommand(update, conn);
-            com.CommandType = CommandType.Text;
-            com.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Xóa thành công");
-            refresh_data();
+            
+
+            if (MessageBox.Show("Bạn thật sự có muốn xóa hay không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                
+                try
+                {
+                    string update = string.Format("Delete from schedule where id_schedule ='{0}'", txt_IDschedule.Text);
+                    conn.Open();
+                    SqlCommand com = new SqlCommand(update, conn);
+                    com.CommandType = CommandType.Text;
+                    com.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Xóa thành công");
+                    refresh_data();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi không thể xóa" + ex.Message, "Errol", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void btn_Refresh_MouseLeave(object sender, EventArgs e)

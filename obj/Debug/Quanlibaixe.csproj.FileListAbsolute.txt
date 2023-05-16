@@ -63,7 +63,6 @@ D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CoreCompileInputs.cache
 D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CopyComplete
 D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.exe
 D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.pdb
-D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Xe.resources
 D:\Quanlibaixe\obj\Debug\Quanlibaixe.Form_Xe.resources
 D:\Dev\Quanlibaixe\bin\Debug\Guna.Charts.WinForms.dll
 D:\Dev\Quanlibaixe\bin\Debug\LiveCharts.dll

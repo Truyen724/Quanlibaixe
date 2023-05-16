@@ -125,38 +125,46 @@ namespace Quanlibaixe
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            if (txt_IDcar.Text != "" && cb_IDtaixe.Text != "")
+            //
+            if (MessageBox.Show("Bạn có muốn thêm hay không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                try
+                if (txt_IDcar.Text != "" && cb_IDtaixe.Text != "")
                 {
-                    // sử dụng cơ chế tham số hóa "parameterization mechanism"
-                    String query = "Insert into Car (Id_car,Id_driver,State,Desciption) values (@Id_car,@Id_driver,@State,@Desciption)";
-                    SqlCommand com = new SqlCommand(query, conn);
-                    com.Parameters.AddWithValue("@Id_car", txt_IDcar.Text);
-                    com.Parameters.AddWithValue("@Id_driver", cb_IDtaixe.Text);
-                    com.Parameters.AddWithValue("@State", cb_TrangThai.Text);
-                    com.Parameters.AddWithValue("@Desciption", txt_MoTa.Text);
+                    try
+                    {
+                        // sử dụng cơ chế tham số hóa "parameterization mechanism"
+                        String query = "Insert into Car (Id_car,Id_driver,State,Desciption) values (@Id_car,@Id_driver,@State,@Desciption)";
+                        SqlCommand com = new SqlCommand(query, conn);
+                        com.Parameters.AddWithValue("@Id_car", txt_IDcar.Text);
+                        com.Parameters.AddWithValue("@Id_driver", cb_IDtaixe.Text);
+                        com.Parameters.AddWithValue("@State", cb_TrangThai.Text);
+                        com.Parameters.AddWithValue("@Desciption", txt_MoTa.Text);
 
-                    conn.Open();
-                    com.CommandType = CommandType.Text;
+                        conn.Open();
+                        com.CommandType = CommandType.Text;
 
-                    // Thực hiện câu truy vấn và đóng kết nối sau khi hoàn thành
-                    com.ExecuteNonQuery();
-                    conn.Close();
-                    MessageBox.Show("Thêm Thành Công");
+                        // Thực hiện câu truy vấn và đóng kết nối sau khi hoàn thành
+                        com.ExecuteNonQuery();
+                        conn.Close();
+                        MessageBox.Show("Thêm Thành Công");
 
-                    // Gọi phương thức ketnoi() để cập nhật dữ liệu trên giao diện
-                    ketnoi();
+                        // Gọi phương thức ketnoi() để cập nhật dữ liệu trên giao diện
+                        ketnoi();
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Lỗi không thể thêm " + ex.Message, "Errol", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        conn.Close();
+                    }
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("Lỗi ");
-                    conn.Close();
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin và chọn một ngày sinh hợp lệ.");
+                return;
             }
         }
 
@@ -173,18 +181,35 @@ namespace Quanlibaixe
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE Car SET Id_driver = @id_driver, State = @state, Desciption = @desciption WHERE id_car = @id_car";
-            conn.Open();
-            SqlCommand com = new SqlCommand(query, conn);
-            com.Parameters.AddWithValue("@id_driver", cb_IDtaixe.Text);
-            com.Parameters.AddWithValue("@state", cb_TrangThai.Text);
-            com.Parameters.AddWithValue("@desciption", txt_MoTa.Text);
-            com.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
-            com.CommandType = CommandType.Text;
-            com.ExecuteNonQuery();
-            conn.Close();
-            ketnoi();
-            MessageBox.Show("Chỉnh thành công");
+            
+
+            if (MessageBox.Show("Bạn có muốn sửa dữ liệu hay không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                string query = "UPDATE Car SET Id_driver = @id_driver, State = @state, Desciption = @desciption WHERE id_car = @id_car";
+                conn.Open();
+                SqlCommand com = new SqlCommand(query, conn);
+                com.Parameters.AddWithValue("@id_driver", cb_IDtaixe.Text);
+                com.Parameters.AddWithValue("@state", cb_TrangThai.Text);
+                com.Parameters.AddWithValue("@desciption", txt_MoTa.Text);
+                com.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
+                com.CommandType = CommandType.Text;
+                com.ExecuteNonQuery();
+                conn.Close();
+                ketnoi();
+                MessageBox.Show("Chỉnh thành công");
+
+                try
+                {
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi không thể sửa" + ex.Message, "Errol", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                return;
+            }
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -200,42 +225,50 @@ namespace Quanlibaixe
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
-        {
-            try
+        {            
+            //
+            if (MessageBox.Show("Bạn thật sự có muốn xóa hay không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                // Kiểm tra trạng thái kết nối trước khi mở kết nối
-                if (conn.State != ConnectionState.Open)
-                    conn.Open();
+                try
+                {
+                    // Kiểm tra trạng thái kết nối trước khi mở kết nối
+                    if (conn.State != ConnectionState.Open)
+                        conn.Open();
 
-                // Tạo đối tượng SqlCommand để xóa các bản ghi liên quan trong bảng schedule
-                string deleteScheduleQuery = "DELETE FROM schedule WHERE id_car = @id_car";
-                SqlCommand deleteScheduleCmd = new SqlCommand(deleteScheduleQuery, conn);
-                deleteScheduleCmd.CommandType = CommandType.Text;
-                deleteScheduleCmd.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
-                deleteScheduleCmd.ExecuteNonQuery();
+                    // Tạo đối tượng SqlCommand để xóa các bản ghi liên quan trong bảng schedule
+                    string deleteScheduleQuery = "DELETE FROM schedule WHERE id_car = @id_car";
+                    SqlCommand deleteScheduleCmd = new SqlCommand(deleteScheduleQuery, conn);
+                    deleteScheduleCmd.CommandType = CommandType.Text;
+                    deleteScheduleCmd.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
+                    deleteScheduleCmd.ExecuteNonQuery();
 
-                // Tạo đối tượng SqlCommand để xóa bản ghi trong bảng Car
-                string deleteCarQuery = "DELETE FROM Car WHERE Id_Car = @id_car";
-                SqlCommand deleteCarCmd = new SqlCommand(deleteCarQuery, conn);
-                deleteCarCmd.CommandType = CommandType.Text;
-                deleteCarCmd.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
-                deleteCarCmd.ExecuteNonQuery();
+                    // Tạo đối tượng SqlCommand để xóa bản ghi trong bảng Car
+                    string deleteCarQuery = "DELETE FROM Car WHERE Id_Car = @id_car";
+                    SqlCommand deleteCarCmd = new SqlCommand(deleteCarQuery, conn);
+                    deleteCarCmd.CommandType = CommandType.Text;
+                    deleteCarCmd.Parameters.AddWithValue("@id_car", txt_IDcar.Text);
+                    deleteCarCmd.ExecuteNonQuery();
 
-                // Đóng kết nối sau khi hoàn thành
-                conn.Close();
+                    // Đóng kết nối sau khi hoàn thành
+                    conn.Close();
 
-                MessageBox.Show("Xóa thành công");
+                    MessageBox.Show("Xóa thành công");
 
-                // Gọi phương thức ketnoi() để cập nhật dữ liệu trên giao diện
-                ketnoi();
+                    // Gọi phương thức ketnoi() để cập nhật dữ liệu trên giao diện
+                    ketnoi();
 
-                // Xóa giá trị của các combobox
-                cb_TrangThai.SelectedIndex = -1;
-                cb_TaiXe.SelectedIndex = -1;
+                    // Xóa giá trị của các combobox
+                    cb_TrangThai.SelectedIndex = -1;
+                    cb_TaiXe.SelectedIndex = -1;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Không thể xóa được: " + ex.Message,"Errol", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Không thể xóa được: " + ex.Message);
+                return;
             }
         }
 

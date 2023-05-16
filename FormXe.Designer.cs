@@ -35,6 +35,11 @@ namespace Quanlibaixe
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormXe));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Id_car = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.cb_TrangThai = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,11 +66,6 @@ namespace Quanlibaixe
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.Id_car = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Id_driver = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Driver_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -117,6 +117,46 @@ namespace Quanlibaixe
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellMouseLeave);
             this.dataGridView1.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseMove);
+            // 
+            // Id_car
+            // 
+            this.Id_car.DataPropertyName = "Id_car";
+            this.Id_car.FillWeight = 85F;
+            this.Id_car.HeaderText = "Biển Số Xe";
+            this.Id_car.MinimumWidth = 6;
+            this.Id_car.Name = "Id_car";
+            this.Id_car.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Id_driver
+            // 
+            this.Id_driver.DataPropertyName = "Id_driver";
+            this.Id_driver.FillWeight = 60F;
+            this.Id_driver.HeaderText = "Mã Tài Xế";
+            this.Id_driver.MinimumWidth = 6;
+            this.Id_driver.Name = "Id_driver";
+            // 
+            // Driver_name
+            // 
+            this.Driver_name.DataPropertyName = "Driver_name";
+            this.Driver_name.FillWeight = 101.8717F;
+            this.Driver_name.HeaderText = "Tên Tài Xế";
+            this.Driver_name.MinimumWidth = 6;
+            this.Driver_name.Name = "Driver_name";
+            // 
+            // State
+            // 
+            this.State.DataPropertyName = "State";
+            this.State.FillWeight = 35F;
+            this.State.HeaderText = "Trạng Thái";
+            this.State.MinimumWidth = 6;
+            this.State.Name = "State";
+            // 
+            // Desciption
+            // 
+            this.Desciption.DataPropertyName = "Desciption";
+            this.Desciption.HeaderText = "Mô Tả";
+            this.Desciption.MinimumWidth = 6;
+            this.Desciption.Name = "Desciption";
             // 
             // label5
             // 
@@ -512,7 +552,6 @@ namespace Quanlibaixe
             // 
             // guna2Transition1
             // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Mosaic;
             this.guna2Transition1.Cursor = null;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -521,8 +560,8 @@ namespace Quanlibaixe
             animation1.MinTime = 0F;
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 20;
-            animation1.Padding = new System.Windows.Forms.Padding(30);
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -530,47 +569,7 @@ namespace Quanlibaixe
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation1;
-            this.guna2Transition1.TimeStep = 0.01F;
-            // 
-            // Id_car
-            // 
-            this.Id_car.DataPropertyName = "Id_car";
-            this.Id_car.FillWeight = 85F;
-            this.Id_car.HeaderText = "Biển Số Xe";
-            this.Id_car.MinimumWidth = 6;
-            this.Id_car.Name = "Id_car";
-            this.Id_car.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Id_driver
-            // 
-            this.Id_driver.DataPropertyName = "Id_driver";
-            this.Id_driver.FillWeight = 60F;
-            this.Id_driver.HeaderText = "Mã Tài Xế";
-            this.Id_driver.MinimumWidth = 6;
-            this.Id_driver.Name = "Id_driver";
-            // 
-            // Driver_name
-            // 
-            this.Driver_name.DataPropertyName = "Driver_name";
-            this.Driver_name.FillWeight = 101.8717F;
-            this.Driver_name.HeaderText = "Tên Tài Xế";
-            this.Driver_name.MinimumWidth = 6;
-            this.Driver_name.Name = "Driver_name";
-            // 
-            // State
-            // 
-            this.State.DataPropertyName = "State";
-            this.State.FillWeight = 35F;
-            this.State.HeaderText = "Trạng Thái";
-            this.State.MinimumWidth = 6;
-            this.State.Name = "State";
-            // 
-            // Desciption
-            // 
-            this.Desciption.DataPropertyName = "Desciption";
-            this.Desciption.HeaderText = "Mô Tả";
-            this.Desciption.MinimumWidth = 6;
-            this.Desciption.Name = "Desciption";
+            this.guna2Transition1.TimeStep = 0.1F;
             // 
             // FormXe
             // 

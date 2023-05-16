@@ -613,7 +613,15 @@ namespace Quanlibaixe
         // Button đăng xuất
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            // close 
+            if(MessageBox.Show("Bạn có muốn đăng xuất ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)== DialogResult.Yes)
+            {
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
             Form_login form_Login = new Form_login();
             form_Login.ShowDialog();
         }
