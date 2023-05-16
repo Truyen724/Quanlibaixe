@@ -47,6 +47,7 @@ namespace Quanlibaixe
             dataGridView1.DataSource = dt;
             conn.Close();
         }
+
         List<string> dates = new List<string>();
         public void load_driver()
         {
@@ -86,7 +87,7 @@ namespace Quanlibaixe
         }
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}' where ID_driver = {2} ", txt_TenTaiXe.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), txt_PhoneNumber.Text, txt_DiaChi.Text, cb_IDtaixe.Text);
+            String query = String.Format("update Driver Set Driver_Name = N'{0}', Dateofbirth ='{1}', Phone_Number = '{2}', Dia_Chi ='{3}' where ID_driver = {4} ", txt_TenTaiXe.Text, NgaySinh_dateTimePicker.Value.ToString("yyyy/MM/dd"), txt_PhoneNumber.Text, txt_DiaChi.Text, cb_IDtaixe.Text);
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             com.CommandType = CommandType.Text;
@@ -102,20 +103,48 @@ namespace Quanlibaixe
         {
             try
             {
-                String query = String.Format("Delete from driver where Id_driver = {0}", cb_IDtaixe.Text);
                 conn.Open();
-                SqlCommand com = new SqlCommand(query, conn);
-                com.CommandType = CommandType.Text;
-                com.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Xóa thành công");
-                cb_IDtaixe.Text = "";
-                ketnoi();
+                SqlTransaction transaction = conn.BeginTransaction();
+                try
+                {
+                    string deleteCarQuery = "DELETE FROM Car WHERE Id_driver = @id";
+                    SqlCommand deleteCarCmd = new SqlCommand(deleteCarQuery, conn, transaction);
+                    deleteCarCmd.Parameters.AddWithValue("@id", cb_IDtaixe.Text);
+                    deleteCarCmd.ExecuteNonQuery();
+
+                    string deleteDriverQuery = "DELETE FROM driver WHERE Id_driver = @id";
+                    SqlCommand deleteDriverCmd = new SqlCommand(deleteDriverQuery, conn, transaction);
+                    deleteDriverCmd.Parameters.AddWithValue("@id", cb_IDtaixe.Text);
+                    int rowsAffected = deleteDriverCmd.ExecuteNonQuery();
+
+                    transaction.Commit();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        cb_IDtaixe.Text = "";
+                        //load_driver();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không Thể Xóa Được");
+                    }
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Không Thể Xóa Được");
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
+            ketnoi();
         }
 
         // Button Add
@@ -124,7 +153,7 @@ namespace Quanlibaixe
             // Lỗi này khả năng cao do việc bảng Driver của bạn đã được tạo trước
             if (txt_TenTaiXe.Text != "" && NgaySinh_dateTimePicker.Value <= DateTime.Now)
             {
-                String query = "INSERT INTO Driver (ID_driver, Driver_Name, Dateofbirth) VALUES (@IDDriver, @DriverName, @DateOfBirth)";
+                String query = "INSERT INTO Driver (ID_driver, Driver_Name, Dateofbirth, Phone_Number) VALUES (@IDDriver, @DriverName, @DateOfBirth, @Phone_Number, @Dia_Chi)";
                 conn.Open();
                 SqlCommand com = new SqlCommand(query, conn);
                 com.CommandType = CommandType.Text;

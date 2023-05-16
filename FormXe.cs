@@ -91,7 +91,7 @@ namespace Quanlibaixe
             {
                 MessageBox.Show("Kết nối thất bại");
             }
-            String tatcacacxe = "select Id_car, Driver.Driver_Name, Driver.Id_driver, Car.State, Car.Desciption from Car left join Driver on Car.Id_driver = Driver.ID_driver";
+            String tatcacacxe = "select Id_car, Driver.Id_driver, Driver.Driver_Name, Car.State, Car.Desciption from Car left join Driver on Car.Id_driver = Driver.ID_driver";
             conn.Open();
             SqlCommand com = new SqlCommand(tatcacacxe, conn);
             DataTable dt = new DataTable();
@@ -293,7 +293,8 @@ namespace Quanlibaixe
             cb_TrangThai.Text = "";
             txt_MoTa.Text = "";
             cb_NgaySinh.Text = "";
-            ketnoi();
+            //ketnoi();
+            load_driver();
             this.Refresh();
         }
 
