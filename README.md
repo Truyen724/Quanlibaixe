@@ -12,12 +12,24 @@
       </tr>
    </table>
 </div>
+
 - **Form Camera Dashboard**
 <div align="center">
    <table align="center" border="0" >
       <tr>
          <td>
             <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FromCamera.png" width=1200>
+         </td>
+      </tr>
+   </table>
+</div>
+
+- **Form Quan Li**
+<div align="center">
+   <table align="center" border="0" >
+      <tr>
+         <td>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormQuanLi.png" width=1200>
          </td>
       </tr>
    </table>
@@ -33,14 +45,39 @@
       </tr>
    </table>
 </div>
-<!-- - **Form Quan Li**
+
+- **Form Tài Xế**
 <div align="center">
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://raw.githubusercontent.com/thqnhngqn-dev/musik-player/master/screenshots/device-2022-11-11-main-player.jpg" width=1200>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormTaiXe.png" width=1200>
          </td>
       </tr>
    </table>
-</div> -->
+</div>
+
+- **Form Tạo Lịch Trình**
+<div align="center">
+   <table align="center" border="0" >
+      <tr>
+         <td>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormTaoLich.png" width=1200>
+         </td>
+      </tr>
+   </table>
+</div>
+
+- **Form Lịch Trình**
+<div align="center">
+   <table align="center" border="0" >
+      <tr>
+         <td>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FromLichXe.png" width=1200>
+         </td>
+      </tr>
+   </table>
+</div>
+
+
 
