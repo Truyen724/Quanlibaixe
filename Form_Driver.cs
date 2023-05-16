@@ -263,19 +263,19 @@ namespace Quanlibaixe
 
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
-            var dataSource = dataGridView1.DataSource;
-            // Đặt giá trị cho DataSource thành null
-            dataGridView1.DataSource = null;
+            //var dataSource = dataGridView1.DataSource;
+            //// Đặt giá trị cho DataSource thành null
+            //dataGridView1.DataSource = null;
 
-            // Thiết lập lại nguồn dữ liệu đã lưu
-            dataGridView1.DataSource = dataSource;
+            //// Thiết lập lại nguồn dữ liệu đã lưu
+            //dataGridView1.DataSource = dataSource;
 
             cb_IDtaixe.Text = "";
             txt_TenTaiXe.Text = "";
             NgaySinh_dateTimePicker.Text = "";
             txt_PhoneNumber.Text = "";
             txt_DiaChi.Text = "";
-            ketnoi();
+            //ketnoi();
             this.Refresh();
         }
 
