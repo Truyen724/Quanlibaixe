@@ -515,6 +515,7 @@ namespace Quanlibaixe
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation1;
+            this.guna2Transition1.TimeStep = 0.01F;
             // 
             // quanlilichtrinh
             // 

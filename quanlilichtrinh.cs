@@ -165,7 +165,7 @@ namespace Quanlibaixe
             comboBox3.Text = "";
             comboBox5.Text = "";
             txt_ND.Text = "";
-            ketnoi();
+            //ketnoi();
             this.Refresh();
         }
 
