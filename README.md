@@ -40,7 +40,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormXe.png" width=1200>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormXe2.png" width=1200>
          </td>
       </tr>
    </table>
@@ -51,7 +51,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormTaiXe.png" width=1200>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormTaiXe2.png" width=1200>
          </td>
       </tr>
    </table>
@@ -73,7 +73,7 @@
    <table align="center" border="0" >
       <tr>
          <td>
-            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FromLichXe.png" width=1200>
+            <img src="https://github.com/Truyen724/Quanlibaixe/blob/Font_End/ScreenShots/FormLich2.png" width=1200>
          </td>
       </tr>
    </table>
