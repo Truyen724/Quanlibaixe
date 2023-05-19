@@ -94,7 +94,7 @@ namespace Quanlibaixe
             this.txt_TenTaiXe.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_TenTaiXe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_TenTaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_TenTaiXe.ForeColor = System.Drawing.Color.Gray;
+            this.txt_TenTaiXe.ForeColor = System.Drawing.Color.Black;
             this.txt_TenTaiXe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_TenTaiXe.Location = new System.Drawing.Point(138, 73);
             this.txt_TenTaiXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -249,7 +249,7 @@ namespace Quanlibaixe
             this.txt_PhoneNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_PhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_PhoneNumber.ForeColor = System.Drawing.Color.Gray;
+            this.txt_PhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.txt_PhoneNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_PhoneNumber.Location = new System.Drawing.Point(138, 145);
             this.txt_PhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -272,7 +272,7 @@ namespace Quanlibaixe
             this.txt_DiaChi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_DiaChi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_DiaChi.ForeColor = System.Drawing.Color.Gray;
+            this.txt_DiaChi.ForeColor = System.Drawing.Color.Black;
             this.txt_DiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_DiaChi.Location = new System.Drawing.Point(138, 183);
             this.txt_DiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -343,7 +343,7 @@ namespace Quanlibaixe
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -370,7 +370,7 @@ namespace Quanlibaixe
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(303, 40);
             this.btn_Add.TabIndex = 74;
-            this.btn_Add.Text = "Thêm xe";
+            this.btn_Add.Text = "Thêm tài xế";
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Edit
@@ -390,7 +390,7 @@ namespace Quanlibaixe
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(146, 40);
             this.btn_Edit.TabIndex = 75;
-            this.btn_Edit.Text = "Sữa Xe";
+            this.btn_Edit.Text = "Sửa thông tin";
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // btn_Delete
@@ -417,6 +417,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.cb_IDtaixe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_IDtaixe.Enabled = false;
             this.cb_IDtaixe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_IDtaixe.ForeColor = System.Drawing.Color.Black;
             this.cb_IDtaixe.FormattingEnabled = true;
             this.cb_IDtaixe.Location = new System.Drawing.Point(138, 35);
             this.cb_IDtaixe.Margin = new System.Windows.Forms.Padding(2);

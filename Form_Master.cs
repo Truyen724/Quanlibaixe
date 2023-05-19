@@ -733,15 +733,18 @@ namespace Quanlibaixe
 
         private void timeToolStripMenuItem_MouseHover(object sender, EventArgs e)
         {
-            timeToolStripMenuItem.BackColor = Color.FromArgb(0,13,66);
-            timeToolStripMenuItem.ForeColor = Color.White;
+            timeToolStripMenuItem.ForeColor = Color.Black;
         }
 
         private void dateToolStripMenuItem_MouseHover(object sender, EventArgs e)
         {
-            timeToolStripMenuItem.BackColor = Color.FromArgb(208, 212, 213);
-            timeToolStripMenuItem.ForeColor = Color.FromArgb(0, 13, 66);
+            //timeToolStripMenuItem.BackColor = Color.FromArgb(208, 212, 213);
+            //timeToolStripMenuItem.ForeColor = Color.FromArgb(0, 13, 66);
         }
 
+        private void timeToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
+        {
+            timeToolStripMenuItem.ForeColor = Color.Black;
+        }
     }
 }

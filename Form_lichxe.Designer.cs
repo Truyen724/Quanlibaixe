@@ -695,7 +695,7 @@ namespace Quanlibaixe
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(146, 40);
             this.btn_Edit.TabIndex = 61;
-            this.btn_Edit.Text = "Sữa Xe";
+            this.btn_Edit.Text = "Sửa thông tin";
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // txt_IDschedule
@@ -873,7 +873,7 @@ namespace Quanlibaixe
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));

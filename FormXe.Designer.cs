@@ -175,7 +175,7 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.SetDecoration(this.cb_TrangThai, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_TrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cb_TrangThai.ForeColor = System.Drawing.Color.Gray;
+            this.cb_TrangThai.ForeColor = System.Drawing.Color.Black;
             this.cb_TrangThai.FormattingEnabled = true;
             this.cb_TrangThai.Items.AddRange(new object[] {
             "in",
@@ -217,7 +217,7 @@ namespace Quanlibaixe
             // 
             this.guna2Transition1.SetDecoration(this.cb_TaiXe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_TaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cb_TaiXe.ForeColor = System.Drawing.Color.Gray;
+            this.cb_TaiXe.ForeColor = System.Drawing.Color.Black;
             this.cb_TaiXe.FormattingEnabled = true;
             this.cb_TaiXe.Location = new System.Drawing.Point(105, 66);
             this.cb_TaiXe.Margin = new System.Windows.Forms.Padding(2);
@@ -260,6 +260,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.cb_NgaySinh, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_NgaySinh.Enabled = false;
             this.cb_NgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_NgaySinh.ForeColor = System.Drawing.Color.Black;
             this.cb_NgaySinh.FormattingEnabled = true;
             this.cb_NgaySinh.Location = new System.Drawing.Point(105, 177);
             this.cb_NgaySinh.Margin = new System.Windows.Forms.Padding(2);
@@ -272,6 +273,7 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.cb_IDtaixe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_IDtaixe.Enabled = false;
             this.cb_IDtaixe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_IDtaixe.ForeColor = System.Drawing.Color.Black;
             this.cb_IDtaixe.FormattingEnabled = true;
             this.cb_IDtaixe.Location = new System.Drawing.Point(105, 103);
             this.cb_IDtaixe.Margin = new System.Windows.Forms.Padding(2);
@@ -425,7 +427,7 @@ namespace Quanlibaixe
             this.txt_MoTa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_MoTa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_MoTa.ForeColor = System.Drawing.Color.Gray;
+            this.txt_MoTa.ForeColor = System.Drawing.Color.Black;
             this.txt_MoTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MoTa.Location = new System.Drawing.Point(105, 140);
             this.txt_MoTa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -448,7 +450,7 @@ namespace Quanlibaixe
             this.txt_IDcar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_IDcar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_IDcar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_IDcar.ForeColor = System.Drawing.Color.Gray;
+            this.txt_IDcar.ForeColor = System.Drawing.Color.Black;
             this.txt_IDcar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_IDcar.Location = new System.Drawing.Point(105, 30);
             this.txt_IDcar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -495,7 +497,7 @@ namespace Quanlibaixe
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(146, 40);
             this.btn_Edit.TabIndex = 60;
-            this.btn_Edit.Text = "Sữa Xe";
+            this.btn_Edit.Text = "Sửa thông tin";
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // btn_Add
@@ -561,7 +563,7 @@ namespace Quanlibaixe
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
