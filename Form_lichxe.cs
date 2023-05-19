@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Common;
 using System.Globalization;
+using Guna.UI2.WinForms;
 
 namespace Quanlibaixe
 {
@@ -349,9 +350,81 @@ namespace Quanlibaixe
             this.Refresh();
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
 
+        //
+        private void ToExcel(DataGridView dataGridView2, string fileName)
+        {
+            //khai báo thư viện hỗ trợ Microsoft.Office.Interop.Excel
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook workbook;
+            Microsoft.Office.Interop.Excel.Worksheet worksheet;
+            try
+            {
+                //Tạo đối tượng COM.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+                //tạo mới một Workbooks bằng phương thức add()
+                workbook = excel.Workbooks.Add(Type.Missing);
+                worksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Sheets["Sheet1"];
+                //đặt tên cho sheet
+                worksheet.Name = "lịch di chuyển";
+
+                // export header trong DataGridView
+                for (int i = 0; i < dataGridView2.ColumnCount; i++)
+                {
+                    worksheet.Cells[1, i + 1] = dataGridView2.Columns[i].HeaderText;
+                }
+                // export nội dung trong DataGridView
+                for (int i = 0; i < dataGridView2.RowCount; i++)
+                {
+                    for (int j = 0; j < dataGridView2.ColumnCount; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = dataGridView2.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+                // sử dụng phương thức SaveAs() để lưu workbook với filename
+                workbook.SaveAs(fileName);
+                //đóng workbook
+                workbook.Close();
+                excel.Quit();
+                MessageBox.Show("Xuất dữ liệu ra Excel thành công!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                workbook = null;
+                worksheet = null;
+            }
+        }
+
+        private void SaveFileDialog(string fileName)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+        }
+
+        // Button export Excel
+        private void btn_ExportExcel_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ToExcel(dataGridView2, saveFileDialog.FileName);
+            }
+        }
+
+        private void btn_ExportExcel_MouseHover(object sender, EventArgs e)
+        {
+            // Transiton HorizSlide cho label3.Visible = false thi animation moi chay
+            guna2Transition2.ShowSync(label14);
+        }
+
+        private void btn_ExportExcel_MouseLeave(object sender, EventArgs e)
+        {
+            label14.Visible = false;
         }
     }
 }

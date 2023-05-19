@@ -29,10 +29,11 @@ namespace Quanlibaixe
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.AnimatorNS.Animation animation6 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormXe));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id_car = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +55,7 @@ namespace Quanlibaixe
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Refresh = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -65,29 +67,34 @@ namespace Quanlibaixe
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.btn_ExportExcel = new System.Windows.Forms.Label();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2Transition2 = new Guna.UI2.WinForms.Guna2Transition();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id_car,
@@ -95,15 +102,16 @@ namespace Quanlibaixe
             this.Driver_name,
             this.State,
             this.Desciption});
+            this.guna2Transition2.SetDecoration(this.dataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.dataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 31);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
@@ -162,6 +170,7 @@ namespace Quanlibaixe
             // 
             this.label5.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
             this.label5.Location = new System.Drawing.Point(221, 106);
@@ -173,6 +182,7 @@ namespace Quanlibaixe
             // 
             // cb_TrangThai
             // 
+            this.guna2Transition2.SetDecoration(this.cb_TrangThai, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.cb_TrangThai, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_TrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cb_TrangThai.ForeColor = System.Drawing.Color.Black;
@@ -191,6 +201,7 @@ namespace Quanlibaixe
             // 
             this.label6.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
             this.label6.Location = new System.Drawing.Point(13, 146);
@@ -204,6 +215,7 @@ namespace Quanlibaixe
             // 
             this.label8.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
             this.label8.Location = new System.Drawing.Point(13, 34);
@@ -215,6 +227,7 @@ namespace Quanlibaixe
             // 
             // cb_TaiXe
             // 
+            this.guna2Transition2.SetDecoration(this.cb_TaiXe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.cb_TaiXe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_TaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cb_TaiXe.ForeColor = System.Drawing.Color.Black;
@@ -230,6 +243,7 @@ namespace Quanlibaixe
             // 
             this.label10.AutoEllipsis = true;
             this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
@@ -246,6 +260,7 @@ namespace Quanlibaixe
             // 
             this.label7.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
             this.label7.Location = new System.Drawing.Point(13, 69);
@@ -257,6 +272,7 @@ namespace Quanlibaixe
             // 
             // cb_NgaySinh
             // 
+            this.guna2Transition2.SetDecoration(this.cb_NgaySinh, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.cb_NgaySinh, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_NgaySinh.Enabled = false;
             this.cb_NgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -270,6 +286,7 @@ namespace Quanlibaixe
             // 
             // cb_IDtaixe
             // 
+            this.guna2Transition2.SetDecoration(this.cb_IDtaixe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.cb_IDtaixe, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cb_IDtaixe.Enabled = false;
             this.cb_IDtaixe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -286,6 +303,7 @@ namespace Quanlibaixe
             // 
             this.label11.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
             this.label11.Location = new System.Drawing.Point(13, 180);
@@ -299,6 +317,7 @@ namespace Quanlibaixe
             // 
             this.label12.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label12, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label12, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gray;
             this.label12.Location = new System.Drawing.Point(15, 106);
@@ -317,6 +336,7 @@ namespace Quanlibaixe
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
+            this.guna2Transition2.SetDecoration(this.tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -330,6 +350,7 @@ namespace Quanlibaixe
             // panel3
             // 
             this.panel3.Controls.Add(this.label10);
+            this.guna2Transition2.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
@@ -339,6 +360,7 @@ namespace Quanlibaixe
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.guna2CircleProgressBar1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btn_Refresh);
@@ -358,6 +380,7 @@ namespace Quanlibaixe
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.cb_TrangThai);
             this.panel1.Controls.Add(this.label5);
+            this.guna2Transition2.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(729, 32);
@@ -365,8 +388,24 @@ namespace Quanlibaixe
             this.panel1.Size = new System.Drawing.Size(478, 452);
             this.panel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.label2.Location = new System.Drawing.Point(383, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 19);
+            this.label2.TabIndex = 80;
+            this.label2.Text = "Export Excel";
+            this.label2.Visible = false;
+            // 
             // guna2CircleProgressBar1
             // 
+            this.guna2Transition2.SetDecoration(this.guna2CircleProgressBar1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.guna2CircleProgressBar1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -383,6 +422,7 @@ namespace Quanlibaixe
             // 
             this.label3.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.label3.Location = new System.Drawing.Point(17, 246);
@@ -395,6 +435,7 @@ namespace Quanlibaixe
             // 
             // btn_Refresh
             // 
+            this.guna2Transition2.SetDecoration(this.btn_Refresh, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.btn_Refresh, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btn_Refresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Refresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -419,6 +460,7 @@ namespace Quanlibaixe
             // 
             this.txt_MoTa.BorderColor = System.Drawing.Color.Gray;
             this.txt_MoTa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition2.SetDecoration(this.txt_MoTa, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.txt_MoTa, Guna.UI2.AnimatorNS.DecorationType.None);
             this.txt_MoTa.DefaultText = "";
             this.txt_MoTa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -442,6 +484,7 @@ namespace Quanlibaixe
             // 
             this.txt_IDcar.BorderColor = System.Drawing.Color.Gray;
             this.txt_IDcar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition2.SetDecoration(this.txt_IDcar, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.txt_IDcar, Guna.UI2.AnimatorNS.DecorationType.None);
             this.txt_IDcar.DefaultText = "";
             this.txt_IDcar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -465,6 +508,7 @@ namespace Quanlibaixe
             // 
             this.btn_Delete.BorderColor = System.Drawing.Color.White;
             this.btn_Delete.BorderRadius = 3;
+            this.guna2Transition2.SetDecoration(this.btn_Delete, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.btn_Delete, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -485,6 +529,7 @@ namespace Quanlibaixe
             this.btn_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
             this.btn_Edit.BorderColor = System.Drawing.Color.White;
             this.btn_Edit.BorderRadius = 3;
+            this.guna2Transition2.SetDecoration(this.btn_Edit, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.btn_Edit, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btn_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -505,6 +550,7 @@ namespace Quanlibaixe
             this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
             this.btn_Add.BorderColor = System.Drawing.Color.White;
             this.btn_Add.BorderRadius = 3;
+            this.guna2Transition2.SetDecoration(this.btn_Add, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.btn_Add, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btn_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -523,6 +569,7 @@ namespace Quanlibaixe
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Transition2.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 376);
@@ -534,6 +581,7 @@ namespace Quanlibaixe
             // 
             this.label1.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(2, 41);
@@ -545,6 +593,8 @@ namespace Quanlibaixe
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel12);
+            this.guna2Transition2.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(729, 3);
@@ -552,26 +602,72 @@ namespace Quanlibaixe
             this.panel2.Size = new System.Drawing.Size(478, 23);
             this.panel2.TabIndex = 37;
             // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.btn_ExportExcel);
+            this.guna2Transition2.SetDecoration(this.panel12, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.panel12, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel12.Location = new System.Drawing.Point(423, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(55, 23);
+            this.panel12.TabIndex = 29;
+            // 
+            // btn_ExportExcel
+            // 
+            this.guna2Transition1.SetDecoration(this.btn_ExportExcel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.btn_ExportExcel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_ExportExcel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_ExportExcel.Image = ((System.Drawing.Image)(resources.GetObject("btn_ExportExcel.Image")));
+            this.btn_ExportExcel.Location = new System.Drawing.Point(0, 0);
+            this.btn_ExportExcel.Name = "btn_ExportExcel";
+            this.btn_ExportExcel.Size = new System.Drawing.Size(55, 23);
+            this.btn_ExportExcel.TabIndex = 76;
+            this.btn_ExportExcel.Click += new System.EventHandler(this.btn_ExportExcel_Click);
+            this.btn_ExportExcel.MouseLeave += new System.EventHandler(this.btn_ExportExcel_MouseLeave);
+            this.btn_ExportExcel.MouseHover += new System.EventHandler(this.btn_ExportExcel_MouseHover);
+            // 
             // guna2Transition1
             // 
             this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 0;
+            animation6.Padding = new System.Windows.Forms.Padding(0);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 0F;
+            animation6.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation6;
             this.guna2Transition1.TimeStep = 0.1F;
+            // 
+            // guna2Transition2
+            // 
+            this.guna2Transition2.Cursor = null;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.guna2Transition2.DefaultAnimation = animation5;
+            this.guna2Transition2.TimeStep = 0.1F;
             // 
             // FormXe
             // 
@@ -579,6 +675,7 @@ namespace Quanlibaixe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 487);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.guna2Transition2.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -593,6 +690,8 @@ namespace Quanlibaixe
             this.panel1.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -630,5 +729,9 @@ namespace Quanlibaixe
         private System.Windows.Forms.DataGridViewTextBoxColumn Driver_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn State;
         private System.Windows.Forms.DataGridViewTextBoxColumn Desciption;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label btn_ExportExcel;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition2;
+        private System.Windows.Forms.Label label2;
     }
 }
