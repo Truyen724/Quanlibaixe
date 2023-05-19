@@ -107,3 +107,4 @@ C:\Users\ASUS\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.CopyComplete
 C:\Users\ASUS\Quanlibaixe\obj\Debug\Quanlibaixe.exe
 C:\Users\ASUS\Quanlibaixe\obj\Debug\Quanlibaixe.pdb
+D:\Dev\Quanlibaixe\obj\Debug\Quanlibaixe.csproj.ResolveComReference.cache

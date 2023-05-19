@@ -25,7 +25,9 @@ namespace Quanlibaixe
         {
             InitializeComponent();
             ketnoi();
-            
+            load_data();
+
+
         }
         String ConectionString = infor.ConectionString;
         SqlConnection conn = new SqlConnection();
@@ -135,11 +137,11 @@ namespace Quanlibaixe
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            
+
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-                
+
                 string id = row.Cells[0].Value.ToString();
                 txt_IDcar.Text = id;
                 txt_TaiXe.Text = row.Cells[1].Value.ToString();
@@ -152,8 +154,8 @@ namespace Quanlibaixe
                 com.CommandType = CommandType.Text;
                 dataGridView2.DataSource = dt;
                 conn.Close();
-                
-            }    
+
+            }
         }
 
         public Image LoadImage(String base64)
@@ -430,18 +432,18 @@ namespace Quanlibaixe
 
         private void button7_Click(object sender, EventArgs e)
         {
-           /* 
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WorkingDirectory = Application.StartupPath+@"\Detect_BienSo";
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C conda activate base && python main.py";
-            process.StartInfo = startInfo;
-            process.Start();
-            MessageBox.Show("Khởi động thành công");
-            button7.Enabled = false;
-           */
+            /* 
+             System.Diagnostics.Process process = new System.Diagnostics.Process();
+             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+             startInfo.WorkingDirectory = Application.StartupPath+@"\Detect_BienSo";
+             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+             startInfo.FileName = "cmd.exe";
+             startInfo.Arguments = "/C conda activate base && python main.py";
+             process.StartInfo = startInfo;
+             process.Start();
+             MessageBox.Show("Khởi động thành công");
+             button7.Enabled = false;
+            */
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -503,6 +505,148 @@ namespace Quanlibaixe
             }
         }
 
+        private void ToExcel(DataGridView dataGridViews, string fileName)
+        {
+            //khai báo thư viện hỗ trợ Microsoft.Office.Interop.Excel
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook workbook;
+            Microsoft.Office.Interop.Excel.Worksheet worksheet;
+            try
+            {
+                //Tạo đối tượng COM.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+                //tạo mới một Workbooks bằng phương thức add()
+                workbook = excel.Workbooks.Add(Type.Missing);
+                worksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Sheets["Sheet1"];
+                //đặt tên cho sheet
+                worksheet.Name = "Quản lý";
+                // export header trong DataGridView
+                //for (int i = 0; i < dataGridViews.ColumnCount; i++)
+                //{
+                //    worksheet.Cells[1, i + 1] = dataGridViews.Columns[i].HeaderText;
+                //}
+                //// export nội dung trong DataGridView
+                //for (int i = 0; i < dataGridViews.RowCount; i++)
+                //{
+                //    for (int j = 0; j < dataGridViews.ColumnCount; j++)
+                //    {
+                //        dataGridViews.EndEdit(); // Đảm bảo giá trị trong cell được lưu vào bộ đệm
+                //        worksheet.Cells[i + 2, j + 1] = dataGridViews.Rows[i].Cells[j].Value.ToString();
+                //    }
+                //}
+
+                // export header trong DataGridView
+                for (int i = 0; i < dataGridViews.ColumnCount; i++)
+                {
+                    worksheet.Cells[1, i + 1] = dataGridViews.Columns[i].HeaderText;
+                }
+                // export nội dung trong DataGridView
+                for (int i = 0; i < dataGridViews.RowCount; i++)
+                {
+                    for (int j = 0; j < dataGridViews.ColumnCount; j++)
+                    {
+                        dataGridViews.EndEdit(); // Đảm bảo giá trị trong cell được lưu vào bộ đệm
+                        object value = dataGridViews.Rows[i].Cells[j].Value;
+                        if (value != null)
+                        {
+                            worksheet.Cells[i + 2, j + 1] = value.ToString();
+                        }
+                        else
+                        {
+                            worksheet.Cells[i + 2, j + 1] = "";
+                        }
+                    }
+                }
+                // sử dụng phương thức SaveAs() để lưu workbook với filename
+                workbook.SaveAs(fileName);
+                //đóng workbook
+                workbook.Close();
+                excel.Quit();
+                MessageBox.Show("Xuất dữ liệu ra Excel thành công!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                workbook = null;
+                worksheet = null;
+            }
+        }
+
+        private void SaveFileDialog(string fileName)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+        }
+
+        private void btn_ExportExcel_Click(object sender, EventArgs e)
+        {
+            // Lấy DataGridView chọn từ ComboBox
+            var dgv = (DataGridView)cbb_datagridview.SelectedItem;
+
+            if (dgv != null)
+            {
+                SaveFileDialog saveDialog = new SaveFileDialog();
+
+                saveDialog.Filter = "Excel Workbook|*.xlsx";
+                saveDialog.Title = "Save as Excel Workbook";
+                saveDialog.FileName = $"{dgv.Name}.xlsx";
+
+                if (saveDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ToExcel(dgv, saveDialog.FileName);
+                }
+            }
+
+
+        }
+        private void load_data()
+        {
+            //List<DataGridView> dataGridViews = new List<DataGridView>()
+            //{
+            //    dataGridView1,
+            //    dataGridView2,
+            //    // ...
+            //};
+            //// Lưu trữ thông tin về tên hoặc ID của mỗi DataGridView vào thuộc tính Tag của nó
+            //dataGridView1.Tag = "datagridview1";
+            //dataGridView2.Tag = "datagridview2";
+
+            //// Thêm các DataGridView vào combobox
+            //cbb_datagridview.DataSource = dataGridViews;
+
+            //// Đăng ký sự kiện SelectedIndexChanged cho combobox
+            //cbb_datagridview.SelectedIndexChanged += cbb_datagridview_SelectedIndexChanged;
+
+            Dictionary<string, DataGridView> dataGridViews = new Dictionary<string, DataGridView>()
+            {
+                { "DataGridView1", dataGridView1 },
+                { "DataGridView2", dataGridView2 },
+                // ...
+            };
+            // Thêm tên các DataGridView vào combobox
+            cbb_datagridview.DataSource = new BindingSource(dataGridViews, null);
+            cbb_datagridview.DisplayMember = "Key";
+
+            // Đăng ký sự kiện SelectedIndexChanged cho combobox
+            cbb_datagridview.SelectedIndexChanged += cbb_datagridview_SelectedIndexChanged;
+        }
+
+        private void cbb_datagridview_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Cập nhật lại DataGridView được chọn          
+            //var selectedDgv = (DataGridView)cbb_datagridview.SelectedItem;
+
+            //if (selectedDgv != null)
+            //{
+            //    label1.Text = $"Selected Table: {selectedDgv.Name}";
+            //}
+            var selectedDgv = ((KeyValuePair<string, DataGridView>)cbb_datagridview.SelectedItem).Value;
+
+        }
 
     }
 }
