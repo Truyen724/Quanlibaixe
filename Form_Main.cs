@@ -605,31 +605,14 @@ namespace Quanlibaixe
         }
         private void load_data()
         {
-            //List<DataGridView> dataGridViews = new List<DataGridView>()
-            //{
-            //    dataGridView1,
-            //    dataGridView2,
-            //    // ...
-            //};
-            //// Lưu trữ thông tin về tên hoặc ID của mỗi DataGridView vào thuộc tính Tag của nó
-            //dataGridView1.Tag = "datagridview1";
-            //dataGridView2.Tag = "datagridview2";
-
-            //// Thêm các DataGridView vào combobox
-            //cbb_datagridview.DataSource = dataGridViews;
-
-            //// Đăng ký sự kiện SelectedIndexChanged cho combobox
-            //cbb_datagridview.SelectedIndexChanged += cbb_datagridview_SelectedIndexChanged;
-
-            Dictionary<string, DataGridView> dataGridViews = new Dictionary<string, DataGridView>()
+            List<DataGridView> dataGridViews = new List<DataGridView>()
             {
-                { "DataGridView1", dataGridView1 },
-                { "DataGridView2", dataGridView2 },
+                dataGridView1,
+                dataGridView2,
                 // ...
             };
-            // Thêm tên các DataGridView vào combobox
-            cbb_datagridview.DataSource = new BindingSource(dataGridViews, null);
-            cbb_datagridview.DisplayMember = "Key";
+            // Thêm các DataGridView vào combobox
+            cbb_datagridview.DataSource = dataGridViews;
 
             // Đăng ký sự kiện SelectedIndexChanged cho combobox
             cbb_datagridview.SelectedIndexChanged += cbb_datagridview_SelectedIndexChanged;
@@ -638,14 +621,12 @@ namespace Quanlibaixe
         private void cbb_datagridview_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Cập nhật lại DataGridView được chọn          
-            //var selectedDgv = (DataGridView)cbb_datagridview.SelectedItem;
+            var selectedDgv = (DataGridView)cbb_datagridview.SelectedItem;
 
             //if (selectedDgv != null)
             //{
             //    label1.Text = $"Selected Table: {selectedDgv.Name}";
             //}
-            var selectedDgv = ((KeyValuePair<string, DataGridView>)cbb_datagridview.SelectedItem).Value;
-
         }
 
     }
