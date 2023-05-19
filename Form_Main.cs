@@ -585,8 +585,11 @@ namespace Quanlibaixe
         private void btn_ExportExcel_Click(object sender, EventArgs e)
         {
             // Lấy DataGridView chọn từ ComboBox
-            var dgv = (DataGridView)cbb_datagridview.SelectedItem;
+            //var dgv = (DataGridView)cbb_datagridview.SelectedItem;
 
+            // sử dụng thuộc tính Value
+            var selectedDgv = (KeyValuePair<string, DataGridView>)cbb_datagridview.SelectedItem;
+            var dgv = selectedDgv.Value;
             if (dgv != null)
             {
                 SaveFileDialog saveDialog = new SaveFileDialog();
@@ -605,28 +608,45 @@ namespace Quanlibaixe
         }
         private void load_data()
         {
-            List<DataGridView> dataGridViews = new List<DataGridView>()
+            //List<DataGridView> dataGridViews = new List<DataGridView>()
+            //{
+            //    dataGridView1,
+            //    dataGridView2,
+            //    // ...
+            //};
+            //// Thêm các DataGridView vào combobox
+            //cbb_datagridview.DataSource = dataGridViews;
+
+            //// Đăng ký sự kiện SelectedIndexChanged cho combobox
+            //cbb_datagridview.SelectedIndexChanged += cbb_datagridview_SelectedIndexChanged;
+
+            Dictionary<string, DataGridView> dataGridViews = new Dictionary<string, DataGridView>()
             {
-                dataGridView1,
-                dataGridView2,
+                { "DataGridView1", dataGridView1 },
+                { "DataGridView2", dataGridView2 },
                 // ...
             };
-            // Thêm các DataGridView vào combobox
-            cbb_datagridview.DataSource = dataGridViews;
+            // Thêm tên các DataGridView vào combobox
+            cbb_datagridview.DataSource = new BindingSource(dataGridViews, null);
+            cbb_datagridview.DisplayMember = "Key";
 
             // Đăng ký sự kiện SelectedIndexChanged cho combobox
             cbb_datagridview.SelectedIndexChanged += cbb_datagridview_SelectedIndexChanged;
+
+            // Xử lý sự kiện SelectedIndexChanged để truy xuất đúng DataGridView
         }
 
         private void cbb_datagridview_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Cập nhật lại DataGridView được chọn          
-            var selectedDgv = (DataGridView)cbb_datagridview.SelectedItem;
+            //var selectedDgv = (DataGridView)cbb_datagridview.SelectedItem;
 
             //if (selectedDgv != null)
             //{
             //    label1.Text = $"Selected Table: {selectedDgv.Name}";
             //}
+            var selectedDgv = ((KeyValuePair<string, DataGridView>)cbb_datagridview.SelectedItem).Value;
+
         }
 
     }
