@@ -397,7 +397,11 @@ namespace Quanlibaixe
         // Button ExportExcel
         private void btn_ExportExcel_Click(object sender, EventArgs e)
         {
-
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ToExcel(dataGridView1, saveFileDialog.FileName);
+            }
         }
 
         private void btn_ExportExcel_MouseHover(object sender, EventArgs e)
