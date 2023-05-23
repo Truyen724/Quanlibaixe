@@ -16,6 +16,7 @@ namespace Quanlibaixe
     {
         public string id_xe;
         public string id_action;
+        public string id_lich = "";
         public Form_Action()
         {
             InitializeComponent();
@@ -80,6 +81,17 @@ namespace Quanlibaixe
 
         private void btn_Accept_Click(object sender, EventArgs e)
         {
+            if(id_lich!="")
+            {
+                string update = string.Format("update schedule set id_action = '{0}' where id_schedule ='{1}'", id_action, id_lich);
+                conn.Open();
+                SqlCommand com = new SqlCommand(update, conn);
+                com.CommandType = CommandType.Text;
+                com.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show(" Xác nhận lịch thành công");
+            }    
+
             this.Close();
         }
 
@@ -97,7 +109,22 @@ namespace Quanlibaixe
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                id_lich = row.Cells[0].Value.ToString();
+            }
+            MessageBox.Show("Chọn lịch thành công");
+        }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                id_lich = row.Cells[0].Value.ToString();
+            }
+            MessageBox.Show("Chọn lịch thành công");
         }
     }
 }

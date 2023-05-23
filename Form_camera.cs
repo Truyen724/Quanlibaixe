@@ -132,6 +132,11 @@ namespace Quanlibaixe
             this.CallerForm = callerForm;
         }
 
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         //public void ExamSchedulerMethod()
         //{
         //    Form_camera form_Camera = new Form_camera();
@@ -140,6 +145,6 @@ namespace Quanlibaixe
         //    form_Camera.Show();
         //}
 
-        
+
     }
 }

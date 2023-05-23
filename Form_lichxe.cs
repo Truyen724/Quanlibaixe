@@ -258,7 +258,7 @@ namespace Quanlibaixe
         // Button Edit
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            
+     
             refresh_data();
             if (MessageBox.Show("Bạn có muốn sửa dữ liệu hay không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
