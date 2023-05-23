@@ -338,15 +338,22 @@ namespace Quanlibaixe
 
             //// Thiết lập lại nguồn dữ liệu đã lưu
             //dataGridView2.DataSource = dataSource;
+            comboBox1.Items.Clear();
+            comboBox2.Items.Clear();
+            comboBox3.Items.Clear();
 
+            comboBox6.Items.Clear();
+            comboBox4.Items.Clear();
+            comboBox5.Items.Clear();
             txt_IDschedule.Text = "";
             comboBox8.Text = "";
             comboBox7.Text = "";
             comboBox6.Text = "";
             comboBox4.Text = "";
-            comboBox5.Text = "";
+            comboBox5.Text = ""; 
+            load_data();
             txt_ND.Text = "";
-            //ketnoi();
+            ketnoi();
             this.Refresh();
         }
 
@@ -425,6 +432,12 @@ namespace Quanlibaixe
         private void btn_ExportExcel_MouseLeave(object sender, EventArgs e)
         {
             label14.Visible = false;
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Form quanlilichtrinh = new quanlilichtrinh();
+            quanlilichtrinh.ShowDialog();
         }
     }
 }

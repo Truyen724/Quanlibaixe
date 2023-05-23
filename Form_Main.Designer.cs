@@ -132,14 +132,14 @@ namespace Quanlibaixe
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(486, 89);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView2.Location = new System.Drawing.Point(648, 109);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(480, 396);
+            this.dataGridView2.Size = new System.Drawing.Size(639, 488);
             this.dataGridView2.TabIndex = 13;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
@@ -173,6 +173,7 @@ namespace Quanlibaixe
             this.Image.Name = "Image";
             this.Image.ReadOnly = true;
             this.Image.Visible = false;
+            this.Image.Width = 125;
             // 
             // In_or_out
             // 
@@ -204,9 +205,9 @@ namespace Quanlibaixe
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(1, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 195);
+            this.pictureBox1.Size = new System.Drawing.Size(306, 240);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -255,13 +256,13 @@ namespace Quanlibaixe
             dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 89);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 109);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(480, 396);
+            this.dataGridView1.Size = new System.Drawing.Size(639, 488);
             this.dataGridView1.TabIndex = 17;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
@@ -323,10 +324,10 @@ namespace Quanlibaixe
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(1, 199);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(1, 245);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(230, 195);
+            this.pictureBox2.Size = new System.Drawing.Size(306, 240);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             // 
@@ -344,12 +345,13 @@ namespace Quanlibaixe
             this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1210, 487);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1613, 599);
             this.tableLayoutPanel1.TabIndex = 36;
             // 
             // tableLayoutPanel2
@@ -362,21 +364,23 @@ namespace Quanlibaixe
             this.tableLayoutPanel2.Controls.Add(this.txt_TaiXe, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(478, 81);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(637, 99);
             this.tableLayoutPanel2.TabIndex = 18;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.guna2Button1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 41);
+            this.panel4.Location = new System.Drawing.Point(4, 51);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(161, 37);
+            this.panel4.Size = new System.Drawing.Size(214, 44);
             this.panel4.TabIndex = 36;
             // 
             // guna2Button1
@@ -393,8 +397,9 @@ namespace Quanlibaixe
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.guna2Button1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(161, 35);
+            this.guna2Button1.Size = new System.Drawing.Size(214, 43);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Tất cả các xe";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -412,13 +417,13 @@ namespace Quanlibaixe
             this.txt_IDcar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_IDcar.ForeColor = System.Drawing.Color.Gray;
             this.txt_IDcar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_IDcar.Location = new System.Drawing.Point(4, 4);
-            this.txt_IDcar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_IDcar.Location = new System.Drawing.Point(5, 5);
+            this.txt_IDcar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_IDcar.Name = "txt_IDcar";
             this.txt_IDcar.PasswordChar = '\0';
             this.txt_IDcar.PlaceholderText = "";
             this.txt_IDcar.SelectedText = "";
-            this.txt_IDcar.Size = new System.Drawing.Size(159, 30);
+            this.txt_IDcar.Size = new System.Drawing.Size(212, 37);
             this.txt_IDcar.TabIndex = 36;
             // 
             // txt_TaiXe
@@ -434,13 +439,13 @@ namespace Quanlibaixe
             this.txt_TaiXe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TaiXe.ForeColor = System.Drawing.Color.Gray;
             this.txt_TaiXe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TaiXe.Location = new System.Drawing.Point(171, 4);
-            this.txt_TaiXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_TaiXe.Location = new System.Drawing.Point(227, 5);
+            this.txt_TaiXe.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_TaiXe.Name = "txt_TaiXe";
             this.txt_TaiXe.PasswordChar = '\0';
             this.txt_TaiXe.PlaceholderText = "";
             this.txt_TaiXe.SelectedText = "";
-            this.txt_TaiXe.Size = new System.Drawing.Size(303, 30);
+            this.txt_TaiXe.Size = new System.Drawing.Size(405, 37);
             this.txt_TaiXe.TabIndex = 1;
             // 
             // panel1
@@ -448,18 +453,20 @@ namespace Quanlibaixe
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(170, 41);
+            this.panel1.Location = new System.Drawing.Point(226, 51);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 37);
+            this.panel1.Size = new System.Drawing.Size(407, 44);
             this.panel1.TabIndex = 37;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.guna2Button3);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(155, 0);
+            this.panel9.Location = new System.Drawing.Point(207, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(150, 37);
+            this.panel9.Size = new System.Drawing.Size(200, 44);
             this.panel9.TabIndex = 1;
             // 
             // guna2Button3
@@ -476,8 +483,9 @@ namespace Quanlibaixe
             this.guna2Button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.guna2Button3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(150, 35);
+            this.guna2Button3.Size = new System.Drawing.Size(200, 43);
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "Xe bên ngoài";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -487,8 +495,9 @@ namespace Quanlibaixe
             this.panel8.Controls.Add(this.guna2Button2);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(150, 37);
+            this.panel8.Size = new System.Drawing.Size(200, 44);
             this.panel8.TabIndex = 0;
             // 
             // guna2Button2
@@ -505,8 +514,9 @@ namespace Quanlibaixe
             this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.guna2Button2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(150, 35);
+            this.guna2Button2.Size = new System.Drawing.Size(200, 43);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Xe bên trong";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -515,9 +525,10 @@ namespace Quanlibaixe
             // 
             this.panel2.Controls.Add(this.tableLayoutPanel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(487, 3);
+            this.panel2.Location = new System.Drawing.Point(649, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(478, 81);
+            this.panel2.Size = new System.Drawing.Size(637, 99);
             this.panel2.TabIndex = 19;
             // 
             // tableLayoutPanel3
@@ -529,20 +540,22 @@ namespace Quanlibaixe
             this.tableLayoutPanel3.Controls.Add(this.panel7, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(478, 81);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(637, 99);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.cbb_datagridview);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Location = new System.Drawing.Point(4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(472, 32);
+            this.panel6.Size = new System.Drawing.Size(629, 39);
             this.panel6.TabIndex = 0;
             // 
             // cbb_datagridview
@@ -559,9 +572,10 @@ namespace Quanlibaixe
             this.cbb_datagridview.Items.AddRange(new object[] {
             "Table 1",
             "Table 2"});
-            this.cbb_datagridview.Location = new System.Drawing.Point(0, -4);
+            this.cbb_datagridview.Location = new System.Drawing.Point(0, 3);
+            this.cbb_datagridview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbb_datagridview.Name = "cbb_datagridview";
-            this.cbb_datagridview.Size = new System.Drawing.Size(472, 36);
+            this.cbb_datagridview.Size = new System.Drawing.Size(629, 36);
             this.cbb_datagridview.TabIndex = 25;
             this.cbb_datagridview.SelectedIndexChanged += new System.EventHandler(this.cbb_datagridview_SelectedIndexChanged);
             // 
@@ -571,18 +585,20 @@ namespace Quanlibaixe
             this.panel7.Controls.Add(this.panel11);
             this.panel7.Controls.Add(this.panel10);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(3, 41);
+            this.panel7.Location = new System.Drawing.Point(4, 51);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(472, 37);
+            this.panel7.Size = new System.Drawing.Size(629, 44);
             this.panel7.TabIndex = 1;
             // 
             // panel12
             // 
             this.panel12.Controls.Add(this.guna2Button6);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(161, 0);
+            this.panel12.Location = new System.Drawing.Point(215, 0);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(150, 37);
+            this.panel12.Size = new System.Drawing.Size(199, 44);
             this.panel12.TabIndex = 2;
             // 
             // guna2Button6
@@ -599,8 +615,9 @@ namespace Quanlibaixe
             this.guna2Button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.guna2Button6.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(150, 35);
+            this.guna2Button6.Size = new System.Drawing.Size(199, 43);
             this.guna2Button6.TabIndex = 25;
             this.guna2Button6.Text = "Xe bên trong";
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
@@ -609,9 +626,10 @@ namespace Quanlibaixe
             // 
             this.panel11.Controls.Add(this.guna2Button4);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(311, 0);
+            this.panel11.Location = new System.Drawing.Point(414, 0);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(161, 37);
+            this.panel11.Size = new System.Drawing.Size(215, 44);
             this.panel11.TabIndex = 1;
             // 
             // guna2Button4
@@ -628,8 +646,9 @@ namespace Quanlibaixe
             this.guna2Button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.guna2Button4.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(161, 35);
+            this.guna2Button4.Size = new System.Drawing.Size(215, 43);
             this.guna2Button4.TabIndex = 3;
             this.guna2Button4.Text = "Xe chưa đăng kí";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -639,8 +658,9 @@ namespace Quanlibaixe
             this.panel10.Controls.Add(this.guna2Button5);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(161, 37);
+            this.panel10.Size = new System.Drawing.Size(215, 44);
             this.panel10.TabIndex = 0;
             // 
             // guna2Button5
@@ -657,8 +677,9 @@ namespace Quanlibaixe
             this.guna2Button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.guna2Button5.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(161, 35);
+            this.guna2Button5.Size = new System.Drawing.Size(215, 43);
             this.guna2Button5.TabIndex = 4;
             this.guna2Button5.Text = "Xe bên ngoài";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -669,18 +690,20 @@ namespace Quanlibaixe
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(971, 90);
+            this.panel3.Location = new System.Drawing.Point(1294, 111);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(236, 394);
+            this.panel3.Size = new System.Drawing.Size(315, 484);
             this.panel3.TabIndex = 20;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 165);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 202);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(236, 229);
+            this.pictureBox3.Size = new System.Drawing.Size(315, 282);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 24;
             this.pictureBox3.TabStop = false;
@@ -689,9 +712,10 @@ namespace Quanlibaixe
             // 
             this.panel5.Controls.Add(this.btn_ExportExcel);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(971, 3);
+            this.panel5.Location = new System.Drawing.Point(1294, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(236, 81);
+            this.panel5.Size = new System.Drawing.Size(315, 99);
             this.panel5.TabIndex = 21;
             // 
             // btn_ExportExcel
@@ -706,22 +730,23 @@ namespace Quanlibaixe
             this.btn_ExportExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.btn_ExportExcel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ExportExcel.ForeColor = System.Drawing.Color.White;
-            this.btn_ExportExcel.Location = new System.Drawing.Point(71, 20);
+            this.btn_ExportExcel.Location = new System.Drawing.Point(4, 5);
+            this.btn_ExportExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_ExportExcel.Name = "btn_ExportExcel";
-            this.btn_ExportExcel.Size = new System.Drawing.Size(110, 40);
+            this.btn_ExportExcel.Size = new System.Drawing.Size(139, 39);
             this.btn_ExportExcel.TabIndex = 62;
             this.btn_ExportExcel.Text = "Xuất Excel";
             this.btn_ExportExcel.Click += new System.EventHandler(this.btn_ExportExcel_Click);
             // 
             // Form_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1210, 487);
+            this.ClientSize = new System.Drawing.Size(1613, 599);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lí Bãi Xe";

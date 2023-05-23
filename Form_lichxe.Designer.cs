@@ -97,6 +97,7 @@ namespace Quanlibaixe
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2Transition2 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -123,10 +124,10 @@ namespace Quanlibaixe
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(2, 21);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Location = new System.Drawing.Point(3, 25);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(366, 28);
+            this.comboBox1.Size = new System.Drawing.Size(487, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.comboBox1_ControlAdded);
@@ -138,10 +139,10 @@ namespace Quanlibaixe
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(387, 21);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox2.Location = new System.Drawing.Point(516, 25);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(367, 28);
+            this.comboBox2.Size = new System.Drawing.Size(489, 33);
             this.comboBox2.TabIndex = 23;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -152,10 +153,9 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 19);
+            this.label1.Size = new System.Drawing.Size(487, 23);
             this.label1.TabIndex = 24;
             this.label1.Text = "Biển Số";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,10 +167,9 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(387, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(516, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(367, 19);
+            this.label2.Size = new System.Drawing.Size(489, 23);
             this.label2.TabIndex = 25;
             this.label2.Text = "Tài xế";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,9 +183,9 @@ namespace Quanlibaixe
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(0, 0);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(381, 28);
+            this.comboBox3.Size = new System.Drawing.Size(508, 33);
             this.comboBox3.TabIndex = 26;
             // 
             // label3
@@ -195,10 +194,9 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-1, -4);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(-1, -5);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(61, 25);
             this.label3.TabIndex = 27;
             this.label3.Text = "Mô tả";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -210,10 +208,10 @@ namespace Quanlibaixe
             this.comboBox5.Enabled = false;
             this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(108, 183);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox5.Location = new System.Drawing.Point(144, 225);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(303, 28);
+            this.comboBox5.Size = new System.Drawing.Size(403, 33);
             this.comboBox5.TabIndex = 43;
             // 
             // comboBox4
@@ -222,10 +220,10 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.comboBox4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(108, 147);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox4.Location = new System.Drawing.Point(144, 181);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(303, 28);
+            this.comboBox4.Size = new System.Drawing.Size(403, 33);
             this.comboBox4.TabIndex = 42;
             // 
             // label8
@@ -235,10 +233,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(11, 187);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(15, 230);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 21);
+            this.label8.Size = new System.Drawing.Size(82, 23);
             this.label8.TabIndex = 41;
             this.label8.Text = "Ghi chú";
             // 
@@ -249,10 +246,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(11, 150);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(15, 185);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 21);
+            this.label6.Size = new System.Drawing.Size(98, 23);
             this.label6.TabIndex = 40;
             this.label6.Text = "Tên tài xế";
             // 
@@ -262,10 +258,9 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 3);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(21, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 21);
+            this.label5.Size = new System.Drawing.Size(192, 23);
             this.label5.TabIndex = 39;
             this.label5.Text = "Nội dung di chuyển";
             // 
@@ -276,10 +271,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(11, 115);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(15, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 21);
+            this.label4.Size = new System.Drawing.Size(101, 23);
             this.label4.TabIndex = 37;
             this.label4.Text = "Biển Số Xe";
             // 
@@ -289,10 +283,10 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.comboBox6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(108, 111);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox6.Location = new System.Drawing.Point(144, 137);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(303, 28);
+            this.comboBox6.Size = new System.Drawing.Size(403, 33);
             this.comboBox6.TabIndex = 36;
             this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
@@ -303,10 +297,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(242, 79);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(323, 97);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 21);
+            this.label7.Size = new System.Drawing.Size(53, 23);
             this.label7.TabIndex = 35;
             this.label7.Text = "Phút";
             // 
@@ -377,10 +370,10 @@ namespace Quanlibaixe
             "58",
             "59",
             "0"});
-            this.comboBox7.Location = new System.Drawing.Point(292, 75);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox7.Location = new System.Drawing.Point(389, 92);
+            this.comboBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(119, 28);
+            this.comboBox7.Size = new System.Drawing.Size(157, 33);
             this.comboBox7.TabIndex = 34;
             // 
             // label9
@@ -390,10 +383,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(11, 77);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(15, 95);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 21);
+            this.label9.Size = new System.Drawing.Size(39, 23);
             this.label9.TabIndex = 33;
             this.label9.Text = "Giờ";
             // 
@@ -428,10 +420,10 @@ namespace Quanlibaixe
             "21",
             "22",
             "23"});
-            this.comboBox8.Location = new System.Drawing.Point(108, 75);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox8.Location = new System.Drawing.Point(144, 92);
+            this.comboBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(125, 28);
+            this.comboBox8.Size = new System.Drawing.Size(165, 33);
             this.comboBox8.TabIndex = 32;
             // 
             // dateTimePicker1
@@ -442,10 +434,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.dateTimePicker1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(108, 41);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(144, 50);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(303, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(403, 30);
             this.dateTimePicker1.TabIndex = 31;
             // 
             // label10
@@ -455,10 +447,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(11, 44);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(15, 54);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 21);
+            this.label10.Size = new System.Drawing.Size(90, 23);
             this.label10.TabIndex = 30;
             this.label10.Text = "Thời gian";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -470,12 +461,12 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(11, 7);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(15, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(96, 21);
+            this.label11.Size = new System.Drawing.Size(117, 23);
             this.label11.TabIndex = 46;
             this.label11.Text = "ID lịch trình";
+            this.label11.Visible = false;
             // 
             // tableLayoutPanel1
             // 
@@ -490,11 +481,12 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1210, 487);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1613, 599);
             this.tableLayoutPanel1.TabIndex = 47;
             // 
             // panel3
@@ -503,9 +495,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(765, 3);
+            this.panel3.Location = new System.Drawing.Point(1020, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(442, 52);
+            this.panel3.Size = new System.Drawing.Size(589, 63);
             this.panel3.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -518,12 +511,13 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.tableLayoutPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(442, 52);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(589, 63);
             this.tableLayoutPanel3.TabIndex = 29;
             // 
             // panel11
@@ -533,9 +527,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel11, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel11, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(3, 22);
+            this.panel11.Location = new System.Drawing.Point(4, 27);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(436, 27);
+            this.panel11.Size = new System.Drawing.Size(581, 32);
             this.panel11.TabIndex = 69;
             // 
             // panel13
@@ -545,8 +540,9 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.panel13, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(381, 27);
+            this.panel13.Size = new System.Drawing.Size(508, 32);
             this.panel13.TabIndex = 28;
             // 
             // panel12
@@ -555,9 +551,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel12, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel12, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel12.Location = new System.Drawing.Point(381, 0);
+            this.panel12.Location = new System.Drawing.Point(508, 0);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(55, 27);
+            this.panel12.Size = new System.Drawing.Size(73, 32);
             this.panel12.TabIndex = 27;
             // 
             // btn_ExportExcel
@@ -567,8 +564,9 @@ namespace Quanlibaixe
             this.btn_ExportExcel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_ExportExcel.Image = ((System.Drawing.Image)(resources.GetObject("btn_ExportExcel.Image")));
             this.btn_ExportExcel.Location = new System.Drawing.Point(0, 0);
+            this.btn_ExportExcel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btn_ExportExcel.Name = "btn_ExportExcel";
-            this.btn_ExportExcel.Size = new System.Drawing.Size(55, 27);
+            this.btn_ExportExcel.Size = new System.Drawing.Size(73, 32);
             this.btn_ExportExcel.TabIndex = 76;
             this.btn_ExportExcel.Click += new System.EventHandler(this.btn_ExportExcel_Click);
             this.btn_ExportExcel.MouseLeave += new System.EventHandler(this.btn_ExportExcel_MouseLeave);
@@ -581,9 +579,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel14, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel14, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(3, 3);
+            this.panel14.Location = new System.Drawing.Point(4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(436, 13);
+            this.panel14.Size = new System.Drawing.Size(581, 15);
             this.panel14.TabIndex = 70;
             // 
             // label14
@@ -593,10 +592,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label14, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            this.label14.Location = new System.Drawing.Point(344, -3);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(459, -4);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 19);
+            this.label14.Size = new System.Drawing.Size(109, 21);
             this.label14.TabIndex = 80;
             this.label14.Text = "Export Excel";
             this.label14.Visible = false;
@@ -609,9 +607,10 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(765, 61);
+            this.panel1.Location = new System.Drawing.Point(1020, 75);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(442, 423);
+            this.panel1.Size = new System.Drawing.Size(589, 520);
             this.panel1.TabIndex = 0;
             // 
             // panel6
@@ -621,9 +620,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 282);
+            this.panel6.Location = new System.Drawing.Point(0, 405);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(442, 141);
+            this.panel6.Size = new System.Drawing.Size(589, 115);
             this.panel6.TabIndex = 64;
             // 
             // tableLayoutPanel4
@@ -636,11 +636,12 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.tableLayoutPanel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(442, 124);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(589, 94);
             this.tableLayoutPanel4.TabIndex = 66;
             // 
             // panel7
@@ -652,9 +653,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Location = new System.Drawing.Point(4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(436, 118);
+            this.panel7.Size = new System.Drawing.Size(581, 86);
             this.panel7.TabIndex = 0;
             // 
             // txt_ND
@@ -663,9 +665,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.txt_ND, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.txt_ND, Guna.UI2.AnimatorNS.DecorationType.None);
             this.txt_ND.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_ND.Location = new System.Drawing.Point(20, 27);
+            this.txt_ND.Location = new System.Drawing.Point(27, 33);
+            this.txt_ND.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_ND.Name = "txt_ND";
-            this.txt_ND.Size = new System.Drawing.Size(391, 321);
+            this.txt_ND.Size = new System.Drawing.Size(521, 395);
             this.txt_ND.TabIndex = 65;
             this.txt_ND.Text = "";
             // 
@@ -674,9 +677,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(411, 27);
+            this.panel8.Location = new System.Drawing.Point(548, 33);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(25, 91);
+            this.panel8.Size = new System.Drawing.Size(33, 53);
             this.panel8.TabIndex = 66;
             // 
             // panel9
@@ -684,9 +688,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(0, 27);
+            this.panel9.Location = new System.Drawing.Point(0, 33);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(20, 91);
+            this.panel9.Size = new System.Drawing.Size(27, 53);
             this.panel9.TabIndex = 67;
             // 
             // panel10
@@ -696,8 +701,9 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.panel10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(436, 27);
+            this.panel10.Size = new System.Drawing.Size(581, 33);
             this.panel10.TabIndex = 68;
             // 
             // label12
@@ -706,16 +712,16 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label12, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(0, 124);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(0, 94);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(442, 17);
+            this.label12.Size = new System.Drawing.Size(589, 21);
             this.label12.TabIndex = 64;
             this.label12.Text = "Vui lòng nhấn nút Refesh tải lại trang !";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.guna2Button1);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.btn_Refresh);
             this.panel5.Controls.Add(this.btn_Delete);
@@ -738,8 +744,9 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.panel5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(442, 282);
+            this.panel5.Size = new System.Drawing.Size(589, 405);
             this.panel5.TabIndex = 63;
             // 
             // label13
@@ -749,10 +756,9 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.label13, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label13.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
-            this.label13.Location = new System.Drawing.Point(11, 217);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(15, 267);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 19);
+            this.label13.Size = new System.Drawing.Size(69, 21);
             this.label13.TabIndex = 75;
             this.label13.Text = "Refresh";
             this.label13.Visible = false;
@@ -771,10 +777,11 @@ namespace Quanlibaixe
             this.btn_Refresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.btn_Refresh.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
-            this.btn_Refresh.Location = new System.Drawing.Point(17, 239);
+            this.btn_Refresh.Location = new System.Drawing.Point(23, 294);
+            this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_Refresh.Size = new System.Drawing.Size(40, 40);
+            this.btn_Refresh.Size = new System.Drawing.Size(53, 49);
             this.btn_Refresh.TabIndex = 74;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             this.btn_Refresh.MouseLeave += new System.EventHandler(this.btn_Refresh_MouseLeave);
@@ -793,9 +800,10 @@ namespace Quanlibaixe
             this.btn_Delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(55)))));
             this.btn_Delete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Location = new System.Drawing.Point(265, 235);
+            this.btn_Delete.Location = new System.Drawing.Point(357, 330);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(146, 40);
+            this.btn_Delete.Size = new System.Drawing.Size(195, 49);
             this.btn_Delete.TabIndex = 62;
             this.btn_Delete.Text = "Xóa";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
@@ -814,9 +822,10 @@ namespace Quanlibaixe
             this.btn_Edit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
             this.btn_Edit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.Location = new System.Drawing.Point(108, 235);
+            this.btn_Edit.Location = new System.Drawing.Point(144, 330);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(146, 40);
+            this.btn_Edit.Size = new System.Drawing.Size(195, 49);
             this.btn_Edit.TabIndex = 61;
             this.btn_Edit.Text = "Sửa thông tin";
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
@@ -835,14 +844,15 @@ namespace Quanlibaixe
             this.txt_IDschedule.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_IDschedule.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_IDschedule.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_IDschedule.Location = new System.Drawing.Point(108, 4);
-            this.txt_IDschedule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_IDschedule.Location = new System.Drawing.Point(144, 5);
+            this.txt_IDschedule.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_IDschedule.Name = "txt_IDschedule";
             this.txt_IDschedule.PasswordChar = '\0';
             this.txt_IDschedule.PlaceholderText = "";
             this.txt_IDschedule.SelectedText = "";
-            this.txt_IDschedule.Size = new System.Drawing.Size(303, 28);
+            this.txt_IDschedule.Size = new System.Drawing.Size(404, 34);
             this.txt_IDschedule.TabIndex = 48;
+            this.txt_IDschedule.Visible = false;
             // 
             // panel2
             // 
@@ -850,9 +860,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(756, 52);
+            this.panel2.Size = new System.Drawing.Size(1008, 63);
             this.panel2.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -869,11 +880,12 @@ namespace Quanlibaixe
             this.guna2Transition1.SetDecoration(this.tableLayoutPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(756, 52);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1008, 63);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel4
@@ -882,9 +894,10 @@ namespace Quanlibaixe
             this.guna2Transition2.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 61);
+            this.panel4.Location = new System.Drawing.Point(4, 75);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(756, 423);
+            this.panel4.Size = new System.Drawing.Size(1008, 520);
             this.panel4.TabIndex = 3;
             // 
             // dataGridView2
@@ -922,12 +935,12 @@ namespace Quanlibaixe
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(756, 423);
+            this.dataGridView2.Size = new System.Drawing.Size(1008, 520);
             this.dataGridView2.TabIndex = 37;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellMouseLeave);
@@ -988,6 +1001,7 @@ namespace Quanlibaixe
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Column2.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column2.HeaderText = "ID Action";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
             // guna2Transition1
@@ -1032,16 +1046,38 @@ namespace Quanlibaixe
             this.guna2Transition2.DefaultAnimation = animation1;
             this.guna2Transition2.TimeStep = 0.1F;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.guna2Button1.BorderColor = System.Drawing.Color.White;
+            this.guna2Button1.BorderRadius = 3;
+            this.guna2Transition2.SetDecoration(this.guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(66)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(144, 263);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(195, 49);
+            this.guna2Button1.TabIndex = 76;
+            this.guna2Button1.Text = "Thêm";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // Form_lichxe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 487);
+            this.ClientSize = new System.Drawing.Size(1613, 599);
             this.Controls.Add(this.tableLayoutPanel1);
             this.guna2Transition2.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_lichxe";
             this.Text = "Lich Xe";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -1127,5 +1163,6 @@ namespace Quanlibaixe
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -307,16 +307,9 @@ namespace Quanlibaixe
 
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
-            // Làm mới DataGridView
-            //dataGridView1.Refresh();
-
-            // Lưu nguồn dữ liệu hiện tại
-            //var dataSource = dataGridView1.DataSource;
-            // Đặt giá trị cho DataSource thành null
-            //dataGridView1.DataSource = null;
-
-            // Thiết lập lại nguồn dữ liệu đã lưu
-            //dataGridView1.DataSource = dataSource;
+            cb_TaiXe.Items.Clear();
+            cb_IDtaixe.Items.Clear();
+            cb_NgaySinh.Items.Clear();
 
             txt_IDcar.Text = "";
             cb_IDtaixe.Text = "";
@@ -324,9 +317,9 @@ namespace Quanlibaixe
             cb_TrangThai.Text = "";
             txt_MoTa.Text = "";
             cb_NgaySinh.Text = "";
-            //ketnoi();
-            //load_driver();
-            this.Refresh();
+            ketnoi();
+            load_driver();
+            Refresh();
         }
 
         private void btn_Refresh_MouseHover(object sender, EventArgs e)
