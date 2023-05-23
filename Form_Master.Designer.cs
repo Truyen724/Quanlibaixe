@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Master));
             this.DragControl_Panel = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -119,7 +119,7 @@
             this.guna2Transition1.SetDecoration(this.DragControl_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DragControl_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.DragControl_Panel.Location = new System.Drawing.Point(0, 0);
-            this.DragControl_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragControl_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.DragControl_Panel.Name = "DragControl_Panel";
             this.DragControl_Panel.Size = new System.Drawing.Size(1942, 33);
             this.DragControl_Panel.TabIndex = 1;
@@ -199,7 +199,7 @@
             this.guna2Transition1.SetDecoration(this.DragControl_Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DragControl_Panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.DragControl_Panel2.Location = new System.Drawing.Point(828, 0);
-            this.DragControl_Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragControl_Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.DragControl_Panel2.Name = "DragControl_Panel2";
             this.DragControl_Panel2.Size = new System.Drawing.Size(955, 33);
             this.DragControl_Panel2.TabIndex = 6;
@@ -213,7 +213,7 @@
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox3.Location = new System.Drawing.Point(1783, 0);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(53, 33);
             this.guna2ControlBox3.TabIndex = 5;
@@ -227,7 +227,7 @@
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(213)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox2.Location = new System.Drawing.Point(1836, 0);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(53, 33);
             this.guna2ControlBox2.TabIndex = 4;
@@ -242,7 +242,7 @@
             this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox1.Location = new System.Drawing.Point(1889, 0);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(53, 33);
             this.guna2ControlBox1.TabIndex = 3;
@@ -255,7 +255,7 @@
             this.guna2Transition1.SetDecoration(this.Master_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Master_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Master_Panel.Location = new System.Drawing.Point(0, 33);
-            this.Master_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Master_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Master_Panel.Name = "Master_Panel";
             this.Master_Panel.Size = new System.Drawing.Size(1942, 873);
             this.Master_Panel.TabIndex = 2;
@@ -270,7 +270,7 @@
             this.guna2Transition1.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(380, 98);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1562, 775);
             this.panel3.TabIndex = 47;
@@ -283,7 +283,7 @@
             this.guna2Transition1.SetDecoration(this.Xe_tableLayoutPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Xe_tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Xe_tableLayoutPanel2.Location = new System.Drawing.Point(0, 144);
-            this.Xe_tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Xe_tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.Xe_tableLayoutPanel2.Name = "Xe_tableLayoutPanel2";
             this.Xe_tableLayoutPanel2.RowCount = 1;
             this.Xe_tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -301,7 +301,7 @@
             this.guna2Transition1.SetDecoration(this.Camera_tableLayoutPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Camera_tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Camera_tableLayoutPanel1.Location = new System.Drawing.Point(0, 144);
-            this.Camera_tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Camera_tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.Camera_tableLayoutPanel1.Name = "Camera_tableLayoutPanel1";
             this.Camera_tableLayoutPanel1.RowCount = 1;
             this.Camera_tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -314,7 +314,7 @@
             this.guna2Transition1.SetDecoration(this.camera_Control1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.camera_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.camera_Control1.Location = new System.Drawing.Point(5, 5);
-            this.camera_Control1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.camera_Control1.Margin = new System.Windows.Forms.Padding(5);
             this.camera_Control1.Name = "camera_Control1";
             this.camera_Control1.Size = new System.Drawing.Size(1545, 590);
             this.camera_Control1.TabIndex = 0;
@@ -327,7 +327,7 @@
             this.guna2Transition1.SetDecoration(this.panel11, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1555, 144);
             this.panel11.TabIndex = 43;
@@ -367,7 +367,7 @@
             this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(1080, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(475, 144);
             this.panel2.TabIndex = 40;
@@ -387,7 +387,7 @@
             this.btn_RunCamera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
             this.btn_RunCamera.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_RunCamera.Location = new System.Drawing.Point(4, 50);
-            this.btn_RunCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RunCamera.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RunCamera.Name = "btn_RunCamera";
             this.btn_RunCamera.Size = new System.Drawing.Size(300, 57);
             this.btn_RunCamera.TabIndex = 43;
@@ -406,7 +406,7 @@
             this.btn_Logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Logout.ForeColor = System.Drawing.Color.White;
             this.btn_Logout.Location = new System.Drawing.Point(312, 50);
-            this.btn_Logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Logout.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Size = new System.Drawing.Size(153, 57);
             this.btn_Logout.TabIndex = 42;
@@ -418,7 +418,7 @@
             this.guna2Transition1.SetDecoration(this.panel10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel10.Location = new System.Drawing.Point(1555, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(7, 744);
             this.panel10.TabIndex = 42;
@@ -431,7 +431,7 @@
             this.guna2Transition1.SetDecoration(this.panel9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 744);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1562, 31);
             this.panel9.TabIndex = 41;
@@ -450,7 +450,7 @@
             this.buttonCT7.ForeColor = System.Drawing.Color.White;
             this.buttonCT7.Image = ((System.Drawing.Image)(resources.GetObject("buttonCT7.Image")));
             this.buttonCT7.Location = new System.Drawing.Point(1531, 0);
-            this.buttonCT7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCT7.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCT7.Name = "buttonCT7";
             this.buttonCT7.Size = new System.Drawing.Size(31, 31);
             this.buttonCT7.TabIndex = 0;
@@ -479,8 +479,6 @@
             this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
             this.timeToolStripMenuItem.Size = new System.Drawing.Size(56, 27);
             this.timeToolStripMenuItem.Text = "Time";
-            this.timeToolStripMenuItem.MouseHover += new System.EventHandler(this.timeToolStripMenuItem_MouseHover);
-            this.timeToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.timeToolStripMenuItem_MouseMove);
             // 
             // dateToolStripMenuItem
             // 
@@ -505,7 +503,7 @@
             this.guna2Transition1.SetDecoration(this.SideBar_panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.SideBar_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar_panel.Location = new System.Drawing.Point(0, 98);
-            this.SideBar_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SideBar_panel.Margin = new System.Windows.Forms.Padding(4);
             this.SideBar_panel.Name = "SideBar_panel";
             this.SideBar_panel.Size = new System.Drawing.Size(380, 775);
             this.SideBar_panel.TabIndex = 46;
@@ -515,7 +513,7 @@
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
             this.guna2Transition1.SetDecoration(this.SidePanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.SidePanel.Location = new System.Drawing.Point(8, 180);
-            this.SidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SidePanel.Margin = new System.Windows.Forms.Padding(4);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(13, 74);
             this.SidePanel.TabIndex = 3;
@@ -535,7 +533,7 @@
             this.Camera_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Camera_buttonCT.Image")));
             this.Camera_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Camera_buttonCT.Location = new System.Drawing.Point(21, 180);
-            this.Camera_buttonCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Camera_buttonCT.Margin = new System.Windows.Forms.Padding(4);
             this.Camera_buttonCT.Name = "Camera_buttonCT";
             this.Camera_buttonCT.Size = new System.Drawing.Size(359, 74);
             this.Camera_buttonCT.TabIndex = 7;
@@ -549,7 +547,7 @@
             this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
             this.guna2Transition1.SetDecoration(this.SidePanel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.SidePanel2.Location = new System.Drawing.Point(8, 261);
-            this.SidePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SidePanel2.Margin = new System.Windows.Forms.Padding(4);
             this.SidePanel2.Name = "SidePanel2";
             this.SidePanel2.Size = new System.Drawing.Size(13, 74);
             this.SidePanel2.TabIndex = 2;
@@ -564,7 +562,7 @@
             this.guna2Transition1.SetDecoration(this.panel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 689);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(380, 86);
             this.panel6.TabIndex = 6;
@@ -583,7 +581,7 @@
             this.guna2CircleButton2.ImageOffset = new System.Drawing.Point(1, 0);
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2CircleButton2.Location = new System.Drawing.Point(315, 22);
-            this.guna2CircleButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CircleButton2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.Size = new System.Drawing.Size(53, 49);
@@ -626,7 +624,7 @@
             this.guna2Transition1.SetDecoration(this.panel5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(380, 172);
             this.panel5.TabIndex = 5;
@@ -660,7 +658,7 @@
             this.LichXe_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("LichXe_buttonCT.Image")));
             this.LichXe_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LichXe_buttonCT.Location = new System.Drawing.Point(21, 497);
-            this.LichXe_buttonCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LichXe_buttonCT.Margin = new System.Windows.Forms.Padding(4);
             this.LichXe_buttonCT.Name = "LichXe_buttonCT";
             this.LichXe_buttonCT.Size = new System.Drawing.Size(359, 74);
             this.LichXe_buttonCT.TabIndex = 4;
@@ -684,7 +682,7 @@
             this.TaiXe_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("TaiXe_buttonCT.Image")));
             this.TaiXe_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TaiXe_buttonCT.Location = new System.Drawing.Point(21, 418);
-            this.TaiXe_buttonCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TaiXe_buttonCT.Margin = new System.Windows.Forms.Padding(4);
             this.TaiXe_buttonCT.Name = "TaiXe_buttonCT";
             this.TaiXe_buttonCT.Size = new System.Drawing.Size(359, 74);
             this.TaiXe_buttonCT.TabIndex = 3;
@@ -708,7 +706,7 @@
             this.XeOto_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("XeOto_buttonCT.Image")));
             this.XeOto_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.XeOto_buttonCT.Location = new System.Drawing.Point(21, 340);
-            this.XeOto_buttonCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.XeOto_buttonCT.Margin = new System.Windows.Forms.Padding(4);
             this.XeOto_buttonCT.Name = "XeOto_buttonCT";
             this.XeOto_buttonCT.Size = new System.Drawing.Size(359, 74);
             this.XeOto_buttonCT.TabIndex = 2;
@@ -732,7 +730,7 @@
             this.QuanLi_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("QuanLi_buttonCT.Image")));
             this.QuanLi_buttonCT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.QuanLi_buttonCT.Location = new System.Drawing.Point(21, 261);
-            this.QuanLi_buttonCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.QuanLi_buttonCT.Margin = new System.Windows.Forms.Padding(4);
             this.QuanLi_buttonCT.Name = "QuanLi_buttonCT";
             this.QuanLi_buttonCT.Size = new System.Drawing.Size(359, 74);
             this.QuanLi_buttonCT.TabIndex = 0;
@@ -749,10 +747,11 @@
             this.guna2Transition1.SetDecoration(this.panel8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1942, 98);
             this.panel8.TabIndex = 45;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // panel7
             // 
@@ -761,7 +760,7 @@
             this.guna2Transition1.SetDecoration(this.panel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(380, 98);
             this.panel7.TabIndex = 3;
@@ -792,7 +791,7 @@
             this.Dashboard_buttonCT.ForeColor = System.Drawing.Color.White;
             this.Dashboard_buttonCT.Image = ((System.Drawing.Image)(resources.GetObject("Dashboard_buttonCT.Image")));
             this.Dashboard_buttonCT.Location = new System.Drawing.Point(21, 20);
-            this.Dashboard_buttonCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dashboard_buttonCT.Margin = new System.Windows.Forms.Padding(4);
             this.Dashboard_buttonCT.Name = "Dashboard_buttonCT";
             this.Dashboard_buttonCT.Size = new System.Drawing.Size(49, 42);
             this.Dashboard_buttonCT.TabIndex = 0;
@@ -808,7 +807,7 @@
             this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1325, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(617, 98);
             this.panel4.TabIndex = 2;
@@ -818,7 +817,7 @@
             this.panel13.BackColor = System.Drawing.Color.White;
             this.guna2Transition1.SetDecoration(this.panel13, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel13.Location = new System.Drawing.Point(212, 58);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(380, 2);
             this.panel13.TabIndex = 3;
@@ -828,7 +827,7 @@
             this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(151, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -845,10 +844,10 @@
             this.textBoxCT1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCT1.ForeColor = System.Drawing.Color.White;
             this.textBoxCT1.Location = new System.Drawing.Point(204, 18);
-            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxCT1.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxCT1.Multiline = false;
             this.textBoxCT1.Name = "textBoxCT1";
-            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.textBoxCT1.Padding = new System.Windows.Forms.Padding(9);
             this.textBoxCT1.PasswordChar = false;
             this.textBoxCT1.Size = new System.Drawing.Size(388, 43);
             this.textBoxCT1.TabIndex = 3;
@@ -865,22 +864,22 @@
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // notifyIcon1
             // 
@@ -915,7 +914,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip2;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Master";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Master";

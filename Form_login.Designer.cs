@@ -72,7 +72,7 @@ namespace Quanlibaixe
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox1.Location = new System.Drawing.Point(441, 31);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(60, 37);
             this.guna2ControlBox1.TabIndex = 15;
@@ -92,7 +92,7 @@ namespace Quanlibaixe
             this.Email_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Email_TextBox.ForeColor = System.Drawing.Color.Gray;
             this.Email_TextBox.Location = new System.Drawing.Point(35, 294);
-            this.Email_TextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Email_TextBox.Margin = new System.Windows.Forms.Padding(5);
             this.Email_TextBox.Name = "Email_TextBox";
             this.Email_TextBox.PasswordChar = '\0';
             this.Email_TextBox.PlaceholderText = "";
@@ -116,7 +116,7 @@ namespace Quanlibaixe
             this.Password_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password_TextBox.ForeColor = System.Drawing.Color.Gray;
             this.Password_TextBox.Location = new System.Drawing.Point(35, 391);
-            this.Password_TextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Password_TextBox.Margin = new System.Windows.Forms.Padding(5);
             this.Password_TextBox.Name = "Password_TextBox";
             this.Password_TextBox.PasswordChar = '●';
             this.Password_TextBox.PlaceholderForeColor = System.Drawing.Color.White;
@@ -193,7 +193,7 @@ namespace Quanlibaixe
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(28, 671);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(348, 23);
             this.panel1.TabIndex = 28;
@@ -228,7 +228,7 @@ namespace Quanlibaixe
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(33, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(80, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -246,7 +246,7 @@ namespace Quanlibaixe
             this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.LoginButton.ForeColor = System.Drawing.Color.White;
             this.LoginButton.Location = new System.Drawing.Point(35, 548);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(4);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(467, 57);
             this.LoginButton.TabIndex = 30;

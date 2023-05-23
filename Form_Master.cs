@@ -62,7 +62,7 @@ namespace Quanlibaixe
         private void Form_Master_Load(object sender, EventArgs e)
         {
             Camera_buttonCT.BackColor = Color.FromArgb(208, 212, 213);
-            camera_Control1.BringToFront();          
+            camera_Control1.BringToFront();
 
             //
 
@@ -79,6 +79,11 @@ namespace Quanlibaixe
             }
             else
             {
+                SideBar_panel.Visible = false;
+                SideBar_panel.Width = 90;
+                // Transiton HorizSlide cho SideBar_panel.Visible = false thi animation moi chay
+                guna2Transition1.ShowSync(SideBar_panel);
+
                 return;
             }
 
@@ -734,10 +739,6 @@ namespace Quanlibaixe
 
         }
 
-        private void timeToolStripMenuItem_MouseHover(object sender, EventArgs e)
-        {
-            timeToolStripMenuItem.ForeColor = Color.Black;
-        }
 
         private void dateToolStripMenuItem_MouseHover(object sender, EventArgs e)
         {
@@ -745,9 +746,9 @@ namespace Quanlibaixe
             //timeToolStripMenuItem.ForeColor = Color.FromArgb(0, 13, 66);
         }
 
-        private void timeToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
+        private void panel8_Paint(object sender, PaintEventArgs e)
         {
-            timeToolStripMenuItem.ForeColor = Color.Black;
+
         }
     }
 }
