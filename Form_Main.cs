@@ -392,7 +392,7 @@ namespace Quanlibaixe
         // Button
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'in'  order by ID_action desc");
+            string query = String.Format("SELECT ID_car, [ID_action], In_or_out, Time, Id_parkinglot FROM Action WHERE [ID_action] IN (SELECT MAX(ID_action) AS MaxID FROM Action GROUP BY ID_car) and In_or_out = 'in' order by ID_action desc");
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             DataTable dt = new DataTable();
@@ -419,7 +419,7 @@ namespace Quanlibaixe
         // Button
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            string query = String.Format("select ID_action, ID_car,In_or_out, Time, Id_parkinglot from Action where ID_car not in(select Id_car from Car) and In_or_out = 'out'  order by ID_action desc");
+            string query = String.Format("SELECT ID_car, [ID_action], In_or_out, Time, Id_parkinglot FROM Action WHERE [ID_action] IN (SELECT MAX(ID_action) AS MaxID FROM Action GROUP BY ID_car) and In_or_out = 'out' order by ID_action desc");
             conn.Open();
             SqlCommand com = new SqlCommand(query, conn);
             DataTable dt = new DataTable();

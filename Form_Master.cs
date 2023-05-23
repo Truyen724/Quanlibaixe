@@ -68,11 +68,14 @@ namespace Quanlibaixe
 
             //thread2 = new Thread(new ThreadStart(run_check));
             //thread2.Start();
-
             // Tắt menuStrip1 nếu user đăng nhập
             if (id_access == "2")
             {
                 menuStrip1.Visible = false;
+                SideBar_panel.Visible = false;
+                SideBar_panel.Width = 90;
+                Dashboard_buttonCT.Visible = false;
+
             }
             else
             {
@@ -159,7 +162,6 @@ namespace Quanlibaixe
             TaiXe_buttonCT.ForeColor = Color.Gray;
             SidePanel2.Visible = false;
         }
-
         //Custom hover buttonCT5
         private void OnMouseEnterButtonCT5(object sender, EventArgs e)
         {
@@ -176,6 +178,7 @@ namespace Quanlibaixe
         {
             LichXe_buttonCT.ForeColor = Color.Gray;
             SidePanel2.Visible = false;
+            
         }            
         //----------------------------------------------------------------------------------------------------------------->
         
