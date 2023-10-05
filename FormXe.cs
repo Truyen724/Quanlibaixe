@@ -65,7 +65,7 @@ namespace Quanlibaixe
         }
 
         // Tạo kết nối tới database
-        String ConectionString = infor.ConectionString;
+        string ConectionString = infor.ConectionString;
         SqlConnection conn = new SqlConnection();
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -133,7 +133,7 @@ namespace Quanlibaixe
                     try
                     {
                         // sử dụng cơ chế tham số hóa "parameterization mechanism"
-                        String query = "Insert into Car (Id_car,Id_driver,State,Desciption) values (@Id_car,@Id_driver,@State,@Desciption)";
+                        string query = "Insert into Car (Id_car,Id_driver,State,Desciption) values (@Id_car,@Id_driver,@State,@Desciption)";
                         SqlCommand com = new SqlCommand(query, conn);
                         com.Parameters.AddWithValue("@Id_car", txt_IDcar.Text);
                         com.Parameters.AddWithValue("@Id_driver", cb_IDtaixe.Text);

@@ -1,5 +1,6 @@
 from sqlalchemy.engine import URL
 connection_string = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=DESKTOP-O41267U;DATABASE=Detect_bienso;Trusted_Connection=yes"
+# connection_string = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=THQNHNGQN\THQNHNGQN;DATABASE=Detect_bienso;Trusted_Connection=yes"
 connection_url = URL.create("mssql+pyodbc", query={"odbc_connect": connection_string})
 from sqlalchemy import text
 from sqlalchemy import create_engine
